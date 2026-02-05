@@ -1,0 +1,3057 @@
+id,syllogism,premises,conclusion,fol,clif,cgif,clingo,tflplus,minifol2,sef
+bff2af61-d4b0-4147-8a5b-ff4fe1892559,There are no bikes that can be called cars. It is also true that every bike is a type of vehicle. This has led to the conclusion that a portion of vehicles are bikes.,"['∀x (Bikes(x) → ¬Called_cars(x))', '∀x (Bike(x) → Vehicle(x))']",∃x (Vehicles(x) ∧ Bikes(x)),"∀x (Bikes(x) → ¬Calledcars(x))
+∀x (Bike(x) → Vehicle(x))
+∃x (Vehicles(x) ∧ Bikes(x))
+","forall x (bikes(x) implies not calledcars(x))
+forall x (bike(x) implies vehicle(x))
+exists x (vehicles(x) and bikes(x))
+","[@every *x [(bikes[(?x)]  ~calledcars[(?x)])]
+@every *x [(bike[(?x)]  vehicle[(?x)])]
+*x [(vehicles[(?x)]  bikes[(?x)])]
+]","forall (bikes(x) -: notcalledcars(x))
+forall (bike(x) -: vehicle(x))
+ (vehicles(x) , bikes(x))
+",-(+B0--+C0)-(+B0-+V0)+(+V1++B1),"all:x (bikes(x) :- ~calledcars(x))
+all:x (bike(x) :- vehicle(x))
+x (vehicles(x) & bikes(x))
+",categorical
+f36a4ca3-3b69-4869-a152-deaa7e0fdad4,"There exist some objects that are books which are not digital files. Every single book is an item with pages. Consequently, some items with pages are digital files.","['∃x (Objects(x) ∧ Books_not_digital_files(x))', '∀x (Book(x) → Item_pages(x))']",∃x (Items_pages(x) ∧ Digital_files(x)),"∃x (Objects(x) ∧ Booksnotdigitalfiles(x))
+∀x (Book(x) → Itempages(x))
+∃x (Itemspages(x) ∧ Digitalfiles(x))
+","exists x (objects(x) and booksnotdigitalfiles(x))
+forall x (book(x) implies itempages(x))
+exists x (itemspages(x) and digitalfiles(x))
+","[*x [(objects[(?x)]  booksnotdigitalfiles[(?x)])]
+@every *x [(book[(?x)]  itempages[(?x)])]
+*x [(itemspages[(?x)]  digitalfiles[(?x)])]
+]"," (objects(x) , booksnotdigitalfiles(x))
+forall (book(x) -: itempages(x))
+ (itemspages(x) , digitalfiles(x))
+",+(+O1++B1)-(+B0-+I0)+(+I1++D1),"x (objects(x) & booksnotdigitalfiles(x))
+all:x (book(x) :- itempages(x))
+x (itemspages(x) & digitalfiles(x))
+",categorical
+e773bd8c-fa53-4e9c-8ec6-7d978e0601ac,Every single object can fly. It is known that some boats cannot fly. It follows that some boats are not objects.,"['∀x (Object(x) → Can_Fly(x))', '∃x (Boats(x) ∧ ¬Can_Fly(x))']",∃x (Boats(x) ∧ Not_objects(x)),"∀x (Object(x) → CanFly(x))
+∃x (Boats(x) ∧ ¬CanFly(x))
+∃x (Boats(x) ∧ Notobjects(x))
+","forall x (object(x) implies canfly(x))
+exists x (boats(x) and not canfly(x))
+exists x (boats(x) and notobjects(x))
+","[@every *x [(object[(?x)]  canfly[(?x)])]
+*x [(boats[(?x)]  ~canfly[(?x)])]
+*x [(boats[(?x)]  notobjects[(?x)])]
+]","forall (object(x) -: canfly(x))
+ (boats(x) , notcanfly(x))
+ (boats(x) , notobjects(x))
+",-(+O0-+C0)+(+B1+-+C1)+(+B1++N1),"all:x (object(x) :- canfly(x))
+x (boats(x) & ~canfly(x))
+x (boats(x) & notobjects(x))
+",categorical
+a2fcf47a-5df0-405d-86ce-ed8629f387a9,Every single fruit is a food. Nothing that is a vegetable is a food. It follows from this that every vegetable is a fruit.,"['∀x (Fruit(x) → Food(x))', '∀x (Nothing(x) → Vegetable_food(x))']",∀x (Vegetable(x) → Fruit(x)),"∀x (Fruit(x) → Food(x))
+∀x (Nothing(x) → Vegetablefood(x))
+∀x (Vegetable(x) → Fruit(x))
+","forall x (fruit(x) implies food(x))
+forall x (nothing(x) implies vegetablefood(x))
+forall x (vegetable(x) implies fruit(x))
+","[@every *x [(fruit[(?x)]  food[(?x)])]
+@every *x [(nothing[(?x)]  vegetablefood[(?x)])]
+@every *x [(vegetable[(?x)]  fruit[(?x)])]
+]","forall (fruit(x) -: food(x))
+forall (nothing(x) -: vegetablefood(x))
+forall (vegetable(x) -: fruit(x))
+",-(+F0-+F0)-(+N0-+V0)-(+V0-+F0),"all:x (fruit(x) :- food(x))
+all:x (nothing(x) :- vegetablefood(x))
+all:x (vegetable(x) :- fruit(x))
+",categorical
+6e5f055f-06e4-40f3-a45b-52b7d9292d60,There are no individuals who are elephants that are also people enrolled in kindergarten. All five-year-olds are people enrolled in kindergarten. It can be deduced that some five-year-olds are not elephants.,"['∀x (Individuals_elephants(x) → ¬People_enrolled_in_kindergarten(x))', '∀x (Five_year_olds(x) → People_enrolled_in_kindergarten(x))']",∃x (Five_year_olds(x) ∧ Not_elephants(x)),"∀x (Individualselephants(x) → ¬Peopleenrolledinkindergarten(x))
+∀x (Fiveyearolds(x) → Peopleenrolledinkindergarten(x))
+∃x (Fiveyearolds(x) ∧ Notelephants(x))
+","forall x (individualselephants(x) implies not peopleenrolledinkindergarten(x))
+forall x (fiveyearolds(x) implies peopleenrolledinkindergarten(x))
+exists x (fiveyearolds(x) and notelephants(x))
+","[@every *x [(individualselephants[(?x)]  ~peopleenrolledinkindergarten[(?x)])]
+@every *x [(fiveyearolds[(?x)]  peopleenrolledinkindergarten[(?x)])]
+*x [(fiveyearolds[(?x)]  notelephants[(?x)])]
+]","forall (individualselephants(x) -: notpeopleenrolledinkindergarten(x))
+forall (fiveyearolds(x) -: peopleenrolledinkindergarten(x))
+ (fiveyearolds(x) , notelephants(x))
+",-(+I0--+P0)-(+F0-+P0)+(+F1++N1),"all:x (individualselephants(x) :- ~peopleenrolledinkindergarten(x))
+all:x (fiveyearolds(x) :- peopleenrolledinkindergarten(x))
+x (fiveyearolds(x) & notelephants(x))
+",categorical
+80a62ff2-1bc5-48e6-bc9f-f877690852fc,The entire set of fruits is composed of round objects with a citrus peel. At least one orange is not a round object with a citrus peel. Every single fruit is an orange.,"['∀x (Fruits(x) → Round_objects_citrus_peel(x))', '∀x (At_least_one_orange(x) → ¬Round_object_citrus_peel(x))', '∀x (Fruit(x) → Orange(x))']",,"∀x (Fruits(x) → Roundobjectscitruspeel(x))
+∀x (Atleastoneorange(x) → ¬Roundobjectcitruspeel(x))
+∀x (Fruit(x) → Orange(x))
+","forall x (fruits(x) implies roundobjectscitruspeel(x))
+forall x (atleastoneorange(x) implies not roundobjectcitruspeel(x))
+forall x (fruit(x) implies orange(x))
+","[@every *x [(fruits[(?x)]  roundobjectscitruspeel[(?x)])]
+@every *x [(atleastoneorange[(?x)]  ~roundobjectcitruspeel[(?x)])]
+@every *x [(fruit[(?x)]  orange[(?x)])]
+]","forall (fruits(x) -: roundobjectscitruspeel(x))
+forall (atleastoneorange(x) -: notroundobjectcitruspeel(x))
+forall (fruit(x) -: orange(x))
+",-(+F0-+R0)-(+A0--+R0)-(+F0-+O0),"all:x (fruits(x) :- roundobjectscitruspeel(x))
+all:x (atleastoneorange(x) :- ~roundobjectcitruspeel(x))
+all:x (fruit(x) :- orange(x))
+",categorical
+b73d8e0e-782e-4e60-866b-595cf13a3421,"No animal is a rock. Some rocks are plants. From this, it can be concluded that some animals are plants.","['∀x (No_animal(x) → Rock(x))', '∃x (Rocks(x) ∧ Plants(x))']",∃x (Animals(x) ∧ Plants(x)),"∀x (Noanimal(x) → Rock(x))
+∃x (Rocks(x) ∧ Plants(x))
+∃x (Animals(x) ∧ Plants(x))
+","forall x (noanimal(x) implies rock(x))
+exists x (rocks(x) and plants(x))
+exists x (animals(x) and plants(x))
+","[@every *x [(noanimal[(?x)]  rock[(?x)])]
+*x [(rocks[(?x)]  plants[(?x)])]
+*x [(animals[(?x)]  plants[(?x)])]
+]","forall (noanimal(x) -: rock(x))
+ (rocks(x) , plants(x))
+ (animals(x) , plants(x))
+",-(+N0-+R0)+(+R1++P1)+(+A1++P1),"all:x (noanimal(x) :- rock(x))
+x (rocks(x) & plants(x))
+x (animals(x) & plants(x))
+",categorical
+fd552276-66bf-45da-8cea-67192fe99fc3,"There is no piece of furniture that can be called a planet. Each and every chair is a piece of furniture. Consequently, no chair is a planet.","['∀x (Piece_furniture(x) → ¬Called_planet(x))', '∀x (Chair(x) → Piece_furniture(x))']",∀x (No_chair(x) → Planet(x)),"∀x (Piecefurniture(x) → ¬Calledplanet(x))
+∀x (Chair(x) → Piecefurniture(x))
+∀x (Nochair(x) → Planet(x))
+","forall x (piecefurniture(x) implies not calledplanet(x))
+forall x (chair(x) implies piecefurniture(x))
+forall x (nochair(x) implies planet(x))
+","[@every *x [(piecefurniture[(?x)]  ~calledplanet[(?x)])]
+@every *x [(chair[(?x)]  piecefurniture[(?x)])]
+@every *x [(nochair[(?x)]  planet[(?x)])]
+]","forall (piecefurniture(x) -: notcalledplanet(x))
+forall (chair(x) -: piecefurniture(x))
+forall (nochair(x) -: planet(x))
+",-(+P0--+C0)-(+C0-+P0)-(+N0-+P0),"all:x (piecefurniture(x) :- ~calledplanet(x))
+all:x (chair(x) :- piecefurniture(x))
+all:x (nochair(x) :- planet(x))
+",categorical
+8041eb99-e73f-46ca-a2d7-9aefd2c6c0b1,"Every single vehicle can be considered an object. There are no cars that are objects. Therefore, no car is a vehicle.","['∀x (Vehicle(x) → Considered_object(x))', '∀x (Cars(x) → ¬Objects(x))']",∀x (No_car(x) → Vehicle(x)),"∀x (Vehicle(x) → Consideredobject(x))
+∀x (Cars(x) → ¬Objects(x))
+∀x (Nocar(x) → Vehicle(x))
+","forall x (vehicle(x) implies consideredobject(x))
+forall x (cars(x) implies not objects(x))
+forall x (nocar(x) implies vehicle(x))
+","[@every *x [(vehicle[(?x)]  consideredobject[(?x)])]
+@every *x [(cars[(?x)]  ~objects[(?x)])]
+@every *x [(nocar[(?x)]  vehicle[(?x)])]
+]","forall (vehicle(x) -: consideredobject(x))
+forall (cars(x) -: notobjects(x))
+forall (nocar(x) -: vehicle(x))
+",-(+V0-+C0)-(+C0--+O0)-(+N0-+V0),"all:x (vehicle(x) :- consideredobject(x))
+all:x (cars(x) :- ~objects(x))
+all:x (nocar(x) :- vehicle(x))
+",categorical
+ad09c938-3d1d-4d5e-b75f-04fb0098ba43,"There exist some things that are books which do not have pages. Every single book is a living thing. Consequently, some living things have pages.","['∃x (Things(x) ∧ Books_do_not_have_pages(x))', '∀x (Book(x) → Living_thing(x))']",∃x (Living_things(x) ∧ Pages(x)),"∃x (Things(x) ∧ Booksdonothavepages(x))
+∀x (Book(x) → Livingthing(x))
+∃x (Livingthings(x) ∧ Pages(x))
+","exists x (things(x) and booksdonothavepages(x))
+forall x (book(x) implies livingthing(x))
+exists x (livingthings(x) and pages(x))
+","[*x [(things[(?x)]  booksdonothavepages[(?x)])]
+@every *x [(book[(?x)]  livingthing[(?x)])]
+*x [(livingthings[(?x)]  pages[(?x)])]
+]"," (things(x) , booksdonothavepages(x))
+forall (book(x) -: livingthing(x))
+ (livingthings(x) , pages(x))
+",+(+T1++B1)-(+B0-+L0)+(+L1++P1),"x (things(x) & booksdonothavepages(x))
+all:x (book(x) :- livingthing(x))
+x (livingthings(x) & pages(x))
+",categorical
+af77d792-0970-4650-8ccf-4218f7685b37,There are no cars that are not alive. It is the case that no horse is alive. At least some horses are cars.,"['∀x (Cars(x) → ¬Not_alive(x))', '∀x (Horse(x) → ¬Alive(x))', '∃x (Horses(x) ∧ Cars(x))']",,"∀x (Cars(x) → ¬Notalive(x))
+∀x (Horse(x) → ¬Alive(x))
+∃x (Horses(x) ∧ Cars(x))
+","forall x (cars(x) implies not notalive(x))
+forall x (horse(x) implies not alive(x))
+exists x (horses(x) and cars(x))
+","[@every *x [(cars[(?x)]  ~notalive[(?x)])]
+@every *x [(horse[(?x)]  ~alive[(?x)])]
+*x [(horses[(?x)]  cars[(?x)])]
+]","forall (cars(x) -: notnotalive(x))
+forall (horse(x) -: notalive(x))
+ (horses(x) , cars(x))
+",-(+C0--+N0)-(+H0--+A0)+(+H1++C1),"all:x (cars(x) :- ~notalive(x))
+all:x (horse(x) :- ~alive(x))
+x (horses(x) & cars(x))
+",categorical
+9ee7aff6-1237-4e93-b3e4-08434de41ede,There is no canine that is a feline. Everything that is a canine is also a dog. This makes it true that all dogs are cats.,"['∀x (Canine(x) → ¬Feline(x))', '∀x (Canine(x) → Dog(x))']",∀x (Dogs(x) → Cats(x)),"∀x (Canine(x) → ¬Feline(x))
+∀x (Canine(x) → Dog(x))
+∀x (Dogs(x) → Cats(x))
+","forall x (canine(x) implies not feline(x))
+forall x (canine(x) implies dog(x))
+forall x (dogs(x) implies cats(x))
+","[@every *x [(canine[(?x)]  ~feline[(?x)])]
+@every *x [(canine[(?x)]  dog[(?x)])]
+@every *x [(dogs[(?x)]  cats[(?x)])]
+]","forall (canine(x) -: notfeline(x))
+forall (canine(x) -: dog(x))
+forall (dogs(x) -: cats(x))
+",-(+C0--+F0)-(+C0-+D0)-(+D0-+C0),"all:x (canine(x) :- ~feline(x))
+all:x (canine(x) :- dog(x))
+all:x (dogs(x) :- cats(x))
+",categorical
+552b33b2-6a6a-4a10-8a76-5d0d7c3d35ff,"There are no birds that are triangles. Every triangle is, by definition, a shape. Thus, some shapes are birds.","['∀x (Birds(x) → ¬Triangles(x))', '∀x (Triangle(x) → Shape(x))']",∃x (Shapes(x) ∧ Birds(x)),"∀x (Birds(x) → ¬Triangles(x))
+∀x (Triangle(x) → Shape(x))
+∃x (Shapes(x) ∧ Birds(x))
+","forall x (birds(x) implies not triangles(x))
+forall x (triangle(x) implies shape(x))
+exists x (shapes(x) and birds(x))
+","[@every *x [(birds[(?x)]  ~triangles[(?x)])]
+@every *x [(triangle[(?x)]  shape[(?x)])]
+*x [(shapes[(?x)]  birds[(?x)])]
+]","forall (birds(x) -: nottriangles(x))
+forall (triangle(x) -: shape(x))
+ (shapes(x) , birds(x))
+",-(+B0--+T0)-(+T0-+S0)+(+S1++B1),"all:x (birds(x) :- ~triangles(x))
+all:x (triangle(x) :- shape(x))
+x (shapes(x) & birds(x))
+",categorical
+41ee96a0-4400-4ba7-a4b3-54d49b5942cc,"It is the case that no lakes are flowing bodies of water. Every single river is, by its nature, a flowing body of water. Rivers are not lakes.","['∀x (Lakes(x) → ¬Flowing_bodies_water(x))', '∀x (Single_river(x) → Flowing_body_water(x))', '∀x (Rivers(x) → ¬Lakes(x))']",,"∀x (Lakes(x) → ¬Flowingbodieswater(x))
+∀x (Singleriver(x) → Flowingbodywater(x))
+∀x (Rivers(x) → ¬Lakes(x))
+","forall x (lakes(x) implies not flowingbodieswater(x))
+forall x (singleriver(x) implies flowingbodywater(x))
+forall x (rivers(x) implies not lakes(x))
+","[@every *x [(lakes[(?x)]  ~flowingbodieswater[(?x)])]
+@every *x [(singleriver[(?x)]  flowingbodywater[(?x)])]
+@every *x [(rivers[(?x)]  ~lakes[(?x)])]
+]","forall (lakes(x) -: notflowingbodieswater(x))
+forall (singleriver(x) -: flowingbodywater(x))
+forall (rivers(x) -: notlakes(x))
+",-(+L0--+F0)-(+S0-+F0)-(+R0--+L0),"all:x (lakes(x) :- ~flowingbodieswater(x))
+all:x (singleriver(x) :- flowingbodywater(x))
+all:x (rivers(x) :- ~lakes(x))
+",categorical
+f682283e-eb75-47d9-9e48-ca918d7c3737,No animal is a tree. All trees are plants without exception. A number of plants are animals.,"['∀x (No_animal(x) → Tree(x))', '∀x (Trees(x) → Plants(x))', '∃x (Plants(x) ∧ Animals(x))']",,"∀x (Noanimal(x) → Tree(x))
+∀x (Trees(x) → Plants(x))
+∃x (Plants(x) ∧ Animals(x))
+","forall x (noanimal(x) implies tree(x))
+forall x (trees(x) implies plants(x))
+exists x (plants(x) and animals(x))
+","[@every *x [(noanimal[(?x)]  tree[(?x)])]
+@every *x [(trees[(?x)]  plants[(?x)])]
+*x [(plants[(?x)]  animals[(?x)])]
+]","forall (noanimal(x) -: tree(x))
+forall (trees(x) -: plants(x))
+ (plants(x) , animals(x))
+",-(+N0-+T0)-(+T0-+P0)+(+P1++A1),"all:x (noanimal(x) :- tree(x))
+all:x (trees(x) :- plants(x))
+x (plants(x) & animals(x))
+",categorical
+5260247f-b290-4bae-8d0c-a6c988d3d610,"Every single item that is a writing instrument is a tool. There are some pens which are writing instruments. Thus, some pens are tools.","['∀x (Item(x) → Writing_instrument_tool(x))', '∃x (Pens(x) ∧ Writing_instruments(x))']",∃x (Pens(x) ∧ Tools(x)),"∀x (Item(x) → Writinginstrumenttool(x))
+∃x (Pens(x) ∧ Writinginstruments(x))
+∃x (Pens(x) ∧ Tools(x))
+","forall x (item(x) implies writinginstrumenttool(x))
+exists x (pens(x) and writinginstruments(x))
+exists x (pens(x) and tools(x))
+","[@every *x [(item[(?x)]  writinginstrumenttool[(?x)])]
+*x [(pens[(?x)]  writinginstruments[(?x)])]
+*x [(pens[(?x)]  tools[(?x)])]
+]","forall (item(x) -: writinginstrumenttool(x))
+ (pens(x) , writinginstruments(x))
+ (pens(x) , tools(x))
+",-(+I0-+W0)+(+P1++W1)+(+P1++T1),"all:x (item(x) :- writinginstrumenttool(x))
+x (pens(x) & writinginstruments(x))
+x (pens(x) & tools(x))
+",categorical
+f80a357f-3815-474b-b77a-9d1c6a3b9bd2,It is the case that there are no reptiles that are birds. Some things with furnitures are reptiles. It follows that some things with furnitures are birds.,"['∀x (Reptiles(x) → ¬Birds(x))', '∃x (Things_furnitures(x) ∧ Reptiles(x))']",∃x (Things_furnitures(x) ∧ Birds(x)),"∀x (Reptiles(x) → ¬Birds(x))
+∃x (Thingsfurnitures(x) ∧ Reptiles(x))
+∃x (Thingsfurnitures(x) ∧ Birds(x))
+","forall x (reptiles(x) implies not birds(x))
+exists x (thingsfurnitures(x) and reptiles(x))
+exists x (thingsfurnitures(x) and birds(x))
+","[@every *x [(reptiles[(?x)]  ~birds[(?x)])]
+*x [(thingsfurnitures[(?x)]  reptiles[(?x)])]
+*x [(thingsfurnitures[(?x)]  birds[(?x)])]
+]","forall (reptiles(x) -: notbirds(x))
+ (thingsfurnitures(x) , reptiles(x))
+ (thingsfurnitures(x) , birds(x))
+",-(+R0--+B0)+(+T1++R1)+(+T1++B1),"all:x (reptiles(x) :- ~birds(x))
+x (thingsfurnitures(x) & reptiles(x))
+x (thingsfurnitures(x) & birds(x))
+",categorical
+581fa853-f1e1-4450-8716-be9e17623a21,"There are no cars that are airplanes. Everything that is a dog is a car. Thus, every dog is an airplane.","['∀x (Cars(x) → ¬Airplanes(x))', '∀x (Dog(x) → Car(x))']",∀x (Dog(x) → Airplane(x)),"∀x (Cars(x) → ¬Airplanes(x))
+∀x (Dog(x) → Car(x))
+∀x (Dog(x) → Airplane(x))
+","forall x (cars(x) implies not airplanes(x))
+forall x (dog(x) implies car(x))
+forall x (dog(x) implies airplane(x))
+","[@every *x [(cars[(?x)]  ~airplanes[(?x)])]
+@every *x [(dog[(?x)]  car[(?x)])]
+@every *x [(dog[(?x)]  airplane[(?x)])]
+]","forall (cars(x) -: notairplanes(x))
+forall (dog(x) -: car(x))
+forall (dog(x) -: airplane(x))
+",-(+C0--+A0)-(+D0-+C0)-(+D0-+A0),"all:x (cars(x) :- ~airplanes(x))
+all:x (dog(x) :- car(x))
+all:x (dog(x) :- airplane(x))
+",categorical
+1d4bc4d0-df5b-4f46-9972-dd906f3c3754,There are no fish that do not live on the moon. It is the case that no cat is a fish. At least some cats live on the moon.,"['∀x (Fish(x) → ¬Live_on_moon(x))', '∀x (Cat(x) → ¬Fish(x))', '∃x (Cat(x) ∧ Live_on_moon(x))']",,"∀x (Fish(x) → ¬Liveonmoon(x))
+∀x (Cat(x) → ¬Fish(x))
+∃x (Cat(x) ∧ Liveonmoon(x))
+","forall x (fish(x) implies not liveonmoon(x))
+forall x (cat(x) implies not fish(x))
+exists x (cat(x) and liveonmoon(x))
+","[@every *x [(fish[(?x)]  ~liveonmoon[(?x)])]
+@every *x [(cat[(?x)]  ~fish[(?x)])]
+*x [(cat[(?x)]  liveonmoon[(?x)])]
+]","forall (fish(x) -: notliveonmoon(x))
+forall (cat(x) -: notfish(x))
+ (cat(x) , liveonmoon(x))
+",-(+F0--+L0)-(+C0--+F0)+(+C1++L1),"all:x (fish(x) :- ~liveonmoon(x))
+all:x (cat(x) :- ~fish(x))
+x (cat(x) & liveonmoon(x))
+",categorical
+cc8b1d14-79aa-445e-929c-ec3043229103,Not a single object that is a vehicle is a type of transportation. A number of vehicles are buses. The conclusion that some buses are not transportation necessarily follows.,"['∀x (Not_single_object(x) → Vehicle_transportation(x))', '∃x (Vehicles(x) ∧ Buses(x))']",∃x (Buses(x) ∧ Not_transportation_necessarily_follows(x)),"∀x (Notsingleobject(x) → Vehicletransportation(x))
+∃x (Vehicles(x) ∧ Buses(x))
+∃x (Buses(x) ∧ Nottransportationnecessarilyfollows(x))
+","forall x (notsingleobject(x) implies vehicletransportation(x))
+exists x (vehicles(x) and buses(x))
+exists x (buses(x) and nottransportationnecessarilyfollows(x))
+","[@every *x [(notsingleobject[(?x)]  vehicletransportation[(?x)])]
+*x [(vehicles[(?x)]  buses[(?x)])]
+*x [(buses[(?x)]  nottransportationnecessarilyfollows[(?x)])]
+]","forall (notsingleobject(x) -: vehicletransportation(x))
+ (vehicles(x) , buses(x))
+ (buses(x) , nottransportationnecessarilyfollows(x))
+",-(+N0-+V0)+(+V1++B1)+(+B1++N1),"all:x (notsingleobject(x) :- vehicletransportation(x))
+x (vehicles(x) & buses(x))
+x (buses(x) & nottransportationnecessarilyfollows(x))
+",categorical
+220a2d26-0db4-4e78-9143-2c9d1fbdac66,Anything that is an athlete can photosynthesize. Every single tennis player is an athlete. At least one tennis player can photosynthesize.,"['∀x (Athlete(x) → Can_Photosynthesize(x))', '∀x (Tennis_player(x) → Athlete(x))', '∃x (Athlete(x) ∧ Can_Photosynthesize(x))']",,"∀x (Athlete(x) → CanPhotosynthesize(x))
+∀x (Tennisplayer(x) → Athlete(x))
+∃x (Athlete(x) ∧ CanPhotosynthesize(x))
+","forall x (athlete(x) implies canphotosynthesize(x))
+forall x (tennisplayer(x) implies athlete(x))
+exists x (athlete(x) and canphotosynthesize(x))
+","[@every *x [(athlete[(?x)]  canphotosynthesize[(?x)])]
+@every *x [(tennisplayer[(?x)]  athlete[(?x)])]
+*x [(athlete[(?x)]  canphotosynthesize[(?x)])]
+]","forall (athlete(x) -: canphotosynthesize(x))
+forall (tennisplayer(x) -: athlete(x))
+ (athlete(x) , canphotosynthesize(x))
+",-(+A0-+C0)-(+T0-+A0)+(+A1++C1),"all:x (athlete(x) :- canphotosynthesize(x))
+all:x (tennisplayer(x) :- athlete(x))
+x (athlete(x) & canphotosynthesize(x))
+",categorical
+6a190af4-111a-4b3e-94bc-4a2efa1d8b8d,Every single four-sided-shape is a rectangle. All four-sided-shapes are squares. It follows from this that some squares are not rectangles.,"['∀x (Four_sided_shape(x) → Rectangle(x))', '∀x (Four_sided_shapes(x) → Squares(x))']",∃x (Squares(x) ∧ Not_rectangles(x)),"∀x (Foursidedshape(x) → Rectangle(x))
+∀x (Foursidedshapes(x) → Squares(x))
+∃x (Squares(x) ∧ Notrectangles(x))
+","forall x (foursidedshape(x) implies rectangle(x))
+forall x (foursidedshapes(x) implies squares(x))
+exists x (squares(x) and notrectangles(x))
+","[@every *x [(foursidedshape[(?x)]  rectangle[(?x)])]
+@every *x [(foursidedshapes[(?x)]  squares[(?x)])]
+*x [(squares[(?x)]  notrectangles[(?x)])]
+]","forall (foursidedshape(x) -: rectangle(x))
+forall (foursidedshapes(x) -: squares(x))
+ (squares(x) , notrectangles(x))
+",-(+F0-+R0)-(+F0-+S0)+(+S1++N1),"all:x (foursidedshape(x) :- rectangle(x))
+all:x (foursidedshapes(x) :- squares(x))
+x (squares(x) & notrectangles(x))
+",categorical
+d1da6110-d78a-4f0b-9499-5740d031bdf5,"Anything that is a bird is a building. Anything that is a bird is a vehicle. Consequently, some vehicles are buildings.","['∀x (Bird(x) → Building(x))', '∀x (Bird(x) → Vehicle(x))']",∃x (Vehicles(x) ∧ Buildings(x)),"∀x (Bird(x) → Building(x))
+∀x (Bird(x) → Vehicle(x))
+∃x (Vehicles(x) ∧ Buildings(x))
+","forall x (bird(x) implies building(x))
+forall x (bird(x) implies vehicle(x))
+exists x (vehicles(x) and buildings(x))
+","[@every *x [(bird[(?x)]  building[(?x)])]
+@every *x [(bird[(?x)]  vehicle[(?x)])]
+*x [(vehicles[(?x)]  buildings[(?x)])]
+]","forall (bird(x) -: building(x))
+forall (bird(x) -: vehicle(x))
+ (vehicles(x) , buildings(x))
+",-(+B0-+B0)-(+B0-+V0)+(+V1++B1),"all:x (bird(x) :- building(x))
+all:x (bird(x) :- vehicle(x))
+x (vehicles(x) & buildings(x))
+",categorical
+2d78480d-7948-48a1-8461-518121b355d2,"A stone is never inanimate. Everything that is a statue is a stone. Therefore, this implies that no statue is inanimate.","['∀x (Stone(x) → Never_inanimate(x))', '∀x (Statue(x) → Stone(x))']",∀x (This_implies_no_statue(x) → Inanimate(x)),"∀x (Stone(x) → Neverinanimate(x))
+∀x (Statue(x) → Stone(x))
+∀x (Thisimpliesnostatue(x) → Inanimate(x))
+","forall x (stone(x) implies neverinanimate(x))
+forall x (statue(x) implies stone(x))
+forall x (thisimpliesnostatue(x) implies inanimate(x))
+","[@every *x [(stone[(?x)]  neverinanimate[(?x)])]
+@every *x [(statue[(?x)]  stone[(?x)])]
+@every *x [(thisimpliesnostatue[(?x)]  inanimate[(?x)])]
+]","forall (stone(x) -: neverinanimate(x))
+forall (statue(x) -: stone(x))
+forall (thisimpliesnostatue(x) -: inanimate(x))
+",-(+S0-+N0)-(+S0-+S0)-(+T0-+I0),"all:x (stone(x) :- neverinanimate(x))
+all:x (statue(x) :- stone(x))
+all:x (thisimpliesnostatue(x) :- inanimate(x))
+",categorical
+b479b2a2-7e13-4c4d-9269-fad1e3fd5220,The set of objects and spoons do not overlap. A portion of spoons are implements. Some implements are not objects.,"['¬∃x (Objects(x)) → (Spoons(x))', '∃x (Spoons(x) ∧ Implements(x))', '∃x (Implements(x) ∧ Not_objects(x))']",,"¬∃x (Objects(x)) → (Spoons(x))
+∃x (Spoons(x) ∧ Implements(x))
+∃x (Implements(x) ∧ Notobjects(x))
+","not exists x (objects(x)) implies (spoons(x))
+exists x (spoons(x) and implements(x))
+exists x (implements(x) and notobjects(x))
+","~[*x [(objects[(?x)])]  [(spoons[(?x)])]
+*x [(spoons[(?x)]  implements[(?x)])]
+*x [(implements[(?x)]  notobjects[(?x)])]
+]","not (objects(x)) -: (spoons(x))
+ (spoons(x) , implements(x))
+ (implements(x) , notobjects(x))
+",-+(+O1)-(+S2)+(+S1++I1)+(+I1++N1),"~x (objects(x)) :- (spoons(x))
+x (spoons(x) & implements(x))
+x (implements(x) & notobjects(x))
+",categorical
+597a91fd-1f07-45d9-9278-a8660622accc,There are some oceans which are insects. Every insect is an animal. It follows that some animals are oceans.,"['∃x (Oceans(x) ∧ Insects(x))', '∀x (Insect(x) → Animal(x))']",∃x (Animals(x) ∧ Oceans(x)),"∃x (Oceans(x) ∧ Insects(x))
+∀x (Insect(x) → Animal(x))
+∃x (Animals(x) ∧ Oceans(x))
+","exists x (oceans(x) and insects(x))
+forall x (insect(x) implies animal(x))
+exists x (animals(x) and oceans(x))
+","[*x [(oceans[(?x)]  insects[(?x)])]
+@every *x [(insect[(?x)]  animal[(?x)])]
+*x [(animals[(?x)]  oceans[(?x)])]
+]"," (oceans(x) , insects(x))
+forall (insect(x) -: animal(x))
+ (animals(x) , oceans(x))
+",+(+O1++I1)-(+I0-+A0)+(+A1++O1),"x (oceans(x) & insects(x))
+all:x (insect(x) :- animal(x))
+x (animals(x) & oceans(x))
+",categorical
+ef762aac-30b4-4fb4-9ac6-012cdf463dc6,Any shape that is a square is also a quadrilateral. No quadrilateral is a circle. It is a necessary conclusion that no circle is a square.,"['∀x (Square(x) → Quadrilateral(x))', '∀x (No_quadrilateral(x) → Circle(x))']",∀x (No_circle(x) → Square(x)),"∀x (Square(x) → Quadrilateral(x))
+∀x (Noquadrilateral(x) → Circle(x))
+∀x (Nocircle(x) → Square(x))
+","forall x (square(x) implies quadrilateral(x))
+forall x (noquadrilateral(x) implies circle(x))
+forall x (nocircle(x) implies square(x))
+","[@every *x [(square[(?x)]  quadrilateral[(?x)])]
+@every *x [(noquadrilateral[(?x)]  circle[(?x)])]
+@every *x [(nocircle[(?x)]  square[(?x)])]
+]","forall (square(x) -: quadrilateral(x))
+forall (noquadrilateral(x) -: circle(x))
+forall (nocircle(x) -: square(x))
+",-(+S0-+Q0)-(+N0-+C0)-(+N0-+S0),"all:x (square(x) :- quadrilateral(x))
+all:x (noquadrilateral(x) :- circle(x))
+all:x (nocircle(x) :- square(x))
+",categorical
+1f38851f-b43f-42ee-a77a-dafeb7a3b29d,"Every human is over 10 feet tall. Some basketball players are humans. It follows, then, that some basketball players are over 10 feet tall.","['∀x (Human(x) → Over_10_feet_tall(x))', '∀x (Players(x) → Humans(x))']",∀x (Players(x) → Over_10_feet_tall(x)),"∀x (Human(x) → Over10feettall(x))
+∀x (Players(x) → Humans(x))
+∀x (Players(x) → Over10feettall(x))
+","forall x (human(x) implies over10feettall(x))
+forall x (players(x) implies humans(x))
+forall x (players(x) implies over10feettall(x))
+","[@every *x [(human[(?x)]  over10feettall[(?x)])]
+@every *x [(players[(?x)]  humans[(?x)])]
+@every *x [(players[(?x)]  over10feettall[(?x)])]
+]","forall (human(x) -: over10feettall(x))
+forall (players(x) -: humans(x))
+forall (players(x) -: over10feettall(x))
+",-(+H0-+O0)-(+P0-+H0)-(+P0-+O0),"all:x (human(x) :- over10feettall(x))
+all:x (players(x) :- humans(x))
+all:x (players(x) :- over10feettall(x))
+",categorical
+e585282c-a9ed-4cc1-b9e0-52db572a0f07,"Every instance of chess is a board game. The game of tag is never a board game. Therefore, tag is not chess.","['∀x (Instance_chess(x) → Board_game(x))', '∀x (Game_tag(x) → Never_board_game(x))']",∀x (Tag(x) → Not_chess(x)),"∀x (Instancechess(x) → Boardgame(x))
+∀x (Gametag(x) → Neverboardgame(x))
+∀x (Tag(x) → Notchess(x))
+","forall x (instancechess(x) implies boardgame(x))
+forall x (gametag(x) implies neverboardgame(x))
+forall x (tag(x) implies notchess(x))
+","[@every *x [(instancechess[(?x)]  boardgame[(?x)])]
+@every *x [(gametag[(?x)]  neverboardgame[(?x)])]
+@every *x [(tag[(?x)]  notchess[(?x)])]
+]","forall (instancechess(x) -: boardgame(x))
+forall (gametag(x) -: neverboardgame(x))
+forall (tag(x) -: notchess(x))
+",-(+I0-+B0)-(+G0-+N0)-(+T0-+N0),"all:x (instancechess(x) :- boardgame(x))
+all:x (gametag(x) :- neverboardgame(x))
+all:x (tag(x) :- notchess(x))
+",categorical
+195b8204-13fb-460d-9b86-16a1cf946ffa,"It is the case that no cat is a dog. Among the animals that are cats, some are pets. The logical consequence is that there are pets that are not dogs.","['∀x (Cat(x) → ¬Dog(x))', '∃x (Animals_cats(x) ∧ Pets(x))']",∃x (Pets(x) ∧ Not_dogs(x)),"∀x (Cat(x) → ¬Dog(x))
+∃x (Animalscats(x) ∧ Pets(x))
+∃x (Pets(x) ∧ Notdogs(x))
+","forall x (cat(x) implies not dog(x))
+exists x (animalscats(x) and pets(x))
+exists x (pets(x) and notdogs(x))
+","[@every *x [(cat[(?x)]  ~dog[(?x)])]
+*x [(animalscats[(?x)]  pets[(?x)])]
+*x [(pets[(?x)]  notdogs[(?x)])]
+]","forall (cat(x) -: notdog(x))
+ (animalscats(x) , pets(x))
+ (pets(x) , notdogs(x))
+",-(+C0--+D0)+(+A1++P1)+(+P1++N1),"all:x (cat(x) :- ~dog(x))
+x (animalscats(x) & pets(x))
+x (pets(x) & notdogs(x))
+",categorical
+370fc136-33be-4129-bf71-b557576fc5d2,"Every piece of fruit grows from plants. There are some apples which are fruits. Therefore, it is the case that some apples grow from plants.","['∀x (Fruit(x) → Grows_from_Plants(x))', '∃x (Apples(x) ∧ Fruits(x))']",∃x (Apples(x) ∧ From_plants(x)),"∀x (Fruit(x) → GrowsfromPlants(x))
+∃x (Apples(x) ∧ Fruits(x))
+∃x (Apples(x) ∧ Fromplants(x))
+","forall x (fruit(x) implies growsfromplants(x))
+exists x (apples(x) and fruits(x))
+exists x (apples(x) and fromplants(x))
+","[@every *x [(fruit[(?x)]  growsfromplants[(?x)])]
+*x [(apples[(?x)]  fruits[(?x)])]
+*x [(apples[(?x)]  fromplants[(?x)])]
+]","forall (fruit(x) -: growsfromplants(x))
+ (apples(x) , fruits(x))
+ (apples(x) , fromplants(x))
+",-(+F0-+G0)+(+A1++F1)+(+A1++F1),"all:x (fruit(x) :- growsfromplants(x))
+x (apples(x) & fruits(x))
+x (apples(x) & fromplants(x))
+",categorical
+c690ad4e-b9a5-4410-80ac-5f97894dedff,Not a single car is a bicycle. Vehicles include every single bicycle. It is logically follows that some vehicles are not cars.,"['∀x (Not_single_car(x) → Bicycle(x))', '∀x (Bicycle(x) → Vehicles(x))']",∃x (Vehicles(x) ∧ Not_cars(x)),"∀x (Notsinglecar(x) → Bicycle(x))
+∀x (Bicycle(x) → Vehicles(x))
+∃x (Vehicles(x) ∧ Notcars(x))
+","forall x (notsinglecar(x) implies bicycle(x))
+forall x (bicycle(x) implies vehicles(x))
+exists x (vehicles(x) and notcars(x))
+","[@every *x [(notsinglecar[(?x)]  bicycle[(?x)])]
+@every *x [(bicycle[(?x)]  vehicles[(?x)])]
+*x [(vehicles[(?x)]  notcars[(?x)])]
+]","forall (notsinglecar(x) -: bicycle(x))
+forall (bicycle(x) -: vehicles(x))
+ (vehicles(x) , notcars(x))
+",-(+N0-+B0)-(+B0-+V0)+(+V1++N1),"all:x (notsinglecar(x) :- bicycle(x))
+all:x (bicycle(x) :- vehicles(x))
+x (vehicles(x) & notcars(x))
+",categorical
+fb637f9c-1c26-4302-9c01-94c061bd352c,The category of chairs and the category of living things do not overlap. The group of living things and the group of inanimate objects are mutually exclusive. A portion of inanimate objects are not chairs.,"['∀x (Chairs(x) → ¬Living_things(x))', '∀x (Living_things(x) → ¬Inanimate_objects(x))', '∀x (Portion_inanimate_objects(x) → ¬Chairs(x))']",,"∀x (Chairs(x) → ¬Livingthings(x))
+∀x (Livingthings(x) → ¬Inanimateobjects(x))
+∀x (Portioninanimateobjects(x) → ¬Chairs(x))
+","forall x (chairs(x) implies not livingthings(x))
+forall x (livingthings(x) implies not inanimateobjects(x))
+forall x (portioninanimateobjects(x) implies not chairs(x))
+","[@every *x [(chairs[(?x)]  ~livingthings[(?x)])]
+@every *x [(livingthings[(?x)]  ~inanimateobjects[(?x)])]
+@every *x [(portioninanimateobjects[(?x)]  ~chairs[(?x)])]
+]","forall (chairs(x) -: notlivingthings(x))
+forall (livingthings(x) -: notinanimateobjects(x))
+forall (portioninanimateobjects(x) -: notchairs(x))
+",-(+C0--+L0)-(+L0--+I0)-(+P0--+C0),"all:x (chairs(x) :- ~livingthings(x))
+all:x (livingthings(x) :- ~inanimateobjects(x))
+all:x (portioninanimateobjects(x) :- ~chairs(x))
+",categorical
+e1b00475-03d2-4149-9ca3-2ab601f34aea,Some robots are dolphins. Every single dolphin is a fish. It must be true that some fish are robots.,"['∃x (Robots(x) ∧ Dolphins(x))', '∀x (Dolphin(x) → Fish(x))']",∃x (Fish(x) ∧ Robots(x)),"∃x (Robots(x) ∧ Dolphins(x))
+∀x (Dolphin(x) → Fish(x))
+∃x (Fish(x) ∧ Robots(x))
+","exists x (robots(x) and dolphins(x))
+forall x (dolphin(x) implies fish(x))
+exists x (fish(x) and robots(x))
+","[*x [(robots[(?x)]  dolphins[(?x)])]
+@every *x [(dolphin[(?x)]  fish[(?x)])]
+*x [(fish[(?x)]  robots[(?x)])]
+]"," (robots(x) , dolphins(x))
+forall (dolphin(x) -: fish(x))
+ (fish(x) , robots(x))
+",+(+R1++D1)-(+D0-+F0)+(+F1++R1),"x (robots(x) & dolphins(x))
+all:x (dolphin(x) :- fish(x))
+x (fish(x) & robots(x))
+",categorical
+ed73250f-c7ad-4976-8c45-d9bf6ece787b,"It is true that some roses are yellow. A rose is a type of flower. Thus, some flowers are yellow.","['∃x (Roses(x) ∧ Yellow(x))', '∀x (Rose(x) → Flower(x))']",∃x (Flowers(x) ∧ Yellow(x)),"∃x (Roses(x) ∧ Yellow(x))
+∀x (Rose(x) → Flower(x))
+∃x (Flowers(x) ∧ Yellow(x))
+","exists x (roses(x) and yellow(x))
+forall x (rose(x) implies flower(x))
+exists x (flowers(x) and yellow(x))
+","[*x [(roses[(?x)]  yellow[(?x)])]
+@every *x [(rose[(?x)]  flower[(?x)])]
+*x [(flowers[(?x)]  yellow[(?x)])]
+]"," (roses(x) , yellow(x))
+forall (rose(x) -: flower(x))
+ (flowers(x) , yellow(x))
+",+(+R1++Y1)-(+R0-+F0)+(+F1++Y1),"x (roses(x) & yellow(x))
+all:x (rose(x) :- flower(x))
+x (flowers(x) & yellow(x))
+",categorical
+6a9dff3f-07fb-4a68-9fe0-5f3b51d9ffeb,There are no professors that are children. Some children are athletes. It is concluded that some professors are athletes.,"['∀x (Professors(x) → ¬Children(x))', '∃x (Children(x) ∧ Athletes(x))', '∃x (Professors(x) ∧ Athletes(x))']",,"∀x (Professors(x) → ¬Children(x))
+∃x (Children(x) ∧ Athletes(x))
+∃x (Professors(x) ∧ Athletes(x))
+","forall x (professors(x) implies not children(x))
+exists x (children(x) and athletes(x))
+exists x (professors(x) and athletes(x))
+","[@every *x [(professors[(?x)]  ~children[(?x)])]
+*x [(children[(?x)]  athletes[(?x)])]
+*x [(professors[(?x)]  athletes[(?x)])]
+]","forall (professors(x) -: notchildren(x))
+ (children(x) , athletes(x))
+ (professors(x) , athletes(x))
+",-(+P0--+C0)+(+C1++A1)+(+P1++A1),"all:x (professors(x) :- ~children(x))
+x (children(x) & athletes(x))
+x (professors(x) & athletes(x))
+",categorical
+58670ea6-d7d3-439a-847a-0e77bf9d5c53,Every single dog is a thing with fur. It is the case that no cat is a dog. This implies that some cats have fur.,"['∀x (Dog(x) → Thing_fur(x))', '∀x (Cat(x) → ¬Dog(x))', '∃x (Cats(x) ∧ Fur(x))']",,"∀x (Dog(x) → Thingfur(x))
+∀x (Cat(x) → ¬Dog(x))
+∃x (Cats(x) ∧ Fur(x))
+","forall x (dog(x) implies thingfur(x))
+forall x (cat(x) implies not dog(x))
+exists x (cats(x) and fur(x))
+","[@every *x [(dog[(?x)]  thingfur[(?x)])]
+@every *x [(cat[(?x)]  ~dog[(?x)])]
+*x [(cats[(?x)]  fur[(?x)])]
+]","forall (dog(x) -: thingfur(x))
+forall (cat(x) -: notdog(x))
+ (cats(x) , fur(x))
+",-(+D0-+T0)-(+C0--+D0)+(+C1++F1),"all:x (dog(x) :- thingfur(x))
+all:x (cat(x) :- ~dog(x))
+x (cats(x) & fur(x))
+",categorical
+61549447-98e0-4960-b618-37958c570ba6,Something that is a bird is a mammal. A thing that is a dog is never a bird. It follows that a dog is never a mammal.,"['∃x (Bird(x) ∧ Mammal(x))', '∀x (Thing(x) → Dog_never_bird(x))']",∀x (Dog(x) → Never_mammal(x)),"∃x (Bird(x) ∧ Mammal(x))
+∀x (Thing(x) → Dogneverbird(x))
+∀x (Dog(x) → Nevermammal(x))
+","exists x (bird(x) and mammal(x))
+forall x (thing(x) implies dogneverbird(x))
+forall x (dog(x) implies nevermammal(x))
+","[*x [(bird[(?x)]  mammal[(?x)])]
+@every *x [(thing[(?x)]  dogneverbird[(?x)])]
+@every *x [(dog[(?x)]  nevermammal[(?x)])]
+]"," (bird(x) , mammal(x))
+forall (thing(x) -: dogneverbird(x))
+forall (dog(x) -: nevermammal(x))
+",+(+B1++M1)-(+T0-+D0)-(+D0-+N0),"x (bird(x) & mammal(x))
+all:x (thing(x) :- dogneverbird(x))
+all:x (dog(x) :- nevermammal(x))
+",categorical
+5fc96a8e-c3a3-467e-bca1-dfbc18827de1,Anything that is clothing is not a shirt. The group of items known as apparel has members that are shirts. It follows that some apparel is not clothing.,"['∀x (Clothing(x) → Not_shirt(x))', '∃x (Items_known_as_apparel(x) ∧ Shirts(x))']",∃x (Apparel(x) ∧ Not_clothing(x)),"∀x (Clothing(x) → Notshirt(x))
+∃x (Itemsknownasapparel(x) ∧ Shirts(x))
+∃x (Apparel(x) ∧ Notclothing(x))
+","forall x (clothing(x) implies notshirt(x))
+exists x (itemsknownasapparel(x) and shirts(x))
+exists x (apparel(x) and notclothing(x))
+","[@every *x [(clothing[(?x)]  notshirt[(?x)])]
+*x [(itemsknownasapparel[(?x)]  shirts[(?x)])]
+*x [(apparel[(?x)]  notclothing[(?x)])]
+]","forall (clothing(x) -: notshirt(x))
+ (itemsknownasapparel(x) , shirts(x))
+ (apparel(x) , notclothing(x))
+",-(+C0-+N0)+(+I1++S1)+(+A1++N1),"all:x (clothing(x) :- notshirt(x))
+x (itemsknownasapparel(x) & shirts(x))
+x (apparel(x) & notclothing(x))
+",categorical
+8886fcb2-f5db-46e1-8cdb-2d698c838393,Every single tiger is a feline. All tigers are mammals. It follows from this that some mammals are not felines.,"['∀x (Tiger(x) → Feline(x))', '∀x (Tigers(x) → Mammals(x))']",∃x (Mammals(x) ∧ Not_felines(x)),"∀x (Tiger(x) → Feline(x))
+∀x (Tigers(x) → Mammals(x))
+∃x (Mammals(x) ∧ Notfelines(x))
+","forall x (tiger(x) implies feline(x))
+forall x (tigers(x) implies mammals(x))
+exists x (mammals(x) and notfelines(x))
+","[@every *x [(tiger[(?x)]  feline[(?x)])]
+@every *x [(tigers[(?x)]  mammals[(?x)])]
+*x [(mammals[(?x)]  notfelines[(?x)])]
+]","forall (tiger(x) -: feline(x))
+forall (tigers(x) -: mammals(x))
+ (mammals(x) , notfelines(x))
+",-(+T0-+F0)-(+T0-+M0)+(+M1++N1),"all:x (tiger(x) :- feline(x))
+all:x (tigers(x) :- mammals(x))
+x (mammals(x) & notfelines(x))
+",categorical
+4d23820c-5d2c-4eec-b345-2b86b1fb58b7,Every single human is a mammal. Everything that is a doctor is a human. It's the case that some doctors are not mammals.,"['∀x (Human(x) → Mammal(x))', '∀x (Doctor(x) → Human(x))', '∃x (Doctors(x) ∧ Not_mammals(x))']",,"∀x (Human(x) → Mammal(x))
+∀x (Doctor(x) → Human(x))
+∃x (Doctors(x) ∧ Notmammals(x))
+","forall x (human(x) implies mammal(x))
+forall x (doctor(x) implies human(x))
+exists x (doctors(x) and notmammals(x))
+","[@every *x [(human[(?x)]  mammal[(?x)])]
+@every *x [(doctor[(?x)]  human[(?x)])]
+*x [(doctors[(?x)]  notmammals[(?x)])]
+]","forall (human(x) -: mammal(x))
+forall (doctor(x) -: human(x))
+ (doctors(x) , notmammals(x))
+",-(+H0-+M0)-(+D0-+H0)+(+D1++N1),"all:x (human(x) :- mammal(x))
+all:x (doctor(x) :- human(x))
+x (doctors(x) & notmammals(x))
+",categorical
+2c866578-204c-4f91-a6ef-faad0d188365,There are some Ferraries that are things with wheels. Everything that is a Ferrari is a car. It follows that every car has wheels.,"['∃x (Ferraries(x) ∧ Things_wheels(x))', '∀x (Ferrari(x) → Car(x))']",∀x (Car(x) → Wheels(x)),"∃x (Ferraries(x) ∧ Thingswheels(x))
+∀x (Ferrari(x) → Car(x))
+∀x (Car(x) → Wheels(x))
+","exists x (ferraries(x) and thingswheels(x))
+forall x (ferrari(x) implies car(x))
+forall x (car(x) implies wheels(x))
+","[*x [(ferraries[(?x)]  thingswheels[(?x)])]
+@every *x [(ferrari[(?x)]  car[(?x)])]
+@every *x [(car[(?x)]  wheels[(?x)])]
+]"," (ferraries(x) , thingswheels(x))
+forall (ferrari(x) -: car(x))
+forall (car(x) -: wheels(x))
+",+(+F1++T1)-(+F0-+C0)-(+C0-+W0),"x (ferraries(x) & thingswheels(x))
+all:x (ferrari(x) :- car(x))
+all:x (car(x) :- wheels(x))
+",categorical
+5da917df-8760-476f-ae79-e20c20c61236,"Nothing that is an organic thing can be said to be a celestial object. Every planet is a type of organic thing. Therefore, there are no planets that are celestial objects.","['∀x (Nothing(x) → Organic_thing_said_to_celestial_object(x))', '∀x (Planet(x) → Organic_thing(x))']",∀x (Planets(x) → ¬Celestial_objects(x)),"∀x (Nothing(x) → Organicthingsaidtocelestialobject(x))
+∀x (Planet(x) → Organicthing(x))
+∀x (Planets(x) → ¬Celestialobjects(x))
+","forall x (nothing(x) implies organicthingsaidtocelestialobject(x))
+forall x (planet(x) implies organicthing(x))
+forall x (planets(x) implies not celestialobjects(x))
+","[@every *x [(nothing[(?x)]  organicthingsaidtocelestialobject[(?x)])]
+@every *x [(planet[(?x)]  organicthing[(?x)])]
+@every *x [(planets[(?x)]  ~celestialobjects[(?x)])]
+]","forall (nothing(x) -: organicthingsaidtocelestialobject(x))
+forall (planet(x) -: organicthing(x))
+forall (planets(x) -: notcelestialobjects(x))
+",-(+N0-+O0)-(+P0-+O0)-(+P0--+C0),"all:x (nothing(x) :- organicthingsaidtocelestialobject(x))
+all:x (planet(x) :- organicthing(x))
+all:x (planets(x) :- ~celestialobjects(x))
+",categorical
+6480d136-bcb5-4aee-a91b-f1c0e828583e,There is no overlap between mammals and felines. It is the case that every single cat is a feline. Cats cannot be considered mammals.,"['∀x (Mammals(x) → ¬Felines(x))', '∀x (Cat(x) → Feline(x))', '∀x (Cat(x) → ¬Mammals(x))']",,"∀x (Mammals(x) → ¬Felines(x))
+∀x (Cat(x) → Feline(x))
+∀x (Cat(x) → ¬Mammals(x))
+","forall x (mammals(x) implies not felines(x))
+forall x (cat(x) implies feline(x))
+forall x (cat(x) implies not mammals(x))
+","[@every *x [(mammals[(?x)]  ~felines[(?x)])]
+@every *x [(cat[(?x)]  feline[(?x)])]
+@every *x [(cat[(?x)]  ~mammals[(?x)])]
+]","forall (mammals(x) -: notfelines(x))
+forall (cat(x) -: feline(x))
+forall (cat(x) -: notmammals(x))
+",-(+M0--+F0)-(+C0-+F0)-(+C0--+M0),"all:x (mammals(x) :- ~felines(x))
+all:x (cat(x) :- feline(x))
+all:x (cat(x) :- ~mammals(x))
+",categorical
+2c0190c9-f98c-46ce-88d2-275ee83f3b48,Anything that is a flower is also an insect. There exist some daisies which are not insects. This necessarily means that some daisies are not flowers.,"['∀x (Flower(x) → Insect(x))', '∃x (Daisies(x) ∧ Not_insects(x))', '∃x (Daisies(x) ∧ Not_flowers(x))']",,"∀x (Flower(x) → Insect(x))
+∃x (Daisies(x) ∧ Notinsects(x))
+∃x (Daisies(x) ∧ Notflowers(x))
+","forall x (flower(x) implies insect(x))
+exists x (daisies(x) and notinsects(x))
+exists x (daisies(x) and notflowers(x))
+","[@every *x [(flower[(?x)]  insect[(?x)])]
+*x [(daisies[(?x)]  notinsects[(?x)])]
+*x [(daisies[(?x)]  notflowers[(?x)])]
+]","forall (flower(x) -: insect(x))
+ (daisies(x) , notinsects(x))
+ (daisies(x) , notflowers(x))
+",-(+F0-+I0)+(+D1++N1)+(+D1++N1),"all:x (flower(x) :- insect(x))
+x (daisies(x) & notinsects(x))
+x (daisies(x) & notflowers(x))
+",categorical
+828b05c2-09b0-4125-90db-ddb6707d6e05,Diamonds are in no way soft substances. Everything that is a diamond is a carbon compound. There are some carbon compounds which are not soft substances.,"['∀x (Diamonds(x) → ¬Soft_substances(x))', '∀x (Diamond(x) → Carbon_compound(x))', '∃x (Carbon_compounds(x) ∧ Not_soft_substances(x))']",,"∀x (Diamonds(x) → ¬Softsubstances(x))
+∀x (Diamond(x) → Carboncompound(x))
+∃x (Carboncompounds(x) ∧ Notsoftsubstances(x))
+","forall x (diamonds(x) implies not softsubstances(x))
+forall x (diamond(x) implies carboncompound(x))
+exists x (carboncompounds(x) and notsoftsubstances(x))
+","[@every *x [(diamonds[(?x)]  ~softsubstances[(?x)])]
+@every *x [(diamond[(?x)]  carboncompound[(?x)])]
+*x [(carboncompounds[(?x)]  notsoftsubstances[(?x)])]
+]","forall (diamonds(x) -: notsoftsubstances(x))
+forall (diamond(x) -: carboncompound(x))
+ (carboncompounds(x) , notsoftsubstances(x))
+",-(+D0--+S0)-(+D0-+C0)+(+C1++N1),"all:x (diamonds(x) :- ~softsubstances(x))
+all:x (diamond(x) :- carboncompound(x))
+x (carboncompounds(x) & notsoftsubstances(x))
+",categorical
+45fc2b0d-433e-407f-a574-cac2caa54b90,Anything that is a planet is a celestial body. The category of comets contains no celestial bodies. Every comet is a planet.,"['∀x (Planet(x) → Celestial_body(x))', '∀x (Comets(x) → ¬Celestial_bodies(x))', '∀x (Comet(x) → Planet(x))']",,"∀x (Planet(x) → Celestialbody(x))
+∀x (Comets(x) → ¬Celestialbodies(x))
+∀x (Comet(x) → Planet(x))
+","forall x (planet(x) implies celestialbody(x))
+forall x (comets(x) implies not celestialbodies(x))
+forall x (comet(x) implies planet(x))
+","[@every *x [(planet[(?x)]  celestialbody[(?x)])]
+@every *x [(comets[(?x)]  ~celestialbodies[(?x)])]
+@every *x [(comet[(?x)]  planet[(?x)])]
+]","forall (planet(x) -: celestialbody(x))
+forall (comets(x) -: notcelestialbodies(x))
+forall (comet(x) -: planet(x))
+",-(+P0-+C0)-(+C0--+C0)-(+C0-+P0),"all:x (planet(x) :- celestialbody(x))
+all:x (comets(x) :- ~celestialbodies(x))
+all:x (comet(x) :- planet(x))
+",categorical
+fc1a0164-31a4-48aa-ab9d-176a66b93bfe,Anything that is a square is also a quadrilateral. No circle is a square. It follows that no circle is a quadrilateral.,"['∀x (Square(x) → Quadrilateral(x))', '∀x (No_circle(x) → Square(x))']",∀x (No_circle(x) → Quadrilateral(x)),"∀x (Square(x) → Quadrilateral(x))
+∀x (Nocircle(x) → Square(x))
+∀x (Nocircle(x) → Quadrilateral(x))
+","forall x (square(x) implies quadrilateral(x))
+forall x (nocircle(x) implies square(x))
+forall x (nocircle(x) implies quadrilateral(x))
+","[@every *x [(square[(?x)]  quadrilateral[(?x)])]
+@every *x [(nocircle[(?x)]  square[(?x)])]
+@every *x [(nocircle[(?x)]  quadrilateral[(?x)])]
+]","forall (square(x) -: quadrilateral(x))
+forall (nocircle(x) -: square(x))
+forall (nocircle(x) -: quadrilateral(x))
+",-(+S0-+Q0)-(+N0-+S0)-(+N0-+Q0),"all:x (square(x) :- quadrilateral(x))
+all:x (nocircle(x) :- square(x))
+all:x (nocircle(x) :- quadrilateral(x))
+",categorical
+c62f852d-16fd-4eda-b380-b85d9a17f9e2,"Every single creature is a mammal. It is true that no mammal is an amphibian. Therefore, it's the case that no amphibian is a creature.","['∀x (Creature(x) → Mammal(x))', '∀x (Mammal(x) → ¬Amphibian(x))']",∀x (Its_case_no_amphibian(x) → Creature(x)),"∀x (Creature(x) → Mammal(x))
+∀x (Mammal(x) → ¬Amphibian(x))
+∀x (Itscasenoamphibian(x) → Creature(x))
+","forall x (creature(x) implies mammal(x))
+forall x (mammal(x) implies not amphibian(x))
+forall x (itscasenoamphibian(x) implies creature(x))
+","[@every *x [(creature[(?x)]  mammal[(?x)])]
+@every *x [(mammal[(?x)]  ~amphibian[(?x)])]
+@every *x [(itscasenoamphibian[(?x)]  creature[(?x)])]
+]","forall (creature(x) -: mammal(x))
+forall (mammal(x) -: notamphibian(x))
+forall (itscasenoamphibian(x) -: creature(x))
+",-(+C0-+M0)-(+M0--+A0)-(+I0-+C0),"all:x (creature(x) :- mammal(x))
+all:x (mammal(x) :- ~amphibian(x))
+all:x (itscasenoamphibian(x) :- creature(x))
+",categorical
+eae77932-d7db-4ce8-b5b1-6c3c951ef553,It is the case that some pencils are white. There are some sheets of paper that are not white. This implies that some sheets of paper are not pencils.,"['∃x (Pencils(x) ∧ White(x))', '∃x (Sheets_paper(x) ∧ Not_white(x))', '∃x (Sheets_paper(x) ∧ Not_pencils(x))']",,"∃x (Pencils(x) ∧ White(x))
+∃x (Sheetspaper(x) ∧ Notwhite(x))
+∃x (Sheetspaper(x) ∧ Notpencils(x))
+","exists x (pencils(x) and white(x))
+exists x (sheetspaper(x) and notwhite(x))
+exists x (sheetspaper(x) and notpencils(x))
+","[*x [(pencils[(?x)]  white[(?x)])]
+*x [(sheetspaper[(?x)]  notwhite[(?x)])]
+*x [(sheetspaper[(?x)]  notpencils[(?x)])]
+]"," (pencils(x) , white(x))
+ (sheetspaper(x) , notwhite(x))
+ (sheetspaper(x) , notpencils(x))
+",+(+P1++W1)+(+S1++N1)+(+S1++N1),"x (pencils(x) & white(x))
+x (sheetspaper(x) & notwhite(x))
+x (sheetspaper(x) & notpencils(x))
+",categorical
+7f1f3231-3a3a-44fa-930f-ace6cf37147e,"No item that is a polygon with seven sides is a square. There are no triangles which are polygons with seven sides. Thus, a portion of triangles are not squares.","['∀x (No_item(x) → Polygon_seven_sides_square(x))', '∀x (Triangles(x) → ¬Polygons_seven_sides(x))']",∀x (Portion_triangles(x) → ¬Squares(x)),"∀x (Noitem(x) → Polygonsevensidessquare(x))
+∀x (Triangles(x) → ¬Polygonssevensides(x))
+∀x (Portiontriangles(x) → ¬Squares(x))
+","forall x (noitem(x) implies polygonsevensidessquare(x))
+forall x (triangles(x) implies not polygonssevensides(x))
+forall x (portiontriangles(x) implies not squares(x))
+","[@every *x [(noitem[(?x)]  polygonsevensidessquare[(?x)])]
+@every *x [(triangles[(?x)]  ~polygonssevensides[(?x)])]
+@every *x [(portiontriangles[(?x)]  ~squares[(?x)])]
+]","forall (noitem(x) -: polygonsevensidessquare(x))
+forall (triangles(x) -: notpolygonssevensides(x))
+forall (portiontriangles(x) -: notsquares(x))
+",-(+N0-+P0)-(+T0--+P0)-(+P0--+S0),"all:x (noitem(x) :- polygonsevensidessquare(x))
+all:x (triangles(x) :- ~polygonssevensides(x))
+all:x (portiontriangles(x) :- ~squares(x))
+",categorical
+1426d859-baa5-484a-aa05-2615e8776499,Some member of the group of fish is not in the group of mammals. At least one dog is a mammal. At least one dog is not a fish.,"['∃x (Member_group_fish(x) ∧ Not_in_group_mammals(x))', '∃x (Dog(x) ∧ Mammal(x))', '∀x (At_least_one_dog(x) → ¬Fish(x))']",,"∃x (Membergroupfish(x) ∧ Notingroupmammals(x))
+∃x (Dog(x) ∧ Mammal(x))
+∀x (Atleastonedog(x) → ¬Fish(x))
+","exists x (membergroupfish(x) and notingroupmammals(x))
+exists x (dog(x) and mammal(x))
+forall x (atleastonedog(x) implies not fish(x))
+","[*x [(membergroupfish[(?x)]  notingroupmammals[(?x)])]
+*x [(dog[(?x)]  mammal[(?x)])]
+@every *x [(atleastonedog[(?x)]  ~fish[(?x)])]
+]"," (membergroupfish(x) , notingroupmammals(x))
+ (dog(x) , mammal(x))
+forall (atleastonedog(x) -: notfish(x))
+",+(+M1++N1)+(+D1++M1)-(+A0--+F0),"x (membergroupfish(x) & notingroupmammals(x))
+x (dog(x) & mammal(x))
+all:x (atleastonedog(x) :- ~fish(x))
+",categorical
+45d4df27-8269-4ecb-9ead-f6571561f3d5,"There is at least one spoon that is a kitchen tool. Some of the utensils are spoons. Consequently, some of the utensils are kitchen tools.","['∃x (Spoon(x) ∧ Kitchen_tool(x))', '∃x (Utensils(x) ∧ Spoons(x))']",∃x (Utensils(x) ∧ Kitchen_tools(x)),"∃x (Spoon(x) ∧ Kitchentool(x))
+∃x (Utensils(x) ∧ Spoons(x))
+∃x (Utensils(x) ∧ Kitchentools(x))
+","exists x (spoon(x) and kitchentool(x))
+exists x (utensils(x) and spoons(x))
+exists x (utensils(x) and kitchentools(x))
+","[*x [(spoon[(?x)]  kitchentool[(?x)])]
+*x [(utensils[(?x)]  spoons[(?x)])]
+*x [(utensils[(?x)]  kitchentools[(?x)])]
+]"," (spoon(x) , kitchentool(x))
+ (utensils(x) , spoons(x))
+ (utensils(x) , kitchentools(x))
+",+(+S1++K1)+(+U1++S1)+(+U1++K1),"x (spoon(x) & kitchentool(x))
+x (utensils(x) & spoons(x))
+x (utensils(x) & kitchentools(x))
+",categorical
+bff3e296-9b17-4fd6-9403-293ff999cfd6,Every single creature that is a cat is a fish. A number of tigers are cats. This means that there are some tigers which are fish.,"['∀x (Creature(x) → Cat_fish(x))', '∃x (Tigers(x) ∧ Cats(x))']",∃x (Tigers(x) ∧ Fish(x)),"∀x (Creature(x) → Catfish(x))
+∃x (Tigers(x) ∧ Cats(x))
+∃x (Tigers(x) ∧ Fish(x))
+","forall x (creature(x) implies catfish(x))
+exists x (tigers(x) and cats(x))
+exists x (tigers(x) and fish(x))
+","[@every *x [(creature[(?x)]  catfish[(?x)])]
+*x [(tigers[(?x)]  cats[(?x)])]
+*x [(tigers[(?x)]  fish[(?x)])]
+]","forall (creature(x) -: catfish(x))
+ (tigers(x) , cats(x))
+ (tigers(x) , fish(x))
+",-(+C0-+C0)+(+T1++C1)+(+T1++F1),"all:x (creature(x) :- catfish(x))
+x (tigers(x) & cats(x))
+x (tigers(x) & fish(x))
+",categorical
+4ebc6f49-0176-42d3-9187-848df1dc6550,"No orange is an apple. Apples are, without exception, fruits. A number of fruits are oranges.","['∀x (No_orange(x) → Apple(x))', '∀x (Apples(x) → Fruits(x))', '∃x (Fruits(x) ∧ Oranges(x))']",,"∀x (Noorange(x) → Apple(x))
+∀x (Apples(x) → Fruits(x))
+∃x (Fruits(x) ∧ Oranges(x))
+","forall x (noorange(x) implies apple(x))
+forall x (apples(x) implies fruits(x))
+exists x (fruits(x) and oranges(x))
+","[@every *x [(noorange[(?x)]  apple[(?x)])]
+@every *x [(apples[(?x)]  fruits[(?x)])]
+*x [(fruits[(?x)]  oranges[(?x)])]
+]","forall (noorange(x) -: apple(x))
+forall (apples(x) -: fruits(x))
+ (fruits(x) , oranges(x))
+",-(+N0-+A0)-(+A0-+F0)+(+F1++O1),"all:x (noorange(x) :- apple(x))
+all:x (apples(x) :- fruits(x))
+x (fruits(x) & oranges(x))
+",categorical
+414a3052-c533-4951-93ee-fdc29d633b0a,"There are some animals that are mammals. There are no mammals that are birds. Thus, it can be said that some birds are animals.","['∃x (Animals(x) ∧ Mammals(x))', '∀x (Mammals(x) → ¬Birds(x))']",∃x (Birds(x) ∧ Animals(x)),"∃x (Animals(x) ∧ Mammals(x))
+∀x (Mammals(x) → ¬Birds(x))
+∃x (Birds(x) ∧ Animals(x))
+","exists x (animals(x) and mammals(x))
+forall x (mammals(x) implies not birds(x))
+exists x (birds(x) and animals(x))
+","[*x [(animals[(?x)]  mammals[(?x)])]
+@every *x [(mammals[(?x)]  ~birds[(?x)])]
+*x [(birds[(?x)]  animals[(?x)])]
+]"," (animals(x) , mammals(x))
+forall (mammals(x) -: notbirds(x))
+ (birds(x) , animals(x))
+",+(+A1++M1)-(+M0--+B0)+(+B1++A1),"x (animals(x) & mammals(x))
+all:x (mammals(x) :- ~birds(x))
+x (birds(x) & animals(x))
+",categorical
+5ebfe44f-39a9-43eb-b8c0-17f997639cd2,"Every single tree has leaves. Any object that is an oak is a tree. Consequently, all oaks are objects that have leaves.","['∀x (Tree(x) → Leaves(x))', '∀x (Oak(x) → Tree(x))']",∀x (Oaks(x) → Objects_have_leaves(x)),"∀x (Tree(x) → Leaves(x))
+∀x (Oak(x) → Tree(x))
+∀x (Oaks(x) → Objectshaveleaves(x))
+","forall x (tree(x) implies leaves(x))
+forall x (oak(x) implies tree(x))
+forall x (oaks(x) implies objectshaveleaves(x))
+","[@every *x [(tree[(?x)]  leaves[(?x)])]
+@every *x [(oak[(?x)]  tree[(?x)])]
+@every *x [(oaks[(?x)]  objectshaveleaves[(?x)])]
+]","forall (tree(x) -: leaves(x))
+forall (oak(x) -: tree(x))
+forall (oaks(x) -: objectshaveleaves(x))
+",-(+T0-+L0)-(+O0-+T0)-(+O0-+O0),"all:x (tree(x) :- leaves(x))
+all:x (oak(x) :- tree(x))
+all:x (oaks(x) :- objectshaveleaves(x))
+",categorical
+8465dcda-98cb-4696-b8d5-9f04732f49ec,"There are no numbers that are ideas. Everything that is a liquid is a number. Thus, every liquid is an idea.","['∀x (Numbers(x) → ¬Ideas(x))', '∀x (Liquid(x) → Number(x))']",∀x (Liquid(x) → Idea(x)),"∀x (Numbers(x) → ¬Ideas(x))
+∀x (Liquid(x) → Number(x))
+∀x (Liquid(x) → Idea(x))
+","forall x (numbers(x) implies not ideas(x))
+forall x (liquid(x) implies number(x))
+forall x (liquid(x) implies idea(x))
+","[@every *x [(numbers[(?x)]  ~ideas[(?x)])]
+@every *x [(liquid[(?x)]  number[(?x)])]
+@every *x [(liquid[(?x)]  idea[(?x)])]
+]","forall (numbers(x) -: notideas(x))
+forall (liquid(x) -: number(x))
+forall (liquid(x) -: idea(x))
+",-(+N0--+I0)-(+L0-+N0)-(+L0-+I0),"all:x (numbers(x) :- ~ideas(x))
+all:x (liquid(x) :- number(x))
+all:x (liquid(x) :- idea(x))
+",categorical
+77a82465-48a9-406f-b4ac-19ec40f5e053,"Every person who is a filmmaker is someone who works in production. The set of directors contains someone who works in production. Consequently, every director is a filmmaker.","['∀x (Filmmaker(x) → Works_in_production(x))', '∀x (Works_in_production(x) → Director(x))']",∀x (Director(x) → Filmmaker(x)),"∀x (Filmmaker(x) → Worksinproduction(x))
+∀x (Worksinproduction(x) → Director(x))
+∀x (Director(x) → Filmmaker(x))
+","forall x (filmmaker(x) implies worksinproduction(x))
+forall x (worksinproduction(x) implies director(x))
+forall x (director(x) implies filmmaker(x))
+","[@every *x [(filmmaker[(?x)]  worksinproduction[(?x)])]
+@every *x [(worksinproduction[(?x)]  director[(?x)])]
+@every *x [(director[(?x)]  filmmaker[(?x)])]
+]","forall (filmmaker(x) -: worksinproduction(x))
+forall (worksinproduction(x) -: director(x))
+forall (director(x) -: filmmaker(x))
+",-(+F0-+W0)-(+W0-+D0)-(+D0-+F0),"all:x (filmmaker(x) :- worksinproduction(x))
+all:x (worksinproduction(x) :- director(x))
+all:x (director(x) :- filmmaker(x))
+",categorical
+c43abaf0-596e-4909-b2b1-03bd3327ac0d,Everything that is a fish has legs. There are no sharks that are not fish. At least some sharks are things that have legs.,"['∀x (Everything(x) → Fish_has_legs(x))', '∀x (Sharks(x) → ¬Not_fish(x))', '∃x (Sharks(x) ∧ Things_have_legs(x))']",,"∀x (Everything(x) → Fishhaslegs(x))
+∀x (Sharks(x) → ¬Notfish(x))
+∃x (Sharks(x) ∧ Thingshavelegs(x))
+","forall x (everything(x) implies fishhaslegs(x))
+forall x (sharks(x) implies not notfish(x))
+exists x (sharks(x) and thingshavelegs(x))
+","[@every *x [(everything[(?x)]  fishhaslegs[(?x)])]
+@every *x [(sharks[(?x)]  ~notfish[(?x)])]
+*x [(sharks[(?x)]  thingshavelegs[(?x)])]
+]","forall (everything(x) -: fishhaslegs(x))
+forall (sharks(x) -: notnotfish(x))
+ (sharks(x) , thingshavelegs(x))
+",-(+E0-+F0)-(+S0--+N0)+(+S1++T1),"all:x (everything(x) :- fishhaslegs(x))
+all:x (sharks(x) :- ~notfish(x))
+x (sharks(x) & thingshavelegs(x))
+",categorical
+6725d344-7c13-4d44-a97d-a4a1b89f858d,The category of celestial bodies and the category of planets are mutually exclusive. Not a single planet is a star. It must be the case that a portion of stars are not celestial bodies.,"['∀x (Celestial_bodies(x) → ¬Planet(x))', '∀x (Not_single_planet(x) → Star(x))', '∀x (It_must_case_portion_stars(x) → ¬Celestial_bodies(x))']",,"∀x (Celestialbodies(x) → ¬Planet(x))
+∀x (Notsingleplanet(x) → Star(x))
+∀x (Itmustcaseportionstars(x) → ¬Celestialbodies(x))
+","forall x (celestialbodies(x) implies not planet(x))
+forall x (notsingleplanet(x) implies star(x))
+forall x (itmustcaseportionstars(x) implies not celestialbodies(x))
+","[@every *x [(celestialbodies[(?x)]  ~planet[(?x)])]
+@every *x [(notsingleplanet[(?x)]  star[(?x)])]
+@every *x [(itmustcaseportionstars[(?x)]  ~celestialbodies[(?x)])]
+]","forall (celestialbodies(x) -: notplanet(x))
+forall (notsingleplanet(x) -: star(x))
+forall (itmustcaseportionstars(x) -: notcelestialbodies(x))
+",-(+C0--+P0)-(+N0-+S0)-(+I0--+C0),"all:x (celestialbodies(x) :- ~planet(x))
+all:x (notsingleplanet(x) :- star(x))
+all:x (itmustcaseportionstars(x) :- ~celestialbodies(x))
+",categorical
+730ad5ee-b19a-4d69-bad3-309f2f2ac775,"It is true that a portion of animals are birds. Among the animals that are penguins, some are also animals. This proves that not every penguin is a bird.","['∃x (Animals(x) ∧ Birds(x))', '∃x (Animals_penguins(x) ∧ Animals(x))']",∀x (Penguin(x) → Bird(x)),"∃x (Animals(x) ∧ Birds(x))
+∃x (Animalspenguins(x) ∧ Animals(x))
+∀x (Penguin(x) → Bird(x))
+","exists x (animals(x) and birds(x))
+exists x (animalspenguins(x) and animals(x))
+forall x (penguin(x) implies bird(x))
+","[*x [(animals[(?x)]  birds[(?x)])]
+*x [(animalspenguins[(?x)]  animals[(?x)])]
+@every *x [(penguin[(?x)]  bird[(?x)])]
+]"," (animals(x) , birds(x))
+ (animalspenguins(x) , animals(x))
+forall (penguin(x) -: bird(x))
+",+(+A1++B1)+(+A1++A1)-(+P0-+B0),"x (animals(x) & birds(x))
+x (animalspenguins(x) & animals(x))
+all:x (penguin(x) :- bird(x))
+",categorical
+2df39c25-0b41-4a37-b760-c722aeea552f,Everything that is a tree is a plant. Everything that is a flower is a plant. This implies that some flowers are not trees.,"['∀x (Tree(x) → Plant(x))', '∀x (Flower(x) → Plant(x))', '∃x (Flowers(x) ∧ Not_trees(x))']",,"∀x (Tree(x) → Plant(x))
+∀x (Flower(x) → Plant(x))
+∃x (Flowers(x) ∧ Nottrees(x))
+","forall x (tree(x) implies plant(x))
+forall x (flower(x) implies plant(x))
+exists x (flowers(x) and nottrees(x))
+","[@every *x [(tree[(?x)]  plant[(?x)])]
+@every *x [(flower[(?x)]  plant[(?x)])]
+*x [(flowers[(?x)]  nottrees[(?x)])]
+]","forall (tree(x) -: plant(x))
+forall (flower(x) -: plant(x))
+ (flowers(x) , nottrees(x))
+",-(+T0-+P0)-(+F0-+P0)+(+F1++N1),"all:x (tree(x) :- plant(x))
+all:x (flower(x) :- plant(x))
+x (flowers(x) & nottrees(x))
+",categorical
+837c9501-97f6-4bbd-bd87-ca004225d437,"It is known that there are no stars which are planets. Every single thing that is the Earth is a planet. As such, some things on Earth are stars.","['∀x (Stars(x) → ¬Planets(x))', '∀x (Thing(x) → Earth_planet(x))', '∃x (Things_on_earth(x) ∧ Stars(x))']",,"∀x (Stars(x) → ¬Planets(x))
+∀x (Thing(x) → Earthplanet(x))
+∃x (Thingsonearth(x) ∧ Stars(x))
+","forall x (stars(x) implies not planets(x))
+forall x (thing(x) implies earthplanet(x))
+exists x (thingsonearth(x) and stars(x))
+","[@every *x [(stars[(?x)]  ~planets[(?x)])]
+@every *x [(thing[(?x)]  earthplanet[(?x)])]
+*x [(thingsonearth[(?x)]  stars[(?x)])]
+]","forall (stars(x) -: notplanets(x))
+forall (thing(x) -: earthplanet(x))
+ (thingsonearth(x) , stars(x))
+",-(+S0--+P0)-(+T0-+E0)+(+T1++S1),"all:x (stars(x) :- ~planets(x))
+all:x (thing(x) :- earthplanet(x))
+x (thingsonearth(x) & stars(x))
+",categorical
+67fb622a-222a-44d1-9996-6ed551f6a79e,Every single triangle is a polygon. Anything that is a triangle is also a geometric shape with three sides. A portion of geometric shapes with three sides are not polygons.,"['∀x (Triangle(x) → Polygon(x))', '∀x (Triangle(x) → Geometric_shape_three_sides(x))', '∀x (Portion_geometric_shapes_three_sides(x) → ¬Polygons(x))']",,"∀x (Triangle(x) → Polygon(x))
+∀x (Triangle(x) → Geometricshapethreesides(x))
+∀x (Portiongeometricshapesthreesides(x) → ¬Polygons(x))
+","forall x (triangle(x) implies polygon(x))
+forall x (triangle(x) implies geometricshapethreesides(x))
+forall x (portiongeometricshapesthreesides(x) implies not polygons(x))
+","[@every *x [(triangle[(?x)]  polygon[(?x)])]
+@every *x [(triangle[(?x)]  geometricshapethreesides[(?x)])]
+@every *x [(portiongeometricshapesthreesides[(?x)]  ~polygons[(?x)])]
+]","forall (triangle(x) -: polygon(x))
+forall (triangle(x) -: geometricshapethreesides(x))
+forall (portiongeometricshapesthreesides(x) -: notpolygons(x))
+",-(+T0-+P0)-(+T0-+G0)-(+P0--+P0),"all:x (triangle(x) :- polygon(x))
+all:x (triangle(x) :- geometricshapethreesides(x))
+all:x (portiongeometricshapesthreesides(x) :- ~polygons(x))
+",categorical
+60d34241-6fa1-4b68-b747-73a5e2d5995d,"It is a given that every machine is an animal. No animals are computers. Therefore, it is a necessary conclusion that some computers are not machines.","['∀x (Machine(x) → Animal(x))', '∀x (Animals(x) → ¬Computers(x))']",∃x (Computers(x) ∧ Not_machines(x)),"∀x (Machine(x) → Animal(x))
+∀x (Animals(x) → ¬Computers(x))
+∃x (Computers(x) ∧ Notmachines(x))
+","forall x (machine(x) implies animal(x))
+forall x (animals(x) implies not computers(x))
+exists x (computers(x) and notmachines(x))
+","[@every *x [(machine[(?x)]  animal[(?x)])]
+@every *x [(animals[(?x)]  ~computers[(?x)])]
+*x [(computers[(?x)]  notmachines[(?x)])]
+]","forall (machine(x) -: animal(x))
+forall (animals(x) -: notcomputers(x))
+ (computers(x) , notmachines(x))
+",-(+M0-+A0)-(+A0--+C0)+(+C1++N1),"all:x (machine(x) :- animal(x))
+all:x (animals(x) :- ~computers(x))
+x (computers(x) & notmachines(x))
+",categorical
+edd9d95e-5279-446f-bfeb-5c6360139e89,"Anything that is a cloud is a politician. Every politician is made of cotton candy. Consequently, some things made of cotton candy are clouds.","['∀x (Cloud(x) → Politician(x))', '∀x (Politician(x) → Made_cotton_candy(x))']",∃x (Things_made_cotton_candy(x) ∧ Clouds(x)),"∀x (Cloud(x) → Politician(x))
+∀x (Politician(x) → Madecottoncandy(x))
+∃x (Thingsmadecottoncandy(x) ∧ Clouds(x))
+","forall x (cloud(x) implies politician(x))
+forall x (politician(x) implies madecottoncandy(x))
+exists x (thingsmadecottoncandy(x) and clouds(x))
+","[@every *x [(cloud[(?x)]  politician[(?x)])]
+@every *x [(politician[(?x)]  madecottoncandy[(?x)])]
+*x [(thingsmadecottoncandy[(?x)]  clouds[(?x)])]
+]","forall (cloud(x) -: politician(x))
+forall (politician(x) -: madecottoncandy(x))
+ (thingsmadecottoncandy(x) , clouds(x))
+",-(+C0-+P0)-(+P0-+M0)+(+T1++C1),"all:x (cloud(x) :- politician(x))
+all:x (politician(x) :- madecottoncandy(x))
+x (thingsmadecottoncandy(x) & clouds(x))
+",categorical
+57104ec7-4729-408b-938d-d37ee5d81de8,There are some buildings which are skyscrapers. A skyscraper is a very tall structure. One can therefore conclude that some tall structures are buildings.,"['∃x (Buildings(x) ∧ Skyscrapers(x))', '∀x (Skyscraper(x) → Very_tall_structure(x))', '∀x (Structures(x) → Buildings(x))']",,"∃x (Buildings(x) ∧ Skyscrapers(x))
+∀x (Skyscraper(x) → Verytallstructure(x))
+∀x (Structures(x) → Buildings(x))
+","exists x (buildings(x) and skyscrapers(x))
+forall x (skyscraper(x) implies verytallstructure(x))
+forall x (structures(x) implies buildings(x))
+","[*x [(buildings[(?x)]  skyscrapers[(?x)])]
+@every *x [(skyscraper[(?x)]  verytallstructure[(?x)])]
+@every *x [(structures[(?x)]  buildings[(?x)])]
+]"," (buildings(x) , skyscrapers(x))
+forall (skyscraper(x) -: verytallstructure(x))
+forall (structures(x) -: buildings(x))
+",+(+B1++S1)-(+S0-+V0)-(+S0-+B0),"x (buildings(x) & skyscrapers(x))
+all:x (skyscraper(x) :- verytallstructure(x))
+all:x (structures(x) :- buildings(x))
+",categorical
+103e14a2-88ad-41b1-8d1f-7308698193ba,"There are no pianos that are not musical instruments. All musical instruments are objects. From this, it can be derived that some objects are pianos.","['∀x (Pianos(x) → ¬Not_musical_instruments(x))', '∀x (Musical_instruments(x) → Objects(x))', '∃x (Objects(x) ∧ Pianos(x))']",,"∀x (Pianos(x) → ¬Notmusicalinstruments(x))
+∀x (Musicalinstruments(x) → Objects(x))
+∃x (Objects(x) ∧ Pianos(x))
+","forall x (pianos(x) implies not notmusicalinstruments(x))
+forall x (musicalinstruments(x) implies objects(x))
+exists x (objects(x) and pianos(x))
+","[@every *x [(pianos[(?x)]  ~notmusicalinstruments[(?x)])]
+@every *x [(musicalinstruments[(?x)]  objects[(?x)])]
+*x [(objects[(?x)]  pianos[(?x)])]
+]","forall (pianos(x) -: notnotmusicalinstruments(x))
+forall (musicalinstruments(x) -: objects(x))
+ (objects(x) , pianos(x))
+",-(+P0--+N0)-(+M0-+O0)+(+O1++P1),"all:x (pianos(x) :- ~notmusicalinstruments(x))
+all:x (musicalinstruments(x) :- objects(x))
+x (objects(x) & pianos(x))
+",categorical
+96d1a6d5-85d5-4446-9d55-7160847cd49d,There is not a single inanimate object that is a writer. A portion of inanimate objects are people. It is the case that some people are writers.,"['∀x (Inanimate_object(x) → ¬Writer(x))', '∃x (Inanimate_objects(x) ∧ People(x))', '∃x (People(x) ∧ Writers(x))']",,"∀x (Inanimateobject(x) → ¬Writer(x))
+∃x (Inanimateobjects(x) ∧ People(x))
+∃x (People(x) ∧ Writers(x))
+","forall x (inanimateobject(x) implies not writer(x))
+exists x (inanimateobjects(x) and people(x))
+exists x (people(x) and writers(x))
+","[@every *x [(inanimateobject[(?x)]  ~writer[(?x)])]
+*x [(inanimateobjects[(?x)]  people[(?x)])]
+*x [(people[(?x)]  writers[(?x)])]
+]","forall (inanimateobject(x) -: notwriter(x))
+ (inanimateobjects(x) , people(x))
+ (people(x) , writers(x))
+",-(+I0--+W0)+(+I1++P1)+(+P1++W1),"all:x (inanimateobject(x) :- ~writer(x))
+x (inanimateobjects(x) & people(x))
+x (people(x) & writers(x))
+",categorical
+2324e141-9d60-425e-a797-224e19395db0,Everything that is a planet is a celestial body. Everything that is a planet is a round object. This means that some round objects are celestial bodies.,"['∀x (Planet(x) → Celestial_body(x))', '∀x (Planet(x) → Round_object(x))']",∃x (Round_objects(x) ∧ Celestial_bodies(x)),"∀x (Planet(x) → Celestialbody(x))
+∀x (Planet(x) → Roundobject(x))
+∃x (Roundobjects(x) ∧ Celestialbodies(x))
+","forall x (planet(x) implies celestialbody(x))
+forall x (planet(x) implies roundobject(x))
+exists x (roundobjects(x) and celestialbodies(x))
+","[@every *x [(planet[(?x)]  celestialbody[(?x)])]
+@every *x [(planet[(?x)]  roundobject[(?x)])]
+*x [(roundobjects[(?x)]  celestialbodies[(?x)])]
+]","forall (planet(x) -: celestialbody(x))
+forall (planet(x) -: roundobject(x))
+ (roundobjects(x) , celestialbodies(x))
+",-(+P0-+C0)-(+P0-+R0)+(+R1++C1),"all:x (planet(x) :- celestialbody(x))
+all:x (planet(x) :- roundobject(x))
+x (roundobjects(x) & celestialbodies(x))
+",categorical
+ad609a5a-b03c-4924-b217-680c76614f03,Every writing utensil is an animal. The set of pencils contains no animals. It is the case that some writing utensils are not pencils.,"['∀x (Writing_utensil(x) → Animal(x))', '∀x (Pencils(x) → ¬Animals(x))', '∃x (Writing_utensils(x) ∧ Not_pencils(x))']",,"∀x (Writingutensil(x) → Animal(x))
+∀x (Pencils(x) → ¬Animals(x))
+∃x (Writingutensils(x) ∧ Notpencils(x))
+","forall x (writingutensil(x) implies animal(x))
+forall x (pencils(x) implies not animals(x))
+exists x (writingutensils(x) and notpencils(x))
+","[@every *x [(writingutensil[(?x)]  animal[(?x)])]
+@every *x [(pencils[(?x)]  ~animals[(?x)])]
+*x [(writingutensils[(?x)]  notpencils[(?x)])]
+]","forall (writingutensil(x) -: animal(x))
+forall (pencils(x) -: notanimals(x))
+ (writingutensils(x) , notpencils(x))
+",-(+W0-+A0)-(+P0--+A0)+(+W1++N1),"all:x (writingutensil(x) :- animal(x))
+all:x (pencils(x) :- ~animals(x))
+x (writingutensils(x) & notpencils(x))
+",categorical
+989f0a8f-629c-40d6-a8ef-f31cc47d97ed,"It is the case that there are no mammals who are insects. There are animals who are mammals. Therefore, some animals are insects.","['∀x (Mammals(x) → ¬Insects(x))', '∃x (Animals(x) ∧ Mammals(x))']",∃x (Animals(x) ∧ Insects(x)),"∀x (Mammals(x) → ¬Insects(x))
+∃x (Animals(x) ∧ Mammals(x))
+∃x (Animals(x) ∧ Insects(x))
+","forall x (mammals(x) implies not insects(x))
+exists x (animals(x) and mammals(x))
+exists x (animals(x) and insects(x))
+","[@every *x [(mammals[(?x)]  ~insects[(?x)])]
+*x [(animals[(?x)]  mammals[(?x)])]
+*x [(animals[(?x)]  insects[(?x)])]
+]","forall (mammals(x) -: notinsects(x))
+ (animals(x) , mammals(x))
+ (animals(x) , insects(x))
+",-(+M0--+I0)+(+A1++M1)+(+A1++I1),"all:x (mammals(x) :- ~insects(x))
+x (animals(x) & mammals(x))
+x (animals(x) & insects(x))
+",categorical
+e6df12a9-03ea-4831-a9ea-2f7049e4daf9,Every single bus driver is not a person who wears a uniform. A portion of the people who are doctors are people who wear uniforms. The result of this is that some doctors are bus drivers.,"['∀x (Bus_driver(x) → Not_person_wears_uniform(x))', '∃x (People(x) ∧ Doctors_people_wear_uniforms(x))', '∃x (Doctors(x) ∧ Bus_drivers(x))']",,"∀x (Busdriver(x) → Notpersonwearsuniform(x))
+∃x (People(x) ∧ Doctorspeoplewearuniforms(x))
+∃x (Doctors(x) ∧ Busdrivers(x))
+","forall x (busdriver(x) implies notpersonwearsuniform(x))
+exists x (people(x) and doctorspeoplewearuniforms(x))
+exists x (doctors(x) and busdrivers(x))
+","[@every *x [(busdriver[(?x)]  notpersonwearsuniform[(?x)])]
+*x [(people[(?x)]  doctorspeoplewearuniforms[(?x)])]
+*x [(doctors[(?x)]  busdrivers[(?x)])]
+]","forall (busdriver(x) -: notpersonwearsuniform(x))
+ (people(x) , doctorspeoplewearuniforms(x))
+ (doctors(x) , busdrivers(x))
+",-(+B0-+N0)+(+P1++D1)+(+D1++B1),"all:x (busdriver(x) :- notpersonwearsuniform(x))
+x (people(x) & doctorspeoplewearuniforms(x))
+x (doctors(x) & busdrivers(x))
+",categorical
+bd01fc8a-394b-4833-9e2b-af5fa8d9e919,"No item that is a state is a government seat. A portion of cities are not government seats. Therefore, every single city is a state.","['∀x (No_item(x) → State_government_seat(x))', '∀x (Portion_cities(x) → ¬Government_seats(x))']",∀x (City(x) → State(x)),"∀x (Noitem(x) → Stategovernmentseat(x))
+∀x (Portioncities(x) → ¬Governmentseats(x))
+∀x (City(x) → State(x))
+","forall x (noitem(x) implies stategovernmentseat(x))
+forall x (portioncities(x) implies not governmentseats(x))
+forall x (city(x) implies state(x))
+","[@every *x [(noitem[(?x)]  stategovernmentseat[(?x)])]
+@every *x [(portioncities[(?x)]  ~governmentseats[(?x)])]
+@every *x [(city[(?x)]  state[(?x)])]
+]","forall (noitem(x) -: stategovernmentseat(x))
+forall (portioncities(x) -: notgovernmentseats(x))
+forall (city(x) -: state(x))
+",-(+N0-+S0)-(+P0--+G0)-(+C0-+S0),"all:x (noitem(x) :- stategovernmentseat(x))
+all:x (portioncities(x) :- ~governmentseats(x))
+all:x (city(x) :- state(x))
+",categorical
+026ddcfd-0279-455c-96fe-340672474b9f,"Every single liquid is composed of rock. A certain amount of liquid is water. Consequently, it is the case that some water is made of rock.","['∀x (Liquid(x) → Composed_rock(x))', '∀x (Certain_amount_liquid(x) → Water(x))']",∃x (Water(x) ∧ Made_rock(x)),"∀x (Liquid(x) → Composedrock(x))
+∀x (Certainamountliquid(x) → Water(x))
+∃x (Water(x) ∧ Maderock(x))
+","forall x (liquid(x) implies composedrock(x))
+forall x (certainamountliquid(x) implies water(x))
+exists x (water(x) and maderock(x))
+","[@every *x [(liquid[(?x)]  composedrock[(?x)])]
+@every *x [(certainamountliquid[(?x)]  water[(?x)])]
+*x [(water[(?x)]  maderock[(?x)])]
+]","forall (liquid(x) -: composedrock(x))
+forall (certainamountliquid(x) -: water(x))
+ (water(x) , maderock(x))
+",-(+L0-+C0)-(+C0-+W0)+(+W1++M1),"all:x (liquid(x) :- composedrock(x))
+all:x (certainamountliquid(x) :- water(x))
+x (water(x) & maderock(x))
+",categorical
+2becb2e2-09ad-4468-91ab-59cd84985759,There are no mammals who are also rational beings. Every single human is a rational being. Mammals are not humans.,"['∀x (Mammals(x) → ¬Rational_beings(x))', '∀x (Human(x) → Rational_being(x))', '∀x (Mammals(x) → ¬Humans(x))']",,"∀x (Mammals(x) → ¬Rationalbeings(x))
+∀x (Human(x) → Rationalbeing(x))
+∀x (Mammals(x) → ¬Humans(x))
+","forall x (mammals(x) implies not rationalbeings(x))
+forall x (human(x) implies rationalbeing(x))
+forall x (mammals(x) implies not humans(x))
+","[@every *x [(mammals[(?x)]  ~rationalbeings[(?x)])]
+@every *x [(human[(?x)]  rationalbeing[(?x)])]
+@every *x [(mammals[(?x)]  ~humans[(?x)])]
+]","forall (mammals(x) -: notrationalbeings(x))
+forall (human(x) -: rationalbeing(x))
+forall (mammals(x) -: nothumans(x))
+",-(+M0--+R0)-(+H0-+R0)-(+M0--+H0),"all:x (mammals(x) :- ~rationalbeings(x))
+all:x (human(x) :- rationalbeing(x))
+all:x (mammals(x) :- ~humans(x))
+",categorical
+4b3008e8-0b0d-4ea6-8765-de94774551ae,"There are no creatures that are non-bipeds that are also living creatures. Everything that is a squirrel is a non-biped. Thus, every squirrel is a living creature.","['∀x (Creatures(x) → ¬Non_bipeds_living_creatures(x))', '∀x (Squirrel(x) → Non_biped(x))']",∀x (Squirrel(x) → Living_creature(x)),"∀x (Creatures(x) → ¬Nonbipedslivingcreatures(x))
+∀x (Squirrel(x) → Nonbiped(x))
+∀x (Squirrel(x) → Livingcreature(x))
+","forall x (creatures(x) implies not nonbipedslivingcreatures(x))
+forall x (squirrel(x) implies nonbiped(x))
+forall x (squirrel(x) implies livingcreature(x))
+","[@every *x [(creatures[(?x)]  ~nonbipedslivingcreatures[(?x)])]
+@every *x [(squirrel[(?x)]  nonbiped[(?x)])]
+@every *x [(squirrel[(?x)]  livingcreature[(?x)])]
+]","forall (creatures(x) -: notnonbipedslivingcreatures(x))
+forall (squirrel(x) -: nonbiped(x))
+forall (squirrel(x) -: livingcreature(x))
+",-(+C0--+N0)-(+S0-+N0)-(+S0-+L0),"all:x (creatures(x) :- ~nonbipedslivingcreatures(x))
+all:x (squirrel(x) :- nonbiped(x))
+all:x (squirrel(x) :- livingcreature(x))
+",categorical
+9c320004-80e7-4842-8b4d-87867ae29d08,Anything that is C++ is a programming language. There are no instances of English which are programming languages. It is therefore established that no English is C++.,"['∀x (C(x) → Programming_language(x))', '∀x (Instances_english(x) → ¬Programming_languages(x))', '∀x (English(x) → ¬C(x))']",,"∀x (C(x) → Programminglanguage(x))
+∀x (Instancesenglish(x) → ¬Programminglanguages(x))
+∀x (English(x) → ¬C(x))
+","forall x (c(x) implies programminglanguage(x))
+forall x (instancesenglish(x) implies not programminglanguages(x))
+forall x (english(x) implies not c(x))
+","[@every *x [(c[(?x)]  programminglanguage[(?x)])]
+@every *x [(instancesenglish[(?x)]  ~programminglanguages[(?x)])]
+@every *x [(english[(?x)]  ~c[(?x)])]
+]","forall (c(x) -: programminglanguage(x))
+forall (instancesenglish(x) -: notprogramminglanguages(x))
+forall (english(x) -: notc(x))
+",-(-+P0)-(+I0--+P0)-(+E0--),"all:x (c(x) :- programminglanguage(x))
+all:x (instancesenglish(x) :- ~programminglanguages(x))
+all:x (english(x) :- ~c(x))
+",categorical
+e0f02ca3-46a2-4cad-9a4d-29c030e0e1e3,"Some bicycles cannot move. It is also true that every bicycle is a vehicle. Consequently, some vehicles cannot move.","['∃x (Bicycles(x) ∧ ¬Can_Move(x))', '∀x (Bicycle(x) → Vehicle(x))']",∃x (Vehicles(x) ∧ ¬Can_Move(x)),"∃x (Bicycles(x) ∧ ¬CanMove(x))
+∀x (Bicycle(x) → Vehicle(x))
+∃x (Vehicles(x) ∧ ¬CanMove(x))
+","exists x (bicycles(x) and not canmove(x))
+forall x (bicycle(x) implies vehicle(x))
+exists x (vehicles(x) and not canmove(x))
+","[*x [(bicycles[(?x)]  ~canmove[(?x)])]
+@every *x [(bicycle[(?x)]  vehicle[(?x)])]
+*x [(vehicles[(?x)]  ~canmove[(?x)])]
+]"," (bicycles(x) , notcanmove(x))
+forall (bicycle(x) -: vehicle(x))
+ (vehicles(x) , notcanmove(x))
+",+(+B1+-+C1)-(+B0-+V0)+(+V1+-+C1),"x (bicycles(x) & ~canmove(x))
+all:x (bicycle(x) :- vehicle(x))
+x (vehicles(x) & ~canmove(x))
+",categorical
+85d441e2-8d3c-4574-a16f-f48a9cbad676,Every single cow is a farm animal. The category of wolves does not contain farm animals. A portion of wolves are not cows.,"['∀x (Cow(x) → Farm_animal(x))', '∀x (Wolf(x) → ¬Farm_animal(x))', '∀x (Portion_wolves(x) → ¬Cows(x))']",,"∀x (Cow(x) → Farmanimal(x))
+∀x (Wolf(x) → ¬Farmanimal(x))
+∀x (Portionwolves(x) → ¬Cows(x))
+","forall x (cow(x) implies farmanimal(x))
+forall x (wolf(x) implies not farmanimal(x))
+forall x (portionwolves(x) implies not cows(x))
+","[@every *x [(cow[(?x)]  farmanimal[(?x)])]
+@every *x [(wolf[(?x)]  ~farmanimal[(?x)])]
+@every *x [(portionwolves[(?x)]  ~cows[(?x)])]
+]","forall (cow(x) -: farmanimal(x))
+forall (wolf(x) -: notfarmanimal(x))
+forall (portionwolves(x) -: notcows(x))
+",-(+C0-+F0)-(+W0--+F0)-(+P0--+C0),"all:x (cow(x) :- farmanimal(x))
+all:x (wolf(x) :- ~farmanimal(x))
+all:x (portionwolves(x) :- ~cows(x))
+",categorical
+7e250e86-12a5-441f-8a5c-bd65f2cc79bf,"Nothing that is a living thing is also a stone. Every single stone is a human. Therefore, a subset of humans is not composed of living things.","['∀x (Nothing(x) → Living_thing_stone(x))', '∀x (Stone(x) → Human(x))']",∀x (Subset_humans(x) → Not_composed_living_things(x)),"∀x (Nothing(x) → Livingthingstone(x))
+∀x (Stone(x) → Human(x))
+∀x (Subsethumans(x) → Notcomposedlivingthings(x))
+","forall x (nothing(x) implies livingthingstone(x))
+forall x (stone(x) implies human(x))
+forall x (subsethumans(x) implies notcomposedlivingthings(x))
+","[@every *x [(nothing[(?x)]  livingthingstone[(?x)])]
+@every *x [(stone[(?x)]  human[(?x)])]
+@every *x [(subsethumans[(?x)]  notcomposedlivingthings[(?x)])]
+]","forall (nothing(x) -: livingthingstone(x))
+forall (stone(x) -: human(x))
+forall (subsethumans(x) -: notcomposedlivingthings(x))
+",-(+N0-+L0)-(+S0-+H0)-(+S0-+N0),"all:x (nothing(x) :- livingthingstone(x))
+all:x (stone(x) :- human(x))
+all:x (subsethumans(x) :- notcomposedlivingthings(x))
+",categorical
+60609ba7-37db-446f-a53c-e41568217236,It is the case that some clouds are white. There are some sheep that are also white. This implies that all sheep are clouds.,"['∃x (Clouds(x) ∧ White(x))', '∃x (Sheep(x) ∧ White(x))', '∀x (Sheep(x) → Clouds(x))']",,"∃x (Clouds(x) ∧ White(x))
+∃x (Sheep(x) ∧ White(x))
+∀x (Sheep(x) → Clouds(x))
+","exists x (clouds(x) and white(x))
+exists x (sheep(x) and white(x))
+forall x (sheep(x) implies clouds(x))
+","[*x [(clouds[(?x)]  white[(?x)])]
+*x [(sheep[(?x)]  white[(?x)])]
+@every *x [(sheep[(?x)]  clouds[(?x)])]
+]"," (clouds(x) , white(x))
+ (sheep(x) , white(x))
+forall (sheep(x) -: clouds(x))
+",+(+C1++W1)+(+S1++W1)-(+S0-+C0),"x (clouds(x) & white(x))
+x (sheep(x) & white(x))
+all:x (sheep(x) :- clouds(x))
+",categorical
+2148d9fc-c7e3-45b6-8429-e59d083350fb,Any part of the year is a day. There are no months which are days. It can be said that a portion of months are not parts of the year.,"['∀x (Any_part_year(x) → Day(x))', '∀x (Months(x) → ¬Days(x))', '∀x (It_said_portion_months(x) → ¬Parts_year(x))']",,"∀x (Anypartyear(x) → Day(x))
+∀x (Months(x) → ¬Days(x))
+∀x (Itsaidportionmonths(x) → ¬Partsyear(x))
+","forall x (anypartyear(x) implies day(x))
+forall x (months(x) implies not days(x))
+forall x (itsaidportionmonths(x) implies not partsyear(x))
+","[@every *x [(anypartyear[(?x)]  day[(?x)])]
+@every *x [(months[(?x)]  ~days[(?x)])]
+@every *x [(itsaidportionmonths[(?x)]  ~partsyear[(?x)])]
+]","forall (anypartyear(x) -: day(x))
+forall (months(x) -: notdays(x))
+forall (itsaidportionmonths(x) -: notpartsyear(x))
+",-(+A0-+D0)-(+M0--+D0)-(+I0--+P0),"all:x (anypartyear(x) :- day(x))
+all:x (months(x) :- ~days(x))
+all:x (itsaidportionmonths(x) :- ~partsyear(x))
+",categorical
+b6368b66-a4e2-4b6c-bcc3-7a04a3c0d604,"All things which are metals are conductors. Copper is, without exception, a metal. There exists some copper that is a conductor.","['∀x (Metals(x) → Conductors(x))', '∀x (Copper(x) → Metals(x))', '∃x (Copper(x) ∧ Conductor(x))']",,"∀x (Metals(x) → Conductors(x))
+∀x (Copper(x) → Metals(x))
+∃x (Copper(x) ∧ Conductor(x))
+","forall x (metals(x) implies conductors(x))
+forall x (copper(x) implies metals(x))
+exists x (copper(x) and conductor(x))
+","[@every *x [(metals[(?x)]  conductors[(?x)])]
+@every *x [(copper[(?x)]  metals[(?x)])]
+*x [(copper[(?x)]  conductor[(?x)])]
+]","forall (metals(x) -: conductors(x))
+forall (copper(x) -: metals(x))
+ (copper(x) , conductor(x))
+",-(+M0-+C0)-(+C0-+M0)+(+C1++C1),"all:x (metals(x) :- conductors(x))
+all:x (copper(x) :- metals(x))
+x (copper(x) & conductor(x))
+",categorical
+4787263f-def5-4639-a523-d3541a99fe8a,There are some mammals that are animals. Every single dog is a mammal. It is therefore the case that every dog is an animal.,"['∃x (Mammals(x) ∧ Animals(x))', '∀x (Dog(x) → Mammal(x))']",∀x (Dog(x) → Animal(x)),"∃x (Mammals(x) ∧ Animals(x))
+∀x (Dog(x) → Mammal(x))
+∀x (Dog(x) → Animal(x))
+","exists x (mammals(x) and animals(x))
+forall x (dog(x) implies mammal(x))
+forall x (dog(x) implies animal(x))
+","[*x [(mammals[(?x)]  animals[(?x)])]
+@every *x [(dog[(?x)]  mammal[(?x)])]
+@every *x [(dog[(?x)]  animal[(?x)])]
+]"," (mammals(x) , animals(x))
+forall (dog(x) -: mammal(x))
+forall (dog(x) -: animal(x))
+",+(+M1++A1)-(+D0-+M0)-(+D0-+A0),"x (mammals(x) & animals(x))
+all:x (dog(x) :- mammal(x))
+all:x (dog(x) :- animal(x))
+",categorical
+3864b331-e27b-45c0-9df1-2277f6c3bcf6,All things which are violins are string instruments. All things which are violins are musical instruments. It follows that some musical instruments are string instruments.,"['∀x (Violins(x) → String_instruments(x))', '∀x (Violins(x) → Musical_instruments(x))']",∃x (Musical_instruments(x) ∧ String_instruments(x)),"∀x (Violins(x) → Stringinstruments(x))
+∀x (Violins(x) → Musicalinstruments(x))
+∃x (Musicalinstruments(x) ∧ Stringinstruments(x))
+","forall x (violins(x) implies stringinstruments(x))
+forall x (violins(x) implies musicalinstruments(x))
+exists x (musicalinstruments(x) and stringinstruments(x))
+","[@every *x [(violins[(?x)]  stringinstruments[(?x)])]
+@every *x [(violins[(?x)]  musicalinstruments[(?x)])]
+*x [(musicalinstruments[(?x)]  stringinstruments[(?x)])]
+]","forall (violins(x) -: stringinstruments(x))
+forall (violins(x) -: musicalinstruments(x))
+ (musicalinstruments(x) , stringinstruments(x))
+",-(+V0-+S0)-(+V0-+M0)+(+M1++S1),"all:x (violins(x) :- stringinstruments(x))
+all:x (violins(x) :- musicalinstruments(x))
+x (musicalinstruments(x) & stringinstruments(x))
+",categorical
+400d39a6-3666-4806-8143-03dacb844452,There exist some individuals who are scientists who are not physicists. Every single person who is a scientist is an academic. One can thus conclude that all academics are physicists.,"['∃x (Individuals(x) ∧ Scientists_not_physicists(x))', '∀x (Person(x) → Scientist_academic(x))', '∀x (Academics(x) → Physicists(x))']",,"∃x (Individuals(x) ∧ Scientistsnotphysicists(x))
+∀x (Person(x) → Scientistacademic(x))
+∀x (Academics(x) → Physicists(x))
+","exists x (individuals(x) and scientistsnotphysicists(x))
+forall x (person(x) implies scientistacademic(x))
+forall x (academics(x) implies physicists(x))
+","[*x [(individuals[(?x)]  scientistsnotphysicists[(?x)])]
+@every *x [(person[(?x)]  scientistacademic[(?x)])]
+@every *x [(academics[(?x)]  physicists[(?x)])]
+]"," (individuals(x) , scientistsnotphysicists(x))
+forall (person(x) -: scientistacademic(x))
+forall (academics(x) -: physicists(x))
+",+(+I1++S1)-(+P0-+S0)-(+A0-+P0),"x (individuals(x) & scientistsnotphysicists(x))
+all:x (person(x) :- scientistacademic(x))
+all:x (academics(x) :- physicists(x))
+",categorical
+78a473a3-d129-4c4d-8434-a0fce13d0024,Every single river is a thing that flows towards the sea. The Amazon River is a river. A number of parts of the Amazon River flow towards the sea.,"['∀x (River(x) → Thing_flows_towards_sea(x))', '∀x (Amazon_river(x) → River(x))', '∃x (Amazon_river(x) → Thing_flows_towards_sea(x))']",,"∀x (River(x) → Thingflowstowardssea(x))
+∀x (Amazonriver(x) → River(x))
+∃x (Amazonriver(x) → Thingflowstowardssea(x))
+","forall x (river(x) implies thingflowstowardssea(x))
+forall x (amazonriver(x) implies river(x))
+exists x (amazonriver(x) implies thingflowstowardssea(x))
+","[@every *x [(river[(?x)]  thingflowstowardssea[(?x)])]
+@every *x [(amazonriver[(?x)]  river[(?x)])]
+*x [(amazonriver[(?x)]  thingflowstowardssea[(?x)])]
+]","forall (river(x) -: thingflowstowardssea(x))
+forall (amazonriver(x) -: river(x))
+ (amazonriver(x) -: thingflowstowardssea(x))
+",-(+R0-+T0)-(+A0-+R0)+(+A1-+T1),"all:x (river(x) :- thingflowstowardssea(x))
+all:x (amazonriver(x) :- river(x))
+x (amazonriver(x) :- thingflowstowardssea(x))
+",hypothetical
+372bfeea-11fd-47ad-b489-0616b8d2cd30,Any and all clouds are made of solid iron. There are clouds that are a type of cumulus. This implies that some cumulus clouds are solid iron.,"['∀x (Clouds(x) → Made_solid_iron(x))', '∃x (Clouds(x) ∧ Cumulus(x))', '∃x (Cumulus_clouds(x) ∧ Solid_iron(x))']",,"∀x (Clouds(x) → Madesolidiron(x))
+∃x (Clouds(x) ∧ Cumulus(x))
+∃x (Cumulusclouds(x) ∧ Solidiron(x))
+","forall x (clouds(x) implies madesolidiron(x))
+exists x (clouds(x) and cumulus(x))
+exists x (cumulusclouds(x) and solidiron(x))
+","[@every *x [(clouds[(?x)]  madesolidiron[(?x)])]
+*x [(clouds[(?x)]  cumulus[(?x)])]
+*x [(cumulusclouds[(?x)]  solidiron[(?x)])]
+]","forall (clouds(x) -: madesolidiron(x))
+ (clouds(x) , cumulus(x))
+ (cumulusclouds(x) , solidiron(x))
+",-(+C0-+M0)+(+C1++C1)+(+C1++S1),"all:x (clouds(x) :- madesolidiron(x))
+x (clouds(x) & cumulus(x))
+x (cumulusclouds(x) & solidiron(x))
+",categorical
+4a405609-338a-4f3e-ba58-bc6690f121db,All things that are cars are fruits. No fruit is a vehicle. This proves that no vehicle is a car.,"['∀x (Cars(x) → Fruits(x))', '∀x (Fruit(x) → ¬Vehicle(x))']",∀x (No_vehicle(x) → Car(x)),"∀x (Cars(x) → Fruits(x))
+∀x (Fruit(x) → ¬Vehicle(x))
+∀x (Novehicle(x) → Car(x))
+","forall x (cars(x) implies fruits(x))
+forall x (fruit(x) implies not vehicle(x))
+forall x (novehicle(x) implies car(x))
+","[@every *x [(cars[(?x)]  fruits[(?x)])]
+@every *x [(fruit[(?x)]  ~vehicle[(?x)])]
+@every *x [(novehicle[(?x)]  car[(?x)])]
+]","forall (cars(x) -: fruits(x))
+forall (fruit(x) -: notvehicle(x))
+forall (novehicle(x) -: car(x))
+",-(+C0-+F0)-(+F0--+V0)-(+N0-+C0),"all:x (cars(x) :- fruits(x))
+all:x (fruit(x) :- ~vehicle(x))
+all:x (novehicle(x) :- car(x))
+",categorical
+267064a3-db1a-4c57-a571-ce5c0c8f141e,"A few reptiles are mammals. There are no mammals that are fish. As a result, some fish are reptiles.","['∃x (Reptiles(x) ∧ Mammals(x))', '∀x (Mammals(x) → ¬Fish(x))', '∃x (Fish(x) ∧ Reptiles(x))']",,"∃x (Reptiles(x) ∧ Mammals(x))
+∀x (Mammals(x) → ¬Fish(x))
+∃x (Fish(x) ∧ Reptiles(x))
+","exists x (reptiles(x) and mammals(x))
+forall x (mammals(x) implies not fish(x))
+exists x (fish(x) and reptiles(x))
+","[*x [(reptiles[(?x)]  mammals[(?x)])]
+@every *x [(mammals[(?x)]  ~fish[(?x)])]
+*x [(fish[(?x)]  reptiles[(?x)])]
+]"," (reptiles(x) , mammals(x))
+forall (mammals(x) -: notfish(x))
+ (fish(x) , reptiles(x))
+",+(+R1++M1)-(+M0--+F0)+(+F1++R1),"x (reptiles(x) & mammals(x))
+all:x (mammals(x) :- ~fish(x))
+x (fish(x) & reptiles(x))
+",categorical
+7757fbfa-2895-462b-8af0-5fe5118ed0ff,Everything that is a spider is an arachnid. Nothing that is an insect is an arachnid. It is not the case that all insects are spiders.,"['∀x (Spider(x) → Arachnid(x))', '∀x (Nothing(x) → Insect_arachnid(x))', '∀x (Insects(x) → Spiders(x))']",,"∀x (Spider(x) → Arachnid(x))
+∀x (Nothing(x) → Insectarachnid(x))
+∀x (Insects(x) → Spiders(x))
+","forall x (spider(x) implies arachnid(x))
+forall x (nothing(x) implies insectarachnid(x))
+forall x (insects(x) implies spiders(x))
+","[@every *x [(spider[(?x)]  arachnid[(?x)])]
+@every *x [(nothing[(?x)]  insectarachnid[(?x)])]
+@every *x [(insects[(?x)]  spiders[(?x)])]
+]","forall (spider(x) -: arachnid(x))
+forall (nothing(x) -: insectarachnid(x))
+forall (insects(x) -: spiders(x))
+",-(+S0-+A0)-(+N0-+I0)-(+I0-+S0),"all:x (spider(x) :- arachnid(x))
+all:x (nothing(x) :- insectarachnid(x))
+all:x (insects(x) :- spiders(x))
+",categorical
+3c944a90-a461-4136-99dc-8ed0cf1d04b0,Every person who is a doctor is also a medical professional. All medical professionals are people with degrees. We can logically conclude that some people with degrees are doctors.,"['∀x (Person(x) → Doctor_medical_professional(x))', '∀x (Medical_professionals(x) → People_degrees(x))', '∃x (People_degrees(x) ∧ Doctors(x))']",,"∀x (Person(x) → Doctormedicalprofessional(x))
+∀x (Medicalprofessionals(x) → Peopledegrees(x))
+∃x (Peopledegrees(x) ∧ Doctors(x))
+","forall x (person(x) implies doctormedicalprofessional(x))
+forall x (medicalprofessionals(x) implies peopledegrees(x))
+exists x (peopledegrees(x) and doctors(x))
+","[@every *x [(person[(?x)]  doctormedicalprofessional[(?x)])]
+@every *x [(medicalprofessionals[(?x)]  peopledegrees[(?x)])]
+*x [(peopledegrees[(?x)]  doctors[(?x)])]
+]","forall (person(x) -: doctormedicalprofessional(x))
+forall (medicalprofessionals(x) -: peopledegrees(x))
+ (peopledegrees(x) , doctors(x))
+",-(+P0-+D0)-(+M0-+P0)+(+P1++D1),"all:x (person(x) :- doctormedicalprofessional(x))
+all:x (medicalprofessionals(x) :- peopledegrees(x))
+x (peopledegrees(x) & doctors(x))
+",categorical
+8812a393-e0c1-40db-9b3f-9622636faf4c,"There are no animals that are trees. At least one plant is a tree. Therefore, there is at least one plant which is an animal.","['∀x (Animals(x) → ¬Trees(x))', '∃x (Plant(x) ∧ Tree(x))']",∃x (Plant(x) ∧ Animal(x)),"∀x (Animals(x) → ¬Trees(x))
+∃x (Plant(x) ∧ Tree(x))
+∃x (Plant(x) ∧ Animal(x))
+","forall x (animals(x) implies not trees(x))
+exists x (plant(x) and tree(x))
+exists x (plant(x) and animal(x))
+","[@every *x [(animals[(?x)]  ~trees[(?x)])]
+*x [(plant[(?x)]  tree[(?x)])]
+*x [(plant[(?x)]  animal[(?x)])]
+]","forall (animals(x) -: nottrees(x))
+ (plant(x) , tree(x))
+ (plant(x) , animal(x))
+",-(+A0--+T0)+(+P1++T1)+(+P1++A1),"all:x (animals(x) :- ~trees(x))
+x (plant(x) & tree(x))
+x (plant(x) & animal(x))
+",categorical
+84a1bda0-cd40-40ce-bff4-4dffcc19e6f0,There are no shrubs that are tall plants. Every single item that is a tree is a tall plant. This proves that a number of trees are not shrubs.,"['∀x (Shrubs(x) → ¬Tall_plants(x))', '∀x (Item(x) → Tree_tall_plant(x))']",∀x (Number_trees(x) → ¬Shrubs(x)),"∀x (Shrubs(x) → ¬Tallplants(x))
+∀x (Item(x) → Treetallplant(x))
+∀x (Numbertrees(x) → ¬Shrubs(x))
+","forall x (shrubs(x) implies not tallplants(x))
+forall x (item(x) implies treetallplant(x))
+forall x (numbertrees(x) implies not shrubs(x))
+","[@every *x [(shrubs[(?x)]  ~tallplants[(?x)])]
+@every *x [(item[(?x)]  treetallplant[(?x)])]
+@every *x [(numbertrees[(?x)]  ~shrubs[(?x)])]
+]","forall (shrubs(x) -: nottallplants(x))
+forall (item(x) -: treetallplant(x))
+forall (numbertrees(x) -: notshrubs(x))
+",-(+S0--+T0)-(+I0-+T0)-(+N0--+S0),"all:x (shrubs(x) :- ~tallplants(x))
+all:x (item(x) :- treetallplant(x))
+all:x (numbertrees(x) :- ~shrubs(x))
+",categorical
+0cc0d0ae-390a-4f5d-9a86-b88d6cb22f91,Items that are tables are in no way items designed for sitting. Everything that is a chair is an item designed for sitting. Chairs cannot be classified as tables.,"['∀x (Items_tables(x) → ¬Items_designed_for_sitting(x))', '∀x (Chair(x) → Item_designed_for_sitting(x))', '∀x (Chair(x) → ¬Tables(x))']",,"∀x (Itemstables(x) → ¬Itemsdesignedforsitting(x))
+∀x (Chair(x) → Itemdesignedforsitting(x))
+∀x (Chair(x) → ¬Tables(x))
+","forall x (itemstables(x) implies not itemsdesignedforsitting(x))
+forall x (chair(x) implies itemdesignedforsitting(x))
+forall x (chair(x) implies not tables(x))
+","[@every *x [(itemstables[(?x)]  ~itemsdesignedforsitting[(?x)])]
+@every *x [(chair[(?x)]  itemdesignedforsitting[(?x)])]
+@every *x [(chair[(?x)]  ~tables[(?x)])]
+]","forall (itemstables(x) -: notitemsdesignedforsitting(x))
+forall (chair(x) -: itemdesignedforsitting(x))
+forall (chair(x) -: nottables(x))
+",-(+I0--+I0)-(+C0-+I0)-(+C0--+T0),"all:x (itemstables(x) :- ~itemsdesignedforsitting(x))
+all:x (chair(x) :- itemdesignedforsitting(x))
+all:x (chair(x) :- ~tables(x))
+",categorical
+821cda62-dee6-452f-ad54-8efdc614af27,"Every single skyscraper is a building. Some sheds are skyscrapers. Consequently, every shed is a building.","['∀x (Skyscraper(x) → Building(x))', '∃x (Sheds(x) ∧ Skyscrapers(x))']",∀x (Shed(x) → Building(x)),"∀x (Skyscraper(x) → Building(x))
+∃x (Sheds(x) ∧ Skyscrapers(x))
+∀x (Shed(x) → Building(x))
+","forall x (skyscraper(x) implies building(x))
+exists x (sheds(x) and skyscrapers(x))
+forall x (shed(x) implies building(x))
+","[@every *x [(skyscraper[(?x)]  building[(?x)])]
+*x [(sheds[(?x)]  skyscrapers[(?x)])]
+@every *x [(shed[(?x)]  building[(?x)])]
+]","forall (skyscraper(x) -: building(x))
+ (sheds(x) , skyscrapers(x))
+forall (shed(x) -: building(x))
+",-(+S0-+B0)+(+S1++S1)-(+S0-+B0),"all:x (skyscraper(x) :- building(x))
+x (sheds(x) & skyscrapers(x))
+all:x (shed(x) :- building(x))
+",categorical
+0b4b4991-85ef-45dd-981a-4ab75398a0e7,No stars are celestial bodies. All suns are things that are stars. It follows that some suns are not celestial bodies.,"['∀x (Stars(x) → ¬Celestial_bodies(x))', '∀x (Suns(x) → Things_stars(x))']",∃x (Suns(x) ∧ Not_celestial_bodies(x)),"∀x (Stars(x) → ¬Celestialbodies(x))
+∀x (Suns(x) → Thingsstars(x))
+∃x (Suns(x) ∧ Notcelestialbodies(x))
+","forall x (stars(x) implies not celestialbodies(x))
+forall x (suns(x) implies thingsstars(x))
+exists x (suns(x) and notcelestialbodies(x))
+","[@every *x [(stars[(?x)]  ~celestialbodies[(?x)])]
+@every *x [(suns[(?x)]  thingsstars[(?x)])]
+*x [(suns[(?x)]  notcelestialbodies[(?x)])]
+]","forall (stars(x) -: notcelestialbodies(x))
+forall (suns(x) -: thingsstars(x))
+ (suns(x) , notcelestialbodies(x))
+",-(+S0--+C0)-(+S0-+T0)+(+S1++N1),"all:x (stars(x) :- ~celestialbodies(x))
+all:x (suns(x) :- thingsstars(x))
+x (suns(x) & notcelestialbodies(x))
+",categorical
+d2bc4045-c226-4f0b-9b3a-32b3d8910b95,Every single dog is an animal. Nothing that is a fish is an animal. It follows from this that every single fish is a dog.,"['∀x (Dog(x) → Animal(x))', '∀x (Nothing(x) → Fish_animal(x))']",∀x (Fish(x) → Dog(x)),"∀x (Dog(x) → Animal(x))
+∀x (Nothing(x) → Fishanimal(x))
+∀x (Fish(x) → Dog(x))
+","forall x (dog(x) implies animal(x))
+forall x (nothing(x) implies fishanimal(x))
+forall x (fish(x) implies dog(x))
+","[@every *x [(dog[(?x)]  animal[(?x)])]
+@every *x [(nothing[(?x)]  fishanimal[(?x)])]
+@every *x [(fish[(?x)]  dog[(?x)])]
+]","forall (dog(x) -: animal(x))
+forall (nothing(x) -: fishanimal(x))
+forall (fish(x) -: dog(x))
+",-(+D0-+A0)-(+N0-+F0)-(+F0-+D0),"all:x (dog(x) :- animal(x))
+all:x (nothing(x) :- fishanimal(x))
+all:x (fish(x) :- dog(x))
+",categorical
+3a2acb10-9c38-4a52-a0a0-b2bf04e3759a,It is not the case that every single car is a truck. All cars are vehicles. One can logically conclude that some vehicles are not trucks.,"['∀x (Car(x) → Truck(x))', '∀x (Cars(x) → Vehicles(x))', '∃x (Vehicles(x) ∧ Not_trucks(x))']",,"∀x (Car(x) → Truck(x))
+∀x (Cars(x) → Vehicles(x))
+∃x (Vehicles(x) ∧ Nottrucks(x))
+","forall x (car(x) implies truck(x))
+forall x (cars(x) implies vehicles(x))
+exists x (vehicles(x) and nottrucks(x))
+","[@every *x [(car[(?x)]  truck[(?x)])]
+@every *x [(cars[(?x)]  vehicles[(?x)])]
+*x [(vehicles[(?x)]  nottrucks[(?x)])]
+]","forall (car(x) -: truck(x))
+forall (cars(x) -: vehicles(x))
+ (vehicles(x) , nottrucks(x))
+",-(+C0-+T0)-(+C0-+V0)+(+V1++N1),"all:x (car(x) :- truck(x))
+all:x (cars(x) :- vehicles(x))
+x (vehicles(x) & nottrucks(x))
+",categorical
+e4fb7540-5e00-4c53-9dfd-4e7050ae4dc6,Not a single piece of furniture is an animal. Every animal is a chair. It must be that a portion of chairs are not furniture.,"['∀x (Not_single_piece_furniture(x) → Animal(x))', '∀x (Animal(x) → Chair(x))', '∀x (It_must_portion_chairs(x) → ¬Furniture(x))']",,"∀x (Notsinglepiecefurniture(x) → Animal(x))
+∀x (Animal(x) → Chair(x))
+∀x (Itmustportionchairs(x) → ¬Furniture(x))
+","forall x (notsinglepiecefurniture(x) implies animal(x))
+forall x (animal(x) implies chair(x))
+forall x (itmustportionchairs(x) implies not furniture(x))
+","[@every *x [(notsinglepiecefurniture[(?x)]  animal[(?x)])]
+@every *x [(animal[(?x)]  chair[(?x)])]
+@every *x [(itmustportionchairs[(?x)]  ~furniture[(?x)])]
+]","forall (notsinglepiecefurniture(x) -: animal(x))
+forall (animal(x) -: chair(x))
+forall (itmustportionchairs(x) -: notfurniture(x))
+",-(+N0-+A0)-(+A0-+C0)-(+I0--+F0),"all:x (notsinglepiecefurniture(x) :- animal(x))
+all:x (animal(x) :- chair(x))
+all:x (itmustportionchairs(x) :- ~furniture(x))
+",categorical
+ea6c2bc1-713a-45ad-85a4-cee85fd16552,"There are no pets which are animals. A few birds are categorized as pets. Thus, a group of birds are not animals.","['∀x (Pets(x) → ¬Animals(x))', '∃x (Birds(x) ∧ Categorized_as_pets(x))']",∀x (Group_birds(x) → ¬Animals(x)),"∀x (Pets(x) → ¬Animals(x))
+∃x (Birds(x) ∧ Categorizedaspets(x))
+∀x (Groupbirds(x) → ¬Animals(x))
+","forall x (pets(x) implies not animals(x))
+exists x (birds(x) and categorizedaspets(x))
+forall x (groupbirds(x) implies not animals(x))
+","[@every *x [(pets[(?x)]  ~animals[(?x)])]
+*x [(birds[(?x)]  categorizedaspets[(?x)])]
+@every *x [(groupbirds[(?x)]  ~animals[(?x)])]
+]","forall (pets(x) -: notanimals(x))
+ (birds(x) , categorizedaspets(x))
+forall (groupbirds(x) -: notanimals(x))
+",-(+P0--+A0)+(+B1++C1)-(+G0--+A0),"all:x (pets(x) :- ~animals(x))
+x (birds(x) & categorizedaspets(x))
+all:x (groupbirds(x) :- ~animals(x))
+",categorical
+7bb6a410-346d-4f41-ba2a-349c3d9c3674,No cat is a dog. All dogs are mammals without exception. A number of mammals are cats.,"['∀x (No_cat(x) → Dog(x))', '∀x (Dogs(x) → Mammals(x))', '∃x (Mammals(x) ∧ Cats(x))']",,"∀x (Nocat(x) → Dog(x))
+∀x (Dogs(x) → Mammals(x))
+∃x (Mammals(x) ∧ Cats(x))
+","forall x (nocat(x) implies dog(x))
+forall x (dogs(x) implies mammals(x))
+exists x (mammals(x) and cats(x))
+","[@every *x [(nocat[(?x)]  dog[(?x)])]
+@every *x [(dogs[(?x)]  mammals[(?x)])]
+*x [(mammals[(?x)]  cats[(?x)])]
+]","forall (nocat(x) -: dog(x))
+forall (dogs(x) -: mammals(x))
+ (mammals(x) , cats(x))
+",-(+N0-+D0)-(+D0-+M0)+(+M1++C1),"all:x (nocat(x) :- dog(x))
+all:x (dogs(x) :- mammals(x))
+x (mammals(x) & cats(x))
+",categorical
+d15cb838-c7fd-4799-a715-f8fdb1572d56,"There are certain objects designated as official game balls that are not round. Every official game ball is a type of basketball. Consequently, some objects classified as basketballs are not round.","['∃x (Certain_objects_designated_as_official_game_balls(x) ∧ Not_round(x))', '∀x (Official_game_ball(x) → Basketball(x))']",∃x (Objects_classified_as_basketballs(x) ∧ Not_round(x)),"∃x (Certainobjectsdesignatedasofficialgameballs(x) ∧ Notround(x))
+∀x (Officialgameball(x) → Basketball(x))
+∃x (Objectsclassifiedasbasketballs(x) ∧ Notround(x))
+","exists x (certainobjectsdesignatedasofficialgameballs(x) and notround(x))
+forall x (officialgameball(x) implies basketball(x))
+exists x (objectsclassifiedasbasketballs(x) and notround(x))
+","[*x [(certainobjectsdesignatedasofficialgameballs[(?x)]  notround[(?x)])]
+@every *x [(officialgameball[(?x)]  basketball[(?x)])]
+*x [(objectsclassifiedasbasketballs[(?x)]  notround[(?x)])]
+]"," (certainobjectsdesignatedasofficialgameballs(x) , notround(x))
+forall (officialgameball(x) -: basketball(x))
+ (objectsclassifiedasbasketballs(x) , notround(x))
+",+(+C1++N1)-(+O0-+B0)+(+O1++N1),"x (certainobjectsdesignatedasofficialgameballs(x) & notround(x))
+all:x (officialgameball(x) :- basketball(x))
+x (objectsclassifiedasbasketballs(x) & notround(x))
+",categorical
+c1c2bdfa-8151-4f68-ac0d-ad67118c1ea3,There are no creatures with scales who are also mythical creatures. A portion of creatures with scales are fish. It is the case that a few fish are mythical creatures.,"['∀x (Creatures_scales(x) → ¬Mythical_creatures(x))', '∃x (Creatures_scales(x) ∧ Fish(x))', '∃x (Fish(x) ∧ Mythical_creatures(x))']",,"∀x (Creaturesscales(x) → ¬Mythicalcreatures(x))
+∃x (Creaturesscales(x) ∧ Fish(x))
+∃x (Fish(x) ∧ Mythicalcreatures(x))
+","forall x (creaturesscales(x) implies not mythicalcreatures(x))
+exists x (creaturesscales(x) and fish(x))
+exists x (fish(x) and mythicalcreatures(x))
+","[@every *x [(creaturesscales[(?x)]  ~mythicalcreatures[(?x)])]
+*x [(creaturesscales[(?x)]  fish[(?x)])]
+*x [(fish[(?x)]  mythicalcreatures[(?x)])]
+]","forall (creaturesscales(x) -: notmythicalcreatures(x))
+ (creaturesscales(x) , fish(x))
+ (fish(x) , mythicalcreatures(x))
+",-(+C0--+M0)+(+C1++F1)+(+F1++M1),"all:x (creaturesscales(x) :- ~mythicalcreatures(x))
+x (creaturesscales(x) & fish(x))
+x (fish(x) & mythicalcreatures(x))
+",categorical
+4217eb31-60ef-4909-8bbd-aaf43dfd68db,There is no software that is hardware. Every program is a form of software. It must be concluded that some programs are not hardware.,"['∀x (Software(x) → ¬Hardware(x))', '∀x (Program(x) → Form_software(x))']",∃x (Programs(x) ∧ Not_hardware(x)),"∀x (Software(x) → ¬Hardware(x))
+∀x (Program(x) → Formsoftware(x))
+∃x (Programs(x) ∧ Nothardware(x))
+","forall x (software(x) implies not hardware(x))
+forall x (program(x) implies formsoftware(x))
+exists x (programs(x) and nothardware(x))
+","[@every *x [(software[(?x)]  ~hardware[(?x)])]
+@every *x [(program[(?x)]  formsoftware[(?x)])]
+*x [(programs[(?x)]  nothardware[(?x)])]
+]","forall (software(x) -: nothardware(x))
+forall (program(x) -: formsoftware(x))
+ (programs(x) , nothardware(x))
+",-(+S0--+H0)-(+P0-+F0)+(+P1++N1),"all:x (software(x) :- ~hardware(x))
+all:x (program(x) :- formsoftware(x))
+x (programs(x) & nothardware(x))
+",categorical
+03cc2c62-68d9-4f7e-98ea-f3fae01cb2c1,Every fish is a swimmer. There are a number of birds that are swimmers. It follows from this that there are some birds that are fish.,"['∀x (Fish(x) → Swimmer(x))', '∃x (Birds(x) ∧ Swimmers(x))']",∃x (Birds(x) ∧ Fish(x)),"∀x (Fish(x) → Swimmer(x))
+∃x (Birds(x) ∧ Swimmers(x))
+∃x (Birds(x) ∧ Fish(x))
+","forall x (fish(x) implies swimmer(x))
+exists x (birds(x) and swimmers(x))
+exists x (birds(x) and fish(x))
+","[@every *x [(fish[(?x)]  swimmer[(?x)])]
+*x [(birds[(?x)]  swimmers[(?x)])]
+*x [(birds[(?x)]  fish[(?x)])]
+]","forall (fish(x) -: swimmer(x))
+ (birds(x) , swimmers(x))
+ (birds(x) , fish(x))
+",-(+F0-+S0)+(+B1++S1)+(+B1++F1),"all:x (fish(x) :- swimmer(x))
+x (birds(x) & swimmers(x))
+x (birds(x) & fish(x))
+",categorical
+07920681-7c88-4bc7-8664-594779ff5ae4,There are no plants that are metal objects. Everything that is a flower is a plant. It's the case that some flowers are metal objects.,"['∀x (Plants(x) → ¬Metal_objects(x))', '∀x (Flower(x) → Plant(x))', '∃x (Flowers(x) ∧ Metal_objects(x))']",,"∀x (Plants(x) → ¬Metalobjects(x))
+∀x (Flower(x) → Plant(x))
+∃x (Flowers(x) ∧ Metalobjects(x))
+","forall x (plants(x) implies not metalobjects(x))
+forall x (flower(x) implies plant(x))
+exists x (flowers(x) and metalobjects(x))
+","[@every *x [(plants[(?x)]  ~metalobjects[(?x)])]
+@every *x [(flower[(?x)]  plant[(?x)])]
+*x [(flowers[(?x)]  metalobjects[(?x)])]
+]","forall (plants(x) -: notmetalobjects(x))
+forall (flower(x) -: plant(x))
+ (flowers(x) , metalobjects(x))
+",-(+P0--+M0)-(+F0-+P0)+(+F1++M1),"all:x (plants(x) :- ~metalobjects(x))
+all:x (flower(x) :- plant(x))
+x (flowers(x) & metalobjects(x))
+",categorical
+92193f8e-bb29-4c19-b647-5050c518f786,"Any and all apples are foods that are delicious. There are some apples which are also fruits. Consequently, a portion of fruits are foods that are delicious.","['∀x (Apples(x) → Foods_delicious(x))', '∃x (Apples(x) ∧ Fruits(x))']",∃x (Fruits(x) ∧ Foods_delicious(x)),"∀x (Apples(x) → Foodsdelicious(x))
+∃x (Apples(x) ∧ Fruits(x))
+∃x (Fruits(x) ∧ Foodsdelicious(x))
+","forall x (apples(x) implies foodsdelicious(x))
+exists x (apples(x) and fruits(x))
+exists x (fruits(x) and foodsdelicious(x))
+","[@every *x [(apples[(?x)]  foodsdelicious[(?x)])]
+*x [(apples[(?x)]  fruits[(?x)])]
+*x [(fruits[(?x)]  foodsdelicious[(?x)])]
+]","forall (apples(x) -: foodsdelicious(x))
+ (apples(x) , fruits(x))
+ (fruits(x) , foodsdelicious(x))
+",-(+A0-+F0)+(+A1++F1)+(+F1++F1),"all:x (apples(x) :- foodsdelicious(x))
+x (apples(x) & fruits(x))
+x (fruits(x) & foodsdelicious(x))
+",categorical
+3f18c212-16aa-4c72-bde9-d1bb4349ca50,There are no animals that are non-aquatic and also fish. A portion of the animals that are mammals are also non-aquatic. It must be the case that some mammals are not fish.,"['∀x (Animals(x) → ¬Non_aquatic_and_fish(x))', '∃x (Animals(x) ∧ Mammals_non_aquatic(x))', '∃x (Mammals(x) ∧ Not_fish(x))']",,"∀x (Animals(x) → ¬Nonaquaticandfish(x))
+∃x (Animals(x) ∧ Mammalsnonaquatic(x))
+∃x (Mammals(x) ∧ Notfish(x))
+","forall x (animals(x) implies not nonaquaticandfish(x))
+exists x (animals(x) and mammalsnonaquatic(x))
+exists x (mammals(x) and notfish(x))
+","[@every *x [(animals[(?x)]  ~nonaquaticandfish[(?x)])]
+*x [(animals[(?x)]  mammalsnonaquatic[(?x)])]
+*x [(mammals[(?x)]  notfish[(?x)])]
+]","forall (animals(x) -: notnonaquaticandfish(x))
+ (animals(x) , mammalsnonaquatic(x))
+ (mammals(x) , notfish(x))
+",-(+A0--+N0)+(+A1++M1)+(+M1++N1),"all:x (animals(x) :- ~nonaquaticandfish(x))
+x (animals(x) & mammalsnonaquatic(x))
+x (mammals(x) & notfish(x))
+",categorical
+589ace73-14ef-480f-b0e0-77df273129d5,"Every single building is a structure that has wheels. Anything that is a house is a building. Consequently, all houses are structures with wheels.","['∀x (Building(x) → Structure_has_wheels(x))', '∀x (House(x) → Building(x))']",∀x (Houses(x) → Structures_wheels(x)),"∀x (Building(x) → Structurehaswheels(x))
+∀x (House(x) → Building(x))
+∀x (Houses(x) → Structureswheels(x))
+","forall x (building(x) implies structurehaswheels(x))
+forall x (house(x) implies building(x))
+forall x (houses(x) implies structureswheels(x))
+","[@every *x [(building[(?x)]  structurehaswheels[(?x)])]
+@every *x [(house[(?x)]  building[(?x)])]
+@every *x [(houses[(?x)]  structureswheels[(?x)])]
+]","forall (building(x) -: structurehaswheels(x))
+forall (house(x) -: building(x))
+forall (houses(x) -: structureswheels(x))
+",-(+B0-+S0)-(+H0-+B0)-(+H0-+S0),"all:x (building(x) :- structurehaswheels(x))
+all:x (house(x) :- building(x))
+all:x (houses(x) :- structureswheels(x))
+",categorical
+c869ec62-ccfd-47ab-b7bc-2cb24c86b835,There are no books that can be called plants. It is also true that every book is a type of animal. This has led to the conclusion that every animal is a plant.,"['∀x (Books(x) → ¬Called_plants(x))', '∀x (Book(x) → Animal(x))']",∀x (Animal(x) → Plant(x)),"∀x (Books(x) → ¬Calledplants(x))
+∀x (Book(x) → Animal(x))
+∀x (Animal(x) → Plant(x))
+","forall x (books(x) implies not calledplants(x))
+forall x (book(x) implies animal(x))
+forall x (animal(x) implies plant(x))
+","[@every *x [(books[(?x)]  ~calledplants[(?x)])]
+@every *x [(book[(?x)]  animal[(?x)])]
+@every *x [(animal[(?x)]  plant[(?x)])]
+]","forall (books(x) -: notcalledplants(x))
+forall (book(x) -: animal(x))
+forall (animal(x) -: plant(x))
+",-(+B0--+C0)-(+B0-+A0)-(+A0-+P0),"all:x (books(x) :- ~calledplants(x))
+all:x (book(x) :- animal(x))
+all:x (animal(x) :- plant(x))
+",categorical
+331224ac-9f0e-4258-ab9d-8a3a73304e04,Not a single animal with wings is an aquatic mammal. Anything that is an aquatic mammal is a fish. It is necessarily true that no fish are animals with wings.,"['∀x (Not_single_animal_wings(x) → Aquatic_mammal(x))', '∀x (Aquatic_mammal(x) → Fish(x))', '∀x (Fish(x) → ¬Animals_wings(x))']",,"∀x (Notsingleanimalwings(x) → Aquaticmammal(x))
+∀x (Aquaticmammal(x) → Fish(x))
+∀x (Fish(x) → ¬Animalswings(x))
+","forall x (notsingleanimalwings(x) implies aquaticmammal(x))
+forall x (aquaticmammal(x) implies fish(x))
+forall x (fish(x) implies not animalswings(x))
+","[@every *x [(notsingleanimalwings[(?x)]  aquaticmammal[(?x)])]
+@every *x [(aquaticmammal[(?x)]  fish[(?x)])]
+@every *x [(fish[(?x)]  ~animalswings[(?x)])]
+]","forall (notsingleanimalwings(x) -: aquaticmammal(x))
+forall (aquaticmammal(x) -: fish(x))
+forall (fish(x) -: notanimalswings(x))
+",-(+N0-+A0)-(+A0-+F0)-(+F0--+A0),"all:x (notsingleanimalwings(x) :- aquaticmammal(x))
+all:x (aquaticmammal(x) :- fish(x))
+all:x (fish(x) :- ~animalswings(x))
+",categorical
+56d2d008-769e-4361-be9a-70140b5796b3,"Every single square is a shape. Every single circle is a shape. As such, every circle is a square.","['∀x (Square(x) → Shape(x))', '∀x (Circle(x) → Shape(x))', '∀x (Circle(x) → Square(x))']",,"∀x (Square(x) → Shape(x))
+∀x (Circle(x) → Shape(x))
+∀x (Circle(x) → Square(x))
+","forall x (square(x) implies shape(x))
+forall x (circle(x) implies shape(x))
+forall x (circle(x) implies square(x))
+","[@every *x [(square[(?x)]  shape[(?x)])]
+@every *x [(circle[(?x)]  shape[(?x)])]
+@every *x [(circle[(?x)]  square[(?x)])]
+]","forall (square(x) -: shape(x))
+forall (circle(x) -: shape(x))
+forall (circle(x) -: square(x))
+",-(+S0-+S0)-(+C0-+S0)-(+C0-+S0),"all:x (square(x) :- shape(x))
+all:x (circle(x) :- shape(x))
+all:x (circle(x) :- square(x))
+",hypothetical
+0b026bf4-126a-47df-b0de-b388bd27cfbf,"There exist some things which are fruits that are not apples. It is true that all fruits are foods. From this, it follows that there are some foods that are not apples.","['∃x (Things(x) ∧ Fruits_not_apples(x))', '∀x (Fruits(x) → Foods(x))']",∃x (Foods(x) ∧ Not_apples(x)),"∃x (Things(x) ∧ Fruitsnotapples(x))
+∀x (Fruits(x) → Foods(x))
+∃x (Foods(x) ∧ Notapples(x))
+","exists x (things(x) and fruitsnotapples(x))
+forall x (fruits(x) implies foods(x))
+exists x (foods(x) and notapples(x))
+","[*x [(things[(?x)]  fruitsnotapples[(?x)])]
+@every *x [(fruits[(?x)]  foods[(?x)])]
+*x [(foods[(?x)]  notapples[(?x)])]
+]"," (things(x) , fruitsnotapples(x))
+forall (fruits(x) -: foods(x))
+ (foods(x) , notapples(x))
+",+(+T1++F1)-(+F0-+F0)+(+F1++N1),"x (things(x) & fruitsnotapples(x))
+all:x (fruits(x) :- foods(x))
+x (foods(x) & notapples(x))
+",categorical
+6acd4cd7-9084-4650-be51-7486727c264e,Anything that is a flower is a stone. There are no stones which are roses. This logically implies that some roses are not flowers.,"['∀x (Flower(x) → Stone(x))', '∀x (Stones(x) → ¬Roses(x))', '∃x (Roses(x) ∧ Not_flowers(x))']",,"∀x (Flower(x) → Stone(x))
+∀x (Stones(x) → ¬Roses(x))
+∃x (Roses(x) ∧ Notflowers(x))
+","forall x (flower(x) implies stone(x))
+forall x (stones(x) implies not roses(x))
+exists x (roses(x) and notflowers(x))
+","[@every *x [(flower[(?x)]  stone[(?x)])]
+@every *x [(stones[(?x)]  ~roses[(?x)])]
+*x [(roses[(?x)]  notflowers[(?x)])]
+]","forall (flower(x) -: stone(x))
+forall (stones(x) -: notroses(x))
+ (roses(x) , notflowers(x))
+",-(+F0-+S0)-(+S0--+R0)+(+R1++N1),"all:x (flower(x) :- stone(x))
+all:x (stones(x) :- ~roses(x))
+x (roses(x) & notflowers(x))
+",categorical
+9d675913-128b-4451-9c9d-a397adcfef77,It is not the case that a pencil is a paper good. Not a single pencil is a book. This makes it true that all books are paper goods.,"['∀x (Pencil(x) → ¬Paper_good(x))', '∀x (Not_single_pencil(x) → Book(x))']",∀x (Books(x) → Paper_goods(x)),"∀x (Pencil(x) → ¬Papergood(x))
+∀x (Notsinglepencil(x) → Book(x))
+∀x (Books(x) → Papergoods(x))
+","forall x (pencil(x) implies not papergood(x))
+forall x (notsinglepencil(x) implies book(x))
+forall x (books(x) implies papergoods(x))
+","[@every *x [(pencil[(?x)]  ~papergood[(?x)])]
+@every *x [(notsinglepencil[(?x)]  book[(?x)])]
+@every *x [(books[(?x)]  papergoods[(?x)])]
+]","forall (pencil(x) -: notpapergood(x))
+forall (notsinglepencil(x) -: book(x))
+forall (books(x) -: papergoods(x))
+",-(+P0--+P0)-(+N0-+B0)-(+B0-+P0),"all:x (pencil(x) :- ~papergood(x))
+all:x (notsinglepencil(x) :- book(x))
+all:x (books(x) :- papergoods(x))
+",categorical
+8e2e1ec3-ffad-4df7-a36e-686e0e81b7fe,"Some individuals who have degrees are people who work in schools. Some person who works in a school is a teacher. As a result, some teachers are individuals with degrees.","['∃x (Individuals_have_degrees(x) ∧ People_work_in_schools(x))', '∃x (Person_works_in_school(x) ∧ Teacher(x))', '∃x (Teachers(x) ∧ Individuals_degrees(x))']",,"∃x (Individualshavedegrees(x) ∧ Peopleworkinschools(x))
+∃x (Personworksinschool(x) ∧ Teacher(x))
+∃x (Teachers(x) ∧ Individualsdegrees(x))
+","exists x (individualshavedegrees(x) and peopleworkinschools(x))
+exists x (personworksinschool(x) and teacher(x))
+exists x (teachers(x) and individualsdegrees(x))
+","[*x [(individualshavedegrees[(?x)]  peopleworkinschools[(?x)])]
+*x [(personworksinschool[(?x)]  teacher[(?x)])]
+*x [(teachers[(?x)]  individualsdegrees[(?x)])]
+]"," (individualshavedegrees(x) , peopleworkinschools(x))
+ (personworksinschool(x) , teacher(x))
+ (teachers(x) , individualsdegrees(x))
+",+(+I1++P1)+(+P1++T1)+(+T1++I1),"x (individualshavedegrees(x) & peopleworkinschools(x))
+x (personworksinschool(x) & teacher(x))
+x (teachers(x) & individualsdegrees(x))
+",categorical
+483eaa32-5436-45f5-aa44-6c5633679ba1,"There is at least an odd number that is a negative number. A portion of the prime numbers are negative numbers. Consequently, some prime numbers are odd numbers.","['∃x (Odd_number(x) ∧ Negative_number(x))', '∃x (Prime_numbers(x) ∧ Negative_numbers(x))']",∃x (Prime_numbers(x) ∧ Odd_numbers(x)),"∃x (Oddnumber(x) ∧ Negativenumber(x))
+∃x (Primenumbers(x) ∧ Negativenumbers(x))
+∃x (Primenumbers(x) ∧ Oddnumbers(x))
+","exists x (oddnumber(x) and negativenumber(x))
+exists x (primenumbers(x) and negativenumbers(x))
+exists x (primenumbers(x) and oddnumbers(x))
+","[*x [(oddnumber[(?x)]  negativenumber[(?x)])]
+*x [(primenumbers[(?x)]  negativenumbers[(?x)])]
+*x [(primenumbers[(?x)]  oddnumbers[(?x)])]
+]"," (oddnumber(x) , negativenumber(x))
+ (primenumbers(x) , negativenumbers(x))
+ (primenumbers(x) , oddnumbers(x))
+",+(+O1++N1)+(+P1++N1)+(+P1++O1),"x (oddnumber(x) & negativenumber(x))
+x (primenumbers(x) & negativenumbers(x))
+x (primenumbers(x) & oddnumbers(x))
+",categorical
+fc53be1a-0b75-4995-bcb2-bc3a878a0cb2,No animal that is a house pet is a feline. Not a single cat is a house pet. This demonstrates that some cats are not felines.,"['∀x (No_animal(x) → House_pet_feline(x))', '∀x (Not_single_cat(x) → House_pet(x))']",∃x (Cats(x) ∧ Not_felines(x)),"∀x (Noanimal(x) → Housepetfeline(x))
+∀x (Notsinglecat(x) → Housepet(x))
+∃x (Cats(x) ∧ Notfelines(x))
+","forall x (noanimal(x) implies housepetfeline(x))
+forall x (notsinglecat(x) implies housepet(x))
+exists x (cats(x) and notfelines(x))
+","[@every *x [(noanimal[(?x)]  housepetfeline[(?x)])]
+@every *x [(notsinglecat[(?x)]  housepet[(?x)])]
+*x [(cats[(?x)]  notfelines[(?x)])]
+]","forall (noanimal(x) -: housepetfeline(x))
+forall (notsinglecat(x) -: housepet(x))
+ (cats(x) , notfelines(x))
+",-(+N0-+H0)-(+N0-+H0)+(+C1++N1),"all:x (noanimal(x) :- housepetfeline(x))
+all:x (notsinglecat(x) :- housepet(x))
+x (cats(x) & notfelines(x))
+",categorical
+6936ce4a-9e83-488a-947d-66bb574f1789,It is true that no person who is North American is a European. It is also true that no person who is French is a North American. It is a logical necessity that no French person is a European.,"['∀x (Person(x) → ¬North_american_european(x))', '∀x (Person(x) → ¬French_north_american(x))', '∀x (French_person(x) → ¬European(x))']",,"∀x (Person(x) → ¬Northamericaneuropean(x))
+∀x (Person(x) → ¬Frenchnorthamerican(x))
+∀x (Frenchperson(x) → ¬European(x))
+","forall x (person(x) implies not northamericaneuropean(x))
+forall x (person(x) implies not frenchnorthamerican(x))
+forall x (frenchperson(x) implies not european(x))
+","[@every *x [(person[(?x)]  ~northamericaneuropean[(?x)])]
+@every *x [(person[(?x)]  ~frenchnorthamerican[(?x)])]
+@every *x [(frenchperson[(?x)]  ~european[(?x)])]
+]","forall (person(x) -: notnorthamericaneuropean(x))
+forall (person(x) -: notfrenchnorthamerican(x))
+forall (frenchperson(x) -: noteuropean(x))
+",-(+P0--+N0)-(+P0--+F0)-(+F0--+E0),"all:x (person(x) :- ~northamericaneuropean(x))
+all:x (person(x) :- ~frenchnorthamerican(x))
+all:x (frenchperson(x) :- ~european(x))
+",categorical
+f86ad9f5-da96-48cf-8f1b-eecff4855720,Anything that is a human is also a mammal. No animal is a human. This means that no animal is a mammal.,"['∀x (Human(x) → Mammal(x))', '∀x (No_animal(x) → Human(x))']",∀x (No_animal(x) → Mammal(x)),"∀x (Human(x) → Mammal(x))
+∀x (Noanimal(x) → Human(x))
+∀x (Noanimal(x) → Mammal(x))
+","forall x (human(x) implies mammal(x))
+forall x (noanimal(x) implies human(x))
+forall x (noanimal(x) implies mammal(x))
+","[@every *x [(human[(?x)]  mammal[(?x)])]
+@every *x [(noanimal[(?x)]  human[(?x)])]
+@every *x [(noanimal[(?x)]  mammal[(?x)])]
+]","forall (human(x) -: mammal(x))
+forall (noanimal(x) -: human(x))
+forall (noanimal(x) -: mammal(x))
+",-(+H0-+M0)-(+N0-+H0)-(+N0-+M0),"all:x (human(x) :- mammal(x))
+all:x (noanimal(x) :- human(x))
+all:x (noanimal(x) :- mammal(x))
+",categorical
+711debd8-26fc-42bc-916e-a7144ce10c7c,Any object that is a house is a building. Some tents are not buildings. This implies that some tents are not houses.,"['∀x (House(x) → Building(x))', '∃x (Tents(x) ∧ Not_buildings(x))', '∃x (Tents(x) ∧ Not_houses(x))']",,"∀x (House(x) → Building(x))
+∃x (Tents(x) ∧ Notbuildings(x))
+∃x (Tents(x) ∧ Nothouses(x))
+","forall x (house(x) implies building(x))
+exists x (tents(x) and notbuildings(x))
+exists x (tents(x) and nothouses(x))
+","[@every *x [(house[(?x)]  building[(?x)])]
+*x [(tents[(?x)]  notbuildings[(?x)])]
+*x [(tents[(?x)]  nothouses[(?x)])]
+]","forall (house(x) -: building(x))
+ (tents(x) , notbuildings(x))
+ (tents(x) , nothouses(x))
+",-(+H0-+B0)+(+T1++N1)+(+T1++N1),"all:x (house(x) :- building(x))
+x (tents(x) & notbuildings(x))
+x (tents(x) & nothouses(x))
+",categorical
+7b2cf5cc-01ef-4c55-bba5-14b8554c88e7,Every square is a rectangle. There exist some triangles which are not rectangles. It follows that some triangles are not squares.,"['∀x (Square(x) → Rectangle(x))', '∃x (Triangles(x) ∧ Not_rectangles(x))']",∃x (Triangles(x) ∧ Not_squares(x)),"∀x (Square(x) → Rectangle(x))
+∃x (Triangles(x) ∧ Notrectangles(x))
+∃x (Triangles(x) ∧ Notsquares(x))
+","forall x (square(x) implies rectangle(x))
+exists x (triangles(x) and notrectangles(x))
+exists x (triangles(x) and notsquares(x))
+","[@every *x [(square[(?x)]  rectangle[(?x)])]
+*x [(triangles[(?x)]  notrectangles[(?x)])]
+*x [(triangles[(?x)]  notsquares[(?x)])]
+]","forall (square(x) -: rectangle(x))
+ (triangles(x) , notrectangles(x))
+ (triangles(x) , notsquares(x))
+",-(+S0-+R0)+(+T1++N1)+(+T1++N1),"all:x (square(x) :- rectangle(x))
+x (triangles(x) & notrectangles(x))
+x (triangles(x) & notsquares(x))
+",categorical
+75606fbf-243c-4bf4-a2c9-b465e1dfc625,"Every human is a primate. Any person that is a man is a human. Therefore, it is a certainty that every man is a primate.","['∀x (Human(x) → Primate(x))', '∀x (Man(x) → Human(x))']",∀x (Man(x) → Primate(x)),"∀x (Human(x) → Primate(x))
+∀x (Man(x) → Human(x))
+∀x (Man(x) → Primate(x))
+","forall x (human(x) implies primate(x))
+forall x (man(x) implies human(x))
+forall x (man(x) implies primate(x))
+","[@every *x [(human[(?x)]  primate[(?x)])]
+@every *x [(man[(?x)]  human[(?x)])]
+@every *x [(man[(?x)]  primate[(?x)])]
+]","forall (human(x) -: primate(x))
+forall (man(x) -: human(x))
+forall (man(x) -: primate(x))
+",-(+H0-+P0)-(+M0-+H0)-(+M0-+P0),"all:x (human(x) :- primate(x))
+all:x (man(x) :- human(x))
+all:x (man(x) :- primate(x))
+",categorical
+817cdc8f-77b7-40f0-b530-534ff43e8157,Any person who is a scientist is also a researcher. It is impossible for a chemist to be a researcher. This means that no chemist is a scientist.,"['∀x (Any_person(x) → Scientist_researcher(x))', '∀x (Chemist(x) → ¬Researcher(x))']",∀x (No_chemist(x) → Scientist(x)),"∀x (Anyperson(x) → Scientistresearcher(x))
+∀x (Chemist(x) → ¬Researcher(x))
+∀x (Nochemist(x) → Scientist(x))
+","forall x (anyperson(x) implies scientistresearcher(x))
+forall x (chemist(x) implies not researcher(x))
+forall x (nochemist(x) implies scientist(x))
+","[@every *x [(anyperson[(?x)]  scientistresearcher[(?x)])]
+@every *x [(chemist[(?x)]  ~researcher[(?x)])]
+@every *x [(nochemist[(?x)]  scientist[(?x)])]
+]","forall (anyperson(x) -: scientistresearcher(x))
+forall (chemist(x) -: notresearcher(x))
+forall (nochemist(x) -: scientist(x))
+",-(+A0-+S0)-(+C0--+R0)-(+N0-+S0),"all:x (anyperson(x) :- scientistresearcher(x))
+all:x (chemist(x) :- ~researcher(x))
+all:x (nochemist(x) :- scientist(x))
+",categorical
+c91be219-5600-47fb-b1fc-f035dd21b630,"It is true that no athletes are lazy. A number of people are athletes. Consequently, some people are lazy.","['∀x (Athletes(x) → ¬Lazy(x))', '∃x (People(x) ∧ Athletes(x))']",∃x (People(x) ∧ Lazy(x)),"∀x (Athletes(x) → ¬Lazy(x))
+∃x (People(x) ∧ Athletes(x))
+∃x (People(x) ∧ Lazy(x))
+","forall x (athletes(x) implies not lazy(x))
+exists x (people(x) and athletes(x))
+exists x (people(x) and lazy(x))
+","[@every *x [(athletes[(?x)]  ~lazy[(?x)])]
+*x [(people[(?x)]  athletes[(?x)])]
+*x [(people[(?x)]  lazy[(?x)])]
+]","forall (athletes(x) -: notlazy(x))
+ (people(x) , athletes(x))
+ (people(x) , lazy(x))
+",-(+A0--+L0)+(+P1++A1)+(+P1++L1),"all:x (athletes(x) :- ~lazy(x))
+x (people(x) & athletes(x))
+x (people(x) & lazy(x))
+",categorical
+197af586-bb35-4468-b95b-66f96fde54e8,Spiders are in no way mammals. Anything that is a spider is an arachnid. It's the case that some arachnids fail to be mammals.,"['∀x (Spiders(x) → ¬Mammals(x))', '∀x (Spider(x) → Arachnid(x))', '∃x (Arachnids(x) ∧ ¬Mammals(x))']",,"∀x (Spiders(x) → ¬Mammals(x))
+∀x (Spider(x) → Arachnid(x))
+∃x (Arachnids(x) ∧ ¬Mammals(x))
+","forall x (spiders(x) implies not mammals(x))
+forall x (spider(x) implies arachnid(x))
+exists x (arachnids(x) and not mammals(x))
+","[@every *x [(spiders[(?x)]  ~mammals[(?x)])]
+@every *x [(spider[(?x)]  arachnid[(?x)])]
+*x [(arachnids[(?x)]  ~mammals[(?x)])]
+]","forall (spiders(x) -: notmammals(x))
+forall (spider(x) -: arachnid(x))
+ (arachnids(x) , notmammals(x))
+",-(+S0--+M0)-(+S0-+A0)+(+A1+-+M1),"all:x (spiders(x) :- ~mammals(x))
+all:x (spider(x) :- arachnid(x))
+x (arachnids(x) & ~mammals(x))
+",categorical
+5da02e7d-f0ca-462a-9517-061b16eb5248,It is impossible for a mammal to be an eagle. Some of the eagles are birds. There are a few birds which are not mammals.,"['∀x (Mammal(x) → ¬Eagle(x))', '∃x (Eagles(x) ∧ Birds(x))', '∃x (Birds(x) ∧ Not_mammals(x))']",,"∀x (Mammal(x) → ¬Eagle(x))
+∃x (Eagles(x) ∧ Birds(x))
+∃x (Birds(x) ∧ Notmammals(x))
+","forall x (mammal(x) implies not eagle(x))
+exists x (eagles(x) and birds(x))
+exists x (birds(x) and notmammals(x))
+","[@every *x [(mammal[(?x)]  ~eagle[(?x)])]
+*x [(eagles[(?x)]  birds[(?x)])]
+*x [(birds[(?x)]  notmammals[(?x)])]
+]","forall (mammal(x) -: noteagle(x))
+ (eagles(x) , birds(x))
+ (birds(x) , notmammals(x))
+",-(+M0--+E0)+(+E1++B1)+(+B1++N1),"all:x (mammal(x) :- ~eagle(x))
+x (eagles(x) & birds(x))
+x (birds(x) & notmammals(x))
+",categorical
+ad259739-10fe-472e-87bb-6a8d488acfeb,Something that is a chair is a table. A thing that is a table cannot be a building. It follows that a building is never a chair.,"['∃x (Chair(x) ∧ Table(x))', '∀x (Thing(x) → Table_cannot_building(x))']",∀x (Building(x) → Never_chair(x)),"∃x (Chair(x) ∧ Table(x))
+∀x (Thing(x) → Tablecannotbuilding(x))
+∀x (Building(x) → Neverchair(x))
+","exists x (chair(x) and table(x))
+forall x (thing(x) implies tablecannotbuilding(x))
+forall x (building(x) implies neverchair(x))
+","[*x [(chair[(?x)]  table[(?x)])]
+@every *x [(thing[(?x)]  tablecannotbuilding[(?x)])]
+@every *x [(building[(?x)]  neverchair[(?x)])]
+]"," (chair(x) , table(x))
+forall (thing(x) -: tablecannotbuilding(x))
+forall (building(x) -: neverchair(x))
+",+(+C1++T1)-(+T0-+T0)-(+B0-+N0),"x (chair(x) & table(x))
+all:x (thing(x) :- tablecannotbuilding(x))
+all:x (building(x) :- neverchair(x))
+",categorical
+5f9dc1fd-7296-4337-bd26-73b8b1734c54,There exist some things which are cars that are not expensive things. It is true that all cars are vehicles. It follows that some vehicles are expensive things.,"['∃x (Things(x) ∧ Cars_not_expensive_things(x))', '∀x (Cars(x) → Vehicles(x))']",∃x (Vehicles(x) ∧ Expensive_things(x)),"∃x (Things(x) ∧ Carsnotexpensivethings(x))
+∀x (Cars(x) → Vehicles(x))
+∃x (Vehicles(x) ∧ Expensivethings(x))
+","exists x (things(x) and carsnotexpensivethings(x))
+forall x (cars(x) implies vehicles(x))
+exists x (vehicles(x) and expensivethings(x))
+","[*x [(things[(?x)]  carsnotexpensivethings[(?x)])]
+@every *x [(cars[(?x)]  vehicles[(?x)])]
+*x [(vehicles[(?x)]  expensivethings[(?x)])]
+]"," (things(x) , carsnotexpensivethings(x))
+forall (cars(x) -: vehicles(x))
+ (vehicles(x) , expensivethings(x))
+",+(+T1++C1)-(+C0-+V0)+(+V1++E1),"x (things(x) & carsnotexpensivethings(x))
+all:x (cars(x) :- vehicles(x))
+x (vehicles(x) & expensivethings(x))
+",categorical
+3b67d2a3-1245-4013-91d0-6463f2b41546,It is impossible for an animal to be a rock. A portion of rocks are felines. Some of the felines are not animals.,"['∀x (Animal(x) → ¬Rock(x))', '∃x (Rocks(x) ∧ Felines(x))', '∃x (Felines(x) ∧ Not_animals(x))']",,"∀x (Animal(x) → ¬Rock(x))
+∃x (Rocks(x) ∧ Felines(x))
+∃x (Felines(x) ∧ Notanimals(x))
+","forall x (animal(x) implies not rock(x))
+exists x (rocks(x) and felines(x))
+exists x (felines(x) and notanimals(x))
+","[@every *x [(animal[(?x)]  ~rock[(?x)])]
+*x [(rocks[(?x)]  felines[(?x)])]
+*x [(felines[(?x)]  notanimals[(?x)])]
+]","forall (animal(x) -: notrock(x))
+ (rocks(x) , felines(x))
+ (felines(x) , notanimals(x))
+",-(+A0--+R0)+(+R1++F1)+(+F1++N1),"all:x (animal(x) :- ~rock(x))
+x (rocks(x) & felines(x))
+x (felines(x) & notanimals(x))
+",categorical
+f6da63f4-4a1e-4d79-8767-b7b8761a3a2e,No reptiles possess fur. There are some snakes which are reptiles. This means that some snakes have fur.,"['∀x (Reptiles(x) → ¬Fur(x))', '∃x (Snakes(x) ∧ Reptiles(x))']",∃x (Snakes(x) ∧ Fur(x)),"∀x (Reptiles(x) → ¬Fur(x))
+∃x (Snakes(x) ∧ Reptiles(x))
+∃x (Snakes(x) ∧ Fur(x))
+","forall x (reptiles(x) implies not fur(x))
+exists x (snakes(x) and reptiles(x))
+exists x (snakes(x) and fur(x))
+","[@every *x [(reptiles[(?x)]  ~fur[(?x)])]
+*x [(snakes[(?x)]  reptiles[(?x)])]
+*x [(snakes[(?x)]  fur[(?x)])]
+]","forall (reptiles(x) -: notfur(x))
+ (snakes(x) , reptiles(x))
+ (snakes(x) , fur(x))
+",-(+R0--+F0)+(+S1++R1)+(+S1++F1),"all:x (reptiles(x) :- ~fur(x))
+x (snakes(x) & reptiles(x))
+x (snakes(x) & fur(x))
+",categorical
+65729a20-e483-464d-873b-bdfb2041b484,There are no metals that are a gas. Every single piece of iron is a metal. It is therefore the case that all iron is a gas.,"['∀x (Metals(x) → ¬Gas(x))', '∀x (Piece_iron(x) → Metal(x))']",∀x (Iron(x) → Gas(x)),"∀x (Metals(x) → ¬Gas(x))
+∀x (Pieceiron(x) → Metal(x))
+∀x (Iron(x) → Gas(x))
+","forall x (metals(x) implies not gas(x))
+forall x (pieceiron(x) implies metal(x))
+forall x (iron(x) implies gas(x))
+","[@every *x [(metals[(?x)]  ~gas[(?x)])]
+@every *x [(pieceiron[(?x)]  metal[(?x)])]
+@every *x [(iron[(?x)]  gas[(?x)])]
+]","forall (metals(x) -: notgas(x))
+forall (pieceiron(x) -: metal(x))
+forall (iron(x) -: gas(x))
+",-(+M0--+G0)-(+P0-+M0)-(+I0-+G0),"all:x (metals(x) :- ~gas(x))
+all:x (pieceiron(x) :- metal(x))
+all:x (iron(x) :- gas(x))
+",categorical
+143a3ae4-83d7-4e39-9181-3de95956b6d1,Not one single animal is a pet. All dogs are pets. It follows from this that some dogs are not animals.,"['∀x (Not_one_single_animal(x) → Pet(x))', '∀x (Dogs(x) → Pets(x))']",∃x (Dogs(x) ∧ Not_animals(x)),"∀x (Notonesingleanimal(x) → Pet(x))
+∀x (Dogs(x) → Pets(x))
+∃x (Dogs(x) ∧ Notanimals(x))
+","forall x (notonesingleanimal(x) implies pet(x))
+forall x (dogs(x) implies pets(x))
+exists x (dogs(x) and notanimals(x))
+","[@every *x [(notonesingleanimal[(?x)]  pet[(?x)])]
+@every *x [(dogs[(?x)]  pets[(?x)])]
+*x [(dogs[(?x)]  notanimals[(?x)])]
+]","forall (notonesingleanimal(x) -: pet(x))
+forall (dogs(x) -: pets(x))
+ (dogs(x) , notanimals(x))
+",-(+N0-+P0)-(+D0-+P0)+(+D1++N1),"all:x (notonesingleanimal(x) :- pet(x))
+all:x (dogs(x) :- pets(x))
+x (dogs(x) & notanimals(x))
+",categorical
+8f2faef7-397b-4544-b9e1-9e2221572866,Every person who is a prime minister is a politician. There are a number of people who are celebrities who are also politicians. It follows from this that there are some celebrities who are prime ministers.,"['∀x (Person(x) → Prime_minister_politician(x))', '∃x (People(x) ∧ Celebrities_politicians(x))']",∃x (Celebrities(x) ∧ Prime_ministers(x)),"∀x (Person(x) → Primeministerpolitician(x))
+∃x (People(x) ∧ Celebritiespoliticians(x))
+∃x (Celebrities(x) ∧ Primeministers(x))
+","forall x (person(x) implies primeministerpolitician(x))
+exists x (people(x) and celebritiespoliticians(x))
+exists x (celebrities(x) and primeministers(x))
+","[@every *x [(person[(?x)]  primeministerpolitician[(?x)])]
+*x [(people[(?x)]  celebritiespoliticians[(?x)])]
+*x [(celebrities[(?x)]  primeministers[(?x)])]
+]","forall (person(x) -: primeministerpolitician(x))
+ (people(x) , celebritiespoliticians(x))
+ (celebrities(x) , primeministers(x))
+",-(+P0-+P0)+(+P1++C1)+(+C1++P1),"all:x (person(x) :- primeministerpolitician(x))
+x (people(x) & celebritiespoliticians(x))
+x (celebrities(x) & primeministers(x))
+",categorical
+8e100be7-956f-46e7-a431-a884cc30b28c,There are no cats that can be called dogs. It is also true that every cat is a type of animal. This has led to the conclusion that a portion of animals are cats.,"['∀x (Cats(x) → ¬Called_dogs(x))', '∀x (Cat(x) → Animal(x))']",∃x (Animals(x) ∧ Cats(x)),"∀x (Cats(x) → ¬Calleddogs(x))
+∀x (Cat(x) → Animal(x))
+∃x (Animals(x) ∧ Cats(x))
+","forall x (cats(x) implies not calleddogs(x))
+forall x (cat(x) implies animal(x))
+exists x (animals(x) and cats(x))
+","[@every *x [(cats[(?x)]  ~calleddogs[(?x)])]
+@every *x [(cat[(?x)]  animal[(?x)])]
+*x [(animals[(?x)]  cats[(?x)])]
+]","forall (cats(x) -: notcalleddogs(x))
+forall (cat(x) -: animal(x))
+ (animals(x) , cats(x))
+",-(+C0--+C0)-(+C0-+A0)+(+A1++C1),"all:x (cats(x) :- ~calleddogs(x))
+all:x (cat(x) :- animal(x))
+x (animals(x) & cats(x))
+",categorical
+454ea1b7-bfb1-4a65-a000-c21cbe9b9ef4,Nothing that is a liquid can be considered a beverage. It is the case that some types of milk are liquids. It follows that some milks are not beverages.,"['∀x (Nothing(x) → Liquid_considered_beverage(x))', '∃x (Types_milk(x) ∧ Liquids(x))']",∃x (Milks(x) ∧ Not_beverages(x)),"∀x (Nothing(x) → Liquidconsideredbeverage(x))
+∃x (Typesmilk(x) ∧ Liquids(x))
+∃x (Milks(x) ∧ Notbeverages(x))
+","forall x (nothing(x) implies liquidconsideredbeverage(x))
+exists x (typesmilk(x) and liquids(x))
+exists x (milks(x) and notbeverages(x))
+","[@every *x [(nothing[(?x)]  liquidconsideredbeverage[(?x)])]
+*x [(typesmilk[(?x)]  liquids[(?x)])]
+*x [(milks[(?x)]  notbeverages[(?x)])]
+]","forall (nothing(x) -: liquidconsideredbeverage(x))
+ (typesmilk(x) , liquids(x))
+ (milks(x) , notbeverages(x))
+",-(+N0-+L0)+(+T1++L1)+(+M1++N1),"all:x (nothing(x) :- liquidconsideredbeverage(x))
+x (typesmilk(x) & liquids(x))
+x (milks(x) & notbeverages(x))
+",categorical
+efa6cac1-2f25-4499-a8c3-270cd761f39b,"Every single bird has a beak. It is not true that any bird is a penguin. Therefore, some penguins have beaks.","['∀x (Bird(x) → Beak(x))', '∀x (It(x) → ¬True_any_bird_penguin(x))']",∃x (Penguins(x) ∧ Beaks(x)),"∀x (Bird(x) → Beak(x))
+∀x (It(x) → ¬Trueanybirdpenguin(x))
+∃x (Penguins(x) ∧ Beaks(x))
+","forall x (bird(x) implies beak(x))
+forall x (it(x) implies not trueanybirdpenguin(x))
+exists x (penguins(x) and beaks(x))
+","[@every *x [(bird[(?x)]  beak[(?x)])]
+@every *x [(it[(?x)]  ~trueanybirdpenguin[(?x)])]
+*x [(penguins[(?x)]  beaks[(?x)])]
+]","forall (bird(x) -: beak(x))
+forall (it(x) -: nottrueanybirdpenguin(x))
+ (penguins(x) , beaks(x))
+",-(+B0-+B0)-(+I0--+T0)+(+P1++B1),"all:x (bird(x) :- beak(x))
+all:x (it(x) :- ~trueanybirdpenguin(x))
+x (penguins(x) & beaks(x))
+",categorical
+38d24800-8f0e-443d-97ee-1893f3706ea3,There are no fish that are creatures. Every single fish is a vertebrate. Some vertebrates fail to be creatures.,"['∀x (Fish(x) → ¬Creatures(x))', '∀x (Fish(x) → Vertebrate(x))', '∃x (Vertebrates(x) ∧ ¬Creatures(x))']",,"∀x (Fish(x) → ¬Creatures(x))
+∀x (Fish(x) → Vertebrate(x))
+∃x (Vertebrates(x) ∧ ¬Creatures(x))
+","forall x (fish(x) implies not creatures(x))
+forall x (fish(x) implies vertebrate(x))
+exists x (vertebrates(x) and not creatures(x))
+","[@every *x [(fish[(?x)]  ~creatures[(?x)])]
+@every *x [(fish[(?x)]  vertebrate[(?x)])]
+*x [(vertebrates[(?x)]  ~creatures[(?x)])]
+]","forall (fish(x) -: notcreatures(x))
+forall (fish(x) -: vertebrate(x))
+ (vertebrates(x) , notcreatures(x))
+",-(+F0--+C0)-(+F0-+V0)+(+V1+-+C1),"all:x (fish(x) :- ~creatures(x))
+all:x (fish(x) :- vertebrate(x))
+x (vertebrates(x) & ~creatures(x))
+",categorical
+6094bd10-5daf-4a42-8eab-e2f321d0562c,There are no animals that can be called chairs. It is also true that every animal is a type of human. This has led to the conclusion that all humans are chairs.,"['∀x (Animals(x) → ¬Called_chairs(x))', '∀x (Animal(x) → Human(x))']",∀x (Humans(x) → Chairs(x)),"∀x (Animals(x) → ¬Calledchairs(x))
+∀x (Animal(x) → Human(x))
+∀x (Humans(x) → Chairs(x))
+","forall x (animals(x) implies not calledchairs(x))
+forall x (animal(x) implies human(x))
+forall x (humans(x) implies chairs(x))
+","[@every *x [(animals[(?x)]  ~calledchairs[(?x)])]
+@every *x [(animal[(?x)]  human[(?x)])]
+@every *x [(humans[(?x)]  chairs[(?x)])]
+]","forall (animals(x) -: notcalledchairs(x))
+forall (animal(x) -: human(x))
+forall (humans(x) -: chairs(x))
+",-(+A0--+C0)-(+A0-+H0)-(+H0-+C0),"all:x (animals(x) :- ~calledchairs(x))
+all:x (animal(x) :- human(x))
+all:x (humans(x) :- chairs(x))
+",categorical
+7871929a-81a2-40c8-b515-2af727c44b13,Every single fish lives in water. Any fish is an animal. This means that all animals live in water.,"['∀x (Fish(x) → Lives_in_Water(x))', '∀x (Any_fish(x) → Animal(x))']",∀x (Animal(x) → Lives_in_Water(x)),"∀x (Fish(x) → LivesinWater(x))
+∀x (Anyfish(x) → Animal(x))
+∀x (Animal(x) → LivesinWater(x))
+","forall x (fish(x) implies livesinwater(x))
+forall x (anyfish(x) implies animal(x))
+forall x (animal(x) implies livesinwater(x))
+","[@every *x [(fish[(?x)]  livesinwater[(?x)])]
+@every *x [(anyfish[(?x)]  animal[(?x)])]
+@every *x [(animal[(?x)]  livesinwater[(?x)])]
+]","forall (fish(x) -: livesinwater(x))
+forall (anyfish(x) -: animal(x))
+forall (animal(x) -: livesinwater(x))
+",-(+F0-+L0)-(+A0-+A0)-(+A0-+L0),"all:x (fish(x) :- livesinwater(x))
+all:x (anyfish(x) :- animal(x))
+all:x (animal(x) :- livesinwater(x))
+",categorical
+003e3990-3141-4a4f-bbb2-8d496df84710,"It is certain that no item categorized as a percussion instrument has strings. A certain group of percussion instruments are musical instruments. Based on this, it must be the case that a portion of musical instruments do not have strings.","['∀x (Percussion(x) → ¬Strings(x))', '∃x (Percussion(x) ∧ Musical_Instrument(x))']",∃x (Musical_Instrument(x) → ¬Strings(x)),"∀x (Percussion(x) → ¬Strings(x))
+∃x (Percussion(x) ∧ MusicalInstrument(x))
+∃x (MusicalInstrument(x) → ¬Strings(x))
+","forall x (percussion(x) implies not strings(x))
+exists x (percussion(x) and musicalinstrument(x))
+exists x (musicalinstrument(x) implies not strings(x))
+","[@every *x [(percussion[(?x)]  ~strings[(?x)])]
+*x [(percussion[(?x)]  musicalinstrument[(?x)])]
+*x [(musicalinstrument[(?x)]  ~strings[(?x)])]
+]","forall (percussion(x) -: notstrings(x))
+ (percussion(x) , musicalinstrument(x))
+ (musicalinstrument(x) -: notstrings(x))
+",-(+P0--+S0)+(+P1++M1)+(+M1--+S1),"all:x (percussion(x) :- ~strings(x))
+x (percussion(x) & musicalinstrument(x))
+x (musicalinstrument(x) :- ~strings(x))
+",categorical
+362cdfd6-8602-406f-ac7a-bc837fa96545,There are no plants that are animals. It is the case that some flower is a plant. No flowers are animals.,"['∀x (Plants(x) → ¬Animals(x))', '∃x (Flower(x) ∧ Plant(x))', '∀x (Flowers(x) → ¬Animals(x))']",,"∀x (Plants(x) → ¬Animals(x))
+∃x (Flower(x) ∧ Plant(x))
+∀x (Flowers(x) → ¬Animals(x))
+","forall x (plants(x) implies not animals(x))
+exists x (flower(x) and plant(x))
+forall x (flowers(x) implies not animals(x))
+","[@every *x [(plants[(?x)]  ~animals[(?x)])]
+*x [(flower[(?x)]  plant[(?x)])]
+@every *x [(flowers[(?x)]  ~animals[(?x)])]
+]","forall (plants(x) -: notanimals(x))
+ (flower(x) , plant(x))
+forall (flowers(x) -: notanimals(x))
+",-(+P0--+A0)+(+F1++P1)-(+F0--+A0),"all:x (plants(x) :- ~animals(x))
+x (flower(x) & plant(x))
+all:x (flowers(x) :- ~animals(x))
+",categorical
+a50d01a9-97f3-4c5d-a89a-b5f18f91c8b8,There are no circles that are 4-sided shapes. Every single circle is a square. Some squares fail to be 4-sided shapes.,"['∀x (Circles(x) → ¬4_sided_shapes(x))', '∀x (Circle(x) → Square(x))', '∃x (Squares(x) ∧ ¬4_sided_shapes(x))']",,"∀x (Circles(x) → ¬4sidedshapes(x))
+∀x (Circle(x) → Square(x))
+∃x (Squares(x) ∧ ¬4sidedshapes(x))
+","forall x (circles(x) implies not 4sidedshapes(x))
+forall x (circle(x) implies square(x))
+exists x (squares(x) and not 4sidedshapes(x))
+","[@every *x [(circles[(?x)]  ~4sidedshapes[(?x)])]
+@every *x [(circle[(?x)]  square[(?x)])]
+*x [(squares[(?x)]  ~4sidedshapes[(?x)])]
+]","forall (circles(x) -: not4sidedshapes(x))
+forall (circle(x) -: square(x))
+ (squares(x) , not4sidedshapes(x))
+",-(+C0--+40)-(+C0-+S0)+(+S1+-+41),"all:x (circles(x) :- ~4sidedshapes(x))
+all:x (circle(x) :- square(x))
+x (squares(x) & ~4sidedshapes(x))
+",categorical
+aba58977-4f05-4852-a433-720010a97208,Anything which is a shoe is also an idea. All ideas are insects. We can infer that some insects are shoes.,"['∀x (Shoe(x) → Idea(x))', '∀x (Ideas(x) → Insects(x))', '∃x (Insects(x) ∧ Shoes(x))']",,"∀x (Shoe(x) → Idea(x))
+∀x (Ideas(x) → Insects(x))
+∃x (Insects(x) ∧ Shoes(x))
+","forall x (shoe(x) implies idea(x))
+forall x (ideas(x) implies insects(x))
+exists x (insects(x) and shoes(x))
+","[@every *x [(shoe[(?x)]  idea[(?x)])]
+@every *x [(ideas[(?x)]  insects[(?x)])]
+*x [(insects[(?x)]  shoes[(?x)])]
+]","forall (shoe(x) -: idea(x))
+forall (ideas(x) -: insects(x))
+ (insects(x) , shoes(x))
+",-(+S0-+I0)-(+I0-+I0)+(+I1++S1),"all:x (shoe(x) :- idea(x))
+all:x (ideas(x) :- insects(x))
+x (insects(x) & shoes(x))
+",categorical
+d7957921-d384-41d5-aec4-ae0fd8c458a4,There is not one fish that is a window. Some of the things that are animals are fish. It must be true that some animals are windows.,"['∀x (Fish(x) → ¬Window(x))', '∃x (Things(x) ∧ Animals_fish(x))']",∃x (Animals(x) ∧ Windows(x)),"∀x (Fish(x) → ¬Window(x))
+∃x (Things(x) ∧ Animalsfish(x))
+∃x (Animals(x) ∧ Windows(x))
+","forall x (fish(x) implies not window(x))
+exists x (things(x) and animalsfish(x))
+exists x (animals(x) and windows(x))
+","[@every *x [(fish[(?x)]  ~window[(?x)])]
+*x [(things[(?x)]  animalsfish[(?x)])]
+*x [(animals[(?x)]  windows[(?x)])]
+]","forall (fish(x) -: notwindow(x))
+ (things(x) , animalsfish(x))
+ (animals(x) , windows(x))
+",-(+F0--+W0)+(+T1++A1)+(+A1++W1),"all:x (fish(x) :- ~window(x))
+x (things(x) & animalsfish(x))
+x (animals(x) & windows(x))
+",categorical
+9f78a37a-81a8-426d-b524-d824fbeceab0,Every single apple is a fruit. Nothing that is a banana is an apple. It follows from this that every banana is a fruit.,"['∀x (Apple(x) → Fruit(x))', '∀x (Nothing(x) → Banana_apple(x))']",∀x (Banana(x) → Fruit(x)),"∀x (Apple(x) → Fruit(x))
+∀x (Nothing(x) → Bananaapple(x))
+∀x (Banana(x) → Fruit(x))
+","forall x (apple(x) implies fruit(x))
+forall x (nothing(x) implies bananaapple(x))
+forall x (banana(x) implies fruit(x))
+","[@every *x [(apple[(?x)]  fruit[(?x)])]
+@every *x [(nothing[(?x)]  bananaapple[(?x)])]
+@every *x [(banana[(?x)]  fruit[(?x)])]
+]","forall (apple(x) -: fruit(x))
+forall (nothing(x) -: bananaapple(x))
+forall (banana(x) -: fruit(x))
+",-(+A0-+F0)-(+N0-+B0)-(+B0-+F0),"all:x (apple(x) :- fruit(x))
+all:x (nothing(x) :- bananaapple(x))
+all:x (banana(x) :- fruit(x))
+",categorical
+b531ac79-36f1-49eb-86bb-3f5ef506b585,"A few of the lizards are dogs. There are no dogs that are felines. As a result, some felines are lizards.","['∃x (Lizards(x) ∧ Dogs(x))', '∀x (Dogs(x) → ¬Felines(x))', '∃x (Felines(x) ∧ Lizards(x))']",,"∃x (Lizards(x) ∧ Dogs(x))
+∀x (Dogs(x) → ¬Felines(x))
+∃x (Felines(x) ∧ Lizards(x))
+","exists x (lizards(x) and dogs(x))
+forall x (dogs(x) implies not felines(x))
+exists x (felines(x) and lizards(x))
+","[*x [(lizards[(?x)]  dogs[(?x)])]
+@every *x [(dogs[(?x)]  ~felines[(?x)])]
+*x [(felines[(?x)]  lizards[(?x)])]
+]"," (lizards(x) , dogs(x))
+forall (dogs(x) -: notfelines(x))
+ (felines(x) , lizards(x))
+",+(+L1++D1)-(+D0--+F0)+(+F1++L1),"x (lizards(x) & dogs(x))
+all:x (dogs(x) :- ~felines(x))
+x (felines(x) & lizards(x))
+",categorical
+d63b3aff-77cd-4c65-9417-be63ce1c733b,Every piece of fruit is edible. Any apple is a fruit. This means that some apples are not vegetables.,"['∀x (Piece_fruit(x) → Edible(x))', '∀x (Any_apple(x) → Fruit(x))']",∃x (Apples(x) ∧ Not_vegetables(x)),"∀x (Piecefruit(x) → Edible(x))
+∀x (Anyapple(x) → Fruit(x))
+∃x (Apples(x) ∧ Notvegetables(x))
+","forall x (piecefruit(x) implies edible(x))
+forall x (anyapple(x) implies fruit(x))
+exists x (apples(x) and notvegetables(x))
+","[@every *x [(piecefruit[(?x)]  edible[(?x)])]
+@every *x [(anyapple[(?x)]  fruit[(?x)])]
+*x [(apples[(?x)]  notvegetables[(?x)])]
+]","forall (piecefruit(x) -: edible(x))
+forall (anyapple(x) -: fruit(x))
+ (apples(x) , notvegetables(x))
+",-(+P0-+E0)-(+A0-+F0)+(+A1++N1),"all:x (piecefruit(x) :- edible(x))
+all:x (anyapple(x) :- fruit(x))
+x (apples(x) & notvegetables(x))
+",categorical
+3167dc72-56e1-47ad-8a27-e9883d7cb917,There are no birds which are aquatic animals. Some animals are things that are birds. It must be true that some animals are aquatic animals.,"['∀x (Birds(x) → ¬Aquatic_animals(x))', '∃x (Animals(x) ∧ Things_birds(x))']",∃x (Animals(x) ∧ Aquatic_animals(x)),"∀x (Birds(x) → ¬Aquaticanimals(x))
+∃x (Animals(x) ∧ Thingsbirds(x))
+∃x (Animals(x) ∧ Aquaticanimals(x))
+","forall x (birds(x) implies not aquaticanimals(x))
+exists x (animals(x) and thingsbirds(x))
+exists x (animals(x) and aquaticanimals(x))
+","[@every *x [(birds[(?x)]  ~aquaticanimals[(?x)])]
+*x [(animals[(?x)]  thingsbirds[(?x)])]
+*x [(animals[(?x)]  aquaticanimals[(?x)])]
+]","forall (birds(x) -: notaquaticanimals(x))
+ (animals(x) , thingsbirds(x))
+ (animals(x) , aquaticanimals(x))
+",-(+B0--+A0)+(+A1++T1)+(+A1++A1),"all:x (birds(x) :- ~aquaticanimals(x))
+x (animals(x) & thingsbirds(x))
+x (animals(x) & aquaticanimals(x))
+",categorical
+be9f522b-b67e-4107-a9b0-76ae2c1672bc,"Some root vegetables are known as carrots. Everything that is a carrot is also a vegetable. Therefore, there are vegetables that are root vegetables.","['∃x (Root_vegetables(x) ∧ Known_as_carrots(x))', '∀x (Carrot(x) → Vegetable(x))']",∃x (Vegetables(x) ∧ Root_vegetables(x)),"∃x (Rootvegetables(x) ∧ Knownascarrots(x))
+∀x (Carrot(x) → Vegetable(x))
+∃x (Vegetables(x) ∧ Rootvegetables(x))
+","exists x (rootvegetables(x) and knownascarrots(x))
+forall x (carrot(x) implies vegetable(x))
+exists x (vegetables(x) and rootvegetables(x))
+","[*x [(rootvegetables[(?x)]  knownascarrots[(?x)])]
+@every *x [(carrot[(?x)]  vegetable[(?x)])]
+*x [(vegetables[(?x)]  rootvegetables[(?x)])]
+]"," (rootvegetables(x) , knownascarrots(x))
+forall (carrot(x) -: vegetable(x))
+ (vegetables(x) , rootvegetables(x))
+",+(+R1++K1)-(+C0-+V0)+(+V1++R1),"x (rootvegetables(x) & knownascarrots(x))
+all:x (carrot(x) :- vegetable(x))
+x (vegetables(x) & rootvegetables(x))
+",categorical
+50b2444b-686f-487c-8e11-e76b4126b8ff,There is not a single piece of paper that can be eaten. A portion of all paper is a book. It is the case that some books are edible.,"['∀x (Piece_paper(x) → ¬Eaten(x))', '∀x (Paper(x) → Book(x))', '∃x (Books(x) ∧ Edible(x))']",,"∀x (Piecepaper(x) → ¬Eaten(x))
+∀x (Paper(x) → Book(x))
+∃x (Books(x) ∧ Edible(x))
+","forall x (piecepaper(x) implies not eaten(x))
+forall x (paper(x) implies book(x))
+exists x (books(x) and edible(x))
+","[@every *x [(piecepaper[(?x)]  ~eaten[(?x)])]
+@every *x [(paper[(?x)]  book[(?x)])]
+*x [(books[(?x)]  edible[(?x)])]
+]","forall (piecepaper(x) -: noteaten(x))
+forall (paper(x) -: book(x))
+ (books(x) , edible(x))
+",-(+P0--+E0)-(+P0-+B0)+(+B1++E1),"all:x (piecepaper(x) :- ~eaten(x))
+all:x (paper(x) :- book(x))
+x (books(x) & edible(x))
+",categorical
+e1a54f18-8d34-4a45-ae80-85de65382e9d,Not a single state within the USA is Canada. Every single instance of Canada is a country. It is necessary that a portion of countries are not states in the USA.,"['∀x (Not_single_state_within_usa(x) → Canada(x))', '∀x (Instance_canada(x) → Country(x))', '∃x (Countries(x) ∧ Not_states_in_usa(x))']",,"∀x (Notsinglestatewithinusa(x) → Canada(x))
+∀x (Instancecanada(x) → Country(x))
+∃x (Countries(x) ∧ Notstatesinusa(x))
+","forall x (notsinglestatewithinusa(x) implies canada(x))
+forall x (instancecanada(x) implies country(x))
+exists x (countries(x) and notstatesinusa(x))
+","[@every *x [(notsinglestatewithinusa[(?x)]  canada[(?x)])]
+@every *x [(instancecanada[(?x)]  country[(?x)])]
+*x [(countries[(?x)]  notstatesinusa[(?x)])]
+]","forall (notsinglestatewithinusa(x) -: canada(x))
+forall (instancecanada(x) -: country(x))
+ (countries(x) , notstatesinusa(x))
+",-(+N0-+C0)-(+I0-+C0)+(+C1++N1),"all:x (notsinglestatewithinusa(x) :- canada(x))
+all:x (instancecanada(x) :- country(x))
+x (countries(x) & notstatesinusa(x))
+",categorical
+5f8d85f1-6ffc-47d1-bb8b-bcba0dca1a9d,"Anything that is a hammer is also an instrument. Some hammers are considered to be tools. A certain number of tools, therefore, are instruments.","['∀x (Hammer(x) → Instrument(x))', '∃x (Hammers(x) ∧ Considered_to_tools(x))']",∃x (Tools(x) ∧ Instrument(x)),"∀x (Hammer(x) → Instrument(x))
+∃x (Hammers(x) ∧ Consideredtotools(x))
+∃x (Tools(x) ∧ Instrument(x))
+","forall x (hammer(x) implies instrument(x))
+exists x (hammers(x) and consideredtotools(x))
+exists x (tools(x) and instrument(x))
+","[@every *x [(hammer[(?x)]  instrument[(?x)])]
+*x [(hammers[(?x)]  consideredtotools[(?x)])]
+*x [(tools[(?x)]  instrument[(?x)])]
+]","forall (hammer(x) -: instrument(x))
+ (hammers(x) , consideredtotools(x))
+ (tools(x) , instrument(x))
+",-(+H0-+I0)+(+H1++C1)+(+T1++I1),"all:x (hammer(x) :- instrument(x))
+x (hammers(x) & consideredtotools(x))
+x (tools(x) & instrument(x))
+",categorical
+eb316e9a-bfaa-484e-934b-26203731767c,There are no planets that are also stars. Everything classified as a celestial body named Earth is a planet. This means some things that are Earth are not stars.,"['∀x (Planets(x) → ¬Stars(x))', '∀x (Celestial_body_named_earth(x) → Planet(x))', '∃x (Things(x) ∧ Earth_not_stars(x))']",,"∀x (Planets(x) → ¬Stars(x))
+∀x (Celestialbodynamedearth(x) → Planet(x))
+∃x (Things(x) ∧ Earthnotstars(x))
+","forall x (planets(x) implies not stars(x))
+forall x (celestialbodynamedearth(x) implies planet(x))
+exists x (things(x) and earthnotstars(x))
+","[@every *x [(planets[(?x)]  ~stars[(?x)])]
+@every *x [(celestialbodynamedearth[(?x)]  planet[(?x)])]
+*x [(things[(?x)]  earthnotstars[(?x)])]
+]","forall (planets(x) -: notstars(x))
+forall (celestialbodynamedearth(x) -: planet(x))
+ (things(x) , earthnotstars(x))
+",-(+P0--+S0)-(+C0-+P0)+(+T1++E1),"all:x (planets(x) :- ~stars(x))
+all:x (celestialbodynamedearth(x) :- planet(x))
+x (things(x) & earthnotstars(x))
+",categorical
+245192ce-465d-4f70-8808-b8f3ed933095,Anything that is a book is edible. Every single novel is a book. This means that every novel is edible.,"['∀x (Book(x) → Edible(x))', '∀x (Novel(x) → Book(x))']",∀x (Novel(x) → Edible(x)),"∀x (Book(x) → Edible(x))
+∀x (Novel(x) → Book(x))
+∀x (Novel(x) → Edible(x))
+","forall x (book(x) implies edible(x))
+forall x (novel(x) implies book(x))
+forall x (novel(x) implies edible(x))
+","[@every *x [(book[(?x)]  edible[(?x)])]
+@every *x [(novel[(?x)]  book[(?x)])]
+@every *x [(novel[(?x)]  edible[(?x)])]
+]","forall (book(x) -: edible(x))
+forall (novel(x) -: book(x))
+forall (novel(x) -: edible(x))
+",-(+B0-+E0)-(+N0-+B0)-(+N0-+E0),"all:x (book(x) :- edible(x))
+all:x (novel(x) :- book(x))
+all:x (novel(x) :- edible(x))
+",categorical
+7595f31f-4f04-42c1-83e4-891c2aa9ddd4,"It is not true that all vegetables are green. All vegetables are, without exception, plants. As a result, it is suggested that some plants are green.","['∀x (Vegetables(x) → Green(x))', '∀x (Vegetables(x) → Plants(x))']",∃x (Plants(x) ∧ Green(x)),"∀x (Vegetables(x) → Green(x))
+∀x (Vegetables(x) → Plants(x))
+∃x (Plants(x) ∧ Green(x))
+","forall x (vegetables(x) implies green(x))
+forall x (vegetables(x) implies plants(x))
+exists x (plants(x) and green(x))
+","[@every *x [(vegetables[(?x)]  green[(?x)])]
+@every *x [(vegetables[(?x)]  plants[(?x)])]
+*x [(plants[(?x)]  green[(?x)])]
+]","forall (vegetables(x) -: green(x))
+forall (vegetables(x) -: plants(x))
+ (plants(x) , green(x))
+",-(+V0-+G0)-(+V0-+P0)+(+P1++G1),"all:x (vegetables(x) :- green(x))
+all:x (vegetables(x) :- plants(x))
+x (plants(x) & green(x))
+",categorical
+7d736cba-aa56-4da6-af1c-a7a5a62a213c,"There are no citrus fruits that are berries. Among the berries, a few are fruits. Not all fruits are citrus.","['∀x (Citrus_fruits(x) → ¬Berries(x))', '∃x (Berries(x) ∧ Fruits(x))', '∀x (Fruits(x) → Citrus(x))']",,"∀x (Citrusfruits(x) → ¬Berries(x))
+∃x (Berries(x) ∧ Fruits(x))
+∀x (Fruits(x) → Citrus(x))
+","forall x (citrusfruits(x) implies not berries(x))
+exists x (berries(x) and fruits(x))
+forall x (fruits(x) implies citrus(x))
+","[@every *x [(citrusfruits[(?x)]  ~berries[(?x)])]
+*x [(berries[(?x)]  fruits[(?x)])]
+@every *x [(fruits[(?x)]  citrus[(?x)])]
+]","forall (citrusfruits(x) -: notberries(x))
+ (berries(x) , fruits(x))
+forall (fruits(x) -: citrus(x))
+",-(+C0--+B0)+(+B1++F1)-(+F0-+C0),"all:x (citrusfruits(x) :- ~berries(x))
+x (berries(x) & fruits(x))
+all:x (fruits(x) :- citrus(x))
+",categorical
+3277e556-ec97-447f-8c23-97bdcf9a2b5d,"Nothing that is a metal is a mammal. Among the creatures that are snakes, there are none that are metals. It must be concluded that no snakes are mammals.","['∀x (Nothing(x) → Metal_mammal(x))', '∃x (None(x) ∧ Metals(x))']",∀x (Snakes(x) → ¬Mammals(x)),"∀x (Nothing(x) → Metalmammal(x))
+∃x (None(x) ∧ Metals(x))
+∀x (Snakes(x) → ¬Mammals(x))
+","forall x (nothing(x) implies metalmammal(x))
+exists x (none(x) and metals(x))
+forall x (snakes(x) implies not mammals(x))
+","[@every *x [(nothing[(?x)]  metalmammal[(?x)])]
+*x [(none[(?x)]  metals[(?x)])]
+@every *x [(snakes[(?x)]  ~mammals[(?x)])]
+]","forall (nothing(x) -: metalmammal(x))
+ (none(x) , metals(x))
+forall (snakes(x) -: notmammals(x))
+",-(+N0-+M0)+(+N1++M1)-(+S0--+M0),"all:x (nothing(x) :- metalmammal(x))
+x (none(x) & metals(x))
+all:x (snakes(x) :- ~mammals(x))
+",categorical
+049d61bb-cd42-4142-a99a-154d048e2073,"A few cars are fish. Every single fish is a swimmer. Consequently, some swimmers are cars.","['∃x (Cars(x) ∧ Fish(x))', '∀x (Fish(x) → Swimmer(x))']",∃x (Swimmers(x) ∧ Cars(x)),"∃x (Cars(x) ∧ Fish(x))
+∀x (Fish(x) → Swimmer(x))
+∃x (Swimmers(x) ∧ Cars(x))
+","exists x (cars(x) and fish(x))
+forall x (fish(x) implies swimmer(x))
+exists x (swimmers(x) and cars(x))
+","[*x [(cars[(?x)]  fish[(?x)])]
+@every *x [(fish[(?x)]  swimmer[(?x)])]
+*x [(swimmers[(?x)]  cars[(?x)])]
+]"," (cars(x) , fish(x))
+forall (fish(x) -: swimmer(x))
+ (swimmers(x) , cars(x))
+",+(+C1++F1)-(+F0-+S0)+(+S1++C1),"x (cars(x) & fish(x))
+all:x (fish(x) :- swimmer(x))
+x (swimmers(x) & cars(x))
+",categorical
+3628765c-fee6-4acf-8209-532629663003,There are no celestial bodies that are giant balls of gas. All stars are giant balls of gas. It follows from this that some stars are not celestial bodies.,"['∀x (Celestial_bodies(x) → ¬Giant_balls_gas(x))', '∀x (Stars(x) → Giant_balls_gas(x))']",∃x (Stars(x) ∧ Not_celestial_bodies(x)),"∀x (Celestialbodies(x) → ¬Giantballsgas(x))
+∀x (Stars(x) → Giantballsgas(x))
+∃x (Stars(x) ∧ Notcelestialbodies(x))
+","forall x (celestialbodies(x) implies not giantballsgas(x))
+forall x (stars(x) implies giantballsgas(x))
+exists x (stars(x) and notcelestialbodies(x))
+","[@every *x [(celestialbodies[(?x)]  ~giantballsgas[(?x)])]
+@every *x [(stars[(?x)]  giantballsgas[(?x)])]
+*x [(stars[(?x)]  notcelestialbodies[(?x)])]
+]","forall (celestialbodies(x) -: notgiantballsgas(x))
+forall (stars(x) -: giantballsgas(x))
+ (stars(x) , notcelestialbodies(x))
+",-(+C0--+G0)-(+S0-+G0)+(+S1++N1),"all:x (celestialbodies(x) :- ~giantballsgas(x))
+all:x (stars(x) :- giantballsgas(x))
+x (stars(x) & notcelestialbodies(x))
+",categorical
+fd7eed56-3886-40c5-b22d-627e7434e507,Reptiles are not animals. All things that are lizards are reptiles. It follows logically that some lizards are not animals.,"['∀x (Reptiles(x) → ¬Animals(x))', '∀x (Lizards(x) → Reptiles(x))']",∃x (Lizards(x) ∧ Not_animals(x)),"∀x (Reptiles(x) → ¬Animals(x))
+∀x (Lizards(x) → Reptiles(x))
+∃x (Lizards(x) ∧ Notanimals(x))
+","forall x (reptiles(x) implies not animals(x))
+forall x (lizards(x) implies reptiles(x))
+exists x (lizards(x) and notanimals(x))
+","[@every *x [(reptiles[(?x)]  ~animals[(?x)])]
+@every *x [(lizards[(?x)]  reptiles[(?x)])]
+*x [(lizards[(?x)]  notanimals[(?x)])]
+]","forall (reptiles(x) -: notanimals(x))
+forall (lizards(x) -: reptiles(x))
+ (lizards(x) , notanimals(x))
+",-(+R0--+A0)-(+L0-+R0)+(+L1++N1),"all:x (reptiles(x) :- ~animals(x))
+all:x (lizards(x) :- reptiles(x))
+x (lizards(x) & notanimals(x))
+",categorical
+8dcec24c-8e0d-4c22-9ecc-5134f3c59fa8,There are no plants that are animals. Every single oak tree is a plant. It is therefore the case that all oak trees are animals.,"['∀x (Plants(x) → ¬Animals(x))', '∀x (Oak_tree(x) → Plant(x))']",∀x (Oak_trees(x) → Animals(x)),"∀x (Plants(x) → ¬Animals(x))
+∀x (Oaktree(x) → Plant(x))
+∀x (Oaktrees(x) → Animals(x))
+","forall x (plants(x) implies not animals(x))
+forall x (oaktree(x) implies plant(x))
+forall x (oaktrees(x) implies animals(x))
+","[@every *x [(plants[(?x)]  ~animals[(?x)])]
+@every *x [(oaktree[(?x)]  plant[(?x)])]
+@every *x [(oaktrees[(?x)]  animals[(?x)])]
+]","forall (plants(x) -: notanimals(x))
+forall (oaktree(x) -: plant(x))
+forall (oaktrees(x) -: animals(x))
+",-(+P0--+A0)-(+O0-+P0)-(+O0-+A0),"all:x (plants(x) :- ~animals(x))
+all:x (oaktree(x) :- plant(x))
+all:x (oaktrees(x) :- animals(x))
+",categorical
+5c2f4196-2ce4-41dd-a456-8a5198ba465f,"Every single item that is a number is not an integer. Of the items that are prime numbers, some are integers. It is a correct deduction that some prime numbers are not numbers.","['∀x (Number(x) → ¬Integer(x))', '∃x (Prime(x) ∧ Integer(x))']",∃x (Prime(x) ∧ ¬Number(x)),"∀x (Number(x) → ¬Integer(x))
+∃x (Prime(x) ∧ Integer(x))
+∃x (Prime(x) ∧ ¬Number(x))
+","forall x (number(x) implies not integer(x))
+exists x (prime(x) and integer(x))
+exists x (prime(x) and not number(x))
+","[@every *x [(number[(?x)]  ~integer[(?x)])]
+*x [(prime[(?x)]  integer[(?x)])]
+*x [(prime[(?x)]  ~number[(?x)])]
+]","forall (number(x) -: notinteger(x))
+ (prime(x) , integer(x))
+ (prime(x) , notnumber(x))
+",-(+N0--+I0)+(+P1++I1)+(+P1+-+N1),"all:x (number(x) :- ~integer(x))
+x (prime(x) & integer(x))
+x (prime(x) & ~number(x))
+",categorical
+85dd382a-22e5-4c21-9218-33228012e4ad,It is completely false that any fruit is a thing that grows on a tree. A portion of fruits are apples. We must conclude that some apples do not grow on trees.,"['∀x (Fruit(x) → ¬Thing_grows_on_tree(x))', '∃x (Fruits(x) ∧ Apples(x))']",∃x (Apples(x) ∧ ¬Grow_on_trees(x)),"∀x (Fruit(x) → ¬Thinggrowsontree(x))
+∃x (Fruits(x) ∧ Apples(x))
+∃x (Apples(x) ∧ ¬Growontrees(x))
+","forall x (fruit(x) implies not thinggrowsontree(x))
+exists x (fruits(x) and apples(x))
+exists x (apples(x) and not growontrees(x))
+","[@every *x [(fruit[(?x)]  ~thinggrowsontree[(?x)])]
+*x [(fruits[(?x)]  apples[(?x)])]
+*x [(apples[(?x)]  ~growontrees[(?x)])]
+]","forall (fruit(x) -: notthinggrowsontree(x))
+ (fruits(x) , apples(x))
+ (apples(x) , notgrowontrees(x))
+",-(+F0--+T0)+(+F1++A1)+(+A1+-+G1),"all:x (fruit(x) :- ~thinggrowsontree(x))
+x (fruits(x) & apples(x))
+x (apples(x) & ~growontrees(x))
+",categorical
+48a96158-28f0-4e60-8802-3a7a9767cacb,"There are some mammals that are animals. All dogs are mammals. Thus, all dogs are animals.","['∃x (Mammals(x) ∧ Animals(x))', '∀x (Dogs(x) → Mammals(x))']",∀x (Dogs(x) → Animals(x)),"∃x (Mammals(x) ∧ Animals(x))
+∀x (Dogs(x) → Mammals(x))
+∀x (Dogs(x) → Animals(x))
+","exists x (mammals(x) and animals(x))
+forall x (dogs(x) implies mammals(x))
+forall x (dogs(x) implies animals(x))
+","[*x [(mammals[(?x)]  animals[(?x)])]
+@every *x [(dogs[(?x)]  mammals[(?x)])]
+@every *x [(dogs[(?x)]  animals[(?x)])]
+]"," (mammals(x) , animals(x))
+forall (dogs(x) -: mammals(x))
+forall (dogs(x) -: animals(x))
+",+(+M1++A1)-(+D0-+M0)-(+D0-+A0),"x (mammals(x) & animals(x))
+all:x (dogs(x) :- mammals(x))
+all:x (dogs(x) :- animals(x))
+",categorical
+c232d8c7-8f29-46bc-8f5c-bdfa3c52fcd5,Anything that is a sea is a large body of saltwater. The category of rivers contains no large bodies of saltwater. Every river is a sea.,"['∀x (Sea(x) → Large_body_saltwater(x))', '∀x (Rivers(x) → ¬Large_bodies_saltwater(x))', '∀x (River(x) → Sea(x))']",,"∀x (Sea(x) → Largebodysaltwater(x))
+∀x (Rivers(x) → ¬Largebodiessaltwater(x))
+∀x (River(x) → Sea(x))
+","forall x (sea(x) implies largebodysaltwater(x))
+forall x (rivers(x) implies not largebodiessaltwater(x))
+forall x (river(x) implies sea(x))
+","[@every *x [(sea[(?x)]  largebodysaltwater[(?x)])]
+@every *x [(rivers[(?x)]  ~largebodiessaltwater[(?x)])]
+@every *x [(river[(?x)]  sea[(?x)])]
+]","forall (sea(x) -: largebodysaltwater(x))
+forall (rivers(x) -: notlargebodiessaltwater(x))
+forall (river(x) -: sea(x))
+",-(+S0-+L0)-(+R0--+L0)-(+R0-+S0),"all:x (sea(x) :- largebodysaltwater(x))
+all:x (rivers(x) :- ~largebodiessaltwater(x))
+all:x (river(x) :- sea(x))
+",categorical
+3f88e8d0-dd4c-45d8-8a75-02835b5a0c49,All things that are birds are animals. It is also true that every single bird is an insect. This proves that all insects are animals.,"['∀x (Birds(x) → Animals(x))', '∀x (Bird(x) → Insect(x))']",∀x (Insects(x) → Animals(x)),"∀x (Birds(x) → Animals(x))
+∀x (Bird(x) → Insect(x))
+∀x (Insects(x) → Animals(x))
+","forall x (birds(x) implies animals(x))
+forall x (bird(x) implies insect(x))
+forall x (insects(x) implies animals(x))
+","[@every *x [(birds[(?x)]  animals[(?x)])]
+@every *x [(bird[(?x)]  insect[(?x)])]
+@every *x [(insects[(?x)]  animals[(?x)])]
+]","forall (birds(x) -: animals(x))
+forall (bird(x) -: insect(x))
+forall (insects(x) -: animals(x))
+",-(+B0-+A0)-(+B0-+I0)-(+I0-+A0),"all:x (birds(x) :- animals(x))
+all:x (bird(x) :- insect(x))
+all:x (insects(x) :- animals(x))
+",categorical
+04996853-61fd-42a9-a624-55022231c633,Every single pencil is an item of stationery. There are no stationery items that can be described as food. It is therefore true that some items of food are not pencils.,"['∀x (Pencil(x) → Item_stationery(x))', '∀x (Stationery_items(x) → ¬Described_as_food(x))']",∃x (Items_food(x) ∧ Not_pencils(x)),"∀x (Pencil(x) → Itemstationery(x))
+∀x (Stationeryitems(x) → ¬Describedasfood(x))
+∃x (Itemsfood(x) ∧ Notpencils(x))
+","forall x (pencil(x) implies itemstationery(x))
+forall x (stationeryitems(x) implies not describedasfood(x))
+exists x (itemsfood(x) and notpencils(x))
+","[@every *x [(pencil[(?x)]  itemstationery[(?x)])]
+@every *x [(stationeryitems[(?x)]  ~describedasfood[(?x)])]
+*x [(itemsfood[(?x)]  notpencils[(?x)])]
+]","forall (pencil(x) -: itemstationery(x))
+forall (stationeryitems(x) -: notdescribedasfood(x))
+ (itemsfood(x) , notpencils(x))
+",-(+P0-+I0)-(+S0--+D0)+(+I1++N1),"all:x (pencil(x) :- itemstationery(x))
+all:x (stationeryitems(x) :- ~describedasfood(x))
+x (itemsfood(x) & notpencils(x))
+",categorical
+7260bc88-c604-4113-a75e-939ae8166676,Absolutely no creature classified as a mammal is an animal with feathers. A portion of dogs are mammals. This demonstrates that some dogs are not animals with feathers.,"['∀x (Absolutely_no_creature_classified_as_mammal(x) → Animal_feathers(x))', '∃x (Dogs(x) ∧ Mammals(x))']",∃x (Dogs(x) ∧ Not_animals_feathers(x)),"∀x (Absolutelynocreatureclassifiedasmammal(x) → Animalfeathers(x))
+∃x (Dogs(x) ∧ Mammals(x))
+∃x (Dogs(x) ∧ Notanimalsfeathers(x))
+","forall x (absolutelynocreatureclassifiedasmammal(x) implies animalfeathers(x))
+exists x (dogs(x) and mammals(x))
+exists x (dogs(x) and notanimalsfeathers(x))
+","[@every *x [(absolutelynocreatureclassifiedasmammal[(?x)]  animalfeathers[(?x)])]
+*x [(dogs[(?x)]  mammals[(?x)])]
+*x [(dogs[(?x)]  notanimalsfeathers[(?x)])]
+]","forall (absolutelynocreatureclassifiedasmammal(x) -: animalfeathers(x))
+ (dogs(x) , mammals(x))
+ (dogs(x) , notanimalsfeathers(x))
+",-(+A0-+A0)+(+D1++M1)+(+D1++N1),"all:x (absolutelynocreatureclassifiedasmammal(x) :- animalfeathers(x))
+x (dogs(x) & mammals(x))
+x (dogs(x) & notanimalsfeathers(x))
+",categorical
+10541e1f-8a1c-4e7b-8d84-fab0d65b94d8,Anything that is a cat is also a feline. Under no circumstances is a feline a canine. It can thus be inferred that certain canines are not cats.,"['∀x (Cat(x) → Feline(x))', '∀x (Under_no_circumstances(x) → Feline_canine(x))']",∀x (Certain_canines(x) → ¬Cats(x)),"∀x (Cat(x) → Feline(x))
+∀x (Undernocircumstances(x) → Felinecanine(x))
+∀x (Certaincanines(x) → ¬Cats(x))
+","forall x (cat(x) implies feline(x))
+forall x (undernocircumstances(x) implies felinecanine(x))
+forall x (certaincanines(x) implies not cats(x))
+","[@every *x [(cat[(?x)]  feline[(?x)])]
+@every *x [(undernocircumstances[(?x)]  felinecanine[(?x)])]
+@every *x [(certaincanines[(?x)]  ~cats[(?x)])]
+]","forall (cat(x) -: feline(x))
+forall (undernocircumstances(x) -: felinecanine(x))
+forall (certaincanines(x) -: notcats(x))
+",-(+C0-+F0)-(+U0-+F0)-(+C0--+C0),"all:x (cat(x) :- feline(x))
+all:x (undernocircumstances(x) :- felinecanine(x))
+all:x (certaincanines(x) :- ~cats(x))
+",categorical
+7d9df7e7-eedb-44f5-8061-30b0a2a98db4,There are no birds that are also mammals. The set of pets includes some creatures that are mammals. A consequence is that some pets are birds.,"['∀x (Birds(x) → ¬Mammals(x))', '∃x (Creatures(x) ∧ Mammals(x))']",∃x (Pets(x) ∧ Birds(x)),"∀x (Birds(x) → ¬Mammals(x))
+∃x (Creatures(x) ∧ Mammals(x))
+∃x (Pets(x) ∧ Birds(x))
+","forall x (birds(x) implies not mammals(x))
+exists x (creatures(x) and mammals(x))
+exists x (pets(x) and birds(x))
+","[@every *x [(birds[(?x)]  ~mammals[(?x)])]
+*x [(creatures[(?x)]  mammals[(?x)])]
+*x [(pets[(?x)]  birds[(?x)])]
+]","forall (birds(x) -: notmammals(x))
+ (creatures(x) , mammals(x))
+ (pets(x) , birds(x))
+",-(+B0--+M0)+(+C1++M1)+(+P1++B1),"all:x (birds(x) :- ~mammals(x))
+x (creatures(x) & mammals(x))
+x (pets(x) & birds(x))
+",categorical
+96909dbd-70b8-4360-8b69-b7e32471b429,"Some foods that are sweet are berries. All things that are berries are fruits. Consequently, it follows that some fruits are sweet foods.","['∃x (Foods(x) ∧ Sweet_berries(x))', '∀x (Berries(x) → Fruits(x))']",∃x (Fruits(x) ∧ Sweet_foods(x)),"∃x (Foods(x) ∧ Sweetberries(x))
+∀x (Berries(x) → Fruits(x))
+∃x (Fruits(x) ∧ Sweetfoods(x))
+","exists x (foods(x) and sweetberries(x))
+forall x (berries(x) implies fruits(x))
+exists x (fruits(x) and sweetfoods(x))
+","[*x [(foods[(?x)]  sweetberries[(?x)])]
+@every *x [(berries[(?x)]  fruits[(?x)])]
+*x [(fruits[(?x)]  sweetfoods[(?x)])]
+]"," (foods(x) , sweetberries(x))
+forall (berries(x) -: fruits(x))
+ (fruits(x) , sweetfoods(x))
+",+(+F1++S1)-(+B0-+F0)+(+F1++S1),"x (foods(x) & sweetberries(x))
+all:x (berries(x) :- fruits(x))
+x (fruits(x) & sweetfoods(x))
+",categorical
+806e7a11-8342-4dbe-a927-d0e806a4b20b,There are no fish which are mammals. Some reptiles are things that are fish. It follows that some reptiles are mammals.,"['∀x (Fish(x) → ¬Mammals(x))', '∃x (Reptiles(x) ∧ Things_fish(x))']",∃x (Reptiles(x) ∧ Mammals(x)),"∀x (Fish(x) → ¬Mammals(x))
+∃x (Reptiles(x) ∧ Thingsfish(x))
+∃x (Reptiles(x) ∧ Mammals(x))
+","forall x (fish(x) implies not mammals(x))
+exists x (reptiles(x) and thingsfish(x))
+exists x (reptiles(x) and mammals(x))
+","[@every *x [(fish[(?x)]  ~mammals[(?x)])]
+*x [(reptiles[(?x)]  thingsfish[(?x)])]
+*x [(reptiles[(?x)]  mammals[(?x)])]
+]","forall (fish(x) -: notmammals(x))
+ (reptiles(x) , thingsfish(x))
+ (reptiles(x) , mammals(x))
+",-(+F0--+M0)+(+R1++T1)+(+R1++M1),"all:x (fish(x) :- ~mammals(x))
+x (reptiles(x) & thingsfish(x))
+x (reptiles(x) & mammals(x))
+",categorical
+1d818034-9835-4fad-8d0f-d5c83e7597df,There are no compounds classified as organic that are made of metal. Every substance that is a sugar is an organic compound. This logically proves that no sugar is made of metal.,"['∀x (Compounds_classified_as_organic(x) → ¬Made_metal(x))', '∀x (Substance(x) → Sugar_organic_compound(x))']",∀x (No_sugar(x) → Made_metal(x)),"∀x (Compoundsclassifiedasorganic(x) → ¬Mademetal(x))
+∀x (Substance(x) → Sugarorganiccompound(x))
+∀x (Nosugar(x) → Mademetal(x))
+","forall x (compoundsclassifiedasorganic(x) implies not mademetal(x))
+forall x (substance(x) implies sugarorganiccompound(x))
+forall x (nosugar(x) implies mademetal(x))
+","[@every *x [(compoundsclassifiedasorganic[(?x)]  ~mademetal[(?x)])]
+@every *x [(substance[(?x)]  sugarorganiccompound[(?x)])]
+@every *x [(nosugar[(?x)]  mademetal[(?x)])]
+]","forall (compoundsclassifiedasorganic(x) -: notmademetal(x))
+forall (substance(x) -: sugarorganiccompound(x))
+forall (nosugar(x) -: mademetal(x))
+",-(+C0--+M0)-(+S0-+S0)-(+N0-+M0),"all:x (compoundsclassifiedasorganic(x) :- ~mademetal(x))
+all:x (substance(x) :- sugarorganiccompound(x))
+all:x (nosugar(x) :- mademetal(x))
+",categorical
+8718088f-3491-4a7e-a2ce-7152317990f5,Nothing that is a fish is also a mammal. The set of creatures that are whales includes some that are mammals. A conclusion that can be drawn is that some whales are not fish.,"['∀x (Nothing(x) → Fish_mammal(x))', '∃x (Predicate(x) ∧ Mammals(x))']",∃x (Whales(x) ∧ Not_fish(x)),"∀x (Nothing(x) → Fishmammal(x))
+∃x (Predicate(x) ∧ Mammals(x))
+∃x (Whales(x) ∧ Notfish(x))
+","forall x (nothing(x) implies fishmammal(x))
+exists x (predicate(x) and mammals(x))
+exists x (whales(x) and notfish(x))
+","[@every *x [(nothing[(?x)]  fishmammal[(?x)])]
+*x [(predicate[(?x)]  mammals[(?x)])]
+*x [(whales[(?x)]  notfish[(?x)])]
+]","forall (nothing(x) -: fishmammal(x))
+ (predicate(x) , mammals(x))
+ (whales(x) , notfish(x))
+",-(+N0-+F0)+(+P1++M1)+(+W1++N1),"all:x (nothing(x) :- fishmammal(x))
+x (predicate(x) & mammals(x))
+x (whales(x) & notfish(x))
+",categorical
+129109ba-a60f-4fb7-a8d3-341580fffe0c,There are no plants that are mammals. Some rose is a plant. It is the case that no roses are mammals.,"['∀x (Plants(x) → ¬Mammals(x))', '∃x (Rose(x) ∧ Plant(x))', '∀x (Roses(x) → ¬Mammals(x))']",,"∀x (Plants(x) → ¬Mammals(x))
+∃x (Rose(x) ∧ Plant(x))
+∀x (Roses(x) → ¬Mammals(x))
+","forall x (plants(x) implies not mammals(x))
+exists x (rose(x) and plant(x))
+forall x (roses(x) implies not mammals(x))
+","[@every *x [(plants[(?x)]  ~mammals[(?x)])]
+*x [(rose[(?x)]  plant[(?x)])]
+@every *x [(roses[(?x)]  ~mammals[(?x)])]
+]","forall (plants(x) -: notmammals(x))
+ (rose(x) , plant(x))
+forall (roses(x) -: notmammals(x))
+",-(+P0--+M0)+(+R1++P1)-(+R0--+M0),"all:x (plants(x) :- ~mammals(x))
+x (rose(x) & plant(x))
+all:x (roses(x) :- ~mammals(x))
+",categorical
+b1ee7c4f-fb73-4e19-a675-7577cb81bc0c,Some plants are living things. There are some trees that are plants. It is therefore the case that every tree is a living thing.,"['∃x (Plants(x) ∧ Living_things(x))', '∃x (Trees(x) ∧ Plants(x))']",∀x (Tree(x) → Living_thing(x)),"∃x (Plants(x) ∧ Livingthings(x))
+∃x (Trees(x) ∧ Plants(x))
+∀x (Tree(x) → Livingthing(x))
+","exists x (plants(x) and livingthings(x))
+exists x (trees(x) and plants(x))
+forall x (tree(x) implies livingthing(x))
+","[*x [(plants[(?x)]  livingthings[(?x)])]
+*x [(trees[(?x)]  plants[(?x)])]
+@every *x [(tree[(?x)]  livingthing[(?x)])]
+]"," (plants(x) , livingthings(x))
+ (trees(x) , plants(x))
+forall (tree(x) -: livingthing(x))
+",+(+P1++L1)+(+T1++P1)-(+T0-+L0),"x (plants(x) & livingthings(x))
+x (trees(x) & plants(x))
+all:x (tree(x) :- livingthing(x))
+",categorical
+652a6a0e-cef2-4cd8-8562-e4c78589d320,The set of humans is a subset of the set of legal professionals. At least one doctor is not a legal professional. The entire group of doctors is not humans.,"['∀x (Humans(x) → Set_legal_professionals(x))', '∀x (At_least_one_doctor(x) → ¬Legal_professional(x))', '∀x (Entire_group_doctors(x) → Not_humans(x))']",,"∀x (Humans(x) → Setlegalprofessionals(x))
+∀x (Atleastonedoctor(x) → ¬Legalprofessional(x))
+∀x (Entiregroupdoctors(x) → Nothumans(x))
+","forall x (humans(x) implies setlegalprofessionals(x))
+forall x (atleastonedoctor(x) implies not legalprofessional(x))
+forall x (entiregroupdoctors(x) implies nothumans(x))
+","[@every *x [(humans[(?x)]  setlegalprofessionals[(?x)])]
+@every *x [(atleastonedoctor[(?x)]  ~legalprofessional[(?x)])]
+@every *x [(entiregroupdoctors[(?x)]  nothumans[(?x)])]
+]","forall (humans(x) -: setlegalprofessionals(x))
+forall (atleastonedoctor(x) -: notlegalprofessional(x))
+forall (entiregroupdoctors(x) -: nothumans(x))
+",-(+H0-+S0)-(+A0--+L0)-(+E0-+N0),"all:x (humans(x) :- setlegalprofessionals(x))
+all:x (atleastonedoctor(x) :- ~legalprofessional(x))
+all:x (entiregroupdoctors(x) :- nothumans(x))
+",categorical
+5934014e-aec0-442f-8a04-abddc9379cfc,Anything that is a rose is a flower. There are no tulips that are roses. Every tulip is a flower.,"['∀x (Rose(x) → Flower(x))', '∀x (Tulips(x) → ¬Roses(x))', '∀x (Tulip(x) → Flower(x))']",,"∀x (Rose(x) → Flower(x))
+∀x (Tulips(x) → ¬Roses(x))
+∀x (Tulip(x) → Flower(x))
+","forall x (rose(x) implies flower(x))
+forall x (tulips(x) implies not roses(x))
+forall x (tulip(x) implies flower(x))
+","[@every *x [(rose[(?x)]  flower[(?x)])]
+@every *x [(tulips[(?x)]  ~roses[(?x)])]
+@every *x [(tulip[(?x)]  flower[(?x)])]
+]","forall (rose(x) -: flower(x))
+forall (tulips(x) -: notroses(x))
+forall (tulip(x) -: flower(x))
+",-(+R0-+F0)-(+T0--+R0)-(+T0-+F0),"all:x (rose(x) :- flower(x))
+all:x (tulips(x) :- ~roses(x))
+all:x (tulip(x) :- flower(x))
+",categorical
+723a274a-a4ff-47f5-8a4f-0cf42e554a5a,It is the case that no adult is a child. Some people are adults. It follows that some people are children.,"['∀x (Adult(x) → ¬Child(x))', '∃x (People(x) ∧ Adults(x))']",∃x (People(x) ∧ Children(x)),"∀x (Adult(x) → ¬Child(x))
+∃x (People(x) ∧ Adults(x))
+∃x (People(x) ∧ Children(x))
+","forall x (adult(x) implies not child(x))
+exists x (people(x) and adults(x))
+exists x (people(x) and children(x))
+","[@every *x [(adult[(?x)]  ~child[(?x)])]
+*x [(people[(?x)]  adults[(?x)])]
+*x [(people[(?x)]  children[(?x)])]
+]","forall (adult(x) -: notchild(x))
+ (people(x) , adults(x))
+ (people(x) , children(x))
+",-(+A0--+C0)+(+P1++A1)+(+P1++C1),"all:x (adult(x) :- ~child(x))
+x (people(x) & adults(x))
+x (people(x) & children(x))
+",categorical
+49939bf4-a4ca-43c7-97c6-463a7ab2a653,"Every single person who is a student is also a person. There are no people who are robots. From this, it follows that no robot is a student.","['∀x (Person(x) → Student_person(x))', '∀x (People(x) → ¬Robots(x))']",∀x (No_robot(x) → Student(x)),"∀x (Person(x) → Studentperson(x))
+∀x (People(x) → ¬Robots(x))
+∀x (Norobot(x) → Student(x))
+","forall x (person(x) implies studentperson(x))
+forall x (people(x) implies not robots(x))
+forall x (norobot(x) implies student(x))
+","[@every *x [(person[(?x)]  studentperson[(?x)])]
+@every *x [(people[(?x)]  ~robots[(?x)])]
+@every *x [(norobot[(?x)]  student[(?x)])]
+]","forall (person(x) -: studentperson(x))
+forall (people(x) -: notrobots(x))
+forall (norobot(x) -: student(x))
+",-(+P0-+S0)-(+P0--+R0)-(+N0-+S0),"all:x (person(x) :- studentperson(x))
+all:x (people(x) :- ~robots(x))
+all:x (norobot(x) :- student(x))
+",categorical
+6d615c95-bbcf-4b0d-b41b-1763fa186ab8,It is true that no apples are mammals. Every single apple is a fruit. This is why every fruit is not a mammal.,"['∀x (Apples(x) → ¬Mammals(x))', '∀x (Apple(x) → Fruit(x))']",∀x (Fruit(x) → Not_mammal(x)),"∀x (Apples(x) → ¬Mammals(x))
+∀x (Apple(x) → Fruit(x))
+∀x (Fruit(x) → Notmammal(x))
+","forall x (apples(x) implies not mammals(x))
+forall x (apple(x) implies fruit(x))
+forall x (fruit(x) implies notmammal(x))
+","[@every *x [(apples[(?x)]  ~mammals[(?x)])]
+@every *x [(apple[(?x)]  fruit[(?x)])]
+@every *x [(fruit[(?x)]  notmammal[(?x)])]
+]","forall (apples(x) -: notmammals(x))
+forall (apple(x) -: fruit(x))
+forall (fruit(x) -: notmammal(x))
+",-(+A0--+M0)-(+A0-+F0)-(+F0-+N0),"all:x (apples(x) :- ~mammals(x))
+all:x (apple(x) :- fruit(x))
+all:x (fruit(x) :- notmammal(x))
+",categorical
+cada4d49-02a3-4dc0-b207-88f4b7b29596,"No object that is a planet can be a star. There are some things known as gas giants which are planets. Consequently, not all gas giants are stars.","['∀x (No_object(x) → Planet_star(x))', '∃x (Things_known_as_gas_giants(x) ∧ Planets(x))']",∀x (Gas_giants(x) → Stars(x)),"∀x (Noobject(x) → Planetstar(x))
+∃x (Thingsknownasgasgiants(x) ∧ Planets(x))
+∀x (Gasgiants(x) → Stars(x))
+","forall x (noobject(x) implies planetstar(x))
+exists x (thingsknownasgasgiants(x) and planets(x))
+forall x (gasgiants(x) implies stars(x))
+","[@every *x [(noobject[(?x)]  planetstar[(?x)])]
+*x [(thingsknownasgasgiants[(?x)]  planets[(?x)])]
+@every *x [(gasgiants[(?x)]  stars[(?x)])]
+]","forall (noobject(x) -: planetstar(x))
+ (thingsknownasgasgiants(x) , planets(x))
+forall (gasgiants(x) -: stars(x))
+",-(+N0-+P0)+(+T1++P1)-(+G0-+S0),"all:x (noobject(x) :- planetstar(x))
+x (thingsknownasgasgiants(x) & planets(x))
+all:x (gasgiants(x) :- stars(x))
+",categorical
+88cbe1ec-a2be-40ca-9f5f-db71a17fba20,Nothing that is a bird is able to fly. Every single bird is a human being. It is therefore true that every human can fly.,"['∀x (Nothing(x) → Bird_able_to_fly(x))', '∀x (Bird(x) → Human_being(x))']",∀x (Human(x) → Can_Fly(x)),"∀x (Nothing(x) → Birdabletofly(x))
+∀x (Bird(x) → Humanbeing(x))
+∀x (Human(x) → CanFly(x))
+","forall x (nothing(x) implies birdabletofly(x))
+forall x (bird(x) implies humanbeing(x))
+forall x (human(x) implies canfly(x))
+","[@every *x [(nothing[(?x)]  birdabletofly[(?x)])]
+@every *x [(bird[(?x)]  humanbeing[(?x)])]
+@every *x [(human[(?x)]  canfly[(?x)])]
+]","forall (nothing(x) -: birdabletofly(x))
+forall (bird(x) -: humanbeing(x))
+forall (human(x) -: canfly(x))
+",-(+N0-+B0)-(+B0-+H0)-(+H0-+C0),"all:x (nothing(x) :- birdabletofly(x))
+all:x (bird(x) :- humanbeing(x))
+all:x (human(x) :- canfly(x))
+",categorical
+03ac9985-ef97-4bab-974b-e75918cf6c05,Anything that is a car is a vehicle. All of the things that are bicycles are vehicles. This means that there are no bicycles that are cars.,"['∀x (Car(x) → Vehicle(x))', '∀x (Bicycles(x) → Vehicles(x))']",∀x (Bicycles(x) → ¬Cars(x)),"∀x (Car(x) → Vehicle(x))
+∀x (Bicycles(x) → Vehicles(x))
+∀x (Bicycles(x) → ¬Cars(x))
+","forall x (car(x) implies vehicle(x))
+forall x (bicycles(x) implies vehicles(x))
+forall x (bicycles(x) implies not cars(x))
+","[@every *x [(car[(?x)]  vehicle[(?x)])]
+@every *x [(bicycles[(?x)]  vehicles[(?x)])]
+@every *x [(bicycles[(?x)]  ~cars[(?x)])]
+]","forall (car(x) -: vehicle(x))
+forall (bicycles(x) -: vehicles(x))
+forall (bicycles(x) -: notcars(x))
+",-(+C0-+V0)-(+B0-+V0)-(+B0--+C0),"all:x (car(x) :- vehicle(x))
+all:x (bicycles(x) :- vehicles(x))
+all:x (bicycles(x) :- ~cars(x))
+",categorical
+87c94990-9984-4e95-8bc2-6d04038fc550,Some people are gold. All things which are gold are metals. It must follow that some metals are people.,"['∃x (People(x) ∧ Gold(x))', '∀x (Gold(x) → Metals(x))']",∃x (Metals(x) ∧ People(x)),"∃x (People(x) ∧ Gold(x))
+∀x (Gold(x) → Metals(x))
+∃x (Metals(x) ∧ People(x))
+","exists x (people(x) and gold(x))
+forall x (gold(x) implies metals(x))
+exists x (metals(x) and people(x))
+","[*x [(people[(?x)]  gold[(?x)])]
+@every *x [(gold[(?x)]  metals[(?x)])]
+*x [(metals[(?x)]  people[(?x)])]
+]"," (people(x) , gold(x))
+forall (gold(x) -: metals(x))
+ (metals(x) , people(x))
+",+(+P1++G1)-(+G0-+M0)+(+M1++P1),"x (people(x) & gold(x))
+all:x (gold(x) :- metals(x))
+x (metals(x) & people(x))
+",categorical
+a5992a44-d98f-46f0-831e-bddd22281a67,"Each and every dog is a star. All dogs are made of cheese. Therefore, it is the case that some things made of cheese are stars.","['∀x (Dog(x) → Star(x))', '∀x (Dogs(x) → Made_cheese(x))']",∃x (Things_made_cheese(x) ∧ Stars(x)),"∀x (Dog(x) → Star(x))
+∀x (Dogs(x) → Madecheese(x))
+∃x (Thingsmadecheese(x) ∧ Stars(x))
+","forall x (dog(x) implies star(x))
+forall x (dogs(x) implies madecheese(x))
+exists x (thingsmadecheese(x) and stars(x))
+","[@every *x [(dog[(?x)]  star[(?x)])]
+@every *x [(dogs[(?x)]  madecheese[(?x)])]
+*x [(thingsmadecheese[(?x)]  stars[(?x)])]
+]","forall (dog(x) -: star(x))
+forall (dogs(x) -: madecheese(x))
+ (thingsmadecheese(x) , stars(x))
+",-(+D0-+S0)-(+D0-+M0)+(+T1++S1),"all:x (dog(x) :- star(x))
+all:x (dogs(x) :- madecheese(x))
+x (thingsmadecheese(x) & stars(x))
+",categorical
+79d80652-f46b-46f0-aa71-9d23c95901bf,"A portion of things that are paper objects are books. Among the items known as notebooks, some are paper objects. This allows us to state that not all notebooks are books.","['∃x (Things(x) ∧ Paper_objects_books(x))', '∃x (Items_known_as_notebooks(x) ∧ Paper_objects(x))']",∀x (Notebooks(x) → Books(x)),"∃x (Things(x) ∧ Paperobjectsbooks(x))
+∃x (Itemsknownasnotebooks(x) ∧ Paperobjects(x))
+∀x (Notebooks(x) → Books(x))
+","exists x (things(x) and paperobjectsbooks(x))
+exists x (itemsknownasnotebooks(x) and paperobjects(x))
+forall x (notebooks(x) implies books(x))
+","[*x [(things[(?x)]  paperobjectsbooks[(?x)])]
+*x [(itemsknownasnotebooks[(?x)]  paperobjects[(?x)])]
+@every *x [(notebooks[(?x)]  books[(?x)])]
+]"," (things(x) , paperobjectsbooks(x))
+ (itemsknownasnotebooks(x) , paperobjects(x))
+forall (notebooks(x) -: books(x))
+",+(+T1++P1)+(+I1++P1)-(+N0-+B0),"x (things(x) & paperobjectsbooks(x))
+x (itemsknownasnotebooks(x) & paperobjects(x))
+all:x (notebooks(x) :- books(x))
+",categorical

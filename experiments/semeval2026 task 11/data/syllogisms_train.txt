@@ -1,0 +1,960 @@
+All cars are a type of vehicle. No animal is a car. Therefore, no animal can be a vehicle.
+Nothing that is a soda is a juice. A portion of the things that are beverages are juices. The only logical conclusion is that some beverages are not sodas.
+Everything that is a planet is a celestial body. Anything that is a sun is a celestial body. There exists at least one sun that is a planet.
+Every cat is an invisible creature. A number of cats are animals. Consequently, a portion of animals are invisible.
+There are no capital cities which are oceans. A select few large cities are classified as capital cities. Therefore, it is clear that some large cities are not oceans.
+Every city is a location. Anything that is a location is a capital city. Therefore, every capital city is a city.
+No star is a meteor. Meteors are, without exception, planets. A number of planets are stars.
+Every single cat is an animal. Anything that can be called a dog is, without exception, an animal. Every dog is a cat.
+There are no mammals that are animals. Everything that is an elephant is a mammal. Thus, every elephant is an animal.
+Anything that is a bird is an animal. Every single creature that is a sparrow is an animal. Consequently, all sparrows are birds.
+There exist students that are adults. Every single person who is a student is a person. It follows that not a single person is an adult.
+Plants are in no way living organisms. All things that are trees are living organisms. Trees cannot be classified as plants.
+Every single car is a vehicle. Everything that is a bicycle is a vehicle. It is the case that some bicycles are not cars.
+Every single animal that is a spider is a creature with eight legs. A few of the things known as daddy longlegs are creatures with eight legs. As a result, not all daddy longlegs are spiders.
+Some mammals are dogs. There are some cats who are mammals. Cats are in no way dogs.
+Every insect is an animal. All mammals are animals. Consequently, every single mammal is an insect.
+Every single gecko is a type of lizard. A number of geckos are also reptiles. Therefore, some reptiles are lizards.
+It is not the case that every human is a male. Every single human is a creature with ten legs. From this, it follows that some creatures with ten legs are males.
+It is true that no building is a vehicle. Each house, without exception, is a building. Therefore, no houses can be vehicles.
+Anything that is an elephant is also a four-legged animal. A portion of insects are creatures that have four legs. Therefore, some insects are not elephants.
+There are no books that are made of paper. There is not a single paperback that is a book. It follows, then, that some paperbacks are not made of paper.
+No giant balls of gas are stars. Suns are, without exception, giant balls of gas. No star can be considered a sun.
+It is true that no fish live in the sea. There are fish, and some of them are salmons. Based on this, it must be the case that a certain amount of salmons do not live in the sea.
+It is not true that any tree is green. There is not a single car that is a tree. Consequently, there is no car that is green.
+There are no rocks that are objects. A few tables are, surprisingly, rocks. This means that a portion of tables are not objects.
+There are some planets that are dogs. All things that are dogs are beings. Hence, it can be concluded that some beings are planets.
+Some fish are penguins. All penguins belong to the class of birds. One must conclude that some birds are fish.
+It is true that all newspapers are animals. There are some magazines that are not animals. Therefore, it is the case that some magazines are not newspapers.
+Any person who is a doctor is a cloud. Every single doctor is a person with a degree. This proves that every person with a degree is a cloud.
+It is true that no fish is a swimmer. There are fish, and some of them are tuna. Based on this, it must be the case that a certain amount of tuna are not swimmers.
+Every single creature that is an animal with fins is a fish. It is also the case that some whales are fish. This leads to the conclusion that some whales are animals with fins.
+There are some animals that are mammals. Something that is a dog is an animal. Consequently, every dog is a mammal.
+Anything that is a feline is a mammal. There are no cats that are felines. Thus, there are no cats that are mammals.
+Every single triangle is a polygon. It is not the case that some lines are polygons. Therefore, it follows that some lines are not triangles.
+Every single person who is an animal is a living thing. Not a single building is an animal. The conclusion that no buildings are living things is inescapable.
+There are no dogs that are cats. Everything that is a bird is a dog. Thus, every bird is a cat.
+Any object that is a building is also a structure. There is not a single structure that is a cloud. It follows that no cloud is a building.
+Some clouds are houses. A house is a building. As such, it is necessarily true that some buildings are clouds.
+Not a single creature that is a retriever is a dog. Every single animal is a retriever. It must be the case that no animal is a dog.
+Every single square is a polygon. There are no polygons which are circles. Thus, it can be concluded that some circles are not squares.
+Some things that are potatoes are not living things. Every single thing that is a potato is a human. A logical consequence of this is that some humans are not living things.
+It is true that all fish live in water. No birds are fish. Therefore, no bird lives in water.
+Every fictional characters is a stone. There are fictional characters which are animals. Thus, a portion of animals are stones.
+An insect is never an arachnid. There are spiders that are arachnids. The only conclusion to draw is that some spiders are not insects.
+It is not true that any dog is an animal. Nothing that is a mammal is a dog. This leads to the conclusion that no mammal is an animal.
+There are no tables that are living things. It is not true that any plant is a table. It is the case that some plants are tables.
+Written works are in no way items with printed pages. Everything that is a book is an item with printed pages. Books are not written works.
+Anything that is a plant with thorns is not a flower. A certain number of roses are considered plants with thorns. This demonstrates that some roses are not flowers.
+Any celestial body which is a planet is a cube. A portion of celestial bodies are planets. Consequently, some celestial bodies are cubes.
+Every square is a shape that is also a rectangle. Every rectangle is a polygon. It follows that some polygons are squares.
+There is not a single tree that is a shrub. It is known that some oaks are trees. Consequently, some oaks are not shrubs.
+Any person who is a human is a robot. The set of people contains no robots. It is the case that some people are not humans.
+Anything that is an apple is not a citrus fruit. The group of items known as fruits has some members that are citrus fruits. The result of this is that some fruits are not apples.
+Lions are not gazelles. All African lions are things that are lions. It follows that there are some African lions that are not gazelles.
+Every single idea is a tree. Every single idea is an animal. Therefore, there are animals that are trees.
+Anything that is cutlery is furniture. There are no pieces of cutlery which are also spoons. It is the case that some cutlery is not a spoon.
+Every single mammal is an animal. There are no fish which are mammals. Consequently, there are no fish which are animals.
+Nothing that is a canine is a cat. A certain number of dogs are canines. Thus, some dogs are cats.
+Some animal that is a reptile is not an amphibian. It is known that a portion of crocodiles are reptiles. From this, we can deduce that some crocodiles are not amphibians.
+Every single hammer is a tool. There are no nails that are hammers. It follows from this that every nail is a tool.
+No single plant is a tree. A select few pines are classified as plants. It is therefore a fact that some pines are not trees.
+Anything that is a animal is an idea. There are no ideas that are dogs. This necessarily suggests that some dogs are not animals.
+Anything that is a bicycle is a vehicle. It is known that no trucks are bicycles. This leads to the conclusion that no truck is a vehicle.
+Anything that is a star is a spoon. There exist no spoons that are suns. From this, we can deduce that some suns are not stars.
+Anything that is a fruit is a feeling. There are no feelings which are apples. As a result, we can conclude that some apples are not fruits.
+Every single animal is a living thing. Everything that is a human is also a living thing. Consequently, every human is an animal.
+There are some creatures that are animals and not vertebrates. All cats are also vertebrates. This leads to the conclusion that there are some cats which are animals.
+Any fire is frozen. There are some flames that are fire. Therefore, it is implied that some flames are frozen.
+It is completely false that any creature which is a bird is a fish. There exists a group of birds who are also penguins. A valid inference is that some penguins are fish.
+There are no triangles which are squares. Every single triangle is a polygon. It's the case that some polygons are not squares.
+There are no clouds that are rocks. There are no rocks that are mountains. Therefore, some mountains are clouds.
+Anything that is a mammal is an animal. Every single dog is an animal. This means that all dogs are mammals.
+All things which are numbers are animals. All things which are numbers are plants. It follows that some plants are animals.
+No books are buildings. Some things made of paper are books. From this, it is concluded that some buildings are made of paper.
+The set of automobiles and the set of self-propelled vehicles are entirely separate. The entire category of cars is composed of self-propelled vehicles. Automobiles are not cars.
+There are no lions which are herbivores. Every single lion is a predator. Therefore, we can conclude that some predators are not herbivores.
+There are no parrots which are mammals. Some birds are parrots. This implies that every bird is a mammal.
+Every doctor is a professional. The set of children does not contain professionals. At least one child is not a doctor.
+Every tiger is a feline. All tigers are also mammals. Therefore, all mammals are felines.
+It is not the case that every single scientist is an engineer. Every scientist is an elevator. It follows from this that some elevators are engineers.
+There are some reptile that are animals. Every single snake is a reptile. It is therefore the case that all snakes are animals.
+Anything that is a bird is an animal. Everything that is a zebra is an animal. All birds are zebras.
+Anything and everything that is a satellite is a moon. There are satellites that are planets. It must follow that all planets are moons.
+There are no animals that are fish that have beaks. All birds are animals that have beaks. Consequently, it can be said that some birds are not fish.
+There are some scientists who are engineers. It is a known fact that some scientists are also doctors. From this, it is suggested that some doctors are engineers.
+A certain number of cars are vehicles. All vehicles are considered modes of transportation. It logically follows that some modes of transportation are cars.
+Any fruit is a food. It is the case that no apple is a food. This means that no apple is a fruit.
+Not a single person who is a doctor is also an engineer. Among the group of people who are doctors, some are researchers. From this, we can logically conclude that there are some researchers who are not engineers.
+It is the case that no circles are round shapes. All of the things that are rings are circles. Thus, some rings are not round shapes.
+It is true that no cats are dogs. There are some people who are not dogs. It follows that some people are not cats.
+All houses are structures. There are no bridges that are houses. Therefore, no bridge is a structure.
+Anything that is a person is made of wood. Without exception, all children are people. Therefore, there are no children who are not made of wood.
+Every single dog is a mammal. There are no dogs that are fish. Therefore, there are no fish that are mammals.
+Things that are thoughts are not electrical signals in the brain. Every single idea is a thought. Therefore, some ideas are not electrical signals in the brain.
+It is the case that every single book weighs a ton. A portion of novels are books. Consequently, some novels weigh a ton.
+There are no hard workers who are also lazy people. Some students are hard workers. It is concluded that some students are lazy people.
+Not a single land-dwelling amphibian is able to survive in saltwater. Every salamander is, without exception, a land-dwelling amphibian. This implies that no salamander is able to live in saltwater.
+Every single fruit is a thing that grows on trees. All apples are things that grow on trees. At least one apple is a fruit.
+Every airplane is a cloud. It is true that every bird is a cloud. This means that every single bird is an airplane.
+Every single building is made of candy. There are no houses that are not buildings. A certain number of houses are made of candy.
+There are no vegetables that are fruits. It is also true that no minerals are vegetables. From this, it is suggested that some minerals are fruits.
+Anything that is a vehicle is also a machine. There is a subset of machines that are cars. Therefore, some cars are not vehicles.
+There are no universities which are plants. At least one tree is a plant. At least one tree is a university.
+It is true that some students are athletes. There are some tall people which are athletes. It logically follows that some tall people are not students.
+Nothing that can be considered a celestial body is an object that orbits a star. Every planet is an object that orbits a star. There exist no planets that are also celestial bodies.
+Every object that is a table is a type of furniture. There exist no pieces of furniture that are cars. From this, we must conclude that some cars are not tables.
+It is the case that no ghost is immortal. There is not a single human that is a ghost. It follows that no human is immortal.
+Anything that is a bird is not an animal. Of the items that are sparrows, some are animals. It must be the case that some sparrows are not birds.
+Reptiles are a class of animal which does not contain any amphibians. All things that are frogs are amphibians. The group of frogs and the group of reptiles have no members in common.
+There are no objects that are both tools and have handles. The entire set of objects with handles is composed of hammers. A portion of tools are hammers.
+The group of continents and the group of countries are mutually exclusive. Canada is not a continent. Therefore, Canada is a country.
+Not a single human is a tree. The entire set of trees is composed of women. It logically follows that some women are not human.
+There is no mammal that is a shark. Some of the sharks are fish. Therefore, some fish are not mammals.
+There are some band members who are singers. All band members are considered musicians. It follows that some musicians are singers.
+Every single bird is an animal. There are no animals that are minerals. This proves that some minerals are not birds.
+Among the people who are scientists, there are some who are also programmers. Of the people who are musicians, a number of them are programmers. It therefore stands that some people who are musicians are also scientists.
+Every bird is a fish. There are no fish which are sparrows. This necessarily suggests that some sparrows are not birds.
+There are no shirts which are vegetables. Some clothing is shirts. This implies that every piece of clothing is a vegetable.
+Every single house is a building. A few schools are classified as buildings. As a result, not all schools are houses.
+The set of humans is a subset of the set of mortals. At least one robot is not a mortal. There is at least one robot who is not a human.
+Every star is a luminous celestial body. There are some planets that are not luminous. It is the case that some planets are not stars.
+Chairs are in no way furniture. Everything that is a chair is an object. There are some objects that are not furniture.
+Some item that is an animal is not a mammal. Some dogs are mammals. Therefore, all dogs can be said to be animals.
+All of the things that are lions are felines. All of the things that are cats are felines. It can be deduced that there are cats that are lions.
+It is impossible for a spider to be a bird. A portion of spiders are considered arachnids. It is necessarily the case that some arachnids are not birds.
+Each bird is a vertebrate. Each bird is an animal that has wings. So, some animals with wings must be vertebrates.
+There are some capitals that are polluted. All capitals are, by definition, cities. One must conclude that some cities are polluted.
+There are some tables that are happiness. Anything that is happiness is an emotion. Consequently, some emotions are tables.
+Anything that is a puppy is venomous. A few puppies are kept as pets. This implies that a certain number of pets are venomous.
+There are some creatures that are mammals and also animals. Among the group of creatures that are tigers, some are animals. It follows that at least some tigers are not mammals.
+No vegetable is a type of meat. It is true that every single meat is a food. This proves that some vegetables are food.
+It is a fact that all mammals are animate objects. There are some animals which are zebras. Therefore, every single zebra is an animate object.
+It is the case that no insect is a mammal. Every single insect is an animal. For this reason, every animal is a mammal.
+Every object that is a car has an engine. Some motorized vehicles are cars. Therefore, all motorized vehicles have engines.
+It is true that anything that is an apple is an edible thing. Every apple is a fruit. It follows that some fruits are edible things.
+There exist some things which are rivers, that are not oceans. Anything that is a river is a body of water. A logical consequence of this is that some bodies of water are not oceans.
+Every bird is an animal. All humans are animals as well. Therefore, all humans must be birds.
+Hammers are items that are tools. It is the case that no glove is a tool. It can be concluded that no glove is a hammer.
+All things which are ghosts are scientific facts. All things which are ghosts are mythical beings. It follows that some mythical beings are scientific facts.
+Every object that is a flower is an animal. Anything that is a rose is an object that is a flower. This means that every rose is an animal.
+It is not true that any stationery item can be used for writing. All pencils are items of stationery. Therefore, no pencil is able to be used for writing.
+Every single apple is a vegetable. Anything that is an apple is a fruit. From this, it can be stated that some fruits are vegetables.
+There are no amphibians that do not live on both land and in water. Every single frog is an amphibian. There exists at least one frog that lives on land and in water.
+There are no roses that are vegetables. A certain quantity of roses are flowers. This logically implies that some flowers are not vegetables.
+Every feline is an animal. There is a subset of animals that is composed of mammals. A portion of mammals are not felines.
+No buildings are found within the group of plants. The category of trees is entirely made up of plants. Buildings and trees are completely separate categories.
+No gold is silver. Silver is, without exception, a metal. A number of metals are gold.
+Everything that is a planet is a celestial body. There are no things that are Earth that are not planets. Therefore, at least some Earth is a celestial body.
+It is true that no bird is an insect. Every single insect is a mammal. This proves that all mammals are birds.
+A computer is never a tablet. All of the tablets are, without exception, electronic devices. A subset of electronic devices is not composed of computers.
+It is not true that any input device is used for typing. Each and every keyboard is an input device. It is therefore a fact that no keyboard is used for typing.
+The group of birds is a subset of the group of creatures with feathers. At least one insect is not a creature with feathers. Not every insect is a bird.
+Every shoe is a type of footwear. Nothing that is a sandal is a type of footwear. It is the case that no sandal is a shoe.
+There are some vegetables which are apples. Everything that is an apple is an aquatic mammal. This necessitates that some aquatic mammals are vegetables.
+Anything which is an animal is a flightless thing. Every single bird is an animal. There are no birds that are not flightless.
+There exist no creatures that are both fish and reptiles. There are no lizards which are fish. It is therefore the case that some lizards are reptiles.
+Nothing that is a bird is also a mammal. It is known that some pets are mammals. Consequently, some pets are birds.
+All of the things that are windows are animals. All of the things that are doors are animals. It can be deduced that there are doors that are windows.
+It is a fact that every single soda is a liquid. Likewise, it is true that all water is liquid. Therefore, it has been asserted that every bit of water is soda.
+Every single liquid is wet. All solids are also wet. Therefore, nothing that is a solid is not a liquid.
+It is true that everything that is a sun is a star. It is also true that all stars are celestial bodies. Thus, it is concluded that all celestial bodies are suns.
+Anything that is a human is a mammal. There are some apes that are mammals. Some apes are not mammals.
+Every single fruit contains seeds. Anything that is an apple is a fruit. A number of apples contain seeds.
+None of the things that are shrubs are plants over 20 feet tall. Anything that belongs to the class of trees is a plant over 20 feet tall. Trees and shrubs do not belong to the same group.
+Some of the planets are animals. All animals are living things. As a result, some living things are planets.
+Every single priest is a person. All priests are human. It follows from this that every human is a person.
+A car is never an airplane. It is also the case that no boat is an airplane. Consequently, all boats are cars.
+There are no fish which are mammals. No cats are considered fish. Some felines are not mammals.
+It is a certainty that every single teacher is a human being. It is also true that a few educated people are human beings. On this basis, it has been stated that a few educated people are teachers.
+Nothing that is a robot is an organic being. Every single person who is a human is an organic being. It follows from this that there are a number of humans who are not robots.
+Anything that is a human is a mammal. Everything that is an ape is a mammal. No apes are mammals.
+Any object that is a body of water is a gas. Nothing that is an ocean is a gas. There exists at least one body of water which is not an ocean.
+There are no vegetables that can be described as fruits. Carrots are, in every instance, vegetables. Therefore, it is certain that no carrots are fruits.
+Every person who is a politician is a mortal. All mortals are humans. Consequently, every single human is a politician.
+There are no trees that are living organisms. Every single item which is a plant is a living organism. This implies that all plants are trees.
+Anything that is an oak is a plant. There are oaks that are trees. It must follow that every single tree is a plant.
+There are no trees that are also animals. Every single tree is a plant. It is the case that some plants fail to be animals.
+The set of stars and the set of celestial bodies that orbit other celestial bodies are mutually exclusive. Nothing that is a planet is a celestial body that orbits another celestial body. The entire group of planets consists of stars.
+Anything that is a fruit is not a baked good. All of the things that are apples are fruits. Thus, some of the things that are apples are not baked goods.
+Each and every kitchen is a room. Each and every kitchen is a place for cooking. This implies that some places for cooking are rooms.
+All fish are birds. It is true that no bird is aquatic. It follows that no aquatic thing is a fish.
+Anything that is a dog has fur. There are some poodles that are dogs. There are no poodles that do not have fur.
+The group of humans and the group of people have nothing in common. All of the things that are men are people. Men are not humans.
+All of the things that are robins are birds. There are no birds whatsoever that are fish. It logically follows that no fish are robins.
+It is a fact that every single dog is a mammal. Likewise, it is true that all poodles are mammals. Therefore, it has been asserted that every poodle is a dog.
+A creature that is a dog is never a mammal. Among the creatures that are dogs, a group are retrievers. One can infer from this that some retrievers are not mammals.
+There are people who are students. A few children are students. It follows, then, that some children are people.
+No car is a boat. Some vehicles are not cars. Therefore, all vehicles are boats.
+There are no cars that are boats. There is not a single ferry that is a car. Consequently, some ferries are boats.
+Every single vegetable is a plant. Anything that is a carrot is a vegetable. Therefore, all carrots are plants.
+There exist some apples that are fruits. Anything that is an apple is edible. Thus, some edible things are fruits.
+Every single creature that is a dog is also a mammal. There are some jack russels which are dogs. It necessarily follows that some jack russels are mammals.
+Every single dog is an animal. There are no zebras which are canines. It is the case that some zebra is an animal.
+There are no eagles that are mammals. Every single eagle is a bird. It is implied that some birds are not mammals.
+Every insect is an animal. All reptiles are animals. Consequently, every single reptile is an ant.
+Anything that is a liquid is a fluid. Every single gas is a fluid. This means that all gases are liquids.
+Every human is a being that has eyes. It is the case that no dog is a human. At least some dogs have eyes.
+Dogs are in no way mammals. Anything that is a dog is a canine. There are some canines that are not mammals.
+All machines are humans. There are at least a few students who are not humans. At least one student is a machine.
+Every single fish is a creature. Every bird is a creature. All birds are fish.
+There are no birds which are insects. There is no fly that is a bird. It follows, then, that some flies are insects.
+No item that can be described as a cat is a dog. There exist pets that are dogs. We must conclude that some pets are not cats.
+There exists no dog that is also a plant. There are no humans who are plants. The group of humans and the group of dogs are mutually exclusive.
+There is a person who is both a politician and a lawyer. The group of senators includes people who are lawyers. The consequence is that some senators are politicians.
+Anything that is a flower is made of metal. Every single rose is a flower. At least one rose is made of metal.
+Every single thing that is a truck is a vehicle. It is the case that a number of pickups are vehicles. Consequently, some pickups are not trucks.
+There are no animals that are both fish and warm-blooded. The entire group of mammals consists of animals that are warm-blooded. Fish and mammals are mutually exclusive categories.
+Every single reptile is a living thing. The set of animals contains no living things. Not a single reptile is an animal.
+Anything that is a fish can fly. It is also the case that every single bird can fly. From this, it can be concluded that all fish are birds.
+There are some sweet foods that are cakes. There are no cakes that are salty foods. It is the case that no salty foods are sweet foods.
+Not a single thing that is a machine is an animal. It is known that a portion of cars are machines. Thus, it must be true that some cars are animals.
+Anything that is a priest is a man. Every single pope is a man. It is necessarily concluded that every pope is a priest.
+There is no machine that is a chair. A few chairs happen to be things that are made of wood. Therefore, some things made of wood are not machines.
+Every single house is a thing that is a building. A shed is never a thing that is a building. It follows that no shed is a house.
+There are no parrots which are mammals. Some birds are parrots. This implies that no birds are mammals.
+Every single bird has the ability to read novels. There exist some pigeons which are birds. Therefore, some pigeons can read novels.
+Nothing that is a land animal is an aquatic animal. A certain number of hippos are to be found among the land animals. Thus, it can be concluded that some hippos are aquatic animals.
+There are no vehicles that are made of metal. Every single car is a vehicle. This means that no car is made of metal.
+Some writers are also poets. It is known that some novelists are writers. It has been said that some novelists are poets.
+Every single organism that is a fish lives in trees. Anything that is a salmon is a type of fish. It is necessarily concluded that all salmon live in trees.
+Any and all humans are mortal. It is a known fact that all humans are primates. Thus, every single primate is mortal.
+Anything that is a sparrow is also a bird. There are some bats which are not birds. This necessarily means that some bats are not sparrows.
+There are some animals that are not mammals. Everything that is a dog is a mammal. Thus, every dog is an animal.
+Anything that is a poet is also a writer. All writers are people who are creative. We can conclude from this that a portion of creative people are poets.
+Anything that is a mammal is a creature that is warm-blooded. Some animals are, without a doubt, mammals. Therefore, every single animal is made of wood.
+It is the case that every single stone is a cloud. Anything that is a cloud is an animal. Therefore, a few animals are stones.
+Nothing that is an emotion is a feeling. Certain emotions are classified as sadness. It must be the case that some sadness is not a feeling.
+It is the case that no liquid is a fluid. All water is a liquid. Consequently, some of the water is not a fluid.
+There are no paintings that are also works of literature. Every single novel is a work of literature. The implication is that there exist some novels which are not paintings.
+There exist vegetables that grow. Every single vegetable is a plant. It follows that not a single plant is a vegetable.
+Anything that is a square is a quadrilateral. There are no shapes that are triangles which can also be described as quadrilaterals. There exist certain triangles that are not squares.
+The group of professionals is a subset of the group of people. Everything that is a doctor is a professional. Therefore, there are some people who are not doctors.
+Anything that is a car is a vehicle. Every single sedan is a vehicle. This means that all sedans are cars.
+It is true that some things that are trees are not oaks. Everything that is a tree is a plant. It follows that there are some plants that are not oaks.
+There are some vehicles that are machines. Every single car is a vehicle. It is therefore the case that every car is a machine.
+Anything that is a liquid is not a solid. There is no water that is a liquid. Consequently, every drop of water is a solid.
+It is not true that any flower is a plant. All things that are roses are flowers. Thus, some roses are not plants.
+There are some creatures that are mythical that are centaurs. Every single one of the centaurs is a domesticated animal. Consequently, it is the case that some domesticated animals are mythical creatures.
+There are no vegetables that are apples. Among the apples, a few are red fruits. Not all red fruits are vegetables.
+There is nothing that is a canine which is also a feline. Every animal that is a dog is, by its very nature, a canine. It can be logically concluded that no dogs are felines.
+Every single human is not a fish. There are a few fish that are also creatures that live in water. It is the case that not all creatures that live in water are humans.
+There are no animals that are rocks. It is also true that no cats are rocks. Therefore, it is argued that there are no cats which are animals.
+It is the case that all actors are performers. There are some men who are actors. Therefore, we can derive that some men are performers.
+There are some dogs that are cats. There are no cats that are reptiles. As a result, some reptiles are dogs.
+Every single country has a capital city. The entity known as France is a country. There is at least some part of France that has a capital city.
+The group of creatures that have eight legs does not intersect with the group of arachnids. All of the arachnids are spiders. It must be the case that a portion of spiders are not creatures that have eight legs.
+It is the case that no bird is a reptile. A portion of the penguin population are birds. Thus, some penguins are excluded from the group of reptiles.
+Every single liquid is wet. It is known that no sand is a liquid. Consequently, there are no things made of sand which are wet.
+There are no plants that can be called trees. It is also true that every plant is a type of vegetable. This has led to the conclusion that every vegetable is a tree.
+Anything that is a table is not a tree. There are tables, and some of them can be identified as furniture. Based on this, a portion of furniture pieces must not be trees.
+Every mammal is an animal. Every fish is an animal. This suggests that some fish are mammals.
+Every single tree is a thing that is alive. Anything that is a plant is alive. At least one plant is a tree.
+There is no square that is a circle. Some of the shapes are squares. Therefore, it is the case that some shapes are circles.
+It is true that every pen is an object. Some things are not pens. From this, it can be claimed that some things are not objects.
+There is no overlap between living things that can breathe oxygen and rocks. All things that are rocks are animals. Certain animals are not living things that can breathe oxygen.
+It is the case that no mammal is an animal. There are some dogs that are animals. It must be the case that some dogs are not mammals.
+Every triangle is a shape. No circle is a triangle. Therefore, no circle can be a shape.
+Every cat is a mammal. The set of dolphins contains no cats. Every single dolphin is a mammal.
+Every cat is an animal. There are a number of dogs that are animals. It follows from this that every single dog is a cat.
+Every single car is a type of vehicle with an engine. There exist some bicycles that do not have an engine. It is the case that some bicycles are not cars.
+It is a fact that all cats are felines. Everything that is a feline is a mammal. Therefore, every single mammal is a cat.
+Any creature that is a bird is an animal. A portion of animals are kept as pets. Some pets are not birds.
+Every fruit is an object that contains seeds. Without exception, all apples are fruits. It can be concluded that every apple contains seeds.
+There are no moons that are also planets. Everything that is a planet is also a celestial body. Some celestial bodies are not moons.
+Nothing that is a fiction book is a biography. Some novels fall under the category of fiction books. This allows us to state that some novels are not biographies.
+Mountains cannot be oceans. Every mountain named Everest is a mountain. It must be that some mountains named Everest are not oceans.
+There exist no machines that are also humans. Anything that can be called a student is, without exception, a human. No students are machines.
+Not a single rock is an animal. Every single item which is a dog is a rock. This implies that some dogs are animals.
+Anything that is a triangle is not a shape with three sides. Every single thing that is an equilateral triangle is a triangle. Therefore, it is the case that some equilateral triangles are not shapes with three sides.
+It is the case that no computers are laptops. It is also true that no tables are computers. From these statements, it can be concluded that some tables are laptops.
+Every single star is a planet. No planets are suns. It is therefore a sound deduction that some suns are not stars.
+Anything that is a human is a mortal. All things that are trees are mortals. This means that everything that is a tree is a human.
+A smartphone is a tool. Everything that is a tool is a robot. This is why every robot is a smartphone.
+There are some planets which are roses. All roses are, in fact, flowers. It follows that some flowers are planets.
+Nothing that is a vehicle is able to fly. Each and every airplane is a vehicle. It is therefore a fact that no airplane is able to fly.
+None of the things that are cats are aquatic animals. All tigers are things that are cats. It follows logically that some tigers are not aquatic animals.
+Every single thing that is a dog is a mammal. Anything that is a cat is a mammal. From this, it can be stated that some cats are dogs.
+There exist some individuals who are artists that are not painters. Every single person who is an artist is a creative person. It follows that some creative people are painters.
+It is not true that any mammal is a fish. There are a few fish that are also humans. There are some humans that are not mammals.
+Everything that is a living organism is a thing that consumes energy. Any and all plants are things that consume energy. This means that all plants are living organisms.
+It is true that some Europeans are people. Among the items that are Germans, some are people. The only conclusion is that some Germans are not Europeans.
+Everything that is a cloud is also a reptile. Everything that is a cloud is also a fish. Hence, some fish are reptiles.
+Any item that is a tree is a plant. It is the case that a portion of pines are plants. Therefore, not all pines are trees.
+Nothing that is a fruit is broccoli. All items of broccoli are vegetables. A subset of vegetables is not fruit.
+There are some buildings that are not skyscrapers. All buildings are considered structures. It is therefore true that some structures are not skyscrapers.
+Not one single nonfiction book is a fictional work. All novels are fictional works. It follows from this that some novels are not nonfiction books.
+Some fast food restaurants have a drive-thru. There are coffee shops which are also fast food restaurants. It follows, then, that some coffee shops have a drive-thru.
+Every single vegetable is a planet. Anything that is a planet is a musical instrument. It is a logical necessity that some musical instruments are vegetables.
+Every mammal is a thing that is an animal. There is not a single dog that is an animal. Consequently, no dog is a mammal.
+The category of moons and the category of celestial bodies do not overlap. All celestial bodies are planets. A subset of planets are moons.
+There are no rocks that can be classified as plants. Some granite is included in the category of rocks. Consequently, it follows that some granite is not plants.
+Every single creature that is a pig is capable of flight. There are some farm animals which are pigs. Therefore, a portion of farm animals can fly.
+No liquids are cats. Some dogs are liquids. It is concluded that some dogs are cats.
+Not one cat is a pet. Everything that is a cat is a mammal. It follows that all pets are mammals.
+The set of artists contains no people who conduct systematic research. Every single scientist is a person who conducts systematic research. Artists are not scientists.
+It is the case that all dogs are mammals. No cats are dogs. It follows that no cat is a mammal.
+There are no birds that are fish. It is the case that some parrots are birds. We can conclude that no parrots are fish.
+The class of insects and the class of creatures with eight legs do not overlap. All creatures with eight legs are spiders. A subset of insects are spiders.
+Every single cloud is a vehicle. There are no clouds that are buses. Therefore, there is no bus that is a vehicle.
+Anything that is a novel is a book. All books are publications. From these facts, it is clear that a few publications are novels.
+There are no reptiles that are humans. It is also true that no ant is a reptile. It follows that no ant is a human.
+There are some animals that are mammals. There are no mammals that are birds. It follows from this that some birds are animals.
+Liquids are in no way substances. Anything that is a liquid is a fluid. It's the case that some fluids are not substances.
+Every single piece of gold is a precious substance. No plastic is gold. It follows that no plastic is a precious substance.
+Every novel is a work of fiction. No work of fiction is a news article. It is thus the case that no news article is a novel.
+It is true that everything which is a bird is a winged creature. There are no insects which are birds. A conclusion that can be drawn from this is that there are no insects which are winged creatures.
+Anything that is a tree is a musical instrument. There are some oaks that are not musical instruments. This leads to the conclusion that some oaks are not trees.
+Anything that is a car has an engine. It is the case that no bicycle is a car. No bicycle has an engine.
+It is not true that any insect is a creature with eight legs. Every insect is a spider. It follows that every spider is a creature with eight legs.
+A few shoes are fruits. Every single fruit grows on a plant. It can be deduced that some things that grow on plants are shoes.
+Absolutely nothing that is an aquatic animal is a feline. It is the case that some cats are aquatic animals. Thus, not all cats are felines.
+There are no things which are animals that are plants. Everything that is a tree is a plant. Consequently, there exist some trees which are not animals.
+Not one single doctor is a person who performs on stage. Every single musician is considered a person who performs on stage. Consequently, there exist some musicians who are not doctors.
+Fathers are in no way humans. Anything that is a father is a mother. There are some mothers that are not humans.
+Everything that is a car is a sentient cloud. All sentient clouds are plants. This means that some plants are cars.
+All sedans are cars. Every sedan is a vehicle. Therefore, all vehicles must be cars.
+There are no flying creatures which are birds. A certain number of sparrows are flying creatures. It follows that not all sparrows are birds.
+No fish are creatures with fur. All of the animals that are considered mammals are creatures with fur. Consequently, it can be said that some mammals are not fish.
+Nothing that is a vehicle is a mode of transportation. A certain number of cars are composed of vehicles. It follows that a portion of cars are not modes of transportation.
+It's the case that all furniture is made of wood. Anything that is a chair is also made of wood. Some chairs fail to be furniture.
+Every single dog is a mammal. All mammals are birds. Consequently, every single bird is a dog.
+Anything that is a stone is soft. Every single diamond is a stone. A certain quantity of diamonds is soft.
+There is no fish that is a mammal. There are no dogs that are mammals. It can be deduced that there are no dogs that are fish.
+There are no polygons that are shapes with three sides. All triangles are shapes with three sides. The implication is that some triangles are not polygons.
+Every single liquid is a fluid. There are some water bodies which are liquid. Water is in no way a fluid.
+There are some animals that are birds. It is a fact that some animals are not fish. It must be the case that no fish is a bird.
+Every single dog is capable of photosynthesis. There exist dogs which are poodles. This implies that a portion of poodles can photosynthesize.
+There are no shirts that are also pants. It is true that no jacket is a pair of pants. Therefore, we can conclude that a few jackets are shirts.
+There are no mythical creatures who are people. A few mythical creatures are aliens. It is the case that a portion of all aliens are people.
+Every dog is a mammal. All cats are also mammals. Therefore, it must be that some cats are not dogs.
+Anything that is water is also an H2O molecule. There is no ice that is an H2O molecule. Therefore, ice cannot be water.
+There are some smart people that are physicists. Every physicist is a scientist. As a result, every single scientist is a smart person.
+Every single vegetable is green. Anything that is a leaf is green. It is necessarily concluded that every leaf is a vegetable.
+There are no objects that are furniture. Each and every table is an object. It follows that no table can be an item of furniture.
+There are no animals that are both carnivores and herbivores. A certain number of wolves are carnivores. It follows that no wolves are herbivores.
+Every single nurse is someone who can fly. A few nurses are doctors. Therefore, a certain number of doctors can fly.
+There are no stars that are planets. Each and every star is a celestial body. It is therefore true that every celestial body is a planet.
+Anything that is a planet is secretly a robot. Every single thing that is secretly a robot is a living thing. From these facts, it is clear that a few living things are planets.
+There are no vegetables that are fruit. It is the case that no fruit is a potato. Therefore, some potatoes are not vegetables.
+It is not the case that animals are non-birds. Of the items that are hummingbirds, some are non-birds. It must be the case that every single hummingbird is not an animal.
+Stars are in no way celestial bodies. Anything that is a star is a planet. It's the case that some planets are not celestial bodies.
+There exist mammals who are cats. Every single dog is a mammal. It follows that not a single dog is a cat.
+Every single grape is a fruit. There exist some carrots that are not fruits. It must be that some carrots are not grapes.
+Every person who is a child is a mortal. All mortals are humans. Consequently, every single human is a child.
+Anything which is a doctor is also a person. There exist some surgeons who are doctors. This means that some people are surgeons.
+Every single polygon is a square. No triangles are included in the category of squares. Some triangles are not polygons.
+Dogs are in no way cats. There are no cats which are fish. There exist no dogs that are fish.
+It is true that every dog is a mammal. Anything that is a dog is an animal. From this, it can be claimed that some animals are mammals.
+It is true that every single number is a concept. There are some prime numbers which are not concepts. It must follow that some prime numbers are not numbers.
+Any animal that is a cat is a mammal. There isn't a single fish that is a cat. This means that no fish is a mammal.
+Any animal that is a lion is a carnivore. No gazelle is a carnivore. It is impossible for a gazelle to be a lion.
+Every bird in existence is made of glass. There are some robins that are birds. It follows, then, that some robins are made of glass.
+It is the case that no cats are dogs. It is also true that no birds are cats. Thus, it can be concluded that some birds are dogs.
+It is not the case that every novel is a short story. Every single thing that is a novel is a book. One can therefore conclude that some books are not short stories.
+Every single thing which is a fish is a creature. It is also the case that every single cat is a creature. From this, it follows that all cats are fish.
+It is the case that no cars are bicycles. Every single thing that is a Ferrari is a car. Therefore, some Ferraris are not bicycles.
+It is the case that every teacher is a college graduate. Some professionals are also known to be college graduates. Thus, it can be concluded that some professionals are also teachers.
+Every sparrow is a type of animal. Some sparrows can be described as birds. Therefore, a certain number of birds are animals.
+Not a single person who is a parent is a human. Among the group of people who are parents, some are mothers. From this, we can logically conclude that there are some mothers who are not humans.
+It is not true that any dog is a cat. A certain number of golden retrievers are found to be dogs. Thus, some golden retrievers are not cats.
+Every single mortal is a number. There are no numbers that can be described as humans. Based on this, some humans are not mortal.
+It is true that no birds are mammals. There are no bats which are birds. Consequently, some bats are not mammals.
+Any creature that is an animal is a bird. There is not a single bird that is a reptile. This logically means that no reptile is an animal.
+Every single tree is a plant. There exist no stones which are also plants. There is at least one stone which is not a tree.
+There are no vegetables that are fruits. All apples are fruits. This is why some apples are vegetables.
+There are no sofas that are furniture. There are no chairs that are furniture. Anything that is a chair is a sofa.
+There are some elephants which are mammals. There are some fish which are mammals. This leads to the conclusion that some fish are elephants.
+Every person who is a primate is a mammal. All humans are mammals. Consequently, every single human is a primate.
+Not a single square is a circle. The entire set of circles is made up of triangles. A portion of triangles are squares.
+Any item that is a phone is a plant. There isn't a single plant that is an electronic device. This proves that no electronic device is a phone.
+It is true that everything that is an elephant is a mammal. It is also true that no fish are elephants. Thus, it is concluded that no fish are mammals.
+It is true that no liquids are solids. There are some gases which are not solids. It follows that all gases are liquids.
+Any and all reptiles are lizards. There are reptiles that are mammals. It must follow that all mammals are lizards.
+Anything that is a plane is a vehicle. There is nothing that is an item of furniture which is a plane. Consequently, no piece of furniture is a vehicle.
+It is true that any dog is an animal. All pets are animals too. Therefore, some pets are not dogs.
+There exist no dogs which are cats. There are some pets which are not dogs. This leads to the conclusion that some pets are cats.
+Nothing that is a vehicle is an object with wheels. Every single item that is a car is an object with wheels. This proves that a number of cars are not vehicles.
+A creature that is a reptile is never a mammal. There are no snakes that are reptiles. It is necessarily the case that a snake is never a mammal.
+Nothing that is a square is a circle. There are some shapes that are circles. It must be the case that every single shape is not a square.
+No cities are countries. All things that are a city named London are cities. It is necessarily true that some cities named London are not countries.
+Any golden retriever is a mammal. It is the case that some golden retrievers are dogs. This means that a few dogs are mammals.
+Every single insect is an arthropod. None of the creatures that are arthropods are vertebrates. It follows directly that no vertebrate is an insect.
+There are no creatures that are both humans and organisms. Among the creatures that are babies, some are organisms. From this, we can logically derive that some babies are not humans.
+Anything that is a reptile is also an animal. A portion of animals are lizards. Therefore, some lizards are not reptiles.
+There are no vegetables that are not poisonous. Anything that is a carrot is a vegetable. It follows that a number of carrots are poisonous.
+Every triangle is a polygon. All shapes that are squares are polygons. Nothing that is a square is also a triangle.
+There are no fish which are mammals. No lions are considered fish. Some lions are not mammals.
+Every single rhino is a mammal. Every single lion is a mammal. It is the case that some lions are not rhinos.
+Anything that is a song is also a composition. No composition is an animal. Thus, we can validly conclude that some animals are not songs.
+The class of birds and the class of cars do not overlap. The entire set of cars is composed of sparrows. It is a logical consequence that some sparrows are not birds.
+The group of even numbers and the group of animals are mutually exclusive. Any animal is also an odd number. There are some odd numbers that are even numbers.
+Every single creature that is a canine is a mammal. A portion of canines are dogs. It is therefore the case that some dogs are mammals.
+Nothing that is a stone is a meat. It is also the case that no fruit is a meat. Therefore, no fruit is a stone.
+There exist some things which are birds that are not animals. Every single thing that is a bird is a mammal. From this, it follows that some mammals are not animals.
+Every dog is a canine. Some canines are terriers. Consequently, every single terrier is a dog.
+Houses are never schools. A few schools are, in fact, buildings. There exist buildings that are not houses.
+Anything that is an elephant is a mammal. Every whale is also a mammal. From this, it is concluded that no whale is an elephant.
+Anything that is a vegetable is a plant. There is a subset of plants that are fruits. A number of vegetables are not fruits.
+Every sport requires physical activity. There is no such thing as soccer that isn't a sport. At least some soccer is a thing that requires physical activity.
+Every single liquid is a fluid. It is impossible for any water to be a fluid. It can be concluded that no water is a liquid.
+A few of the buildings are houses. There are no houses that are cars. As a result, some cars are buildings.
+Any structure which is a house is made of chocolate. There are some buildings which are houses. This means that some buildings are made of chocolate.
+Anything which is a bird is an animal. No birds are rocks. Therefore, It is possible to infer that some rocks are animals.
+Anything that is a fruit is a food that contains seeds. Some foods are, without a doubt, fruits. Therefore, every single food contains rocks.
+Every single dog is an animal. Anything that is a cat is an animal. It follows that a few cats are dogs.
+Every single apple is a food. It is also true that every apple is a fruit. This means that all fruits are foods.
+Anything that is a stone is not a berry. Of the items that are fruits, some are not berries. It follows that some fruits are not stones.
+Every single dog is a cloud. All animals are clouds. It must be true that every animal is a dog.
+Every single dog is a mammal. A portion of mammals can be classified as creatures that bark. Some creatures that can bark are not dogs.
+Every sky is a blue thing. There is not a single car that is a sky. It can be concluded that no car is a blue thing.
+Some penguins are birds. Every bird is an animal. As such, it is necessarily true that some animals are penguins.
+Every single liquid is solid. It is not true that any rock is a liquid. It is the case that no rock is solid.
+There is no celestial body that is a thing in the sky. All planets are things in the sky. The implication is that a number of planets are not celestial bodies.
+It is the case that no fruits are vegetables. It is also true that no apples are fruits. From these statements, one can conclude that some apples are not vegetables.
+Every single book is a planet. Every single book is furniture. Therefore, there are pieces of furniture that are planets.
+Every single cat is an animal. Everything that is a dog is an animal. There is at least one dog that is a cat.
+Every single ocean is a body of water. Any area that is a sea is part of an ocean. This means that all seas are bodies of water.
+Every single plant is food. Everything that is a fruit is food. It follows that every fruit is a plant.
+Any animal that is a land animal is not a whale. Some whales are considered animals that live in the ocean. It is the case that some animals living in the ocean are not land animals.
+Every single vegetable is not a fruit. A portion of the things that are croissants are fruits. The result of this is that some croissants are vegetables.
+A few of the insects are beetles. Every beetle is an arthropod. As a result, some arthropods are insects.
+Every single human is a cloud. It is also true that every mammal is a cloud. This proves that all mammals are humans.
+There are no dogs who are cats. A few dogs are pets. This implies that some pets are cats.
+Some chairs are people. Every single person is a living being. Consequently, some living beings are chairs.
+Every single novel is a planet. No planet is a book. It is a necessary conclusion that no book is a novel.
+There is nothing that is a planet that is not also a celestial body. It is the case that every celestial body is an object in space. Therefore, some objects in space are planets.
+All fish are animals that live in water. Some sharks are not fish. We can infer that some sharks are not animals that live in water.
+Every single dog belongs to the canine family. Anything that is a chihuahua is a dog. This means that every chihuahua is a canine.
+Every single cat is a living creature. Every single dog is a living creature. As such, there are some dogs that are not cats.
+Every fish is a creature that is an amphibian. Without exception, all sharks are fish. Therefore, it is certain that every shark is an amphibian.
+Nothing that is a car is a motorcycle. A few things called vehicles are identified as being cars. This proves that some vehicles are not motorcycles.
+There are no numbers that are tables. It is not true that any table is a couch. It is the case that some couches are numbers.
+Anything that is a vegetable is not a plant. A portion of the things that are vegetables are also carrots. The conclusion that some carrots are not plants is inescapable.
+Every single bird is a fish. Some penguins, it is known, are not fish. This necessarily implies that some penguins are not birds.
+Not a single object that is a car is a boat. A group of cars can be described as vehicles. It is a logical consequence that some vehicles are not boats.
+A group of numbers are planets. Every planet is a celestial body. As a result, a portion of celestial bodies are numbers.
+There are some mammals which live on land. It is the case that no fish lives on land. Consequently, all fish are mammals.
+Some liquids are cats. Every single thing that is a cat is a mammal. Therefore, some mammals are liquids.
+Every computer is a plant. There exist some laptops that are not plants. It must be the case that some laptops are not computers.
+Everything that is a spoon is a piece of cutlery. No giraffes can be considered pieces of cutlery. It can be said that some giraffes are not spoons.
+There are some mammals that are primates. Every single primate is an animal. Consequently, some animals are mammals.
+Every single mammal is a living thing. The set of animals contains no living things. Not a single mammal is an animal.
+There are no cats which are fish. There are no fish which are animals. It follows that some animals are cats.
+There are no fish that are mammals. No cats are considered fish. Some felines are not mammals.
+The set of honest people and the set of liars are mutually exclusive. There are no politicians who are liars. All politicians are honest people.
+There are no animals that are flying vehicles and are also canines. All flying vehicles are dogs. It is necessarily true that a portion of dogs is not canines.
+There are no squares which are round. There are no circles which are squares. It follows, then, that some circles are square.
+Every item that is a mammal is an animal. Some lions are mammals. Therefore, all lions can be said to be animals.
+It is true that no numbers are waves. No sounds are numbers. It follows that no sounds are waves.
+There are no cars that can be called boats. It is also true that every car is a type of vehicle. This has led to the conclusion that a portion of vehicles are cars.
+Every single cat is an animal. There are some fish which are cats. Fish are in no way animals.
+It is true that everything which is a bird is a winged creature. There are no insects which are birds. A conclusion that can be drawn from this is that there are insects which are winged creatures.
+Anything that is an apple is a cloud. Every single apple is a fruit. It follows from this that all fruits are clouds.
+Nothing that is a pet animal is also a feline. Some cats happen to be pet animals. This leads to the conclusion that a certain number of cats are not felines.
+All people who are doctors are those who have medical training. There are no people with medical training who are teachers. This means that no one who is a teacher is a doctor.
+There are no mammals that are birds. Every single thing that is a mammal is an animal. It is the case that some animals fail to be birds.
+Some of the felines in the world are lions. Every single feline is a mammal. Consequently, some mammals are found to be lions.
+Absolutely no primary color is also a secondary color. Some things which are visible colors are classified as primary colors. It is thus the case that not every visible color is a secondary color.
+There are some things which are clouds that are not made of water. Every single cloud is made of vapour. It follows from this that there exist some things made of vapour that are not made of water.
+The category of fish is a subset of the category of animals. All animals that are dogs are also animals. Nothing that is a dog is a fish.
+Something that is a living organism is a mammal. The entire set of people is composed of living organisms. It is the case that all people are mammals.
+Every single laptop is a computer. There are some abacuses which are not computers. This leads to the conclusion that some abacuses are not laptops.
+Among dogs, there are some that are carnivores. All dogs belong to the class of mammals. Consequently, among the class of mammals, some are carnivores.
+Every single feline is a mammal. Anything that is a cat is a feline. At least one cat is a mammal.
+There is no overlap between the category of vegetables and the category of fruits. Anything that is an apple is, by definition, a fruit. Apples and vegetables are two separate categories.
+Every single thing which is a dog is an animal. Some cats are not dogs. We can infer that some cats are not animals.
+Anything that is a tree is made of wood. Every single chair is made of wood. It is necessarily concluded that every chair is a tree.
+There are no dogs that are cats. It is the case that no cat is a fish. Therefore, it is possible to conclude that some fish are not dogs.
+There are no birds that can be called fish. It is also true that every bird is a type of animal. This has led to the conclusion that a portion of animals are birds.
+Everything that is a human is also a primate. Everything that is a human is also a bipedal animal. Consequently, some bipedal animals are primates.
+There are no footwear items that are clothing. Every shoe is a type of footwear. It can be concluded that no shoe is clothing.
+Spiders cannot be arachnids. It is a fact that all tarantulas are spiders. It must be concluded that some tarantulas are not arachnids.
+There are no cats that are also dogs. It is known that there are no dogs that are birds. One might conclude that no birds are cats.
+Any object that is a shape is an animal. There are no circles that are also animals. A portion of shapes are not circles.
+There exist some things which are water which are not liquids. All water can be poured. It follows that some things that can be poured are not liquids.
+There are no squares which are circles. All squares are, in fact, shapes. It's the case that some shapes are not circles.
+There is no automobile that can be classified as a bicycle. Every single car is an automobile. This means that no car can be a bicycle.
+It is not the case that every single person has blood. Every person is a mammal. One can therefore conclude that some mammals do not have blood.
+There are no insects that are animals. Every single ant is an insect. Consequently, nothing that is an ant is an animal.
+Anything that is a teacher is an educator. Every single person who is a student is also an educator. It logically follows that there are some students who are not teachers.
+There exist certain creatures that are mammals, yet they are not reptiles. Every creature that is a mammal is also considered an animal. From these statements, it follows that some animals are not reptiles.
+There exist some fish that are mammals. A few elephants are mammals. Consequently, some elephants are fish.
+Every single dog is an animal. Everything that is an animal is a mammal. It must therefore be true that every mammal is an animal.
+The category of non-living things and the category of computers have no members in common. At least one human is a computer. At least one human is a non-living thing.
+It is the case that no two-wheeled item is a vehicle. A certain number of bicycles can be found among two-wheeled items. Therefore, a number of bicycles do not belong to the category of vehicles.
+Not a single motorized vehicle is a bicycle. It is also true that no motorized vehicle is a car. It follows that no car is a bicycle.
+Every single mammal is an insect. There are no insects which are dogs. Based on this, it must be the case that some dogs are not mammals.
+There are no fruits that are things that grow on trees. Every single apple is a thing that grows on a tree. Consequently, it can be said that some apples are not fruits.
+It is true that every reptile has fur. Some snakes are known to be reptiles. Therefore, we can conclude that some snakes have fur.
+Every single person who is a professor is an academic. Any academic is a knowledgeable person. Therefore, some knowledgeable people are professors.
+Every single living being is a cloud. It is true that every bird is a cloud. It follows that no bird is a living being.
+There are all men that are humans. Every single man is a mortal. As a result, all mortals are humans.
+There exist some things which are trees that are not pines. Everything that is a tree is a plant. It logically follows that there are some plants that are not pines.
+Nothing that is a plant is a mammal. A portion of trees are to be found among the plants. Thus, there are no trees that are also mammals.
+Anything that is a square is also a quadrilateral. A triangle can never be a quadrilateral. It is the case that no triangle is a square.
+Every single thing that is a dog is a mammal. Every mammal is an animal. From this, it follows that some animals are indeed dogs.
+Anything that is a car is not an airplane. There are no vehicles that are cars. Consequently, every vehicle is an airplane.
+There are some fish that are salmon that live in fresh water. All salmon are fish. Therefore, some fish are fresh water fish.
+Anyone who is a teacher is an educator. Nothing that is a principal is a teacher. Consequently, some principal is an educator.
+There are no chairs that can be considered musical instruments. Certain chairs exist that are also antiques. The conclusion that a portion of antiques are not musical instruments is inescapable.
+Every single cat is a type of animal. A few cats are mammals. It must follow that a portion of mammals are animals.
+It is true that everything which is a elephant is a mammal. There are no things that are wolves that are also elephants. From this, it follows that there are no wolves which are mammals.
+Not a single one of the things that are penguins is a flying bird. It is known that some birds are flying birds. The conclusion is that some birds are not penguins.
+There is no snake which is a mammal. It is true that every single mammal is a reptile. It follows from this that all reptiles are snakes.
+Every single human is a mammal. A subset of mammals is composed of women. It is necessarily true that some women are not humans.
+Anything that is a bird is a mammal. No parrots are included in the category of mammals. It is the case that some parrots are not birds.
+Every item that is a rose is also a flower. Every item that is a rose is also a plant with thorns. Hence, some plants that have thorns are flowers.
+There is no man that is a cat. No cat is a woman whatsoever. This implies that all women are men.
+Every single animal that is a cat is a vertebrate. Some fish are classified as vertebrates. As a result, not all fish are cats.
+Every item that is a fish is a plant. Some cars are fish. Therefore, all cars can be said to be plants.
+It is true that every human being is a vegetable. There are no vegetables that can be classified as teachers. As a result, it must be that some teachers are not people.
+Every nurse is a healthcare professional. Not a single teacher is a healthcare professional. A part of the population of teachers are not nurses.
+Drums are completely separate from trumpets. A trumpet is, without exception, a musical instrument. Some musical instruments cannot be classified as drums.
+There are no creatures that are both mammals and reptiles. The class of human beings has members that are reptiles. The consequence is that some human beings are not mammals.
+Anyone who is a teacher is an educator. It is impossible for a student to be an educator. Consequently, every student is a teacher.
+It is the case that no liquid is a solid. It is also the case that no gas is a solid. Therefore, all gases are liquids.
+Every fish can be seen to write novels. Anything that can write novels has feathers. It follows that a few things with feathers are fish.
+Every dog is an animal. There are no felines that are canines. It is the case that no cat is a dog.
+Anything which is a mammal is cold-blooded. All things that are whales are mammals. There exists at least one whale that is cold-blooded.
+A number of objects categorized as furniture are not chairs. Every single item of furniture is a household good. We can therefore deduce that some household goods are not chairs.
+There exist some buildings who are also houses. Of the things that are homes, some are also houses. It must be the case that some homes are not buildings.
+Anything that is a mammal is a living organism. Every single dog is an living organism. This means every dog is a mammal.
+There is no animal that is a living creature. There are no things with wings that are living creatures. It can be deduced that there are no things with wings that are animals.
+There is no item that is a vehicle which is also a car. The group of automobiles includes some that are cars. We must accept that some automobiles are not vehicles.
+All things that are cars are vehicles. There is no vehicle that is a bicycle. Therefore, there is no bicycle that is a car.
+Every single dog is a mammal. A small number of mammals are animals. Some animals are not dogs.
+Anything that is a bird is a vertebrate. There are no insects which are birds. Therefore, it can be concluded that no insects are vertebrates.
+It is true that no car is a boat. There are no airplanes that are boats. Therefore, it is a fact that some airplanes are cars.
+Zebras are in no way dogs. There are some dogs that are mammals. This implies that some zebras are mammals.
+There are no humans that are animals. Every single doctor is not a human. Therefore, we can deduce that no doctors are animals.
+Every person who is a prime minister is a politician. There are a number of people who are celebrities who are also politicians. It follows from this that there are some celebrities who are prime ministers.
+Anything which is a cloud is made of rock. Some weather phenomena are known to be clouds. Consequently, some weather phenomena are made of rock.
+There are no computers that are animals. There are no animals that are trees. Therefore, some trees are computers.
+All people from New York need to pay taxes. Every New Yorker is a citizen of the US. Therefore, all citizens of the US need to pay taxes.
+Anything that is a mammal is warm-blooded. Every single dog is a mammal. At least one dog is warm-blooded.
+There are some animals that are sparrows. All things that are sparrows are birds. Consequently, every single thing that is a bird is an animal.
+There are no flowers that are vegetables. There are some carrots that are vegetables. As a result, no carrots are flowers.
+There is no person who is both a musician and a non-artistic person. It is known that some human beings are among the non-artistic people. The consequence is that there exist human beings who are not musicians.
+It is the case that everything which is a dog is a mammal. No building is a dog. As a result, no building is a mammal.
+Not a single dog is a canine. Every single poodle is a canine. It follows from this that there are a number of poodles who are not dogs.
+Anything that is a bird is a flying creature. Every single thing that is a bat is a flying creature. This means that every single bat is a bird.
+There is no table that is a desk. No desks are chairs whatsoever. Therefore, we can conclude that no chair is a table.
+Anything that is an insect has six legs. Every single spider is an insect. There are no spiders that do not have six legs.
+Every single cat is a dog. It is true that no dog is a feline. It must follow that no feline is a cat.
+There are no fish that are mammals. There are no fish that are birds. Consequently, no birds are mammals.
+There are no fish that are land animals. It is true that all fish are vertebrates. It is the case that some vertebrates are not land animals.
+Every single item that is money is not currency. A subset of items that are dollars are currency. It follows that some dollars are not money.
+Everything that is a poodle is a dog. It is known that a portion of poodles are dogs. Consequently, some poodles are not dogs.
+There are no tables that are chairs. All zebras are, without exception, chairs. It is therefore suggested that some zebras are tables.
+There are certain leaders who are politicians. All of those who are politicians are also human beings. Hence, a group of human beings are leaders.
+There are no reptiles which are also mammals. Not a single amphibian is a reptile. It is the case that a portion of amphibians are not mammals.
+Everything that is a pencil is a writing instrument. Nothing that is an eraser is a writing instrument. There exists at least one eraser which is not a pencil.
+Some plants are a type of vegetable. There are some carrots that are vegetables. This leads to the conclusion that some carrots are plants.
+Every single thing that is a car is a vehicle. A portion of trucks are vehicles. Consequently, some trucks are not cars.
+Anything that is a square is also a polygon. It is known that there are no circles that are squares. It has been proposed that no circles are polygons.
+There are no cars that are made of water. There are no cars that are clouds. Consequently, no clouds are made of water.
+A few cars are trucks. Every single thing that is a truck has wheels. It follows from this that every single thing with wheels is a car.
+There are no mammals which are fish. Every single fish is an animal. One can conclude that some animals are mammals.
+Animals are entirely separate from creatures with beaks and feathers. Every single animal that is a bird is a creature with a beak and feathers. Birds cannot be considered animals.
+It is true that no lion is an animal. A certain number of lions are carnivores. Based on this, it must be the case that a certain number of carnivores are not animals.
+Birds are in no way winged creatures. There exist no winged creatures that are animals. It is the case that no bird is an animal.
+A portion of buildings are dogs. Every single dog is a domestic animal. Hence, some domestic animals are buildings.
+Every single lion is a building. There is no lion which is a skyscraper. Therefore, there are no skyscrapers that are buildings.
+All things which are triangles are polygons. All things which are triangles are geometric shapes. It follows that some geometric shapes are polygons.
+Every single banana is a type of fruit. There are no fruits that are rocks. Therefore, it necessarily follows that some of the objects that are rocks are not bananas.
+There are some cars that are not a liquid. There are no bicycles that are cars. Consequently, there are no bicycles which are liquid.
+Every single flower is a plant. Any and all roses are also plants. This implies that all roses are flowers.
+It is the case that no numbers are concepts. Everything that is an integer is a number. Consequently, it must be true that some integers are not concepts.
+Anything which is a rock is heavy. It is the case that some heavy things are not clouds. Therefore, this implies that all clouds are rocks.
+Everything that is a hut is a vehicle. A few huts are houses. Thus, a number of houses are vehicles.
+Anything which is an ocean is a desert. There are no Atlantic Oceans that are not oceans. There exists at least one Atlantic Ocean that is a desert.
+Anything that is a unit of time is a liquid. No weeks can be called liquids. A portion of weeks are not units of time.
+Every single cat is a dog. There is not a single mammal that is a cat. It can be concluded that no mammal is a dog.
+It is true that some people who are students are human. There are teenagers that are also students. This proves that a number of humans are not teenagers.
+It is true that anything that is a rose is a flower. Every single flower is a plant. Therefore, it is a fact that some plants are roses.
+Anyone who is a planet is round. Some balls are not round. It is thus the case that all balls are planets.
+It is the case that every fish lives in a tree. There exist some sea basses which do not live in trees. It necessarily follows that some sea basses are not fish.
+There are no mammals which are reptiles. Some animals are mammals. From this, it can be concluded that some animals are reptiles.
+There is no overlap between even numbers and words. All words are numbers that can be divided by two. Therefore, some numbers divisible by two are not even.
+It is a fact that all shirts are garments. Every single garment is an article of clothing. Therefore, we can conclude that a few articles of clothing are shirts.
+There are no dogs that are felines. It is also true that no cats are canines. Therefore, it is argued that there are no cats which are dogs.
+All hammers are objects made by humans. All tools are also objects made by humans. Therefore, all tools are hammers.
+Some of the bees that exist are insects. Every single bee is an arthropod. Thus, some arthropods are insects.
+No animal that is an invertebrate is a vertebrate. Among the things that are spiders, a few are invertebrates. Thus, some spiders are vertebrates.
+Every single doctor is a professional. Anything that is an engineer is also a professional. Some engineers fail to be doctors.
+It is true that no comet is a moon. It is a fact that no planet is a moon. Therefore, some planets are comets.
+Cats are in no way mammals. Every single cat is a feline. It is the case that some felines fail to be mammals.
+Every single chef is a culinary expert. No pilots are included in the category of culinary experts. A certain number of pilots are not chefs.
+Students are in no way teachers. There are no teachers who are learners. It is the case that no student is an learner.
+There are no plants that can be called humans. It is also true that every plant is a type of vegetable. This has led to the conclusion that every vegetable is a human.
+The class of athletes and the class of non-runners have elements in common. Every single runner is an athlete. Consequently, a portion of non-runners are not athletes.
+Anything that is a cat is a creature with three eyes. Every single kitten is a cat. This means that every kitten has three eyes.
+Everything that is a living thing is a creature. It is impossible for something to be an organism and a creature at the same time. It is the case that a portion of organisms are not living things.
+There is no soda that is a juice. A portion of the items that are beverages are not juices. It follows that some beverages are not sodas.
+There is nothing that is a vegetable that is also a fruit. Every single thing that is a carrot is a vegetable. As a result, at least one thing that is a carrot is not a fruit.
+There are no books that are fiction and also non-fiction. Every single fiction book is a story. It follows that some stories fail to be non-fiction.
+Every single priest is a man. All priests are human. It follows from this that some humans are not men.
+There are no cars that are liquids. There are no cars that are oceans. Consequently, no oceans are liquids.
+Anything that is a dog is also an animal. There are no animals which are lizards. This necessitates that no lizard is a dog.
+Not a single liquid is a solid. There are no gases which are also liquids. It follows that some gases are solids.
+Any penguin is a living creature. There are some living creatures that are not birds. It follows that some birds are not penguins.
+It is true that all roses are flowers. It is also true that some plants are flowers. One can therefore conclude that some plants are roses.
+All of the things that are planets are animals. All of the things that are bridges are animals. It can be deduced that there are bridges that are planets.
+All items that are phones are electronic devices. None of the electronic devices are foods. Therefore, no food is a phone.
+No pet is a canine. It is known that a portion of dogs are pets. Therefore, some dogs do not belong to the group of canines.
+There are no trees that are human beings. Every single oak is a tree. It's the case that some oaks are human beings.
+No circle is a square. No square is a triangle either. Therefore, all triangles must be circles.
+There are no scientists that are authors of fantasy novels. All fantasy novelists are authors of fantasy novels. This proves that some fantasy novelists are not scientists.
+No spoons are forks. All things that are ladles are spoons. Therefore, some things that are ladles are not forks.
+Every single eagle is a bird. Nothing that is a bat is a bird. From this, it can be concluded that no bat is an eagle.
+There are no dogs that are felines. Every single cat is a feline. Consequently, there are some cats who are not dogs.
+Every single animal is a living thing. Anything that is a bird is an animal. All birds are living things.
+It is the case that no bird is a fish. Some aquatic animals are things that are birds. Thus, some aquatic animals are things that are fish.
+It is a certainty that every single doctor is a human being. It is also true that a few professionals are human beings. On this basis, it has been stated that a few professionals are doctors.
+Anything that is a dog is a mammal. There are no sharks which are also dogs. It is the case that some sharks are not mammals.
+Every single mountain is a landform that is flat. Anything that is a hill is a mountain. Therefore, it must be the case that all hills are flat.
+Everything that is a tulip is a flower. It is the case that some trees are not flowers. This necessarily means that some trees are not tulips.
+Everything that is a vehicle is something that can fly. Any and all birds are things that can fly. This implies that all birds are vehicles.
+There are some voters who are citizens. Not a single foreigner is a citizen. Therefore, no foreigner is a voter.
+Everything that is a fish is also an insect. Everything that is a fish is also made of fire. Hence, some things that are made of fire are insects.
+All things that are tigers are felines. All tigers are mammals. Therefore, some animals that are mammals are not felines.
+Everything that is a carrot is also a vegetable. Some dogs are carrots. Therefore, all dogs can be said to be vegetables.
+There is not a single engineer who is a medical practitioner. Every single person who is a doctor is also a medical practitioner. Doctors and engineers are mutually exclusive occupations.
+It is true that some vehicles are machines. It is also true that no spoons are vehicles. Thus, it is concluded that no spoons are machines.
+There are no rivers that are oceans. Every single river is a body of water. It logically follows that some bodies of water are not oceans.
+Every politician is a citizen. All senators are citizens. Consequently, every single senator is a politician.
+There are no cars which are motorcycles. Every single car is, in fact, a vehicle. It is the case that some vehicles are not motorcycles.
+Every single piece of furniture is sentient. It is true that some chairs are furniture. Therefore, every chair is sentient.
+There is no triangle that is a square. A square, every single one of them, is a geometric shape. Certain geometric shapes are not triangles.
+There are some researchers who are also academics. A person who is an academic is also part of the university faculty. Therefore, some university faculty are researchers.
+It is the case that there are no fish that are also mammals. Anything that is a whale is not a fish. It follows that some whales are mammals.
+Anything that is a mammal is a warm-blooded animal. There is no such thing as a warm-blooded animal that is a fish. It follows that there are no fish that are mammals.
+Every vehicle that is a car is also a vehicle. A portion of the items that are automobiles are also vehicles. It follows that some automobiles are not cars.
+There are no items that are both felines and cats. The category of tigers contains some members that are cats. It must be the case that some tigers are not felines.
+Anyone who is a professor is an academic. Not a single artist is an academic. Consequently, no artist is a professor.
+There are all humans which are primates. Every human is a kind of mammal. It follows that all mammals are not primates.
+Every single thing that is a tool is an object. Anything that is a hammer is a tool. This means that all hammers are objects.
+Everything that is a chair is furniture. Every single table is furniture. It follows from this that some tables are chairs.
+The set of planets and the set of clouds are mutually exclusive. All clouds in existence are Earth. A portion of Earth is not a planet.
+Every single geometric figure is an emotion. It is not the case that some circles are emotions. Therefore, it is possible to conclude that some circles are not geometric figures.
+Every bicycle is a vehicle. Every bicycle is an item that has wheels. Therefore, this implies that some items with wheels are vehicles.
+It is a fact that all birds can fly. There are some animals which are birds. Therefore, every single animal can fly.
+Anything that is an animal is a mammal. There are no dogs which are animals. Thus, there are no dogs that are mammals.
+Every single person is a human. Anything that is a human is a husband. Consequently, it follows that all husbands are people.
+Every mammal is made of glass. It is the case that some cats are not made of glass. Therefore, it is true that some cats are not mammals.
+It is true that no mammals are insects. There are no butterflies that are mammals. Therefore, it follows that some butterflies are insects.
+There are no trees that cannot teleport. Every single thing that can teleport has gills. It is a logical consequence that some things with gills are trees.
+Every single planet is a thing made of cheese. The Earth is a planet. A certain part of Earth is made of cheese.
+Not a single pencil is a pen. There are some pencils which are also writing tools. We can conclude from this that some writing tools are not pens.
+Anything that is a mammal is a human. Every dog is a mammal. Not a single dog is a human.
+It is not true that any insect is a bird. All airplains are, without exception, birds. This means that every airplain is an insect.
+None of the things that are birds are insects. Every sparrow is a bird. Therefore, it is the case that some sparrows are not insects.
+Anything that is a table is furniture. Lamps are not things that are furniture. It's impossible for any lamp to be a table.
+Any animal that is a cat is a cloud. Every single animal with fur is a cloud. It follows that no animal with fur is a cat.
+There are no animals that are also plants. At least one tree is a plant. At least one tree is not an animal.
+Of the people who are children, some of them are humans. A portion of the people who are humans are also children. It must be the case that some children are not humans.
+It is completely false that any person who is a scientist is an artist. There exists a group of scientists who are also physicists. A valid inference is that some physicists are not artists.
+There are no cars that are bicycles. No bicycles are things that are motorcycles. Therefore, it is the case that some motorcycles are not cars.
+There are some rocks that are guitars. Every single guitar is a musical instrument. It follows that some musical instruments are rocks.
+There is nothing that is a fruit that is a baked good. Not one passion fruit is a baked good. Consequently, it follows that some passion fruits are not fruits.
+Plants are never stones. A few stones are, in fact, flowers. There exist flowers that are not plants.
+Every vegetable is a cloud. Any object that is a potato is a vegetable. This means that all potatoes are clouds.
+Every single cat is a four-legged creature. There is no dog that is a cat. It can be concluded that no dog is a four-legged creature.
+Not a single fish is an insect. There are some elephants that are not fish. We can conclude that no elephant is an insect.
+Anything that is a square has four equal sides. Every single object that has four equal sides has four sides. This means that all squares have four sides.
+It is true that everything that is a dog is an animal. It is also true that no mammals are dogs. Thus, it is concluded that no mammals are animals.
+Some aquatic animals can be considered fish. Not a single human is an aquatic animal. As a result, no human is a fish.
+It is the case that no arachnid has eight legs. Every spider is an arachnid. It follows that no spider has eight legs.
+Every single thing that is a number is a letter. The set of all integers contains no letters. It is the case that there are certain integers which are not numbers.
+Anything that is a spider is a mammal. All spiders are insects. This means that a few insects are mammals.
+It is not true that any ocean is a continent. Every single thing that is an ocean named Pacific is an ocean. This means some oceans named Pacific are not continents.
+Anything that is a planet is considered a celestial body. It is impossible for a bridge to be a celestial body. Some bridges can be found that are not planets.
+Anything that is a robot is a thing made of water. Every single thing made of water is a planet. From these statements, it can be concluded that some planets are robots.
+Not a single man is a woman. It is also true that no adult is a man. It follows that no adult is a woman.
+All sedans are cars. Some motorcycles are not cars. Therefore, some motorcycles are not sedans.
+Anything that is a solid is also an animal. There exist some rocks that are not animals. This logically entails that some rocks are not solid.
+Every single shark is an aquatic creature. A number of sharks are classified as fish. Consequently, it is the case that some fish are aquatic creatures.
+Plants are in no way living things. Everything that is a plant is an organism. It's the case that some organisms are not living things.
+Everything that is a star is cold. A few stars are suns. It is the case that some suns are cold.
+Every single insect is a creature that has six legs. Anything that is an ant is an insect. Therefore, there are no ants that do not have six legs.
+All things that are tigers are felines. All things that are cats are felines. It can be deduced that there are cats that are tigers.
+There exist some felines that are also pets. There are pets which are mammals. The result of this is that some mammals are not felines.
+There are no numbers which are both even and odd. A few numbers that are odd are also divisible by two. Not all numbers that are divisible by two are even.
+Every single poodle is a canine. It is known that no felines are poodles. Consequently, there are no felines which are canines.
+Anything that is a doctor is an alien. There are no aliens who are humans. This means that no human is a doctor.
+Nothing that is clothing is a shirt. There is some apparel that is made of shirts. We must conclude that some apparel is not clothing.
+Everything that is a pencil is a writing tool. Anything that is a writing tool is an object. Consequently, we can conclude that that every single object is a pencil.
+Anything that is a technology is a piece of furniture. No furniture is a phone. It is therefore a sound deduction that some phones is not technology.
+Anything that can be called a musician is also an artist. A portion of artists are painters. A certain portion of painters are not musicians.
+No doctor is a lawyer. Lawyers are, without exception, professionals. A number of professionals are doctors.
+A portion of planets are rocks. There are some moons that are rocks. Consequently, some moons are planets.
+There exist some birds that can fly. A few tables are birds. Consequently, some tables are able to fly.
+There are some objects that are metals that are not gold. All objects that are metals are elements. Consequently, some elements are not gold.
+Anything that is a square is a shape that is round. Every single triangle is a square. This means that all triangles are round.
+It is a fact that every single dog is a creature. Likewise, it is true that all cats are creatures. Therefore, it has been asserted that every cat is a dog.
+Nothing that is a chair is a piece of furniture. A thing that is a table is never a chair. It follows that a table is never a piece of furniture.
+It is true that some things that are trees do not have roots. Everything that is a tree is a plant. It logically follows that there are some plants that do not have roots.
+There are no cats that are fish. Every single dolphin is a cat. It is therefore the case that every dolphin is a fish.
+Every politician is a living organism. All senators are living organisms. Consequently, every single senator is a politician.
+There is no such thing as a water creature that is able to breathe underwater. Every single fish is a water creature. Consequently, no fish are able to breathe underwater.
+There are no animals that are living creatures. Every single mammal is a living creature. Consequently, there exist some mammals which are not animals.
+No individual who is a physicist is an English teacher. There are some people who are teachers and are also English teachers. Thus, some individuals who are teachers are not physicists.
+Anything that is a mammal is not an insect. It is known that some items that are spiders are insects. A consequence is that some spiders are mammals.
+It is true that there are some individuals who are musicians who are not pianists. Every musician is an artist. From these two facts, one can conclude that some artists are not pianists.
+It is not true that any bird is a cat. No dog is a bird. This leads to the conclusion that no dog is a cat.
+Every human is an animal that is a primate. No animals that are primates are also fish. Therefore, it is the case that some fish are not humans.
+Anything that is a human is a primate. The set of reptiles contains no primates. Every single reptile is a human.
+There is no fire which is hot. All of the bonfires are fire. Thus, there exist some bonfires which are not hot.
+Every animal is a mammal. There are some reptiles that are animals. It can be concluded that all reptiles are mammals.
+Every object that orbits a star is a planet. Anything that is a gas giant is an object that is a planet. Therefore, there are no gas giants that do not orbit a star.
+Every single hammer is a tool. Nothing that is a wrench is a tool. Therefore, it must be the case that every wrench is a hammer.
+There are no politicians that are fish. There are no fish that are lawyers. Therefore, some lawyers are politicians.
+Every single mammal is an animal. Every single mammal is a vertebrate. Therefore, there are vertebrates that are animals.
+Nothing that is a cold-blooded animal is also a reptile. Among the animals that are snakes, some are cold-blooded. It is therefore the case that some snakes are not reptiles.
+Every creature that is a human is an academic. All professors are academics. This leads to the conclusion that there are some professors who are not humans.
+Every single mammal is an animal. Each and every feline is an animal. This makes it true that every feline is a mammal.
+Anything that is a scientist is a person who studies. Anything that is a scientist is a professional. Consequently, some professionals are people who study.
+Every keyboard is a cloud. Not a single cloud is a musical instrument. From this, it follows that no musical instruments is a keyboard.
+The set of living beings is a subset of the set of animals with gills. At least one fish is not an animal with gills. Not every fish is a living being.
+There exist creatures which are sharks that are not creatures that leave in water. Every shark is a fish. Consequently, it follows that some fish are not creatures that leave in water.
+It is true that all cars are vehicles. Anything that is a bicycle is also a vehicle. It's the case that some bicycles fail to be cars.
+There is not a single item that is a car and also a truck. A subset of vehicles consists of trucks. It can be deduced that some vehicles are not cars.
+Every single thing that is a bird is an animal. Anything that is a pigeon is, without exception, a bird. This means that all pigeons are animals.
+Every car is a vehicle. Nothing that is a building can be considered a vehicle. There are some buildings that do not fit the description of a car.
+Not a single thing that is a canine is a feline. It is the case that a portion of dogs are canines. This proves that some dogs are felines.
+Every single person who is a biologist is a scientist. All people who are physicists are scientists. This leads to the conclusion that all physicists are biologists.
+Not a single person who is a poodle is a dog. Every single animal is a poodle. The conclusion that no animal is a dog is inescapable.
+All successful people are those who can be rich. Every single person who is successful works hard. This proves that everyone who works hard can be rich.
+Every car is a motorized vehicle. At least one bicycle is not a motorized vehicle. Not all bicycles can be considered cars.
+It is true that every single book is invisible. Anything that is invisible is also poisonous. This means that a few poisonous things are books.
+There are no dogs that are cats. There are no dogs that are reptiles. Consequently, no reptiles are cats.
+Nothing that is a liquid is a solid. It is the case that some water is not a solid. The only conclusion is that some water is not a liquid.
+There are no fiction books that are not non-fiction. Anything that is a novel is a fiction book. Therefore, some novels are non-fiction.
+Gold is always classified as a metal. Nothing that is a plastic is a metal. Therefore, no plastic is gold.
+A few aquatic animals are fish. All things that are fish are vertebrates. It can be deduced that some vertebrates are aquatic animals.
+Every single dog is a mammal. Nothing that is a lizard is a mammal. Consequently, there are no creatures that are both lizards and dogs.
+No animal that is a dog is a bird. Some of the animals known as beagles are dogs. As a result, some beagles are not birds.
+Any beverage that is chilled is cold. Some soft drinks are beverages that are chilled. It follows that some soft drinks are cold.
+It is the case that some individuals who are professors are not lecturers. Anyone who is a professor is also an academic. Consequently, it can be concluded that some academics are not lecturers.
+The group of furniture is a subset of the group of chairs. At least one sofa is not a chair. Not every sofa is a furntiture.
+There are no humans who are insects. A few humans are astronauts. It is the case that a portion of all astronauts are insects.
+Anything that is a fish is not a mammal. There are no dogs that are fish. Consequently, every dog is a mammal.
+Anything that is a cat is a feline. Every single tiger is a feline. It follows that every tiger is not a cat.
+Not a single item that is an instrument is a piano. There are keyboards which are also pianos. We must conclude that some keyboards are not instruments.
+Everything that is an oak is a plant. A certain number of oaks are trees. This implies that some trees are plants.
+Anything that is a primate has a thumb. All monkeys are, by definition, primates. We can conclude that some monkeys have a thumb.
+There is no plant that is a mushroom. Some of the mushrooms are vegetables. Therefore, some vegetables are not plants.
+There are no animals that do not live on land. It is the case that no fish is an animal. At least some fish live on land.
+There exist some fish that are bony fish. Of the items that are sharks, some are bony fish. We must conclude that some sharks are not fish.
+Every single person is a human. A number of women are humans. Consequently, some women are people.
+It is the case that no cars are boats. It is also true that no bikes are cars. From these statements, one can conclude that some bikes are not boats.
+Anything with an internal combustion engine needs fuel. Some cars possess an internal combustion engine. From this, it follows that some cars need fuel.
+All things that are made of wood can catch on fire. There are some chairs that are wooden objects. It follows, then, that some chairs can be set on fire.
+It is true that all novels are books. There are some posters that are not books. Therefore, it is the case that some posters are not novels.
+It is true that every single vehicle is a cloud. No clouds are cars. Based on this information, it is logically necessary that some cars are not vehicles.
+Every single snake is a reptile. It is the case that all lizards are reptiles. It follows that some lizards are snakes.
+Nothing that is a vehicle is a building. All buildings in existence are cars. A certain portion of cars are not vehicles.
+Everything that is an ocean is a body of water. A few rivers are bodies of water. Consequently, it is possible to infer that some rivers are oceans.
+It is the case that all trees are plants. Anything that is an oak is also a plant. Some oaks fail to be trees.
+Each and every star is a celestial body. There are some planets that are stars. Consequently, all planets are celestial bodies.
+It is not the case that every novel has pages. Every single thing which is a novel is a book. One can therefore conclude that some books do not have pages.
+Every plant is a living thing. Anything that is an animal is a living thing. It is therefore the case that all animals are plants.
+It is true that everything that is an animal is a mammal. It is also true that no reptiles are animals. Thus, it is concluded that no reptiles are animals.
+Every object that is a living thing is an object with mass. All humans are objects with mass. Consequently, every single human is a living thing.
+A square cannot be a shape. There exist shapes that are squares and are also rectangles. It necessarily follows that a subset of rectangles are not shapes.
+There are some celestial bodies that are stars. There are some planets which are celestial bodies. Planets are in no way stars.
+There are no animals that are vegetables. It is also true that no cats are vegetables. Therefore, it is argued that every cat is an animal.
+There are no creatures with feathers which are also insects. Every single creature identified as a bird is a creature with feathers. None of the creatures that are birds are also insects.
+There are some mammals that can fly. It is the case that no bird can fly. Therefore, all birds are mammals.
+Anything which is a human is capable of walking. It is the case that no rock is a human. At least some rocks can walk.
+Every single elephant is a mammal. Every single rhinoceros is a mammal. This means that no rhinoceros is an elephant.
+Every single four-sided-shape is a rectangle. All four-sided-shapes are squares. It follows from this that some squares are not rectangles.
+Anything that is a car is an object that moves. Some vehicles are cars. Therefore, every single vehicle is an object that moves.
+There are no houses that are buildings. There are no cars that are houses. It follows, then, that some cars are buildings.
+Every person who is a professional cook is a person who can cook. A portion of professional cooks are chefs. Thus, it is the case that some chefs are people who can cook.
+Nothing that is a mineral is a plant. It is known that a portion of rocks are minerals. This leads to the conclusion that a certain number of rocks are plants.
+Anyone who is a reader is a scholar. There are students who are readers. Consequently, some students are scholars.
+There is no fish that is a mammal. No mammals are birds whatsoever. This implies that no bird is a fish.
+Hats and jackets do not overlap. A portion of jackets are pieces of clothing. Some pieces of clothing are not hats.
+The set of refrigerators and the set of pieces of furniture have nothing in common. All items that are sofas are pieces of furniture. Refrigerators are not sofas.
+Animals and tables have no overlap whatsoever. A portion of tables are birds. Some of the things that are birds are not animals.
+Some of the mammals are carnivores. Every single carnivore is an animal. It is the case that some animals are mammals.
+There are no parrots which are mammals. Some birds are parrots. This implies that some birds are mammals.
+Anything that is a carrot is also a fruit. There is no banana which is a carrot. This means that no banana is a fruit.
+Every spoon is a planet. All planets are singing lessons. It can be logically concluded that some singing lessons are spoons.
+Anything that is an insect is a creature made of glass. Every single ant is an insect. Consequently, all ants are made of glass.
+There is not a single item that is both a color and red. Of the items that are hues, a portion of them are red. It must be the case that some hues are not colors.
+Every car can be described as a machine. There are no ferraries that are machines. Consequently, no ferrari is a car.
+Every single shirt is a piece of clothing. No articles of clothing are ever beverages. This implies that some beverages are not shirts.
+Every vehicle has wheels. At least one car does not have wheels. Not all cars are vehicles.
+Anything that is a dog is an animal. Everything that is a cat is an animal. It is the case that some cats are not canines.
+There is no plant that is a rock. Some of the rocks are flowers. Therefore, some flowers are not plants.
+People are not, in any way, learners. Anything that is a student is a learner. Students cannot be people.
+All things which are oceans are computers. All things which are oceans are made of silk. It follows that some things made of silk are computers.
+Nothing that is mortal is immortal. Every single human being is a mortal creature. Therefore, no human is immortal.
+There are no plants that are fish. Some objects classified as a rose is a plant. Therefore, no roses are fish.
+Furniture are things that are in no way items for sitting. All items that are chairs were designed for sitting. Chairs are not furniture.
+Every monkey is a primate. There are some animals that have prehensile tails which are monkeys. This means that a few animals with prehensile tails are primates.
+Some trains are not celestial bodies. It is the case that every single train is a planet. Consequently, some planets cannot be considered celestial bodies.
+Every single truck is a vehicle. There are some scooters which are not vehicles. It follows that some scooters are not trucks.
+There isn't a single car that is a two-wheeled vehicle. Everything that is a bicycle is a two-wheeled vehicle. This proves that some bicycles are not cars.
+There are no items that are not plants that are plants. A number of items that are not plants are trees. Therefore, a portion of trees are plants.
+There's no small rodent that is a bear. Every single squirrel is a small rodent. Consequently, no squirrel is a bear.
+There exist no poodles that are also cats. Every single creature that is a poodle is a dog. It follows that not a single dog is a cat.
+Any individual who is a teacher is a robot. There are some educators who are teachers. Consequently, some educators are robots.
+Anything that is a human is a primate. Every single whale is a mammal. Not a single whale is a human.
+Everything that is a tree is a plant. Not a single stone is a plant. All stones are trees.
+Every single human being is a mammal. It is also true that every lion is a mammal. This means that there are no lions that are humans.
+Some animals are human. There are politicians who are human. This means that some politicians are animals.
+There are no mammals that are birds. Every single dog is a mammal. It is therefore the case that every dog is a bird.
+Anything that is a cat is a feline. It is true that all felines are carnivores. This means that a few carnivores are cats.
+Every single human is a monkey. There are no primates that are monkeys. From this, it follows that no primate is a human.
+Every single building is alive. There is not a single living thing that is a house. This means that no house is a building.
+Every single writing tool is a spaceship. There are some erasers which are not spaceships. It follows that some erasers are not writing tools.
+There are some individuals who find pleasure in reading who are librarians. Every single person who is a librarian is a student. It is the case that some of the people who are students are people who enjoy reading.
+Anything that is a bird is a vertebrate. It is also the case that every single bat is a vertebrate. Consequently, nothing that is a bat is a bird.
+Absolutely nothing that is a reptile is a mammal. Among the creatures that are animals, some are mammals. Consequently, some of the creatures that are animals are not reptiles.
+Nothing that is an animal is a non-living thing. There are some mammals that are not non-living things. It follows that some mammals are not animals.
+Every single integer is divisible by two. All integers are even numbers. It follows from this that some even numbers are not divisible by two.
+There are no liquids that are solids. Some of the things that are beverages are liquids. It follows that some beverages are solids.
+Nothing that is a cat is a reptile. A creature that is a reptile is never a mammal. It follows that a cat is never a mammal.
+There are no birds which are cats. There are no dogs that are birds. It follows, then, that some dogs are cats.
+Every capital city is considered a major city. A portion of capital cities are located in Europe. It therefore follows that some cities in Europe are major cities.
+Some of the spoons are reptiles. All things that are reptiles are vertebrates. Consequently, it can be concluded that some vertebrates are spoons.
+Every single thing that is a snake is a cold-blooded animal. A few snakes are a type of reptile. Thus, some reptiles are cold-blooded animals.
+Anything that is a fish swims. It is the case that no dog is a fish. This implies that some dogs swim.
+There are no stones that are alive. There are no trees that are stones. Therefore, no trees are alive.
+Every single writing tool is a pencil. No pen is a pencil. This means no pen is a writing tool.
+There exist some mammals that have fur. There are some reptiles which have fur. Consequently, a number of reptiles are mammals.
+Among the items that are dogs, some are mammals. There are pets which are mammals. We must conclude that some pets are not dogs.
+All plants are in need of sunlight. All trees are, by definition, plants. At least one tree needs sunlight.
+Not one single insect is a six-legged arthropod. Every single item that is a bug is a six-legged arthropod. It follows from this that a portion of bugs are not insects.
+There exist cats that are also mammals. A subset of dogs can be classified as mammals. It follows that at least some dogs are not cats.
+There are no birds that do not have wings. It is the case that no insect is a bird. It follows that some insects have wings.
+It is not the case that every single vegetable is a food. All vegetables are pizzas. Thus, some pizzas are not foods.
+Not one single rectangle is a four-sided polygon. Everything that is a square is a four-sided polygon. The implication is that a portion of squares are not rectangles.
+It is true that everything that is a table is furniture. It is also true that all furniture are objects. Thus, it is concluded that all objects are tables.
+Among those who are students, there are some who are athletes. Every single student is a person who spends time studying. It follows that, of the people who study, some of them are also athletes.
+It is a fact that all mammals are animals. There are some animals which are cats. Therefore, every single cat is an animal.
+Wives are not people. Anything that is a wife is a husband. It's the case that some husbands are not people.
+There is no physicist who is not a person. It is true that all physicists are scientists. It follows that some scientists are people.
+Every teacher is a robot. None of the robots are humans. It follows that no human is a teacher.
+Anything that is a spoon is a form of cutlery. No cutlery items are books. This logically entails that some books are not spoons.
+Everything that is a song is also a mountain. Everything that is a song is also made of water. Hence, some things made of water are mountains.
+It is a fact that every tulip is a flower. It is also true that all roses are flowers. Therefore, it is concluded that a few flowers are roses.
+Some of the dogs are mammals. Every mammal is a domesticated animal. From this, it can be concluded that some domesticated animals are dogs.
+Everything that is a doctor is a medical professional. Anything that is a medical professional is a human. Thus, every single human is a doctor.
+Anyone who is a president is a citizen. Every single person who is a senator is a citizen. This leads to the conclusion that there are some senators who are not citizens.
+There is not a single sound that is a phenomenon that travels in waves. All of the things that are musical notes are sounds. Consequently, some musical notes are not phenomena that travel in waves.
+It is not the case that a paper good is made of paper. Each and every book is a paper good. It logically follows that no books are made of paper.
+Every piece of furniture that is a chair is made of liquid. Any object that is a bench is a chair. Consequently, all benches are pieces of furniture that are made of liquid.
+All things which are mammals are vertebrates. A portion of warm-blooded animals are mammals. Therefore, there exist some warm-blooded animals that are vertebrates.
+Not a single house is a stadium. Every single stadium is a building. It is therefore the case that some buildings are not houses.
+The class of insects and the class of lions do not overlap. Every single lion is an animal. As a result, some animals are not insects.
+There exist some birds that are fish. A number of sharks are fish. It follows, then, that some sharks are birds.
+Every dog is a mammal. No dog is a reptile. Therefore, no reptiles are mammals.
+It is the case that all professionals are adults. Some people are not professionals. Therefore, it is implied that some people are not adults.
+Every novel is a book. Nothing that is a magazine is a book. Therefore, a magazine cannot be a novel.
+There are no mammals that are fish. Among the fish, a few are canines. Not all canines are mammals.
+There are no dogs that are reptiles. Everything that is a fish is a dog. Thus, every fish is a reptile.
+It is impossible for furniture to be a chair. A portion of chairs are tables. Some of the tables are not furniture.
+Kitchen items are never hammers. A few hammers are, in fact, tools. There exist tools that are not kitchen items.
+Everything that is a bird is an animal. Every single eagle is an animal. It is the case that some eagles are birds.
+Anything that is a planet is a celestial body. Not a single Earth is a celestial body. It follows from this that no Earth is a planet.
+Anything that is a dog is also a pet. There are some cats that are not pets. It must be true that no cat is a dog.
+Anything that is a fish is an animal. There are birds, and all of them are animals. Based on this, it must be the case that every bird is a fish.
+It is the case that no bird is a fish. It is also not the case that any fish is a mammal. It follows from this that no mammals are birds.
+There are no animals that fly which are also fish. Every creature that is a bird is also a flying animal. As a consequence, there is not a single bird that is a fish.
+There are no cars which are airplanes. Some of the things that are vehicles are cars. It must be true that some airplanes are not vehicles.
+Every parrot has a beak. All parrots are classified as birds. Therefore, it must be that all birds have beaks.
+A thing that is a square cannot be a circle. There exist shapes that are squares and are also polygons. From this, we know for certain that some polygons are not circles.
+Anyone who is a rose is red. Some flowers are not red. From this, all flowers are roses.
+A portion of healthy foods are vegetables. There are some carrots that are vegetables. It follows, then, that some carrots are healthy foods.
+Anyone who is a doctor is trained in medicine. Every single pediatrician is a doctor. It is the case that some pediatricians are trained in medicine.
+Every flying object is a creature with wings. Any and all elephants are also creatures with wings. This implies that all elephants are flying objects.
+Everything that is a fish is a vertebrate. A portion of vertebrates are sharks. A subset of sharks are fish.
+Stars and gas giants have no overlap whatsoever. At least one thing that is a gas giant is a planet. Some of the things that are planets are not stars.
+It is not the case that every huma is a man. Every single man is a human. From this, it follows that some humans are living beings.
+Anything that is a doctor is also a human. No humans are ever insects. This logically suggests that some insects are not doctors.
+Every single liquid is a molecule. Every single gas is a molecule. As a result, all gases are liquids.
+There are some ideas that are made of cheese. Every single idea is an emotion. Consequently, some emotions are made of cheese.
+There is no such thing as an insect that is also a mammal. Every single ant is an insect. It logically follows that ants are not mammals.
+A few large predators are insects. Every single insect is a tiny creature. It logically follows that some tiny creatures are large predators.
+There are no chairs that are not furniture. All furniture are items found in a household. It follows that some items found in a household are chairs.
+Polygons and circles have no overlap whatsoever. At least one thing that is a circle is a triangle. Some of the things that are triangles are not polygons.
+Everything that can be classified as an apple is a vegetable. Everything that is a carrot is also a vegetable. Every single apple is a carrot.
+Every single vehicle is an animal. No cars are animals. A portion of modes of transportation are not vehicles.
+Every single human is an alien. Every single human is a reptile. Therefore, there are reptiles that are aliens.
+There is no book that is an electronic device. All electronic devices are items. This proves that some items are books.
+There are some robots that are teenagers. Every teenager is a human. It follows from this that every single human is a robot.
+None of the items that are carrots are bell peppers. There are vegetables that are bell peppers. It is correct to infer that some vegetables are not carrots.
+No animal that is a reptile is a mammal. A few of the things that are fish are reptiles. This leads to the conclusion that a certain number of fish are mammals.
+No relatives are considered family members. Everything that is a sibling is a family member. It can be deduced that a part of siblings are not relatives.
+A celestial body is never a piece of furniture. Each of the planets is, in fact, a celestial body. For this reason, no planet is an item of furniture.
+Any person who is a man is a human. Every man is a bachelor. It follows that every bachelor is a human.
+Some fruits are bicycles. Every bicycle is a vehicle. Therefore, some vehicles are fruits.
+A portion of fitness enthusiasts are runners. Anyone who is a runner is also an athlete. Therefore, a subset of athletes are fitness enthusiasts.
+Anything that is a rose is a plant. There are no animals that are roses. Consequently, there are no animals that are plants.
+Anything which is a dog is a living creature. It is the case that some living creatures are not mammals. Therefore, it follows that some mammals are not dogs.
+Every single animal is capable of breathing underwater. There are no horses that are not animals. A number of horses are able to breathe underwater.
+It is completely false that people who are students are inhanimate objects. There exists a group of students who are also teenagers. A valid inference is that no teenagers are inhanimate objects.
+Anything that is a reptile is also an animal. A portion of the animals are snakes. Thus, not all snakes are reptiles.
+Not a single mammal is an object that can think. The entire group of objects that can think is a subset of people. It is a logical consequence that some people are not mammals.
+Every single car is an emotion. Every single car is a musical instrument. Therefore, there are musical instruments that are emotions.
+Every work of poetry is a type of literature. No sculpture is literature. It is the case that no sculpture is poetry.
+Every single arachnid has six legs. There are some spiders that are arachnids. This means that there exist spiders that have six legs.
+Anything that is a rose is a flower. Under no circumstances is a flower a tree. This leads to the conclusion that some trees are not roses.
+Nothing that is a mammal has feathers. A portion of the things that are birds have feathers. It must be the case that every single bird is not a mammal.
+Anything that is a car is a vehicle. There are some Toyotas that are cars. This leads to the conclusion that some Toyotas are vehicles.
+It is the case that no flying animal is a penguin. Anything that is a penguin is also a bird. It necessarily follows that certain birds are not flying animals.
+Every poodle is a dog. No cat is a poodle. Therefore, no cat is a dog.
+Flowers are in no way organisms. Anything that is a flower is a plant. It's the case that some plants are not organisms.
+Any person who is an author is a creative. There are no tables that are authors. Consequently, no table is a creative.
+There are no humans that are not made of glass. Every single thing made of glass is indestructible. From this, it can be derived that some indestructible things are humans.
+It is not true that any vehicle is a bicycle. There are a few bicycles that are also automobiles. There are some automobiles that are not vehicles.
+Every fish is an animal. Anything that is an animal is a mammal. It follows that every mammal is a fish.
+Anything that is a cat is an animal. It is not true that any fish are cats. It follows that no fish are animals.
+The category of animals and the category of plants do not overlap. Every single plant is a mammal. It must be that a portion of mammals are not animals.
+It is the case that no creature that is a mammal is a fish. There exists at least one creature that is a mammal and also a dolphin. This proves that at least one dolphin is not a fish.
+There are no doctors who are not medical professionals. There are no doctors who are not people with medical degrees. Therefore, some people with medical degrees are medical professionals.
+It is true that some lawyers are mythical creatures. Anything that is a lawyer is a politician. As a result, some politicians are mythical creatures.
+The set of people and the set of individuals who hold public office are mutually exclusive. Every single person who is a politician is an individual who holds public office. Politicians are not people.
+No teachers are students. No students are professionals. It necessarily follows that some professionals are not teachers.
+Everything that is a vehicle is a magical item. A portion of vehicles are cars. It necessarily follows that some cars are magical items.
+There are no liquids that are not solid. Anything that is water is a liquid. At least one quantity of water is solid.
+Anything that is a parrot is a bird. Every single bird is an animal. One must conclude that every animal is a parrot.
+Everything that is a salamander is a planet. A few salamanders are amphibians. It must follow that a certain number of amphibians are planets.
+A group of animals are vertebrates. It is a fact that some animals are not insects. It is necessarily true that no insects are vertebrates.
+Every item that is a shirt is an article of clothing. Every single t-shirt is a type of shirt. Consequently, every t-shirt is clothing.
+Anything that is a tomato is also a planet. There is no planet that is a food. It is thus the case that no food is a tomato.
+Humans are in no way animals. Anything that is a human is a mammal. There are some mammals which are not animals.
+There are no instances where flowers can be considered trees. Every single tree is a type of plant. It must be the case that some plants are not flowers.
+It is true that no birds are insects. There are some people who are not insects. Therefore, we can conclude that some people are not birds.
+Every dog is a mammal. Anything that is a cat is a mammal. This means that every cat is a dog.
+There is no worm that is an insect. Every worm is a bird. This leads to the conclusion that all birds are insects.
+Everything that is a dog is an animal. Everything that is a cat is an animal. All felines are canines.
+Every single bird is not a mammal. A portion of the things that are pets are not mammals. It must be the case that some pets are birds.
+Any creature that is a cat is not an animal. There are cats which are also dogs. From this, we know that there are certain dogs that are not animals.
+It is not true that any car is a train. There are a few trains that are also types of transportation. There are some types of transportation that are not cars.
+No animals that are mammals can be considered fish. It is the case that some whales belong to the category of mammals. Consequently, some whales are not fish.
+A triangle is never a square. It is also the case that no circle is a square. Consequently, no circle is a triangle.
+Not a single thing that is a reptile is a mammal. Among the items that are reptiles, some are snakes. This proves that a number of snakes are mammals.
+The group of birds and the group of mammals do not overlap. Anything that is a mammal is an insect. It is the case that some insects are birds.
+Every single feline is a cat. Every single mammal is a cat. Therefore, there are mammals that are felines.
+A number of chairs are people. Anything that is a person is an organism. Therefore, a portion of organisms are chairs.
+Every single car has wheels. Every single bicycle has wheels. It follows that all bicycles are cars.
+It is true that no birds are fish. It is also true that no fish are plants. Therefore, no plants are birds.
+Every single apple is a fruit. There are no fruits which are vegetables. This necessitates the conclusion that no vegetable is an apple.
+Every car is a vehicle. At least one motorized vehicle is not a vehicle. There is at least one motorized vehicle that is not a car.
+Every single bird is a mammal. It is the case that no lion is a bird. It is the case that no lion is a mammal.
+Every single rose is a plant. It is true that all flowers are plants. From this, it is stated that some flowers are roses.
+Some of the sports that are for teams are sports. Every single thing considered a sport is a recreational activity. Therefore, some recreational activities are team sports.
+There is no ice that is frozen water. All things that are glaciers are ice. It follows that some glaciers are not frozen water.
+Nothing that is a liquid is H2O. All water is H2O. It can be deduced that some water is not liquid.
+There are no animals that are rocks. It is also true that no dogs are rocks. Therefore, it is argued that there are no dogs which are animals.
+Some creatures that can fly are birds. It is true that some sparrows are flying creatures. For this reason, every single sparrow is a bird.
+Every single thing that is a hammer is a tool. All screwdrivers are also tools. It must be true that no screwdriver is a hammer.
+No person who is a doctor is also a teacher. Anything that is a teacher is a profession. Therefore, some professions are not doctors.
+A creature that is a reptile is never a mammal. There is a group of reptiles that are also elephants. It must logically follow that some elephants are not mammals.
+Everything that is a tree is a plant. Not a single human is a plant. All humans are trees.
