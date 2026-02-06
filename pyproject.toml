@@ -1,0 +1,21 @@
+[project]
+name = "clgc"
+version = "0.0.1"
+authors = [
+  { name="Hanna Abi Akl", email="hannaabiakl8@gmail.com" },
+]
+description = "A Python package to translate First-Order Logic (FOL) into different knowledge representation languages"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Development Status :: 2 - Pre-Alpha",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+license = "GPL-3.0-or-later"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/HannaAbiAkl/clgc"
+Issues = "https://github.com/HannaAbiAkl/clgc/issues"
