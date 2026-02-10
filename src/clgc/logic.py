@@ -411,9 +411,14 @@ def categorize_syllogism(statements):
     return "hypothetical"
 
 
-# generate statistics for each sef category
 def count_syllogisms(data_dict):
+  '''
+  Docstring for count_syllogisms
+  
+  :param data_dict: list
+  :return syllogisms: dict with counts of each syllogism type
+  '''
   syllogisms = {'hypothetical': 0, 'disjunctive': 0, 'categorical': 0, 'complex': 0}
   for item in data_dict:
-    syllogisms[item['sef']] += 1
+    syllogisms[categorize_syllogism(item)] += 1
   return syllogisms
