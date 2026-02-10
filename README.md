@@ -1,4 +1,6 @@
-# CLGC ![alt text for screen readers](logo.png "CLGC")
+![alt text for screen readers](logo.png "CLGC")
+
+# CLGC
 
 A Python package to translate First-Order Logic (FOL) into different knowledge representation languages
 
