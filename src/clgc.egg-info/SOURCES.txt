@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/clgc/__init__.py
+src/clgc/logic.py
+src/clgc.egg-info/PKG-INFO
+src/clgc.egg-info/SOURCES.txt
+src/clgc.egg-info/dependency_links.txt
+src/clgc.egg-info/top_level.txt
