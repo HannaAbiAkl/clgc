@@ -1,0 +1,39 @@
+Metadata-Version: 2.4
+Name: clgc
+Version: 0.0.1
+Summary: A Python package to translate First-Order Logic (FOL) into different knowledge representation languages
+Author-email: Hanna Abi Akl <hannaabiakl8@gmail.com>
+License-Expression: GPL-3.0-or-later
+Project-URL: Homepage, https://github.com/HannaAbiAkl/clgc
+Project-URL: Issues, https://github.com/HannaAbiAkl/clgc/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+![alt text for screen readers](logo.png "CLGC")
+
+# CLGC
+
+A Python package to translate First-Order Logic (FOL) into different knowledge representation languages
+
+## Scope
+
+A package used for handling logic statements and logic analysis using formal knowledge representation languages.
+
+## Key Features
+- Translate FOL statements to other formal Knowledge Representation (KR) languages
+- Categorize syllogisms by type
+
+## Supported KR Languages
+- Common Logic Interchange Format (CLIF)
+- Conceptual Graph Interchange Format (CGIF)
+- Tensor Function Logic (TFL)
+- Tensor Function Logic Plus (TFL+)
+- CLINGO
+- MINIFOLX
+
