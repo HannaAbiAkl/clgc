@@ -80,7 +80,7 @@ class FOLSyllogism(Notation):
 
     def __init__(self, syllogism: str):
         self.syllogism = syllogism
-        self.statements = syllogism.split("\n")
+        self.statements = syllogism.rstrip("\n").split("\n")
         self.premises = self.statements[:-1]
         self.conclusion = self.statements[-1]
 
@@ -111,21 +111,27 @@ class FOLSyllogism(Notation):
         else:
             return "hypothetical"
         
-    def add_statements(self, new_statements):
-        # Add new statement to syllogism
-        self.statements.extend(new_statements)
+    def add_statements(self, new_statements: list):
+        '''Add new statement to syllogism'''
+        list_of_statements = ''.join(new_statements)
+        self.syllogism = self.syllogism  + list_of_statements
+        self.statements = self.syllogism.rstrip("\n").split("\n")
         self.premises = self.statements[:-1]
         self.conclusion = self.statements[-1]
 
     def add_premises(self, new_premises):
-        # Add new premises to syllogism
-        self.statements = [self.premises] + new_premises + [self.conclusion]
+        '''Add new premises to syllogism'''
+        list_of_premises = ''.join(new_premises)
+        self.premises = self.premises + list_of_premises.rstrip("\n").split("\n")
+        self.statements = list(self.premises) + [self.conclusion]
+        self.syllogism = '\n'.join(self.statements)
 
     def add_conclusion(self, new_conclusion):
-        # Add new conclusion to syllogism
-        self.statements.extend(new_conclusion)
-        self.premises = self.statements[:-1]
-        self.conclusion = self.statements[-1]
+        '''Add new conclusion to syllogism'''
+        self.premises = self.premises + [self.conclusion]
+        self.conclusion = new_conclusion.rstrip("\n")
+        self.statements = self.premises + [self.conclusion]
+        self.syllogism = '\n'.join(self.statements)
     
     @staticmethod
     def _tree_to_json(item, write, level):

@@ -34,6 +34,12 @@ To load all functionalities
 
 `from clgc.base import *`
 
+To create a valid syllogism in FOL, each statement of the syllogism should be followed by the `'\n'` terminator. The following example creates a syllogism of 2 premises and a conclusion:
+
+```python
+syllogism = FOLSyllogism("∀x (Bikes(x) → ¬Calledcars(x))\n ∀x (Bike(x) → Vehicle(x))\n ∃x (Vehicles(x) ∧ Bikes(x))\n")
+```
+
 To categorize syllogisms in natural language or first-order language
 
 ```python
@@ -54,4 +60,39 @@ tfl_plus_syllogism = FOLSyllogism.fol_to_tfl_plus(test_syllogism)
 
 print(tfl_syllogism)
 # -(+B0--+C0)-(+B0-+V0)+(+V1++B1)
+```
+
+A list of functions are available to modify a syllogism:
+- `add_statements` (automatically adds the given statements in that order meaning the last given statement becomes the conclusion of the syllogism)
+- `add_premises` (automatically keeps the original conclusion and adds everything given as premises)
+- `add_conclusion` (automatically takes the given statement as the conclusion and renders everything else to premises)
+
+An example of adding new statements
+
+```python
+test_syllogism = FOLSyllogism("∃x (Canine(x) ∧ ¬AquaticCreatureKnownAsFish(x))\n")
+        test_syllogism.add_statements(["∀x (Fish(x) → ¬MammalThereforeEveryCanineFallUnderTheCategoryOfMammal(x))\n"])   
+
+print(test_syllogism.statements)
+# ["∃x (Canine(x) ∧ ¬AquaticCreatureKnownAsFish(x))", "∀x (Fish(x) → ¬MammalThereforeEveryCanineFallUnderTheCategoryOfMammal(x))"])
+```
+
+An example of adding new premises
+
+```python
+test_syllogism = FOLSyllogism("∃x (Canine(x) ∧ ¬AquaticCreatureKnownAsFish(x))\n ∀x (Bike(x) → Vehicle(x))\n")
+        test_syllogism.add_premises(["∀x (Fish(x) → ¬MammalThereforeEveryCanineFallUnderTheCategoryOfMammal(x))\n"]) 
+
+print(test_syllogism.premises)
+# ["∃x (Canine(x) ∧ ¬AquaticCreatureKnownAsFish(x))", "∀x (Fish(x) → ¬MammalThereforeEveryCanineFallUnderTheCategoryOfMammal(x))"]
+```
+
+An example of adding a new conclusion
+
+```python
+test_syllogism = FOLSyllogism("∃x (Canine(x) ∧ ¬AquaticCreatureKnownAsFish(x))\n ∀x (Bike(x) → Vehicle(x))\n")
+        test_syllogism.add_conclusion("∀x (Fish(x) → ¬MammalThereforeEveryCanineFallUnderTheCategoryOfMammal(x))\n") 
+
+print(test_syllogism.conclusion)
+# "∀x (Fish(x) → ¬MammalThereforeEveryCanineFallUnderTheCategoryOfMammal(x))"
 ```
