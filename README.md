@@ -1,4 +1,4 @@
-![alt text for screen readers](logo.png "CLGC")
+![alt text for screen readers](https://raw.githubusercontent.com/hannaabiakl/clgc/main/logo.png "CLGC")
 
 # CLGC
 
