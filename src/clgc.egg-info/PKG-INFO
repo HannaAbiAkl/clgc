@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: clgc
-Version: 1.0.0
+Version: 2.0
 Summary: A Python package to translate First-Order Logic (FOL) into different knowledge representation languages
 Author-email: Hanna Abi Akl <hannaabiakl8@gmail.com>
 License-Expression: GPL-3.0-or-later
@@ -8,14 +8,14 @@ Project-URL: Homepage, https://github.com/HannaAbiAkl/clgc
 Project-URL: Issues, https://github.com/HannaAbiAkl/clgc/issues
 Classifier: Programming Language :: Python :: 3
 Classifier: Operating System :: OS Independent
-Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Development Status :: 4 - Beta
 Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
 Requires-Python: >=3.9
 Description-Content-Type: text/markdown
 License-File: LICENSE
 Dynamic: license-file
 
-![alt text for screen readers](logo.png "CLGC")
+![alt text for screen readers](https://raw.githubusercontent.com/hannaabiakl/clgc/main/logo.png "CLGC")
 
 # CLGC
 
