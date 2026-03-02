@@ -49,7 +49,7 @@ Then install the dependencies
 ## Basic Usage
 To load all functionalities
 
-`from clgc.base import *`
+`from clgc.__base import *`
 
 To create a valid syllogism in FOL, each statement of the syllogism should be followed by the `'\n'` terminator. The following example creates a syllogism of 2 premises and a conclusion:
 
