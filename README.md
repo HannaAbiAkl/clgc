@@ -23,7 +23,7 @@ A package used for handling logic statements and logic analysis using formal kno
 ## Setup
 Start by installing the package
 
-`pip install -i https://test.pypi.org/simple/ clgc==0.0.1`
+`pip install clgc`
 
 Then install the dependencies
 
