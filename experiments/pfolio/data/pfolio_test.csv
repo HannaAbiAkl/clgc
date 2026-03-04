@@ -1,0 +1,1599 @@
+Unnamed: 0,Premises - NL,Conclusions - NL,Truth Values,Premises - FOL,Conclusions - FOL,Comments,Verified by Prover,Premises - CLIF,Conclusions - CLIF,Premises - CLINGO,Conclusions - CLINGO,Premises - CGIF,Conclusions - CGIF,Premises - MINIFOL2,Conclusions - MINIFOL2,Premises - TFLPLUS,Conclusions - TFLPLUS
+36,"Tyga is a rapper.
+Rappers release rap albums.
+Tyga released the Well Done 3 album.
+Rappers are not opera singers.",Well Done 3 is worth listening to.,U,"IsRapper(tyga)
+∀x ∀y ((IsRapper(x) ∧ ReleasedAlbum(x, y)) → IsRapAlbum(y))
+ReleasedAlbum(tyga, wellDone3)
+∀x (IsRapper(x) → ¬IsOperaSinger(x))",IsWorthListening(wellDone3),,,"israpper(tyga)
+forall x forall y ((israpper(x) and releasedalbum(x, y)) implies israpalbum(y))
+releasedalbum(tyga, welldone3)
+forall x (israpper(x) implies not isoperasinger(x))",isworthlistening(welldone3),"israpper(tyga)
+forall forall ((israpper(x) , releasedalbum(x, y)) -: israpalbum(y))
+releasedalbum(tyga, welldone3)
+forall (israpper(x) -: notisoperasinger(x))",isworthlistening(welldone3),"[israpper[(tyga)]
+@every *x @every *y [([(israpper[(?x)]  releasedalbum[(?x  y)])]  israpalbum[(?y)])]
+releasedalbum[(tyga  welldone3)]
+@every *x [(israpper[(?x)]  ~isoperasinger[(?x)])]]",[isworthlistening[(welldone3)]],"israpper(tyga)
+all:x all:y ((israpper(x) & releasedalbum(x, y)) :- israpalbum(y))
+releasedalbum(tyga, welldone3)
+all:x (israpper(x) :- ~isoperasinger(x))",isworthlistening(welldone3),+I2(+t2)--((+I0++R0)-+I0)+R2-(+I0--+I0),+I2(+w2)
+90,"Koei Tecmo is a Japanese video game and anime holding company.
+Holding companies hold several companies.
+Tecmo was disbanded in Japan, while Koei survived but was renamed.
+Video game holding companies are holding companies.",Koei Tecmo holds anime.,U,"Japanese(koeitecmo) ∧ VideoGameHoldingCompany(koeitecmo) ∧ AnimeHoldingCompany(koeitecmo) ∧ HoldingCompany(x)
+∀x (HoldingCompany(x) → ∃y(Company(y) ∧ Holds(x, y)))
+DisbandsIn(tecmo, japan) ∧ Survives(koei) ∧ Renames(koei)
+∀x (VideoGameHoldingCompany(x) → HoldingCompany(x))",AnimeHoldingCompany(koeitecmo),,,"japanese(koeitecmo) and videogameholdingcompany(koeitecmo) and animeholdingcompany(koeitecmo) and holdingcompany(x)
+forall x (holdingcompany(x) implies exists y(company(y) and holds(x, y)))
+disbandsin(tecmo, japan) and survives(koei) and renames(koei)
+forall x (videogameholdingcompany(x) implies holdingcompany(x))",animeholdingcompany(koeitecmo),"japanese(koeitecmo) , videogameholdingcompany(koeitecmo) , animeholdingcompany(koeitecmo) , holdingcompany(x)
+forall (holdingcompany(x) -: (company(y) , holds(x, y)))
+disbandsin(tecmo, japan) , survives(koei) , renames(koei)
+forall (videogameholdingcompany(x) -: holdingcompany(x))",animeholdingcompany(koeitecmo),"[japanese[(koeitecmo)]  videogameholdingcompany[(koeitecmo)]  animeholdingcompany[(koeitecmo)]  holdingcompany[(x)]
+@every *x [(holdingcompany[(?x)]  *y[(company[(?y)]  holds[(?x  y)])])]
+disbandsin[(tecmo  japan)]  survives[(koei)]  renames[(koei)]
+@every *x [(videogameholdingcompany[(?x)]  holdingcompany[(?x)])]]",[animeholdingcompany[(koeitecmo)]],"japanese(koeitecmo) & videogameholdingcompany(koeitecmo) & animeholdingcompany(koeitecmo) & holdingcompany(x)
+all:x (holdingcompany(x) :- y(company(y) & holds(x, y)))
+disbandsin(tecmo, japan) & survives(koei) & renames(koei)
+all:x (videogameholdingcompany(x) :- holdingcompany(x))",animeholdingcompany(koeitecmo),+J2(+k2)++V2(+k2)++A2(+k2)++H2-(+H0-+(+C1++H1))+D2++S2(+k2)++R2(+k2)-(+V0-+H0),+A2(+k2)
+60,"All buildings in New Haven are not high.
+All buildings managed by Yale Housing are located in New Haven. 
+All buildings in Manhattans are high. 
+All buildings owned by Bloomberg are located in Manhattans. 
+All buildings with the Bloomberg logo are owned by Bloomberg. 
+Tower A is managed by Yale Housing.
+Tower B is with the Bloomberg logo.",Tower A is low.,T,"∀x (In(x, newHaven) → ¬High(x))
+∀x (YaleHousing(x) → In(x, newHaven))
+∀x (In(x, manhattan) → High(x))
+∀x (Bloomberg(x) → In(x, manhattan))
+∀x (BloombergLogo(x) → Bloomberg(x))
+YaleHousing(tower-a)
+BloombergLogo(tower-b)",¬High(tower-a),,,"forall x (in(x, newhaven) implies not high(x))
+forall x (yalehousing(x) implies in(x, newhaven))
+forall x (in(x, manhattan) implies high(x))
+forall x (bloomberg(x) implies in(x, manhattan))
+forall x (bloomberglogo(x) implies bloomberg(x))
+yalehousing(tower-a)
+bloomberglogo(tower-b)",not high(tower-a),"forall (in(x, newhaven) -: nothigh(x))
+forall (yalehousing(x) -: in(x, newhaven))
+forall (in(x, manhattan) -: high(x))
+forall (bloomberg(x) -: in(x, manhattan))
+forall (bloomberglogo(x) -: bloomberg(x))
+yalehousing(tower-a)
+bloomberglogo(tower-b)",nothigh(tower-a),"[@every *x [(in[(?x  newhaven)]  ~high[(?x)])]
+@every *x [(yalehousing[(?x)]  in[(?x  newhaven)])]
+@every *x [(in[(?x  manhattan)]  high[(?x)])]
+@every *x [(bloomberg[(?x)]  in[(?x  manhattan)])]
+@every *x [(bloomberglogo[(?x)]  bloomberg[(?x)])]
+yalehousing[(tower-a)]
+bloomberglogo[(tower-b)]]",~[high[(tower-a)]],"all:x (in(x, newhaven) :- ~high(x))
+all:x (yalehousing(x) :- in(x, newhaven))
+all:x (in(x, manhattan) :- high(x))
+all:x (bloomberg(x) :- in(x, manhattan))
+all:x (bloomberglogo(x) :- bloomberg(x))
+yalehousing(tower-a)
+bloomberglogo(tower-b)",~high(tower-a),-(+I0--+H0)-(+Y0-+I0)-(+I0-+H0)-(+B0-+I0)-(+B0-+B0)+Y2(+t2)+B2(+t2),-+H2(+t2)
+11,"Walter Folger Brown was an American politician and lawyer who served as the postmaster general.
+Walter Folger Brown graduated from Harvard University with a Bachelor of Arts.
+While they were both in Toledo, Walter Folger Brown's father practiced law with Walter Folger Brown.
+Katherin Hafer married Walter Folger Brown.",Walter Folger Brown's father was in Toledo.,T,"AmericanPolitician(walterBrown) ∧ Lawyer(walterBrown) ∧ ServedAs(walterBrown, postMasterGeneral)
+Graduated(walterBrown, harvard) ∧ GraduatedWith(walterBrown, bachelorsOfArt)
+∃t(In(walterBrown, toledo, t) ∧ In(walterBrownFather, toledo, t) ∧ PracticedLawTogether(walterBrown, walterBrownFather, t))
+Married(katherinHafer, walterBrown)","∃t(In(walterBrownFather, toledo, t))",,,"americanpolitician(walterbrown) and lawyer(walterbrown) and servedas(walterbrown, postmastergeneral)
+graduated(walterbrown, harvard) and graduatedwith(walterbrown, bachelorsofart)
+exists t(in(walterbrown, toledo, t) and in(walterbrownfather, toledo, t) and practicedlawtogether(walterbrown, walterbrownfather, t))
+married(katherinhafer, walterbrown)","exists t(in(walterbrownfather, toledo, t))","americanpolitician(walterbrown) , lawyer(walterbrown) , servedas(walterbrown, postmastergeneral)
+graduated(walterbrown, harvard) , graduatedwith(walterbrown, bachelorsofart)
+(in(walterbrown, toledo, t) , in(walterbrownfather, toledo, t) , practicedlawtogether(walterbrown, walterbrownfather, t))
+married(katherinhafer, walterbrown)","(in(walterbrownfather, toledo, t))","[americanpolitician[(walterbrown)]  lawyer[(walterbrown)]  servedas[(walterbrown  postmastergeneral)]
+graduated[(walterbrown  harvard)]  graduatedwith[(walterbrown  bachelorsofart)]
+*t[(in[(walterbrown  toledo  t)]  in[(walterbrownfather  toledo  t)]  practicedlawtogether[(walterbrown  walterbrownfather  t)])]
+married[(katherinhafer  walterbrown)]]",[*t[(in[(walterbrownfather  toledo  t)])]],"americanpolitician(walterbrown) & lawyer(walterbrown) & servedas(walterbrown, postmastergeneral)
+graduated(walterbrown, harvard) & graduatedwith(walterbrown, bachelorsofart)
+t(in(walterbrown, toledo, t) & in(walterbrownfather, toledo, t) & practicedlawtogether(walterbrown, walterbrownfather, t))
+married(katherinhafer, walterbrown)","t(in(walterbrownfather, toledo, t))",+A2(+w2)++L2(+w2)++S2+G2++G2+(+I1++I1++P1)+M2,+(+I1)
+90,"Koei Tecmo is a Japanese video game and anime holding company.
+Holding companies hold several companies.
+Tecmo was disbanded in Japan, while Koei survived but was renamed.
+Video game holding companies are holding companies.",Tecmo holds another company.,U,"Japanese(koeitecmo) ∧ VideoGameHoldingCompany(koeitecmo) ∧ AnimeHoldingCompany(koeitecmo) ∧ HoldingCompany(x)
+∀x (HoldingCompany(x) → ∃y(Company(y) ∧ Holds(x, y)))
+DisbandsIn(tecmo, japan) ∧ Survives(koei) ∧ Renames(koei)
+∀x (VideoGameHoldingCompany(x) → HoldingCompany(x))","∃x (Company(x) ∧ Holds(tecmo, x))",,,"japanese(koeitecmo) and videogameholdingcompany(koeitecmo) and animeholdingcompany(koeitecmo) and holdingcompany(x)
+forall x (holdingcompany(x) implies exists y(company(y) and holds(x, y)))
+disbandsin(tecmo, japan) and survives(koei) and renames(koei)
+forall x (videogameholdingcompany(x) implies holdingcompany(x))","exists x (company(x) and holds(tecmo, x))","japanese(koeitecmo) , videogameholdingcompany(koeitecmo) , animeholdingcompany(koeitecmo) , holdingcompany(x)
+forall (holdingcompany(x) -: (company(y) , holds(x, y)))
+disbandsin(tecmo, japan) , survives(koei) , renames(koei)
+forall (videogameholdingcompany(x) -: holdingcompany(x))"," (company(x) , holds(tecmo, x))","[japanese[(koeitecmo)]  videogameholdingcompany[(koeitecmo)]  animeholdingcompany[(koeitecmo)]  holdingcompany[(x)]
+@every *x [(holdingcompany[(?x)]  *y[(company[(?y)]  holds[(?x  y)])])]
+disbandsin[(tecmo  japan)]  survives[(koei)]  renames[(koei)]
+@every *x [(videogameholdingcompany[(?x)]  holdingcompany[(?x)])]]",[*x [(company[(?x)]  holds[(tecmo  x)])]],"japanese(koeitecmo) & videogameholdingcompany(koeitecmo) & animeholdingcompany(koeitecmo) & holdingcompany(x)
+all:x (holdingcompany(x) :- y(company(y) & holds(x, y)))
+disbandsin(tecmo, japan) & survives(koei) & renames(koei)
+all:x (videogameholdingcompany(x) :- holdingcompany(x))","x (company(x) & holds(tecmo, x))",+J2(+k2)++V2(+k2)++A2(+k2)++H2-(+H0-+(+C1++H1))+D2++S2(+k2)++R2(+k2)-(+V0-+H0),+(+C1++H1)
+48,"Douglas Adams is an author who created the book collection called The Salmon of Doubt. 
+The Salmon of Doubt is about life experiences and technology.
+All authors are writers.
+Writers create innovative ideas.
+Some books that contain innovative ideas are about technology.",The Salmon of Doubt has no innovative Ideas.,U,"Author(douglasAdams) ∧ Authored(douglasAdams, theSalmonOfDoubt) ∧ Book(theSalmonOfDoubt)
+About(theSalmonOfDoubt, lifeExperience) ∧ About(theSalmonOfDoubt, technology)
+∀x (Author(x) → Writer(x))
+∀x (Writer(x) → Create(x, innovativeIdea))
+∃x ∃y (Contain(x, innovativeIdea) ∧ About(x, technology) ∧ (¬(x=y)) ∧ (Contain(y, innovativeIdea) ∧ About(y, technology)))","¬Contain(theSalmonOfDoubt, innovativeIdea)",,,"author(douglasadams) and authored(douglasadams, thesalmonofdoubt) and book(thesalmonofdoubt)
+about(thesalmonofdoubt, lifeexperience) and about(thesalmonofdoubt, technology)
+forall x (author(x) implies writer(x))
+forall x (writer(x) implies create(x, innovativeidea))
+exists x exists y (contain(x, innovativeidea) and about(x, technology) and (not (x=y)) and (contain(y, innovativeidea) and about(y, technology)))","not contain(thesalmonofdoubt, innovativeidea)","author(douglasadams) , authored(douglasadams, thesalmonofdoubt) , book(thesalmonofdoubt)
+about(thesalmonofdoubt, lifeexperience) , about(thesalmonofdoubt, technology)
+forall (author(x) -: writer(x))
+forall (writer(x) -: create(x, innovativeidea))
+  (contain(x, innovativeidea) , about(x, technology) , (not(x=y)) , (contain(y, innovativeidea) , about(y, technology)))","notcontain(thesalmonofdoubt, innovativeidea)","[author[(douglasadams)]  authored[(douglasadams  thesalmonofdoubt)]  book[(thesalmonofdoubt)]
+about[(thesalmonofdoubt  lifeexperience)]  about[(thesalmonofdoubt  technology)]
+@every *x [(author[(?x)]  writer[(?x)])]
+@every *x [(writer[(?x)]  create[(?x  innovativeidea)])]
+*x *y [(contain[(?x  innovativeidea)]  about[(?x  technology)]  [(~[(?x=y)])]  [(contain[(?y  innovativeidea)]  about[(?y  technology)])])]]",~[contain[(thesalmonofdoubt  innovativeidea)]],"author(douglasadams) & authored(douglasadams, thesalmonofdoubt) & book(thesalmonofdoubt)
+about(thesalmonofdoubt, lifeexperience) & about(thesalmonofdoubt, technology)
+all:x (author(x) :- writer(x))
+all:x (writer(x) :- create(x, innovativeidea))
+x y (contain(x, innovativeidea) & about(x, technology) & (~(x=y)) & (contain(y, innovativeidea) & about(y, technology)))","~contain(thesalmonofdoubt, innovativeidea)",+A2(+d2)++A2++B2(+t2)+A2++A2-(+A0-+W0)-(+W0-+C0)++(+C1++A1+(-(+x1))+(+C1++A1)),-+C2
+80,"New Vessel Press is a publishing house specializing in translating foreign literature into English.
+All of New Vessel Press's published books are in English.
+Neapolitan Chronicles is a book published by New Vessel Press.
+Neapolitan Chronicles was translated from Italian.
+Palace of Flies is a book published by New Vessel Press.",Palace of Flies was translated from Italian.,U,"PublishingHouse(newVesselPress) ∧ SpecializesInTranslatingIntoEnglish(newVesselPress, foreignLiterature)
+∀x ((Book(x) ∧ PublishedBy(x, newVesselPress)) → In(x, english))
+Book(neapolitanChronicles) ∧ PublishedBy(neapolitanChronicles, newVesselPress)
+TranslatedFrom(neapolitanChronicles, italian)
+Book(palaceOfFlies) ∧ PublishedBy(palaceOfFlies, newVesselPress)","TranslatedFrom(palaceOfFlies, italian)",,,"publishinghouse(newvesselpress) and specializesintranslatingintoenglish(newvesselpress, foreignliterature)
+forall x ((book(x) and publishedby(x, newvesselpress)) implies in(x, english))
+book(neapolitanchronicles) and publishedby(neapolitanchronicles, newvesselpress)
+translatedfrom(neapolitanchronicles, italian)
+book(palaceofflies) and publishedby(palaceofflies, newvesselpress)","translatedfrom(palaceofflies, italian)","publishinghouse(newvesselpress) , specializesintranslatingintoenglish(newvesselpress, foreignliterature)
+forall ((book(x) , publishedby(x, newvesselpress)) -: in(x, english))
+book(neapolitanchronicles) , publishedby(neapolitanchronicles, newvesselpress)
+translatedfrom(neapolitanchronicles, italian)
+book(palaceofflies) , publishedby(palaceofflies, newvesselpress)","translatedfrom(palaceofflies, italian)","[publishinghouse[(newvesselpress)]  specializesintranslatingintoenglish[(newvesselpress  foreignliterature)]
+@every *x [([(book[(?x)]  publishedby[(?x  newvesselpress)])]  in[(?x  english)])]
+book[(neapolitanchronicles)]  publishedby[(neapolitanchronicles  newvesselpress)]
+translatedfrom[(neapolitanchronicles  italian)]
+book[(palaceofflies)]  publishedby[(palaceofflies  newvesselpress)]]",[translatedfrom[(palaceofflies  italian)]],"publishinghouse(newvesselpress) & specializesintranslatingintoenglish(newvesselpress, foreignliterature)
+all:x ((book(x) & publishedby(x, newvesselpress)) :- in(x, english))
+book(neapolitanchronicles) & publishedby(neapolitanchronicles, newvesselpress)
+translatedfrom(neapolitanchronicles, italian)
+book(palaceofflies) & publishedby(palaceofflies, newvesselpress)","translatedfrom(palaceofflies, italian)",+P2(+n2)++S2-((+B0++P0)-+I0)+B2(+n2)++P2+T2+B2(+p2)++P2,+T2
+61,"No coffee sold in Walmart is from France. 
+All coffee favored by local residents is from Columbia. 
+All coffee with high prices is favored by Jack. 
+Civet Coffee is coffee that's not from Columbia.
+Jamaica Blue is expensive coffee.
+Expensive coffee has a high price.",Jamaica Blue is favored by local residents.,T,"∀x ((Coffee(x) ∧ SoldIn(x, walmart)) → ¬From(x, france))
+∀x ((Coffee(x) ∧ FavoredBy(x, localResidents)) → From(x, colombia))
+∀x ((Coffee(x) ∧ HighPrice(x)) → FavoredByLocalResidents(x))
+Coffee(civetCoffee) ∧ ¬From(colombia)
+Expensive(jamaicaBlue) ∧ Coffee(jamaicaBlue)
+∀x ((Expensive(x) ∧ Coffee(x)) → HighPrice(x))","FavoredBy(jamaicablue, localResidents)",,,"forall x ((coffee(x) and soldin(x, walmart)) implies not from(x, france))
+forall x ((coffee(x) and favoredby(x, localresidents)) implies from(x, colombia))
+forall x ((coffee(x) and highprice(x)) implies favoredbylocalresidents(x))
+coffee(civetcoffee) and not from(colombia)
+expensive(jamaicablue) and coffee(jamaicablue)
+forall x ((expensive(x) and coffee(x)) implies highprice(x))","favoredby(jamaicablue, localresidents)","forall ((coffee(x) , soldin(x, walmart)) -: notfrom(x, france))
+forall ((coffee(x) , favoredby(x, localresidents)) -: from(x, colombia))
+forall ((coffee(x) , highprice(x)) -: favoredbylocalresidents(x))
+coffee(civetcoffee) , notfrom(colombia)
+expensive(jamaicablue) , coffee(jamaicablue)
+forall ((expensive(x) , coffee(x)) -: highprice(x))","favoredby(jamaicablue, localresidents)","[@every *x [([(coffee[(?x)]  soldin[(?x  walmart)])]  ~from[(?x  france)])]
+@every *x [([(coffee[(?x)]  favoredby[(?x  localresidents)])]  from[(?x  colombia)])]
+@every *x [([(coffee[(?x)]  highprice[(?x)])]  favoredbylocalresidents[(?x)])]
+coffee[(civetcoffee)]  ~from[(colombia)]
+expensive[(jamaicablue)]  coffee[(jamaicablue)]
+@every *x [([(expensive[(?x)]  coffee[(?x)])]  highprice[(?x)])]]",[favoredby[(jamaicablue  localresidents)]],"all:x ((coffee(x) & soldin(x, walmart)) :- ~from(x, france))
+all:x ((coffee(x) & favoredby(x, localresidents)) :- from(x, colombia))
+all:x ((coffee(x) & highprice(x)) :- favoredbylocalresidents(x))
+coffee(civetcoffee) & ~from(colombia)
+expensive(jamaicablue) & coffee(jamaicablue)
+all:x ((expensive(x) & coffee(x)) :- highprice(x))","favoredby(jamaicablue, localresidents)",-((+C0++S0)--+F0)-((+C0++F0)-+F0)-((+C0++H0)-+F0)+C2(+c2)+-+F2(+c2)+E2(+j2)++C2(+j2)-((+E0++C0)-+H0),+F2
+96,"Diamond Mine is a professional wrestling stable formed in WWE.
+Roderick Strong leads Diamond Mine.
+Diamond Mine includes the Creed Brothers and Ivy Nile.
+Imperium has a feud with Diamond Mine.",Roderick Strong leads a professional wrestling stable.,T,"ProfessionalWrestlingStable(diamondMine) ∧ In(diamondMine, wWE)
+Leads(roderickStrong, diamondMine)
+Includes(diamondMine, creedBrothers) ∧ Includes(diamondMine, ivyNile)
+Feuds(imperium, diamondMine)","∃x (Leads(roderickstrong, x) ∧ ProfessionalWrestlingStable(x))",,,"professionalwrestlingstable(diamondmine) and in(diamondmine, wwe)
+leads(roderickstrong, diamondmine)
+includes(diamondmine, creedbrothers) and includes(diamondmine, ivynile)
+feuds(imperium, diamondmine)","exists x (leads(roderickstrong, x) and professionalwrestlingstable(x))","professionalwrestlingstable(diamondmine) , in(diamondmine, wwe)
+leads(roderickstrong, diamondmine)
+includes(diamondmine, creedbrothers) , includes(diamondmine, ivynile)
+feuds(imperium, diamondmine)"," (leads(roderickstrong, x) , professionalwrestlingstable(x))","[professionalwrestlingstable[(diamondmine)]  in[(diamondmine  wwe)]
+leads[(roderickstrong  diamondmine)]
+includes[(diamondmine  creedbrothers)]  includes[(diamondmine  ivynile)]
+feuds[(imperium  diamondmine)]]",[*x [(leads[(roderickstrong  x)]  professionalwrestlingstable[(?x)])]],"professionalwrestlingstable(diamondmine) & in(diamondmine, wwe)
+leads(roderickstrong, diamondmine)
+includes(diamondmine, creedbrothers) & includes(diamondmine, ivynile)
+feuds(imperium, diamondmine)","x (leads(roderickstrong, x) & professionalwrestlingstable(x))",+P2(+d2)++I2+L2+I2++I2+F2,+(+L1++P1)
+3,"Fort Ticonderoga is the current name for Fort Carillon.
+Pierre de Rigaud de Vaudreuil built Fort Carillon.
+Fort Carillon was located in New France.
+New France is not in Europe.",Pierre de Rigaud de Vaudreuil built a fort in New France.,T,"RenamedAs(fortCarillon, fortTiconderoga)
+Built(pierredeRigauddeVaudreuil, fortCarillon)
+LocatedIn(fortCarillon, newFrance)
+¬LocatedIn(newFrance, europe)","∃x (Built(pierredeRigauddeVaudreuil, x) ∧ LocatedIn(x, newFrance))",,,"renamedas(fortcarillon, fortticonderoga)
+built(pierrederigauddevaudreuil, fortcarillon)
+locatedin(fortcarillon, newfrance)
+not locatedin(newfrance, europe)","exists x (built(pierrederigauddevaudreuil, x) and locatedin(x, newfrance))","renamedas(fortcarillon, fortticonderoga)
+built(pierrederigauddevaudreuil, fortcarillon)
+locatedin(fortcarillon, newfrance)
+notlocatedin(newfrance, europe)"," (built(pierrederigauddevaudreuil, x) , locatedin(x, newfrance))","[renamedas[(fortcarillon  fortticonderoga)]
+built[(pierrederigauddevaudreuil  fortcarillon)]
+locatedin[(fortcarillon  newfrance)]
+~locatedin[(newfrance  europe)]]",[*x [(built[(pierrederigauddevaudreuil  x)]  locatedin[(?x  newfrance)])]],"renamedas(fortcarillon, fortticonderoga)
+built(pierrederigauddevaudreuil, fortcarillon)
+locatedin(fortcarillon, newfrance)
+~locatedin(newfrance, europe)","x (built(pierrederigauddevaudreuil, x) & locatedin(x, newfrance))",+R2+B2+L2-+L2,+(+B1++L1)
+12,"The Croton River watershed is the drainage basin of the Croton River.
+The Croton River is in southwestern New York.
+Water from the Croton River watershed flows to the Bronx.
+The Bronx is in New York.",Water from the Croton River watershed flows to somewhere in New York.,T,"DrainageBasinOf(crotonRiverWatershed, crotonRiver)
+In(crotonRiver, southwesternNewYork)
+∀x ((Water(x) ∧ In(x, crotonRiverWatershed)) → FlowsTo(x, bronx))
+In(bronx, newYork)","∀x ((Water(x) ∧ From(x, crotonRiverWatershed)) → ∃y(FlowsTo(x, y) ∧ In(y, newYork)))",,,"drainagebasinof(crotonriverwatershed, crotonriver)
+in(crotonriver, southwesternnewyork)
+forall x ((water(x) and in(x, crotonriverwatershed)) implies flowsto(x, bronx))
+in(bronx, newyork)","forall x ((water(x) and from(x, crotonriverwatershed)) implies exists y(flowsto(x, y) and in(y, newyork)))","drainagebasinof(crotonriverwatershed, crotonriver)
+in(crotonriver, southwesternnewyork)
+forall ((water(x) , in(x, crotonriverwatershed)) -: flowsto(x, bronx))
+in(bronx, newyork)","forall ((water(x) , from(x, crotonriverwatershed)) -: (flowsto(x, y) , in(y, newyork)))","[drainagebasinof[(crotonriverwatershed  crotonriver)]
+in[(crotonriver  southwesternnewyork)]
+@every *x [([(water[(?x)]  in[(?x  crotonriverwatershed)])]  flowsto[(?x  bronx)])]
+in[(bronx  newyork)]]",[@every *x [([(water[(?x)]  from[(?x  crotonriverwatershed)])]  *y[(flowsto[(?x  y)]  in[(?y  newyork)])])]],"drainagebasinof(crotonriverwatershed, crotonriver)
+in(crotonriver, southwesternnewyork)
+all:x ((water(x) & in(x, crotonriverwatershed)) :- flowsto(x, bronx))
+in(bronx, newyork)","all:x ((water(x) & from(x, crotonriverwatershed)) :- y(flowsto(x, y) & in(y, newyork)))",+D2+I2-((+W0++I0)-+F0)+I2,-((+W0++F0)-+(+F1++I1))
+83,"All vehicle registration plates in Istanbul begin with the number 34.
+Plates that do not begin with the number 34 are not from Istanbul. 
+Joe's vehicle registration plate is from Istanbul. 
+Tom's license plate begins with the number 35. 
+If a license plate begins with the number 35, then it does not begin with the number 34.",Joe's license plate begins with the number 34.,T,"∀x (VehicleRegistrationPlateIn(x, istanbul) → BeginWith(x, num34))
+∀x (¬BeginWith(x, num34) → ¬FromIstanbul(x))
+∃x (Owns(joe, x) ∧ VehicleRegistrationPlateIn(x, istanbul))
+∃x (Owns(tom, x) ∧ BeginWith(x, num35))
+∀x (BeginWith(x, num35) → ¬BeginWith(x, num34))","∃x (Owns(joe, x) ∧ BeginWith(x, num34))",,,"forall x (vehicleregistrationplatein(x, istanbul) implies beginwith(x, num34))
+forall x (not beginwith(x, num34) implies not fromistanbul(x))
+exists x (owns(joe, x) and vehicleregistrationplatein(x, istanbul))
+exists x (owns(tom, x) and beginwith(x, num35))
+forall x (beginwith(x, num35) implies not beginwith(x, num34))","exists x (owns(joe, x) and beginwith(x, num34))","forall (vehicleregistrationplatein(x, istanbul) -: beginwith(x, num34))
+forall (notbeginwith(x, num34) -: notfromistanbul(x))
+ (owns(joe, x) , vehicleregistrationplatein(x, istanbul))
+ (owns(tom, x) , beginwith(x, num35))
+forall (beginwith(x, num35) -: notbeginwith(x, num34))"," (owns(joe, x) , beginwith(x, num34))","[@every *x [(vehicleregistrationplatein[(?x  istanbul)]  beginwith[(?x  num34)])]
+@every *x [(~beginwith[(?x  num34)]  ~fromistanbul[(?x)])]
+*x [(owns[(joe  x)]  vehicleregistrationplatein[(?x  istanbul)])]
+*x [(owns[(tom  x)]  beginwith[(?x  num35)])]
+@every *x [(beginwith[(?x  num35)]  ~beginwith[(?x  num34)])]]",[*x [(owns[(joe  x)]  beginwith[(?x  num34)])]],"all:x (vehicleregistrationplatein(x, istanbul) :- beginwith(x, num34))
+all:x (~beginwith(x, num34) :- ~fromistanbul(x))
+x (owns(joe, x) & vehicleregistrationplatein(x, istanbul))
+x (owns(tom, x) & beginwith(x, num35))
+all:x (beginwith(x, num35) :- ~beginwith(x, num34))","x (owns(joe, x) & beginwith(x, num34))",-(+V0-+B0)-(-+B0--+F0)+(+O1++V1)+(+O1++B1)-(+B0--+B0),+(+O1++B1)
+40,"If someone can run far and navigate using a map, they can participate in orienteering.
+Fit people can run far.
+People who have a good sense of direction can use a map.
+Military officers are fit.
+Hailee is a military officer and has a good sense of direction.
+Karl is not a military officer and can use a map.",Karl can not participate in orienteering.,U,"∀x ((RunFar(x) ∧ UseMap(x)) → Orienteer(x))
+∀x (Fit(x) → RunFar(x))
+∀x (SenseDirection(x) → UseMap(x))
+∀x (MilitaryOfficer(x) → Fit(x))
+MilitaryOfficer(hailee) ∧ SenseDirection(hailee)
+¬MilitaryOfficer(karl) ∧ UseMap(karl)",¬Orienteer(karl),,,"forall x ((runfar(x) and usemap(x)) implies orienteer(x))
+forall x (fit(x) implies runfar(x))
+forall x (sensedirection(x) implies usemap(x))
+forall x (militaryofficer(x) implies fit(x))
+militaryofficer(hailee) and sensedirection(hailee)
+not militaryofficer(karl) and usemap(karl)",not orienteer(karl),"forall ((runfar(x) , usemap(x)) -: orienteer(x))
+forall (fit(x) -: runfar(x))
+forall (sensedirection(x) -: usemap(x))
+forall (militaryofficer(x) -: fit(x))
+militaryofficer(hailee) , sensedirection(hailee)
+notmilitaryofficer(karl) , usemap(karl)",notorienteer(karl),"[@every *x [([(runfar[(?x)]  usemap[(?x)])]  orienteer[(?x)])]
+@every *x [(fit[(?x)]  runfar[(?x)])]
+@every *x [(sensedirection[(?x)]  usemap[(?x)])]
+@every *x [(militaryofficer[(?x)]  fit[(?x)])]
+militaryofficer[(hailee)]  sensedirection[(hailee)]
+~militaryofficer[(karl)]  usemap[(karl)]]",~[orienteer[(karl)]],"all:x ((runfar(x) & usemap(x)) :- orienteer(x))
+all:x (fit(x) :- runfar(x))
+all:x (sensedirection(x) :- usemap(x))
+all:x (militaryofficer(x) :- fit(x))
+militaryofficer(hailee) & sensedirection(hailee)
+~militaryofficer(karl) & usemap(karl)",~orienteer(karl),-((+R0++U0)-+O0)-(+F0-+R0)-(+S0-+U0)-(+M0-+F0)+M2(+h2)++S2(+h2)-+M2(+k2)++U2(+k2),-+O2(+k2)
+87,"Daveed Diggs is an actor and film producer.
+Daveed Diggs played two roles in the musical Hamilton on Broadway.
+One of the actors from Hamilton won the best actor award.
+The actor playing Thomas Jefferson won the best actor award.
+Daveed Diggs played Thomas Jefferson.
+Musicals on Broadway are not films.",Hamilton is a film.,F,"Actor(daveedDiggs) ∧ FilmProducer(daveedDiggs)
+∃x ∃y(PlaysIn(daveedDiggs, x, hamilton) ∧ (¬(x=y)) ∧ PlaysIn(daveedDiggs, y, hamilton)) ∧ OnBroadway(hamilton) ∧ Musical(hamilton)
+∃x ∃y(Actor(x) ∧ PlaysIn(x, y, hamilton) ∧ Wins(x, bestActorAward))
+∃x (Actor(x) ∧ PlaysIn(x, thomasJefferson, hamilton) ∧ Wins(x, bestActorAward))
+Plays(daveedDiggs, thomasJefferson)
+∀x ((Musical(x) ∧ OnBroadway(x)) → ¬Film(x))",Film(hamilton),,,"actor(daveeddiggs) and filmproducer(daveeddiggs)
+exists x exists y(playsin(daveeddiggs, x, hamilton) and (not (x=y)) and playsin(daveeddiggs, y, hamilton)) and onbroadway(hamilton) and musical(hamilton)
+exists x exists y(actor(x) and playsin(x, y, hamilton) and wins(x, bestactoraward))
+exists x (actor(x) and playsin(x, thomasjefferson, hamilton) and wins(x, bestactoraward))
+plays(daveeddiggs, thomasjefferson)
+forall x ((musical(x) and onbroadway(x)) implies not film(x))",film(hamilton),"actor(daveeddiggs) , filmproducer(daveeddiggs)
+ (playsin(daveeddiggs, x, hamilton) , (not(x=y)) , playsin(daveeddiggs, y, hamilton)) , onbroadway(hamilton) , musical(hamilton)
+ (actor(x) , playsin(x, y, hamilton) , wins(x, bestactoraward))
+ (actor(x) , playsin(x, thomasjefferson, hamilton) , wins(x, bestactoraward))
+plays(daveeddiggs, thomasjefferson)
+forall ((musical(x) , onbroadway(x)) -: notfilm(x))",film(hamilton),"[actor[(daveeddiggs)]  filmproducer[(daveeddiggs)]
+*x *y[(playsin[(daveeddiggs  x  hamilton)]  [(~[(?x=y)])]  playsin[(daveeddiggs  y  hamilton)])]  onbroadway[(hamilton)]  musical[(hamilton)]
+*x *y[(actor[(?x)]  playsin[(?x  y  hamilton)]  wins[(?x  bestactoraward)])]
+*x [(actor[(?x)]  playsin[(?x  thomasjefferson  hamilton)]  wins[(?x  bestactoraward)])]
+plays[(daveeddiggs  thomasjefferson)]
+@every *x [([(musical[(?x)]  onbroadway[(?x)])]  ~film[(?x)])]]",[film[(hamilton)]],"actor(daveeddiggs) & filmproducer(daveeddiggs)
+x y(playsin(daveeddiggs, x, hamilton) & (~(x=y)) & playsin(daveeddiggs, y, hamilton)) & onbroadway(hamilton) & musical(hamilton)
+x y(actor(x) & playsin(x, y, hamilton) & wins(x, bestactoraward))
+x (actor(x) & playsin(x, thomasjefferson, hamilton) & wins(x, bestactoraward))
+plays(daveeddiggs, thomasjefferson)
+all:x ((musical(x) & onbroadway(x)) :- ~film(x))",film(hamilton),+A2(+d2)++F2(+d2)++(+P1+(-(+x1))++P1)++O1(+h1)++M1(+h1)++(+A1++P1++W1)+(+A1++P1++W1)+P2-((+M0++O0)--+F0),+F2(+h2)
+75,"Robert Zimmer was a philosopher born in Germany.
+Robert Zimmer is an essayist.
+Robert Zimmer was born in 1953.
+Every essayist is a writer.",Robert Zimmer is not a writer.,F,"BornIn(robertZimmer, germany) ∧ Philosopher(robertZimmer)
+Essayist(robertZimmer)
+BornIn(robertZimmer, yr1953)
+∀x (Essayist(x) → Writer(x))",¬Writer(robertZimmer),,,"bornin(robertzimmer, germany) and philosopher(robertzimmer)
+essayist(robertzimmer)
+bornin(robertzimmer, yr1953)
+forall x (essayist(x) implies writer(x))",not writer(robertzimmer),"bornin(robertzimmer, germany) , philosopher(robertzimmer)
+essayist(robertzimmer)
+bornin(robertzimmer, yr1953)
+forall (essayist(x) -: writer(x))",notwriter(robertzimmer),"[bornin[(robertzimmer  germany)]  philosopher[(robertzimmer)]
+essayist[(robertzimmer)]
+bornin[(robertzimmer  yr1953)]
+@every *x [(essayist[(?x)]  writer[(?x)])]]",~[writer[(robertzimmer)]],"bornin(robertzimmer, germany) & philosopher(robertzimmer)
+essayist(robertzimmer)
+bornin(robertzimmer, yr1953)
+all:x (essayist(x) :- writer(x))",~writer(robertzimmer),+B2++P2(+r2)+E2(+r2)+B2-(+E0-+W0),-+W2(+r2)
+0,"There are six types of wild turkeys: Eastern wild turkey, Osceola wild turkey, Gould’s wild turkey, Merriam’s wild turkey, Rio Grande wild turkey, and Ocellated wild turkey.
+Tom is not an Eastern wild turkey.
+Tom is not an Osceola wild turkey.
+Tom is not a Gould's wild turkey.
+Tom is neither a Merriam's wild turkey nor a Rio Grande wild turkey.
+Tom is a wild turkey.",Tom is an Ocellated wild turkey.,T,"∀x (WildTurkey(x) → (EasternWildTurkey(x) ∨ OsceolaWildTurkey(x) ∨ GouldsWildTurkey(x) ∨ MerriamsWildTurkey(x) ∨ RiograndeWildTurkey(x) ∨ OcellatedWildTurkey(x)))
+¬(EasternWildTurkey(tom))
+¬(OsceolaWildTurkey(tom))
+¬(GouldsWildTurkey(tom))
+¬(MerriamsWildTurkey(tom) ∨ RiograndeWildTurkey(tom))
+WildTurkey(tom)",OcellatedWildTurkey(tom),"extra brackets?
+Gould's or Goulds?
+Merriam's or Merriams?",,"forall x (wildturkey(x) implies (easternwildturkey(x) or osceolawildturkey(x) or gouldswildturkey(x) or merriamswildturkey(x) or riograndewildturkey(x) or ocellatedwildturkey(x)))
+not (easternwildturkey(tom))
+not (osceolawildturkey(tom))
+not (gouldswildturkey(tom))
+not (merriamswildturkey(tom) or riograndewildturkey(tom))
+wildturkey(tom)",ocellatedwildturkey(tom),"forall (wildturkey(x) -: (easternwildturkey(x) | osceolawildturkey(x) | gouldswildturkey(x) | merriamswildturkey(x) | riograndewildturkey(x) | ocellatedwildturkey(x)))
+not(easternwildturkey(tom))
+not(osceolawildturkey(tom))
+not(gouldswildturkey(tom))
+not(merriamswildturkey(tom) | riograndewildturkey(tom))
+wildturkey(tom)",ocellatedwildturkey(tom),"[@every *x [(wildturkey[(?x)]  [(easternwildturkey[(?x)]  osceolawildturkey[(?x)]  gouldswildturkey[(?x)]  merriamswildturkey[(?x)]  riograndewildturkey[(?x)]  ocellatedwildturkey[(?x)])])]
+~[(easternwildturkey[(tom)])]
+~[(osceolawildturkey[(tom)])]
+~[(gouldswildturkey[(tom)])]
+~[(merriamswildturkey[(tom)]  riograndewildturkey[(tom)])]
+wildturkey[(tom)]]",[ocellatedwildturkey[(tom)]],"all:x (wildturkey(x) :- (easternwildturkey(x) | osceolawildturkey(x) | gouldswildturkey(x) | merriamswildturkey(x) | riograndewildturkey(x) | ocellatedwildturkey(x)))
+~(easternwildturkey(tom))
+~(osceolawildturkey(tom))
+~(gouldswildturkey(tom))
+~(merriamswildturkey(tom) | riograndewildturkey(tom))
+wildturkey(tom)",ocellatedwildturkey(tom),-(+W0-(+E0-+O0-+G0-+M0-+R0-+O0))-(+E0(+t0))-(+O0(+t0))-(+G0(+t0))-(+M0(+t0)-+R0(+t0))+W2(+t2),+O2(+t2)
+15,"Elephantopus is a genus of perennial plants in the daisy family.
+Elephantopus is widespread over much of Africa, southern Asia, Australia, and the Americas.
+Several species of Elephantopus are native to the southeastern United States.
+Elephantopus scaber is a traditional medicine.",Elephantopus is a traditional medicine.,U,"∀x (Elephantopus(x) → (Genus(x, perennialplants) ∧ BelongTo(x, daisyfamily)))
+∃x ∃y ∃z(Elephantopus(x) ∧ In(x,africa) ∧ (¬(x=y)) ∧ Elephantopus(y) ∧ In(y, southernasia) ∧ (¬(x=z)) ∧ (¬(y=z)) ∧ Elephantopus(z) ∧ In(z, australia))
+∃x ∃y (Elephantopus(x) ∧ NativeTo(x, southeasternunitedstates) ∧ (¬(x=y)) ∧ Elephantopus(y) ∧ NativeTo(y, southeasternunitedstates))
+∀x (ElephantopusScaber(x) → TraditionalMedicine(x))",∀x (Elephantopus(x) → TraditionalMedicine(x)),,,"forall x (elephantopus(x) implies (genus(x, perennialplants) and belongto(x, daisyfamily)))
+exists x exists y exists z(elephantopus(x) and in(x,africa) and (not (x=y)) and elephantopus(y) and in(y, southernasia) and (not (x=z)) and (not (y=z)) and elephantopus(z) and in(z, australia))
+exists x exists y (elephantopus(x) and nativeto(x, southeasternunitedstates) and (not (x=y)) and elephantopus(y) and nativeto(y, southeasternunitedstates))
+forall x (elephantopusscaber(x) implies traditionalmedicine(x))",forall x (elephantopus(x) implies traditionalmedicine(x)),"forall (elephantopus(x) -: (genus(x, perennialplants) , belongto(x, daisyfamily)))
+  (elephantopus(x) , in(x,africa) , (not(x=y)) , elephantopus(y) , in(y, southernasia) , (not(x=z)) , (not(y=z)) , elephantopus(z) , in(z, australia))
+  (elephantopus(x) , nativeto(x, southeasternunitedstates) , (not(x=y)) , elephantopus(y) , nativeto(y, southeasternunitedstates))
+forall (elephantopusscaber(x) -: traditionalmedicine(x))",forall (elephantopus(x) -: traditionalmedicine(x)),"[@every *x [(elephantopus[(?x)]  [(genus[(?x  perennialplants)]  belongto[(?x  daisyfamily)])])]
+*x *y *z[(elephantopus[(?x)]  in[(?x africa)]  [(~[(?x=y)])]  elephantopus[(?y)]  in[(?y  southernasia)]  [(~[(?x=z)])]  [(~[(?y=z)])]  elephantopus[(?z)]  in[(?z  australia)])]
+*x *y [(elephantopus[(?x)]  nativeto[(?x  southeasternunitedstates)]  [(~[(?x=y)])]  elephantopus[(?y)]  nativeto[(?y  southeasternunitedstates)])]
+@every *x [(elephantopusscaber[(?x)]  traditionalmedicine[(?x)])]]",[@every *x [(elephantopus[(?x)]  traditionalmedicine[(?x)])]],"all:x (elephantopus(x) :- (genus(x, perennialplants) & belongto(x, daisyfamily)))
+x y z(elephantopus(x) & in(x,africa) & (~(x=y)) & elephantopus(y) & in(y, southernasia) & (~(x=z)) & (~(y=z)) & elephantopus(z) & in(z, australia))
+x y (elephantopus(x) & nativeto(x, southeasternunitedstates) & (~(x=y)) & elephantopus(y) & nativeto(y, southeasternunitedstates))
+all:x (elephantopusscaber(x) :- traditionalmedicine(x))",all:x (elephantopus(x) :- traditionalmedicine(x)),-(+E0-(+G0++B0))+++(+E1++I1+(-(+x1))++E1++I1+(-(+x1))+(-(+y1))++E1++I1)++(+E1++N1+(-(+x1))++E1++N1)-(+E0-+T0),-(+E0-+T0)
+66,"If a city holds a Summer Olympics, and the city is a US city, then the Summer Olympics will be in the US.
+If a city is in a state in the US, the city is a US city.
+If a city is in a state, and a Summer Olympics is in this city, then the Summer Olympics is in this state.
+The 2028 Summer Olympics is scheduled to take place in Los Angeles.
+Los Angeles is a city in California.
+Atlanta is a US city.
+Atlanta is in Georgia.
+California is a state in the United States.
+Boxing, modern pentathlon, and weightlifting will be removed from The 2028 Summer Olympics.
+Atlanta in the United States held the 1996 Summer Olympics.",The 2028 Summer Olympics will take place in the US.,T,"∀x ∀y ((SummerOlympicsIn(x,y) ∧ In(x, unitedStates)) → SummerOlympicsIn(x, unitedStates))
+∀x ∀y ((In(x, y) ∧ In(y, unitedStates)) → In(x, unitedStates))
+∀x ∀y ∀z ((In(x, z) ∧ State(z) ∧ SummerOlympicsIn(x,y)) → SummerOlympicsIn(z, y))
+SummerOlympicsIn(losAngeles, yr2028)
+In(losAngeles, california)
+In(atlanta, unitedStates)
+In(california, unitedStates)
+In(atlanta, georgia)
+¬InSummerOlympicsIn(boxing, yr2028) ∧ (¬InSummerOlympicsIn(modern_pentathlon, yr2028)) ∧ (¬InSummerOlympicsIn(weightlifting, yr2028))
+SummerOlympicsIn(atlanta, yr1996)","SummerOlympicsIn(unitedStates, yr2028)",,,"forall x forall y ((summerolympicsin(x,y) and in(x, unitedstates)) implies summerolympicsin(x, unitedstates))
+forall x forall y ((in(x, y) and in(y, unitedstates)) implies in(x, unitedstates))
+forall x forall y forall z ((in(x, z) and state(z) and summerolympicsin(x,y)) implies summerolympicsin(z, y))
+summerolympicsin(losangeles, yr2028)
+in(losangeles, california)
+in(atlanta, unitedstates)
+in(california, unitedstates)
+in(atlanta, georgia)
+not insummerolympicsin(boxing, yr2028) and (not insummerolympicsin(modern_pentathlon, yr2028)) and (not insummerolympicsin(weightlifting, yr2028))
+summerolympicsin(atlanta, yr1996)","summerolympicsin(unitedstates, yr2028)","forall forall ((summerolympicsin(x,) , in(x, unitedstates)) -: summerolympicsin(x, unitedstates))
+forall forall ((in(x, y) , in(y, unitedstates)) -: in(x, unitedstates))
+forall forall forall ((in(x, z) , state(z) , summerolympicsin(x,)) -: summerolympicsin(z, y))
+summerolympicsin(losangeles, yr2028)
+in(losangeles, california)
+in(atlanta, unitedstates)
+in(california, unitedstates)
+in(atlanta, georgia)
+notinsummerolympicsin(boxing, yr2028) , (notinsummerolympicsin(modern_pentathlon, yr2028)) , (notinsummerolympicsin(weightlifting, yr2028))
+summerolympicsin(atlanta, yr1996)","summerolympicsin(unitedstates, yr2028)","[@every *x @every *y [([(summerolympicsin[(?x ?y)]  in[(?x  unitedstates)])]  summerolympicsin[(?x  unitedstates)])]
+@every *x @every *y [([(in[(?x  y)]  in[(?y  unitedstates)])]  in[(?x  unitedstates)])]
+@every *x @every *y @every *z [([(in[(?x  z)]  state[(?z)]  summerolympicsin[(?x ?y)])]  summerolympicsin[(?z  y)])]
+summerolympicsin[(losangeles  yr2028)]
+in[(losangeles  california)]
+in[(atlanta  unitedstates)]
+in[(california  unitedstates)]
+in[(atlanta  georgia)]
+~insummerolympicsin[(boxing  yr2028)]  [(~insummerolympicsin[(modern_pentathlon  yr2028)])]  [(~insummerolympicsin[(weightlifting  yr2028)])]
+summerolympicsin[(atlanta  yr1996)]]",[summerolympicsin[(unitedstates  yr2028)]],"all:x all:y ((summerolympicsin(x,y) & in(x, unitedstates)) :- summerolympicsin(x, unitedstates))
+all:x all:y ((in(x, y) & in(y, unitedstates)) :- in(x, unitedstates))
+all:x all:y all:z ((in(x, z) & state(z) & summerolympicsin(x,y)) :- summerolympicsin(z, y))
+summerolympicsin(losangeles, yr2028)
+in(losangeles, california)
+in(atlanta, unitedstates)
+in(california, unitedstates)
+in(atlanta, georgia)
+~insummerolympicsin(boxing, yr2028) & (~insummerolympicsin(modern_pentathlon, yr2028)) & (~insummerolympicsin(weightlifting, yr2028))
+summerolympicsin(atlanta, yr1996)","summerolympicsin(unitedstates, yr2028)",--((+S0++I0)-+S0)--((+I0++I0)-+I0)---((+I0++S0++S0)-+S0)+S2+I2+I2+I2+I2-+I2+(-+I2)+(-+I2)+S2,+S2
+2,"Billings is a city in the state of Montana in U.S.
+The state of Montana includes the cities of Butte, Helena, and Missoula.
+White Sulphur Springs and Butte are cities in the same state in U.S.
+The city of St Pierre is not in the state of Montana.
+Any city in Butte is not in St Pierre.
+A city can only be in one state in U.S.  except for Bristol, Texarkana, Texhoma and Union City.",St Pierre and Bismarck are in the same state.,U,"City(billings) ∧ In(billings, montana)
+City(butte) ∧ In(butte, montana) ∧ City(helena) ∧ In(helena, montana) ∧ City(missoula) ∧ In(missoula, montana)
+∃x (City(whitesulphursprings) ∧ In(whitesulphursprings, x) ∧ City(butte) ∧ In(butte, x))
+City(pierre) ∧ ¬(In(pierre, montana))
+∀x ((City(x) ∧ City(butte) ∧ In(x, butte)) → ¬(In(x, pierre)))
+∀x ∃y ((City(x) ∧ (In(x, y) ∧ ¬(x=bristol) ∧ ¬(x=texarkana) ∧ ¬(x=texhoma) ∧ ¬(x=unionCity)) → ¬∃z (¬(z=y) ∧ In(x, z)))","∃x (City(pierre) ∧ In(pierre, x) ∧ City(bismarck) ∧ In(bismarck, x))",,,"city(billings) and in(billings, montana)
+city(butte) and in(butte, montana) and city(helena) and in(helena, montana) and city(missoula) and in(missoula, montana)
+exists x (city(whitesulphursprings) and in(whitesulphursprings, x) and city(butte) and in(butte, x))
+city(pierre) and not (in(pierre, montana))
+forall x ((city(x) and city(butte) and in(x, butte)) implies not (in(x, pierre)))
+forall x exists y ((city(x) and (in(x, y) and not (x=bristol) and not (x=texarkana) and not (x=texhoma) and not (x=unioncity)) implies not exists z (not (z=y) and in(x, z)))","exists x (city(pierre) and in(pierre, x) and city(bismarck) and in(bismarck, x))","city(billings) , in(billings, montana)
+city(butte) , in(butte, montana) , city(helena) , in(helena, montana) , city(missoula) , in(missoula, montana)
+ (city(whitesulphursprings) , in(whitesulphursprings, x) , city(butte) , in(butte, x))
+city(pierre) , not(in(pierre, montana))
+forall ((city(x) , city(butte) , in(x, butte)) -: not(in(x, pierre)))
+forall  ((city(x) , (in(x, y) , not(x=bristol) , not(x=texarkana) , not(x=texhoma) , not(x=unioncity)) -: not (not(z=y) , in(x, z)))"," (city(pierre) , in(pierre, x) , city(bismarck) , in(bismarck, x))","[city[(billings)]  in[(billings  montana)]
+city[(butte)]  in[(butte  montana)]  city[(helena)]  in[(helena  montana)]  city[(missoula)]  in[(missoula  montana)]
+*x [(city[(whitesulphursprings)]  in[(whitesulphursprings  x)]  city[(butte)]  in[(butte  x)])]
+city[(pierre)]  ~[(in[(pierre  montana)])]
+@every *x [([(city[(?x)]  city[(butte)]  in[(?x  butte)])]  ~[(in[(?x  pierre)])])]
+@every *x *y [([(city[(?x)]  [(in[(?x  y)]  ~[(?x=bristol)]  ~[(?x=texarkana)]  ~[(?x=texhoma)]  ~[(?x=unioncity)])]  ~*z [(~[(?z=y)]  in[(?x  z)])])]]",[*x [(city[(pierre)]  in[(pierre  x)]  city[(bismarck)]  in[(bismarck  x)])]],"city(billings) & in(billings, montana)
+city(butte) & in(butte, montana) & city(helena) & in(helena, montana) & city(missoula) & in(missoula, montana)
+x (city(whitesulphursprings) & in(whitesulphursprings, x) & city(butte) & in(butte, x))
+city(pierre) & ~(in(pierre, montana))
+all:x ((city(x) & city(butte) & in(x, butte)) :- ~(in(x, pierre)))
+all:x y ((city(x) & (in(x, y) & ~(x=bristol) & ~(x=texarkana) & ~(x=texhoma) & ~(x=unioncity)) :- ~z (~(z=y) & in(x, z)))","x (city(pierre) & in(pierre, x) & city(bismarck) & in(bismarck, x))",+C2(+b2)++I2+C2(+b2)++I2++C2(+h2)++I2++C2(+m2)++I2+(+C1(+w1)++I1++C1(+b1)++I1)+C2(+p2)+-(+I2)-((+C0++C0(+b0)++I0)--(+I0))-+((+C1+(+I1+-(+x1+b1)+-(+x1+t1)+-(+x1+t1)+-(+x1+u1))--+(-(+z1)++I1)),+(+C1(+p1)++I1++C1(+b1)++I1)
+37,"Heptalogyy is a compound literary or narrative work that is made up of seven distinct works.
+The Harry Potter series consists of 7 distinct works.
+The Chronicles of Narnia consists of 7 distinct works.",The Lord of the Rings is Heptalogy.,U,"∀x (SevenDistinctWorks(x) → Heptalogy(x))
+SevenDistinctWorks(harryPotter)
+SevenDistinctWorks(chroniclesOfNarnia)",Heptalogy(lordOfRings),,,"forall x (sevendistinctworks(x) implies heptalogy(x))
+sevendistinctworks(harrypotter)
+sevendistinctworks(chroniclesofnarnia)",heptalogy(lordofrings),"forall (sevendistinctworks(x) -: heptalogy(x))
+sevendistinctworks(harrypotter)
+sevendistinctworks(chroniclesofnarnia)",heptalogy(lordofrings),"[@every *x [(sevendistinctworks[(?x)]  heptalogy[(?x)])]
+sevendistinctworks[(harrypotter)]
+sevendistinctworks[(chroniclesofnarnia)]]",[heptalogy[(lordofrings)]],"all:x (sevendistinctworks(x) :- heptalogy(x))
+sevendistinctworks(harrypotter)
+sevendistinctworks(chroniclesofnarnia)",heptalogy(lordofrings),-(+S0-+H0)+S2(+h2)+S2(+c2),+H2(+l2)
+35,"An Olympian is a person who trains for an Olympic sport and goes to the Olympics.
+Carlos Reyes trains for an Olympic sport.
+Carlos Reyes went to the Olympics.
+Carlos Reyes is a welterweight.
+Heavy weights are not welterweights.",Carlos Reyes is an Olympian.,T,"∀x ((DoesOlympicSport(x) ∧ GoesToOlympicGames(x)) → Olympian(x))
+DoesOlympicSport(carlosReyes)
+GoesToOlympicGames(carlosReyes)
+WelterWeight(carlosReyes)
+∀x (WelterWeight(x) → ¬ HeavyWeight(x))",Olympian(carlosReyes),,,"forall x ((doesolympicsport(x) and goestoolympicgames(x)) implies olympian(x))
+doesolympicsport(carlosreyes)
+goestoolympicgames(carlosreyes)
+welterweight(carlosreyes)
+forall x (welterweight(x) implies not  heavyweight(x))",olympian(carlosreyes),"forall ((doesolympicsport(x) , goestoolympicgames(x)) -: olympian(x))
+doesolympicsport(carlosreyes)
+goestoolympicgames(carlosreyes)
+welterweight(carlosreyes)
+forall (welterweight(x) -: not heavyweight(x))",olympian(carlosreyes),"[@every *x [([(doesolympicsport[(?x)]  goestoolympicgames[(?x)])]  olympian[(?x)])]
+doesolympicsport[(carlosreyes)]
+goestoolympicgames[(carlosreyes)]
+welterweight[(carlosreyes)]
+@every *x [(welterweight[(?x)]  ~ heavyweight[(?x)])]]",[olympian[(carlosreyes)]],"all:x ((doesolympicsport(x) & goestoolympicgames(x)) :- olympian(x))
+doesolympicsport(carlosreyes)
+goestoolympicgames(carlosreyes)
+welterweight(carlosreyes)
+all:x (welterweight(x) :- ~ heavyweight(x))",olympian(carlosreyes),-((+D0++G0)-+O0)+D2(+c2)+G2(+c2)+W2(+c2)-(+W0--+H0),+O2(+c2)
+78,"Ableton has an office in Germany.
+Ableton has an office in the USA.
+USA and Germany are different countries.
+Any company that has offices in different countries is a multinational company.
+Ableton makes music software.",Ableton makes AI software.,U,"OfficeIn(ableton, germany)
+OfficeIn(ableton, unitedStates)
+¬SameCountry(germany, unitedStates)
+∀x ∀y ∀z (OfficeIn(x, y) ∧ OfficeIn(x, z) ∧ (¬SameCountry(y, z)) → MultinationalCompany(x))
+MakesMusicSoftware(ableton)",MakesAISoftware(ableton),,,"officein(ableton, germany)
+officein(ableton, unitedstates)
+not samecountry(germany, unitedstates)
+forall x forall y forall z (officein(x, y) and officein(x, z) and (not samecountry(y, z)) implies multinationalcompany(x))
+makesmusicsoftware(ableton)",makesaisoftware(ableton),"officein(ableton, germany)
+officein(ableton, unitedstates)
+notsamecountry(germany, unitedstates)
+forall forall forall (officein(x, y) , officein(x, z) , (notsamecountry(y, z)) -: multinationalcompany(x))
+makesmusicsoftware(ableton)",makesaisoftware(ableton),"[officein[(ableton  germany)]
+officein[(ableton  unitedstates)]
+~samecountry[(germany  unitedstates)]
+@every *x @every *y @every *z [(officein[(?x  y)]  officein[(?x  z)]  [(~samecountry[(?y  z)])]  multinationalcompany[(?x)])]
+makesmusicsoftware[(ableton)]]",[makesaisoftware[(ableton)]],"officein(ableton, germany)
+officein(ableton, unitedstates)
+~samecountry(germany, unitedstates)
+all:x all:y all:z (officein(x, y) & officein(x, z) & (~samecountry(y, z)) :- multinationalcompany(x))
+makesmusicsoftware(ableton)",makesaisoftware(ableton),+O2+O2-+S2---(+O0++O0+(-+S0)-+M0)+M2(+a2),+M2(+a2)
+91,"Virginia Lee is an Australian rower.
+Virginia Lee competed in both sweep oared and sculling events.
+Sydney is Virginia Lee's home city.
+New South Wales was represented by Virginia Lee.",An Australian who competed in sweep oared events represented New South Wales.,T,"Australian(virginiaLee) ∧ Rower(virginiaLee)
+CompetesIn(virginiaLee, sweepOaredEvents) ∧ CompetesIn(virginiaLee, scullingEvents)
+City(sydney) ∧ HomeCity(sydney, virginiaLee)
+Represents(virginiaLee, newSouthWales)","∃x (Australian(x) ∧ CompetesIn(x, sweepOaredEvents) ∧ Represents(x, newSouthWales))",,,"australian(virginialee) and rower(virginialee)
+competesin(virginialee, sweepoaredevents) and competesin(virginialee, scullingevents)
+city(sydney) and homecity(sydney, virginialee)
+represents(virginialee, newsouthwales)","exists x (australian(x) and competesin(x, sweepoaredevents) and represents(x, newsouthwales))","australian(virginialee) , rower(virginialee)
+competesin(virginialee, sweepoaredevents) , competesin(virginialee, scullingevents)
+city(sydney) , homecity(sydney, virginialee)
+represents(virginialee, newsouthwales)"," (australian(x) , competesin(x, sweepoaredevents) , represents(x, newsouthwales))","[australian[(virginialee)]  rower[(virginialee)]
+competesin[(virginialee  sweepoaredevents)]  competesin[(virginialee  scullingevents)]
+city[(sydney)]  homecity[(sydney  virginialee)]
+represents[(virginialee  newsouthwales)]]",[*x [(australian[(?x)]  competesin[(?x  sweepoaredevents)]  represents[(?x  newsouthwales)])]],"australian(virginialee) & rower(virginialee)
+competesin(virginialee, sweepoaredevents) & competesin(virginialee, scullingevents)
+city(sydney) & homecity(sydney, virginialee)
+represents(virginialee, newsouthwales)","x (australian(x) & competesin(x, sweepoaredevents) & represents(x, newsouthwales))",+A2(+v2)++R2(+v2)+C2++C2+C2(+s2)++H2+R2,+(+A1++C1++R1)
+55,"A businessperson is someone who has ownership over part of a company. 
+People who own a company make money from it. 
+A businessperson can be either a businessman or a businesswoman. 
+Many businesspersons are extroverted.
+Businesspersons can handle money well.
+Bob is a businessman who has ownership over Microsoft.",Bob can handle money well.,T,"∀x (BusinessPerson(x) → ∃y(Company(y) ∧ Ownership(x, y)))
+∀x ∀y (Ownership(x, y) → MakeMoney(x, y))
+∀x (BusinessPerson(x) → (BusinessMan(x) ⊕ BusinessWoman(x)))
+∃x (BusinessPerson(x) ∧ Extrovert(x))
+∀x (BusinessPerson(x) → HandleMoney(x))
+BusinessPerson(bob) ∧ Ownership(bob, microsoft)",HandleMoney(bob),,,"forall x (businessperson(x) implies exists y(company(y) and ownership(x, y)))
+forall x forall y (ownership(x, y) implies makemoney(x, y))
+forall x (businessperson(x) implies (businessman(x) xor businesswoman(x)))
+exists x (businessperson(x) and extrovert(x))
+forall x (businessperson(x) implies handlemoney(x))
+businessperson(bob) and ownership(bob, microsoft)",handlemoney(bob),"forall (businessperson(x) -: (company(y) , ownership(x, y)))
+forall forall (ownership(x, y) -: makemoney(x, y))
+forall (businessperson(x) -: (businessman(x) ^ businesswoman(x)))
+ (businessperson(x) , extrovert(x))
+forall (businessperson(x) -: handlemoney(x))
+businessperson(bob) , ownership(bob, microsoft)",handlemoney(bob),"[@every *x [(businessperson[(?x)]  *y[(company[(?y)]  ownership[(?x  y)])])]
+@every *x @every *y [(ownership[(?x  y)]  makemoney[(?x  y)])]
+@every *x [(businessperson[(?x)]  [(businessman[(?x)]  businesswoman[(?x)])])]
+*x [(businessperson[(?x)]  extrovert[(?x)])]
+@every *x [(businessperson[(?x)]  handlemoney[(?x)])]
+businessperson[(bob)]  ownership[(bob  microsoft)]]",[handlemoney[(bob)]],"all:x (businessperson(x) :- y(company(y) & ownership(x, y)))
+all:x all:y (ownership(x, y) :- makemoney(x, y))
+all:x (businessperson(x) :- (businessman(x) ^ businesswoman(x)))
+x (businessperson(x) & extrovert(x))
+all:x (businessperson(x) :- handlemoney(x))
+businessperson(bob) & ownership(bob, microsoft)",handlemoney(bob),-(+B0-+(+C1++O1))--(+O0-+M0)-(+B0-(+B0-+B0))+(+B1++E1)-(+B0-+H0)+B2(+b2)++O2,+H2(+b2)
+42,"James Cocks was a British lawyer.
+James Cocks was a Whig politician who sat in the House of Commons.
+A British is a European.
+Any lawyer is familiar with laws.
+Some Whigs speak French.",No lawyer ever sat in the House of Commons.,F,"British(james) ∧ Lawyer(james)
+Whig(james) ∧ Politician(james) ∧ SatInHouseOfCommons(james)
+∀x (British(x) → European(x))
+∀x (Lawyer(x) → FamiliarWithLaws(x))
+∃x ∃y (Whig(x) ∧ SpeakFrench(x)) ∧ (¬(x=y)) ∧ (Whig(y) ∧ SpeakFrench(y))",∀x (Lawyer(x) → ¬SatInHouseOfCommons(x)),,,"british(james) and lawyer(james)
+whig(james) and politician(james) and satinhouseofcommons(james)
+forall x (british(x) implies european(x))
+forall x (lawyer(x) implies familiarwithlaws(x))
+exists x exists y (whig(x) and speakfrench(x)) and (not (x=y)) and (whig(y) and speakfrench(y))",forall x (lawyer(x) implies not satinhouseofcommons(x)),"british(james) , lawyer(james)
+whig(james) , politician(james) , satinhouseofcommons(james)
+forall (british(x) -: european(x))
+forall (lawyer(x) -: familiarwithlaws(x))
+  (whig(x) , speakfrench(x)) , (not(x=y)) , (whig(y) , speakfrench(y))",forall (lawyer(x) -: notsatinhouseofcommons(x)),"[british[(james)]  lawyer[(james)]
+whig[(james)]  politician[(james)]  satinhouseofcommons[(james)]
+@every *x [(british[(?x)]  european[(?x)])]
+@every *x [(lawyer[(?x)]  familiarwithlaws[(?x)])]
+*x *y [(whig[(?x)]  speakfrench[(?x)])]  [(~[(?x=y)])]  [(whig[(?y)]  speakfrench[(?y)])]]",[@every *x [(lawyer[(?x)]  ~satinhouseofcommons[(?x)])]],"british(james) & lawyer(james)
+whig(james) & politician(james) & satinhouseofcommons(james)
+all:x (british(x) :- european(x))
+all:x (lawyer(x) :- familiarwithlaws(x))
+x y (whig(x) & speakfrench(x)) & (~(x=y)) & (whig(y) & speakfrench(y))",all:x (lawyer(x) :- ~satinhouseofcommons(x)),+B2(+j2)++L2(+j2)+W2(+j2)++P2(+j2)++S2(+j2)-(+B0-+E0)-(+L0-+F0)++(+W1++S1)+(-(+x1))+(+W1++S1),-(+L0--+S0)
+73,"Ambiortus is a prehistoric bird genus.
+Ambiortus Dementjevi is the only known species of Ambiortus.
+Mongolia was where Ambiortus Dementjevi lived.
+Yevgeny Kurochkin was the discoverer of Ambiortus.",Yevgeny Kurochkin lived in Mongolia.,U,"Prehistoric(ambiortus) ∧ BirdGenus(ambiortus)
+∀x(KnownSpeciesOf(x, ambiortus) → IsSpecies(x, ambiortusDementjevi))
+LiveIn(ambiortusDementjevi, mongolia)
+Discover(yevgenykurochkin, ambiortus)","LiveIn(yevgenykurochkin, mongolia)",,,"prehistoric(ambiortus) and birdgenus(ambiortus)
+forall x(knownspeciesof(x, ambiortus) implies isspecies(x, ambiortusdementjevi))
+livein(ambiortusdementjevi, mongolia)
+discover(yevgenykurochkin, ambiortus)","livein(yevgenykurochkin, mongolia)","prehistoric(ambiortus) , birdgenus(ambiortus)
+forall(knownspeciesof(x, ambiortus) -: isspecies(x, ambiortusdementjevi))
+livein(ambiortusdementjevi, mongolia)
+discover(yevgenykurochkin, ambiortus)","livein(yevgenykurochkin, mongolia)","[prehistoric[(ambiortus)]  birdgenus[(ambiortus)]
+@every *x[(knownspeciesof[(?x  ambiortus)]  isspecies[(?x  ambiortusdementjevi)])]
+livein[(ambiortusdementjevi  mongolia)]
+discover[(yevgenykurochkin  ambiortus)]]",[livein[(yevgenykurochkin  mongolia)]],"prehistoric(ambiortus) & birdgenus(ambiortus)
+all:x(knownspeciesof(x, ambiortus) :- isspecies(x, ambiortusdementjevi))
+livein(ambiortusdementjevi, mongolia)
+discover(yevgenykurochkin, ambiortus)","livein(yevgenykurochkin, mongolia)",+P2(+a2)++B2(+a2)-(+K0-+I0)+L2+D2,+L2
+10,"Thick as Thieves is a young adult fantasy novel written by Megan Whalen Turner.
+Thick as Thieves was published by Greenwillow Books.
+If a book was published by a company, then the author of that book worked with the company that published the book.
+The fictional Mede Empire is where Thick as Thieves is set.
+The Mede Empire plots to swallow up some nearby countries.
+Attolia and Sounis are countries near the Mede Empire.
+Thick as Thieves was sold both as a hardcover and an e-book.",Thick as Thieves is not set in the Mede Empire.,F,"YoungAdultFantasy(thickAsTheives) ∧ Novel(thickAsTheives) ∧ WrittenBy(thickAsTheives, meganWhalenTurner)
+PublishedBy(thickAsTheives, greenWillowBooks)
+∀x ∀y ∀z ((WrittenBy(x, y) ∧ PublishedBy(x, z)) → WorkedWith(y, z))
+Fictional(medeEmpire) ∧ SetIn(thickAsTheives, medeEmpire)
+∃x ∃y ((Country(x) ∧ Near(x, medeEmpire) ∧ PlotsToSwallowUp(medeEmpire, x)) ∧ (¬(x=y) ∧ Near(y, medeEmpire) ∧ PlotsToSwallowUp(medeEmpire, y)))
+Country(attolia) ∧ Near(attolia, medeEmpire) ∧ Country(sounis) ∧ Near(sounis, medeEmpire)
+SoldAs(thickAsTheives, hardCover) ∧ SoldAs(thickAsTheives, softCover)","¬SetIn(thickAsTheives, medeEmpire)",,,"youngadultfantasy(thickastheives) and novel(thickastheives) and writtenby(thickastheives, meganwhalenturner)
+publishedby(thickastheives, greenwillowbooks)
+forall x forall y forall z ((writtenby(x, y) and publishedby(x, z)) implies workedwith(y, z))
+fictional(medeempire) and setin(thickastheives, medeempire)
+exists x exists y ((country(x) and near(x, medeempire) and plotstoswallowup(medeempire, x)) and (not (x=y) and near(y, medeempire) and plotstoswallowup(medeempire, y)))
+country(attolia) and near(attolia, medeempire) and country(sounis) and near(sounis, medeempire)
+soldas(thickastheives, hardcover) and soldas(thickastheives, softcover)","not setin(thickastheives, medeempire)","youngadultfantasy(thickastheives) , novel(thickastheives) , writtenby(thickastheives, meganwhalenturner)
+publishedby(thickastheives, greenwillowbooks)
+forall forall forall ((writtenby(x, y) , publishedby(x, z)) -: workedwith(y, z))
+fictional(medeempire) , setin(thickastheives, medeempire)
+  ((country(x) , near(x, medeempire) , plotstoswallowup(medeempire, x)) , (not(x=y) , near(y, medeempire) , plotstoswallowup(medeempire, y)))
+country(attolia) , near(attolia, medeempire) , country(sounis) , near(sounis, medeempire)
+soldas(thickastheives, hardcover) , soldas(thickastheives, softcover)","notsetin(thickastheives, medeempire)","[youngadultfantasy[(thickastheives)]  novel[(thickastheives)]  writtenby[(thickastheives  meganwhalenturner)]
+publishedby[(thickastheives  greenwillowbooks)]
+@every *x @every *y @every *z [([(writtenby[(?x  y)]  publishedby[(?x  z)])]  workedwith[(?y  z)])]
+fictional[(medeempire)]  setin[(thickastheives  medeempire)]
+*x *y [([(country[(?x)]  near[(?x  medeempire)]  plotstoswallowup[(medeempire  x)])]  [(~[(?x=y)]  near[(?y  medeempire)]  plotstoswallowup[(medeempire  y)])])]
+country[(attolia)]  near[(attolia  medeempire)]  country[(sounis)]  near[(sounis  medeempire)]
+soldas[(thickastheives  hardcover)]  soldas[(thickastheives  softcover)]]",~[setin[(thickastheives  medeempire)]],"youngadultfantasy(thickastheives) & novel(thickastheives) & writtenby(thickastheives, meganwhalenturner)
+publishedby(thickastheives, greenwillowbooks)
+all:x all:y all:z ((writtenby(x, y) & publishedby(x, z)) :- workedwith(y, z))
+fictional(medeempire) & setin(thickastheives, medeempire)
+x y ((country(x) & near(x, medeempire) & plotstoswallowup(medeempire, x)) & (~(x=y) & near(y, medeempire) & plotstoswallowup(medeempire, y)))
+country(attolia) & near(attolia, medeempire) & country(sounis) & near(sounis, medeempire)
+soldas(thickastheives, hardcover) & soldas(thickastheives, softcover)","~setin(thickastheives, medeempire)",+Y2(+t2)++N2(+t2)++W2+P2---((+W0++P0)-+W0)+F2(+m2)++S2++((+C1++N1++P1)+(-(+x1)++N1++P1))+C2(+a2)++N2++C2(+s2)++N2+S2++S2,-+S2
+62,"All devices belonging to the company are connected to Google Home. 
+All devices belonging to employees are connected to the company's wifi. 
+All devices connected to Google Home are controlled by the managers. 
+All devices that connect to the company's wifi are easy to operate. 
+ModelXX belongs to employees. ",ModelXX is easy to operate.,T,"∀x (OwnedBy(x, company) → ConnectedTo(x, googleHome))
+∀x (OwnedBy(x, employee) → ConnectedTo(x, companyWiFi))
+∀x (ConnectedTo(x, googleHome) → ControlledBy(x, managers))
+∀x (ConnectedTo(x, companyWiFi) → EasyToOperate(x))
+OwnedBy(modelXX, employee)",EasyToOperate(modelXX),,,"forall x (ownedby(x, company) implies connectedto(x, googlehome))
+forall x (ownedby(x, employee) implies connectedto(x, companywifi))
+forall x (connectedto(x, googlehome) implies controlledby(x, managers))
+forall x (connectedto(x, companywifi) implies easytooperate(x))
+ownedby(modelxx, employee)",easytooperate(modelxx),"forall (ownedby(x, company) -: connectedto(x, googlehome))
+forall (ownedby(x, employee) -: connectedto(x, companywifi))
+forall (connectedto(x, googlehome) -: controlledby(x, managers))
+forall (connectedto(x, companywifi) -: easytooperate(x))
+ownedby(modelxx, employee)",easytooperate(modelxx),"[@every *x [(ownedby[(?x  company)]  connectedto[(?x  googlehome)])]
+@every *x [(ownedby[(?x  employee)]  connectedto[(?x  companywifi)])]
+@every *x [(connectedto[(?x  googlehome)]  controlledby[(?x  managers)])]
+@every *x [(connectedto[(?x  companywifi)]  easytooperate[(?x)])]
+ownedby[(modelxx  employee)]]",[easytooperate[(modelxx)]],"all:x (ownedby(x, company) :- connectedto(x, googlehome))
+all:x (ownedby(x, employee) :- connectedto(x, companywifi))
+all:x (connectedto(x, googlehome) :- controlledby(x, managers))
+all:x (connectedto(x, companywifi) :- easytooperate(x))
+ownedby(modelxx, employee)",easytooperate(modelxx),-(+O0-+C0)-(+O0-+C0)-(+C0-+C0)-(+C0-+E0)+O2,+E2(+m2)
+10,"Thick as Thieves is a young adult fantasy novel written by Megan Whalen Turner.
+Thick as Thieves was published by Greenwillow Books.
+If a book was published by a company, then the author of that book worked with the company that published the book.
+The fictional Mede Empire is where Thick as Thieves is set.
+The Mede Empire plots to swallow up some nearby countries.
+Attolia and Sounis are countries near the Mede Empire.
+Thick as Thieves was sold both as a hardcover and an e-book.",Megan Whalen Turner worked with Greenwillow Books.,T,"YoungAdultFantasy(thickAsTheives) ∧ Novel(thickAsTheives) ∧ WrittenBy(thickAsTheives, meganWhalenTurner)
+PublishedBy(thickAsTheives, greenWillowBooks)
+∀x ∀y ∀z ((WrittenBy(x, y) ∧ PublishedBy(x, z)) → WorkedWith(y, z))
+Fictional(medeEmpire) ∧ SetIn(thickAsTheives, medeEmpire)
+∃x ∃y ((Country(x) ∧ Near(x, medeEmpire) ∧ PlotsToSwallowUp(medeEmpire, x)) ∧ (¬(x=y) ∧ Near(y, medeEmpire) ∧ PlotsToSwallowUp(medeEmpire, y)))
+Country(attolia) ∧ Near(attolia, medeEmpire) ∧ Country(sounis) ∧ Near(sounis, medeEmpire)
+SoldAs(thickAsTheives, hardCover) ∧ SoldAs(thickAsTheives, softCover)","WorkedWith(WhalenTurner, greenWillowbooks)",,,"youngadultfantasy(thickastheives) and novel(thickastheives) and writtenby(thickastheives, meganwhalenturner)
+publishedby(thickastheives, greenwillowbooks)
+forall x forall y forall z ((writtenby(x, y) and publishedby(x, z)) implies workedwith(y, z))
+fictional(medeempire) and setin(thickastheives, medeempire)
+exists x exists y ((country(x) and near(x, medeempire) and plotstoswallowup(medeempire, x)) and (not (x=y) and near(y, medeempire) and plotstoswallowup(medeempire, y)))
+country(attolia) and near(attolia, medeempire) and country(sounis) and near(sounis, medeempire)
+soldas(thickastheives, hardcover) and soldas(thickastheives, softcover)","workedwith(whalenturner, greenwillowbooks)","youngadultfantasy(thickastheives) , novel(thickastheives) , writtenby(thickastheives, meganwhalenturner)
+publishedby(thickastheives, greenwillowbooks)
+forall forall forall ((writtenby(x, y) , publishedby(x, z)) -: workedwith(y, z))
+fictional(medeempire) , setin(thickastheives, medeempire)
+  ((country(x) , near(x, medeempire) , plotstoswallowup(medeempire, x)) , (not(x=y) , near(y, medeempire) , plotstoswallowup(medeempire, y)))
+country(attolia) , near(attolia, medeempire) , country(sounis) , near(sounis, medeempire)
+soldas(thickastheives, hardcover) , soldas(thickastheives, softcover)","workedwith(whalenturner, greenwillowbooks)","[youngadultfantasy[(thickastheives)]  novel[(thickastheives)]  writtenby[(thickastheives  meganwhalenturner)]
+publishedby[(thickastheives  greenwillowbooks)]
+@every *x @every *y @every *z [([(writtenby[(?x  y)]  publishedby[(?x  z)])]  workedwith[(?y  z)])]
+fictional[(medeempire)]  setin[(thickastheives  medeempire)]
+*x *y [([(country[(?x)]  near[(?x  medeempire)]  plotstoswallowup[(medeempire  x)])]  [(~[(?x=y)]  near[(?y  medeempire)]  plotstoswallowup[(medeempire  y)])])]
+country[(attolia)]  near[(attolia  medeempire)]  country[(sounis)]  near[(sounis  medeempire)]
+soldas[(thickastheives  hardcover)]  soldas[(thickastheives  softcover)]]",[workedwith[(whalenturner  greenwillowbooks)]],"youngadultfantasy(thickastheives) & novel(thickastheives) & writtenby(thickastheives, meganwhalenturner)
+publishedby(thickastheives, greenwillowbooks)
+all:x all:y all:z ((writtenby(x, y) & publishedby(x, z)) :- workedwith(y, z))
+fictional(medeempire) & setin(thickastheives, medeempire)
+x y ((country(x) & near(x, medeempire) & plotstoswallowup(medeempire, x)) & (~(x=y) & near(y, medeempire) & plotstoswallowup(medeempire, y)))
+country(attolia) & near(attolia, medeempire) & country(sounis) & near(sounis, medeempire)
+soldas(thickastheives, hardcover) & soldas(thickastheives, softcover)","workedwith(whalenturner, greenwillowbooks)",+Y2(+t2)++N2(+t2)++W2+P2---((+W0++P0)-+W0)+F2(+m2)++S2++((+C1++N1++P1)+(-(+x1)++N1++P1))+C2(+a2)++N2++C2(+s2)++N2+S2++S2,+W2
+17,"Odell is an English surname originating in Odell, Bedfordshire.
+In some families, Odell is spelled O'Dell in a mistaken Irish adaptation.
+Notable people with surnames include Amy Odell, Jack Odell, and Mats Odell.
+Amy Odell is a British singer-songwriter.
+Jack Odell is an English toy inventor.",Amy Odell is an English toy inventor.,U,"Surname(nameODell) ∧ From(nameODell, oDellBedfordshire)
+MistakenSpellingOf(nameO'Dell, nameODell) ∧ (∃x∃y(Family(x) ∧ Named(x, nameO'Dell) ∧ (¬(x=y)) ∧ Family(y) ∧ Named(y, nameO'Dell))
+Named(amyODell, nameODell) ∧ NotablePerson(amyODell) ∧ Named(jackODell, nameODell) ∧ NotablePerson(jackODell) ∧ Named(matsODell, nameODell) ∧ NotablePerson(matsODell)
+British(amyODell) ∧ Singer(amyODell) ∧ SongWriter(amyODell)
+English(jackODell) ∧ ToyInventor(jackODell)",English(amyODell) ∧ ToyInventor(amyODell),,,"surname(nameodell) and from(nameodell, odellbedfordshire)
+mistakenspellingof(nameo'dell, nameodell) and (exists xexists y(family(x) and named(x, nameo'dell) and (not (x=y)) and family(y) and named(y, nameo'dell))
+named(amyodell, nameodell) and notableperson(amyodell) and named(jackodell, nameodell) and notableperson(jackodell) and named(matsodell, nameodell) and notableperson(matsodell)
+british(amyodell) and singer(amyodell) and songwriter(amyodell)
+english(jackodell) and toyinventor(jackodell)",english(amyodell) and toyinventor(amyodell),"surname(nameodell) , from(nameodell, odellbedfordshire)
+mistakenspellingof(nameo'dell, nameodell) , ((family(x) , named(x, nameo'dell) , (not(x=y)) , family(y) , named(y, nameo'dell))
+named(amyodell, nameodell) , notableperson(amyodell) , named(jackodell, nameodell) , notableperson(jackodell) , named(matsodell, nameodell) , notableperson(matsodell)
+british(amyodell) , singer(amyodell) , songwriter(amyodell)
+english(jackodell) , toyinventor(jackodell)","english(amyodell) , toyinventor(amyodell)","[surname[(nameodell)]  from[(nameodell  odellbedfordshire)]
+mistakenspellingof[(nameo'dell  nameodell)]  [(*x*y[(family[(?x)]  named[(?x  nameo'dell)]  [(~[(?x=y)])]  family[(?y)]  named[(?y  nameo'dell)])]
+named[(amyodell  nameodell)]  notableperson[(amyodell)]  named[(jackodell  nameodell)]  notableperson[(jackodell)]  named[(matsodell  nameodell)]  notableperson[(matsodell)]
+british[(amyodell)]  singer[(amyodell)]  songwriter[(amyodell)]
+english[(jackodell)]  toyinventor[(jackodell)]]",[english[(amyodell)]  toyinventor[(amyodell)]],"surname(nameodell) & from(nameodell, odellbedfordshire)
+mistakenspellingof(nameo'dell, nameodell) & (xy(family(x) & named(x, nameo'dell) & (~(x=y)) & family(y) & named(y, nameo'dell))
+named(amyodell, nameodell) & notableperson(amyodell) & named(jackodell, nameodell) & notableperson(jackodell) & named(matsodell, nameodell) & notableperson(matsodell)
+british(amyodell) & singer(amyodell) & songwriter(amyodell)
+english(jackodell) & toyinventor(jackodell)",english(amyodell) & toyinventor(amyodell),+S2(+n2)++F2+M2+(++(+F1++N1+(-(+x1))++F1++N1)+N2++N2(+a2)++N2++N2(+j2)++N2++N2(+m2)+B2(+a2)++S2(+a2)++S2(+a2)+E2(+j2)++T2(+j2),+E2(+a2)++T2(+a2)
+20,"A Japanese game company created the game the Legend of Zelda.
+All games on the Top 10 list are made by Japanese game companies.
+If a game sells more than one million copies, then it will be included in the Top 10 list.
+The Legend of Zelda sold more than one million copies.",The Legend of Zelda is not on the Top 10 list.,F,"Game(theLegendofZelda) ∧ ∃x (Japanese(x) ∧ VideoGameCompany(x) ∧ Created(x, theLegendofZelda))
+∀x ∀y ((Game(x) ∧ InTop10(x) ∧ Created(y,x)) → Japanese(y))
+∀x ((Game(x) ∧ ∃y(GreaterThan(y, oneMillion) ∧ CopiesSold(x, y))) → Top10(x)))
+∃y(GreaterThan(y, oneMillion) ∧ CopiesSold(theLegendofZelda,y))",¬Top10(thelegendofzelda),,,"game(thelegendofzelda) and exists x (japanese(x) and videogamecompany(x) and created(x, thelegendofzelda))
+forall x forall y ((game(x) and intop10(x) and created(y,x)) implies japanese(y))
+forall x ((game(x) and exists y(greaterthan(y, onemillion) and copiessold(x, y))) implies top10(x)))
+exists y(greaterthan(y, onemillion) and copiessold(thelegendofzelda,y))",not top10(thelegendofzelda),"game(thelegendofzelda) ,  (japanese(x) , videogamecompany(x) , created(x, thelegendofzelda))
+forall forall ((game(x) , intop10(x) , created(y,)) -: japanese(y))
+forall ((game(x) , (greaterthan(y, onemillion) , copiessold(x, y))) -: top10(x)))
+(greaterthan(y, onemillion) , copiessold(thelegendofzelda,))",nottop10(thelegendofzelda),"[game[(thelegendofzelda)]  *x [(japanese[(?x)]  videogamecompany[(?x)]  created[(?x  thelegendofzelda)])]
+@every *x @every *y [([(game[(?x)]  intop10[(?x)]  created[(?y ?x)])]  japanese[(?y)])]
+@every *x [([(game[(?x)]  *y[(greaterthan[(?y  onemillion)]  copiessold[(?x  y)])])]  top10[(?x)])])]
+*y[(greaterthan[(?y  onemillion)]  copiessold[(thelegendofzelda ?y)])]]",~[top10[(thelegendofzelda)]],"game(thelegendofzelda) & x (japanese(x) & videogamecompany(x) & created(x, thelegendofzelda))
+all:x all:y ((game(x) & intop10(x) & created(y,x)) :- japanese(y))
+all:x ((game(x) & y(greaterthan(y, onemillion) & copiessold(x, y))) :- top10(x)))
+y(greaterthan(y, onemillion) & copiessold(thelegendofzelda,y))",~top10(thelegendofzelda),+G2(+t2)++(+J1++V1++C1)--((+G0++I0++C0)-+J0)-((+G0++(+G1++C1))-+T1))+(+G1++C1),-+T2(+t2)
+66,"If a city holds a Summer Olympics, and the city is a US city, then the Summer Olympics will be in the US.
+If a city is in a state in the US, the city is a US city.
+If a city is in a state, and a Summer Olympics is in this city, then the Summer Olympics is in this state.
+The 2028 Summer Olympics is scheduled to take place in Los Angeles.
+Los Angeles is a city in California.
+Atlanta is a US city.
+Atlanta is in Georgia.
+California is a state in the United States.
+Boxing, modern pentathlon, and weightlifting will be removed from The 2028 Summer Olympics.
+Atlanta in the United States held the 1996 Summer Olympics.",Skateboarding will appear at The 2028 Summer Olympics.,U,"∀x ∀y ((SummerOlympicsIn(x,y) ∧ In(x, unitedStates)) → SummerOlympicsIn(x, unitedStates))
+∀x ∀y ((In(x, y) ∧ In(y, unitedStates)) → In(x, unitedStates))
+∀x ∀y ∀z ((In(x, z) ∧ State(z) ∧ SummerOlympicsIn(x,y)) → SummerOlympicsIn(z, y))
+SummerOlympicsIn(losAngeles, yr2028)
+In(losAngeles, california)
+In(atlanta, unitedStates)
+In(california, unitedStates)
+In(atlanta, georgia)
+¬InSummerOlympicsIn(boxing, yr2028) ∧ (¬InSummerOlympicsIn(modern_pentathlon, yr2028)) ∧ (¬InSummerOlympicsIn(weightlifting, yr2028))
+SummerOlympicsIn(atlanta, yr1996)","InSummerOlympicsIn(skateboarding, yr2028)",,,"forall x forall y ((summerolympicsin(x,y) and in(x, unitedstates)) implies summerolympicsin(x, unitedstates))
+forall x forall y ((in(x, y) and in(y, unitedstates)) implies in(x, unitedstates))
+forall x forall y forall z ((in(x, z) and state(z) and summerolympicsin(x,y)) implies summerolympicsin(z, y))
+summerolympicsin(losangeles, yr2028)
+in(losangeles, california)
+in(atlanta, unitedstates)
+in(california, unitedstates)
+in(atlanta, georgia)
+not insummerolympicsin(boxing, yr2028) and (not insummerolympicsin(modern_pentathlon, yr2028)) and (not insummerolympicsin(weightlifting, yr2028))
+summerolympicsin(atlanta, yr1996)","insummerolympicsin(skateboarding, yr2028)","forall forall ((summerolympicsin(x,) , in(x, unitedstates)) -: summerolympicsin(x, unitedstates))
+forall forall ((in(x, y) , in(y, unitedstates)) -: in(x, unitedstates))
+forall forall forall ((in(x, z) , state(z) , summerolympicsin(x,)) -: summerolympicsin(z, y))
+summerolympicsin(losangeles, yr2028)
+in(losangeles, california)
+in(atlanta, unitedstates)
+in(california, unitedstates)
+in(atlanta, georgia)
+notinsummerolympicsin(boxing, yr2028) , (notinsummerolympicsin(modern_pentathlon, yr2028)) , (notinsummerolympicsin(weightlifting, yr2028))
+summerolympicsin(atlanta, yr1996)","insummerolympicsin(skateboarding, yr2028)","[@every *x @every *y [([(summerolympicsin[(?x ?y)]  in[(?x  unitedstates)])]  summerolympicsin[(?x  unitedstates)])]
+@every *x @every *y [([(in[(?x  y)]  in[(?y  unitedstates)])]  in[(?x  unitedstates)])]
+@every *x @every *y @every *z [([(in[(?x  z)]  state[(?z)]  summerolympicsin[(?x ?y)])]  summerolympicsin[(?z  y)])]
+summerolympicsin[(losangeles  yr2028)]
+in[(losangeles  california)]
+in[(atlanta  unitedstates)]
+in[(california  unitedstates)]
+in[(atlanta  georgia)]
+~insummerolympicsin[(boxing  yr2028)]  [(~insummerolympicsin[(modern_pentathlon  yr2028)])]  [(~insummerolympicsin[(weightlifting  yr2028)])]
+summerolympicsin[(atlanta  yr1996)]]",[insummerolympicsin[(skateboarding  yr2028)]],"all:x all:y ((summerolympicsin(x,y) & in(x, unitedstates)) :- summerolympicsin(x, unitedstates))
+all:x all:y ((in(x, y) & in(y, unitedstates)) :- in(x, unitedstates))
+all:x all:y all:z ((in(x, z) & state(z) & summerolympicsin(x,y)) :- summerolympicsin(z, y))
+summerolympicsin(losangeles, yr2028)
+in(losangeles, california)
+in(atlanta, unitedstates)
+in(california, unitedstates)
+in(atlanta, georgia)
+~insummerolympicsin(boxing, yr2028) & (~insummerolympicsin(modern_pentathlon, yr2028)) & (~insummerolympicsin(weightlifting, yr2028))
+summerolympicsin(atlanta, yr1996)","insummerolympicsin(skateboarding, yr2028)",--((+S0++I0)-+S0)--((+I0++I0)-+I0)---((+I0++S0++S0)-+S0)+S2+I2+I2+I2+I2-+I2+(-+I2)+(-+I2)+S2,+I2
+2,"Billings is a city in the state of Montana in U.S.
+The state of Montana includes the cities of Butte, Helena, and Missoula.
+White Sulphur Springs and Butte are cities in the same state in U.S.
+The city of St Pierre is not in the state of Montana.
+Any city in Butte is not in St Pierre.
+A city can only be in one state in U.S.  except for Bristol, Texarkana, Texhoma and Union City.",Butte and St Pierre are in the same state.,F,"City(billings) ∧ In(billings, montana)
+City(butte) ∧ In(butte, montana) ∧ City(helena) ∧ In(helena, montana) ∧ City(missoula) ∧ In(missoula, montana)
+∃x (City(whitesulphursprings) ∧ In(whitesulphursprings, x) ∧ City(butte) ∧ In(butte, x))
+City(pierre) ∧ ¬(In(pierre, montana))
+∀x ((City(x) ∧ City(butte) ∧ In(x, butte)) → ¬(In(x, pierre)))
+∀x ∃y ((City(x) ∧ (In(x, y) ∧ ¬(x=bristol) ∧ ¬(x=texarkana) ∧ ¬(x=texhoma) ∧ ¬(x=unionCity)) → ¬∃z (¬(z=y) ∧ In(x, z)))","∃x (In(butte, x) ∧ In(stPierre, x))",,,"city(billings) and in(billings, montana)
+city(butte) and in(butte, montana) and city(helena) and in(helena, montana) and city(missoula) and in(missoula, montana)
+exists x (city(whitesulphursprings) and in(whitesulphursprings, x) and city(butte) and in(butte, x))
+city(pierre) and not (in(pierre, montana))
+forall x ((city(x) and city(butte) and in(x, butte)) implies not (in(x, pierre)))
+forall x exists y ((city(x) and (in(x, y) and not (x=bristol) and not (x=texarkana) and not (x=texhoma) and not (x=unioncity)) implies not exists z (not (z=y) and in(x, z)))","exists x (in(butte, x) and in(stpierre, x))","city(billings) , in(billings, montana)
+city(butte) , in(butte, montana) , city(helena) , in(helena, montana) , city(missoula) , in(missoula, montana)
+ (city(whitesulphursprings) , in(whitesulphursprings, x) , city(butte) , in(butte, x))
+city(pierre) , not(in(pierre, montana))
+forall ((city(x) , city(butte) , in(x, butte)) -: not(in(x, pierre)))
+forall  ((city(x) , (in(x, y) , not(x=bristol) , not(x=texarkana) , not(x=texhoma) , not(x=unioncity)) -: not (not(z=y) , in(x, z)))"," (in(butte, x) , in(stpierre, x))","[city[(billings)]  in[(billings  montana)]
+city[(butte)]  in[(butte  montana)]  city[(helena)]  in[(helena  montana)]  city[(missoula)]  in[(missoula  montana)]
+*x [(city[(whitesulphursprings)]  in[(whitesulphursprings  x)]  city[(butte)]  in[(butte  x)])]
+city[(pierre)]  ~[(in[(pierre  montana)])]
+@every *x [([(city[(?x)]  city[(butte)]  in[(?x  butte)])]  ~[(in[(?x  pierre)])])]
+@every *x *y [([(city[(?x)]  [(in[(?x  y)]  ~[(?x=bristol)]  ~[(?x=texarkana)]  ~[(?x=texhoma)]  ~[(?x=unioncity)])]  ~*z [(~[(?z=y)]  in[(?x  z)])])]]",[*x [(in[(butte  x)]  in[(stpierre  x)])]],"city(billings) & in(billings, montana)
+city(butte) & in(butte, montana) & city(helena) & in(helena, montana) & city(missoula) & in(missoula, montana)
+x (city(whitesulphursprings) & in(whitesulphursprings, x) & city(butte) & in(butte, x))
+city(pierre) & ~(in(pierre, montana))
+all:x ((city(x) & city(butte) & in(x, butte)) :- ~(in(x, pierre)))
+all:x y ((city(x) & (in(x, y) & ~(x=bristol) & ~(x=texarkana) & ~(x=texhoma) & ~(x=unioncity)) :- ~z (~(z=y) & in(x, z)))","x (in(butte, x) & in(stpierre, x))",+C2(+b2)++I2+C2(+b2)++I2++C2(+h2)++I2++C2(+m2)++I2+(+C1(+w1)++I1++C1(+b1)++I1)+C2(+p2)+-(+I2)-((+C0++C0(+b0)++I0)--(+I0))-+((+C1+(+I1+-(+x1+b1)+-(+x1+t1)+-(+x1+t1)+-(+x1+u1))--+(-(+z1)++I1)),+(+I1++I1)
+5,"Peter Parker is either a superhero or a civilian.
+The Hulk is a destroyer.
+The Hulk wakes up when he is angry.
+If the Hulk wakes up, then he will break a bridge.
+Thor is a god.
+Thor will break a bridge when he is happy.
+A god is not a destroyer.
+Peter Parker wears a uniform when he is a superhero.
+Peter Parker is not a civilian if a destroyer is breaking a bridge.
+If Thor is happy, the Hulk is angry.","If Thor is happy, then Peter Parker wears a uniform.",T,"Superhero(peterParker) ⊕ Civilian(peterParker)
+Destroyer(theHulk)
+Angry(theHulk) → WakesUp(theHulk)
+WakesUp(theHulk) → Breaks(theHulk, bridge)
+God(thor)
+Happy(thor) → Breaks(thor, bridge)
+∀x (God(x) → ¬Destroyer(x))
+Superhero(peter) → Wears(peter, uniform)
+∀x ((Destroyer(x) ∧ Breaks(x,bridge)) → ¬Civilian(peter))
+Happy(thor) → Angry(theHulk)","Happy(thor) → Wears(peterParker, uniform)",,,"superhero(peterparker) xor civilian(peterparker)
+destroyer(thehulk)
+angry(thehulk) implies wakesup(thehulk)
+wakesup(thehulk) implies breaks(thehulk, bridge)
+god(thor)
+happy(thor) implies breaks(thor, bridge)
+forall x (god(x) implies not destroyer(x))
+superhero(peter) implies wears(peter, uniform)
+forall x ((destroyer(x) and breaks(x,bridge)) implies not civilian(peter))
+happy(thor) implies angry(thehulk)","happy(thor) implies wears(peterparker, uniform)","superhero(peterparker) ^ civilian(peterparker)
+destroyer(thehulk)
+angry(thehulk) -: wakesup(thehulk)
+wakesup(thehulk) -: breaks(thehulk, bridge)
+god(thor)
+happy(thor) -: breaks(thor, bridge)
+forall (god(x) -: notdestroyer(x))
+superhero(peter) -: wears(peter, uniform)
+forall ((destroyer(x) , breaks(x,bridge)) -: notcivilian(peter))
+happy(thor) -: angry(thehulk)","happy(thor) -: wears(peterparker, uniform)","[superhero[(peterparker)]  civilian[(peterparker)]
+destroyer[(thehulk)]
+angry[(thehulk)]  wakesup[(thehulk)]
+wakesup[(thehulk)]  breaks[(thehulk  bridge)]
+god[(thor)]
+happy[(thor)]  breaks[(thor  bridge)]
+@every *x [(god[(?x)]  ~destroyer[(?x)])]
+superhero[(peter)]  wears[(peter  uniform)]
+@every *x [([(destroyer[(?x)]  breaks[(?x bridge)])]  ~civilian[(peter)])]
+happy[(thor)]  angry[(thehulk)]]",[happy[(thor)]  wears[(peterparker  uniform)]],"superhero(peterparker) ^ civilian(peterparker)
+destroyer(thehulk)
+angry(thehulk) :- wakesup(thehulk)
+wakesup(thehulk) :- breaks(thehulk, bridge)
+god(thor)
+happy(thor) :- breaks(thor, bridge)
+all:x (god(x) :- ~destroyer(x))
+superhero(peter) :- wears(peter, uniform)
+all:x ((destroyer(x) & breaks(x,bridge)) :- ~civilian(peter))
+happy(thor) :- angry(thehulk)","happy(thor) :- wears(peterparker, uniform)",+S2(+p2)-+C2(+p2)+D2(+t2)+A2(+t2)-+W2(+t2)+W2(+t2)-+B2+G2(+t2)+H2(+t2)-+B2-(+G0--+D0)+S2(+p2)-+W2-((+D0++B0)--+C0(+p0))+H2(+t2)-+A2(+t2),+H2(+t2)-+W2
+65,"If a person coaches a football club, the person is a football coach.
+If a person has a position in a club in a year, and the club is in NFL in the same year, the person plays in NFL.
+Minnesota Vikings is a football club.
+Dennis Green coached Minnesota Vikings.
+Cris Carter had 13 touchdown receptions.
+Minnesota Vikings were in the National Football League in 1997.
+John Randle was Minnesota Vikings defensive tackle in 1997.",Cris Carter played for Minnesota Vikings.,U,"∀x ∀y ((Coach(x, y) ∧ FootballClub(y)) → FootballCoach(x))
+∀w ∀x ∀y ∀z ((PlayPositionFor(x, w, y, z) ∧ InNFL(y, z)) → PlayInNFL(x))
+FootballClub(minnesotaVikings)
+Coach(dennisGreen, minnesotaVikings)
+ReceiveTD(crisCarter, num13)
+InNFL(minnesotaVikings, yr1997)
+PlayPositionFor(johnRandle, defensiveTackle, minnesotaVikings, yr1997)","PlayPositionFor(crisCarter, wr, minnesotaVikings, year1997)",,,"forall x forall y ((coach(x, y) and footballclub(y)) implies footballcoach(x))
+forall w forall x forall y forall z ((playpositionfor(x, w, y, z) and innfl(y, z)) implies playinnfl(x))
+footballclub(minnesotavikings)
+coach(dennisgreen, minnesotavikings)
+receivetd(criscarter, num13)
+innfl(minnesotavikings, yr1997)
+playpositionfor(johnrandle, defensivetackle, minnesotavikings, yr1997)","playpositionfor(criscarter, wr, minnesotavikings, year1997)","forall forall ((coach(x, y) , footballclub(y)) -: footballcoach(x))
+forall forall forall forall ((playpositionfor(x, w, y, z) , innfl(y, z)) -: playinnfl(x))
+footballclub(minnesotavikings)
+coach(dennisgreen, minnesotavikings)
+receivetd(criscarter, num13)
+innfl(minnesotavikings, yr1997)
+playpositionfor(johnrandle, defensivetackle, minnesotavikings, yr1997)","playpositionfor(criscarter, wr, minnesotavikings, year1997)","[@every *x @every *y [([(coach[(?x  y)]  footballclub[(?y)])]  footballcoach[(?x)])]
+@every *w @every *x @every *y @every *z [([(playpositionfor[(?x  w  y  z)]  innfl[(?y  z)])]  playinnfl[(?x)])]
+footballclub[(minnesotavikings)]
+coach[(dennisgreen  minnesotavikings)]
+receivetd[(criscarter  num13)]
+innfl[(minnesotavikings  yr1997)]
+playpositionfor[(johnrandle  defensivetackle  minnesotavikings  yr1997)]]",[playpositionfor[(criscarter  wr  minnesotavikings  year1997)]],"all:x all:y ((coach(x, y) & footballclub(y)) :- footballcoach(x))
+all:w all:x all:y all:z ((playpositionfor(x, w, y, z) & innfl(y, z)) :- playinnfl(x))
+footballclub(minnesotavikings)
+coach(dennisgreen, minnesotavikings)
+receivetd(criscarter, num13)
+innfl(minnesotavikings, yr1997)
+playpositionfor(johnrandle, defensivetackle, minnesotavikings, yr1997)","playpositionfor(criscarter, wr, minnesotavikings, year1997)",--((+C0++F0)-+F0)----((+P0++I0)-+P0)+F2(+m2)+C2+R2+I2+P2,+P2
+16,"Notable people with the given name include Dagfinn Aarskog, Dagfinn Bakke and Dagfinn Dahl.
+Dagfinn Aarskog is a Norwegian physician.
+Dagfinn Dahl is a Norwegian barrister.",Dagfinn Aarskog is a notable person.,T,"
+GivenName(nameDagfinn) ∧ Named(dagfinnAarskog, nameDagfinn) ∧ NotablePerson(dagfinnAarskog) ∧ Named(dagfinnBakke, nameDagfinn) ∧ NotablePerson(dagfinnBakke)  ∧ Named(dagfinnDahl, nameDagfinn) ∧ NotablePerson(dagfinnDahl)
+Norwegian(dagfinnAarskog) ∧ Physician(dagfinnAarskog)
+Norwegian(dagfinnDahl) ∧ Barrister(dagfinnDahl)",NotablePerson(dagfinnAarskog),,,"
+givenname(namedagfinn) and named(dagfinnaarskog, namedagfinn) and notableperson(dagfinnaarskog) and named(dagfinnbakke, namedagfinn) and notableperson(dagfinnbakke)  and named(dagfinndahl, namedagfinn) and notableperson(dagfinndahl)
+norwegian(dagfinnaarskog) and physician(dagfinnaarskog)
+norwegian(dagfinndahl) and barrister(dagfinndahl)",notableperson(dagfinnaarskog),"
+givenname(namedagfinn) , named(dagfinnaarskog, namedagfinn) , notableperson(dagfinnaarskog) , named(dagfinnbakke, namedagfinn) , notableperson(dagfinnbakke)  , named(dagfinndahl, namedagfinn) , notableperson(dagfinndahl)
+norwegian(dagfinnaarskog) , physician(dagfinnaarskog)
+norwegian(dagfinndahl) , barrister(dagfinndahl)",notableperson(dagfinnaarskog),"[
+givenname[(namedagfinn)]  named[(dagfinnaarskog  namedagfinn)]  notableperson[(dagfinnaarskog)]  named[(dagfinnbakke  namedagfinn)]  notableperson[(dagfinnbakke)]   named[(dagfinndahl  namedagfinn)]  notableperson[(dagfinndahl)]
+norwegian[(dagfinnaarskog)]  physician[(dagfinnaarskog)]
+norwegian[(dagfinndahl)]  barrister[(dagfinndahl)]]",[notableperson[(dagfinnaarskog)]],"
+givenname(namedagfinn) & named(dagfinnaarskog, namedagfinn) & notableperson(dagfinnaarskog) & named(dagfinnbakke, namedagfinn) & notableperson(dagfinnbakke)  & named(dagfinndahl, namedagfinn) & notableperson(dagfinndahl)
+norwegian(dagfinnaarskog) & physician(dagfinnaarskog)
+norwegian(dagfinndahl) & barrister(dagfinndahl)",notableperson(dagfinnaarskog),+G2(+n2)++N2++N2(+d2)++N2++N2(+d2)++N2++N2(+d2)+N2(+d2)++P2(+d2)+N2(+d2)++B2(+d2),+N2(+d2)
+21,"The Golden State Warriors are a team from San Francisco.
+The Golden State Warriors won the NBA finals.
+All teams attending the NBA finals have won many games.
+Boston Celtics are a team that lost the NBA finals.
+If a team wins the NBA finals, then they will have more income.
+If a team wins or loses at the NBA finals, then they are attending the finals.",The Boston Celtics are from San Francisco.,U,"Team(goldenStateWarriors) ∧ From(goldenStateWarriors, sanFrancisco)
+Won(goldenStateWarriors, nbaFinals)
+∀x ((Team(x) ∧ Attending(x, nbaFinals)) → WonManyGames(x))
+Team(bostonCeltics) ∧ Lost(bostonCeltics, nbaFinals)
+∀x ((Team(x) ∧ Won(x, nbaFinals)) → MoreIncome(x))
+∀x ((Won(x, nbaFinals) ∨ Lost(x, nbaFinals)) → Attending(x, nbaFinals))","From(bostonCeltics, sanFrancisco)",,,"team(goldenstatewarriors) and from(goldenstatewarriors, sanfrancisco)
+won(goldenstatewarriors, nbafinals)
+forall x ((team(x) and attending(x, nbafinals)) implies wonmanygames(x))
+team(bostonceltics) and lost(bostonceltics, nbafinals)
+forall x ((team(x) and won(x, nbafinals)) implies moreincome(x))
+forall x ((won(x, nbafinals) or lost(x, nbafinals)) implies attending(x, nbafinals))","from(bostonceltics, sanfrancisco)","team(goldenstatewarriors) , from(goldenstatewarriors, sanfrancisco)
+won(goldenstatewarriors, nbafinals)
+forall ((team(x) , attending(x, nbafinals)) -: wonmanygames(x))
+team(bostonceltics) , lost(bostonceltics, nbafinals)
+forall ((team(x) , won(x, nbafinals)) -: moreincome(x))
+forall ((won(x, nbafinals) | lost(x, nbafinals)) -: attending(x, nbafinals))","from(bostonceltics, sanfrancisco)","[team[(goldenstatewarriors)]  from[(goldenstatewarriors  sanfrancisco)]
+won[(goldenstatewarriors  nbafinals)]
+@every *x [([(team[(?x)]  attending[(?x  nbafinals)])]  wonmanygames[(?x)])]
+team[(bostonceltics)]  lost[(bostonceltics  nbafinals)]
+@every *x [([(team[(?x)]  won[(?x  nbafinals)])]  moreincome[(?x)])]
+@every *x [([(won[(?x  nbafinals)]  lost[(?x  nbafinals)])]  attending[(?x  nbafinals)])]]",[from[(bostonceltics  sanfrancisco)]],"team(goldenstatewarriors) & from(goldenstatewarriors, sanfrancisco)
+won(goldenstatewarriors, nbafinals)
+all:x ((team(x) & attending(x, nbafinals)) :- wonmanygames(x))
+team(bostonceltics) & lost(bostonceltics, nbafinals)
+all:x ((team(x) & won(x, nbafinals)) :- moreincome(x))
+all:x ((won(x, nbafinals) | lost(x, nbafinals)) :- attending(x, nbafinals))","from(bostonceltics, sanfrancisco)",+T2(+g2)++F2+W2-((+T0++A0)-+W0)+T2(+b2)++L2-((+T0++W0)-+M0)-((+W0-+L0)-+A0),+F2
+75,"Robert Zimmer was a philosopher born in Germany.
+Robert Zimmer is an essayist.
+Robert Zimmer was born in 1953.
+Every essayist is a writer.",Robert Zimmer is a biographer.,U,"BornIn(robertZimmer, germany) ∧ Philosopher(robertZimmer)
+Essayist(robertZimmer)
+BornIn(robertZimmer, yr1953)
+∀x (Essayist(x) → Writer(x))",Biographer(robertZimmer),,,"bornin(robertzimmer, germany) and philosopher(robertzimmer)
+essayist(robertzimmer)
+bornin(robertzimmer, yr1953)
+forall x (essayist(x) implies writer(x))",biographer(robertzimmer),"bornin(robertzimmer, germany) , philosopher(robertzimmer)
+essayist(robertzimmer)
+bornin(robertzimmer, yr1953)
+forall (essayist(x) -: writer(x))",biographer(robertzimmer),"[bornin[(robertzimmer  germany)]  philosopher[(robertzimmer)]
+essayist[(robertzimmer)]
+bornin[(robertzimmer  yr1953)]
+@every *x [(essayist[(?x)]  writer[(?x)])]]",[biographer[(robertzimmer)]],"bornin(robertzimmer, germany) & philosopher(robertzimmer)
+essayist(robertzimmer)
+bornin(robertzimmer, yr1953)
+all:x (essayist(x) :- writer(x))",biographer(robertzimmer),+B2++P2(+r2)+E2(+r2)+B2-(+E0-+W0),+B2(+r2)
+39,"""Your Woman"" is a song by the British one-person band White Town.
+""Your Woman"" song peaked at No. 1 on the UK Singles Chart.
+If a song peaked at No.1 at a particular place, it was extremely popular.
+""Your Woman"" peaked at No. 1 in Iceland, Israel, and Spain.",White Town did not produce any popular songs.,F,"Produce(whiteTown, yourWoman) ∧ OnePersonBand(whiteTown)
+Peak(yourWoman, uKSinglesChart)
+∀x ((∃y(Peak(x, y))) → Popular(x))
+Peak(yourWoman, iceland) ∧ Peak(yourWoman, israel) ∧ Peak(yourWoman, spain)","∀x (Produce(whiteTown, x) → ¬Popular(x))",,,"produce(whitetown, yourwoman) and onepersonband(whitetown)
+peak(yourwoman, uksingleschart)
+forall x ((exists y(peak(x, y))) implies popular(x))
+peak(yourwoman, iceland) and peak(yourwoman, israel) and peak(yourwoman, spain)","forall x (produce(whitetown, x) implies not popular(x))","produce(whitetown, yourwoman) , onepersonband(whitetown)
+peak(yourwoman, uksingleschart)
+forall (((peak(x, y))) -: popular(x))
+peak(yourwoman, iceland) , peak(yourwoman, israel) , peak(yourwoman, spain)","forall (produce(whitetown, x) -: notpopular(x))","[produce[(whitetown  yourwoman)]  onepersonband[(whitetown)]
+peak[(yourwoman  uksingleschart)]
+@every *x [([(*y[(peak[(?x  y)])])]  popular[(?x)])]
+peak[(?yourwoman  iceland)]  peak[(?yourwoman  israel)]  peak[(?yourwoman  spain)]]",[@every *x [(produce[(whitetown  x)]  ~popular[(?x)])]],"produce(whitetown, yourwoman) & onepersonband(whitetown)
+peak(yourwoman, uksingleschart)
+all:x ((y(peak(x, y))) :- popular(x))
+peak(yourwoman, iceland) & peak(yourwoman, israel) & peak(yourwoman, spain)","all:x (produce(whitetown, x) :- ~popular(x))",+P2++O2(+w2)+P2-((+(+P1))-+P1)+P2++P2++P2,-(+P0--+P0)
+59,"Some monitors equipped in the lab are produced by the company named AOC. 
+All monitors equipped in the lab are cheaper than their original prices. 
+If a monitor is cheaper than its original price, then its resolution is 1080p. 
+If a monitor has a resolution of 1080p, then it does not support the type-c port. 
+LG34 is equipped in the lab.  ",LG34 machine does not support the type-c port.,T,"∃x ∃y  (LabMonitor(x) ∧ AOC(x) ∧ (¬(x=y)) ∧ LabMonitor(y) ∧ AOC(y))
+∀x (LabMonitor(x) → Discounted(x))
+∀x (Discounted(x) → A1080p(x))
+∀x (A1080p(x) → ¬TypeC(x))
+LabMonitor(lg-34)",¬TypeC(lg-34),,,"exists x exists y  (labmonitor(x) and aoc(x) and (not (x=y)) and labmonitor(y) and aoc(y))
+forall x (labmonitor(x) implies discounted(x))
+forall x (discounted(x) implies a1080p(x))
+forall x (a1080p(x) implies not typec(x))
+labmonitor(lg-34)",not typec(lg-34),"   (labmonitor(x) , aoc(x) , (not(x=y)) , labmonitor(y) , aoc(y))
+forall (labmonitor(x) -: discounted(x))
+forall (discounted(x) -: a1080p(x))
+forall (a1080p(x) -: nottypec(x))
+labmonitor(lg-34)",nottypec(lg-34),"[*x *y  [(labmonitor[(?x)]  aoc[(?x)]  [(~[(?x=y)])]  labmonitor[(?y)]  aoc[(?y)])]
+@every *x [(labmonitor[(?x)]  discounted[(?x)])]
+@every *x [(discounted[(?x)]  a1080p[(?x)])]
+@every *x [(a1080p[(?x)]  ~typec[(?x)])]
+labmonitor[(lg-34)]]",~[typec[(lg-34)]],"x y  (labmonitor(x) & aoc(x) & (~(x=y)) & labmonitor(y) & aoc(y))
+all:x (labmonitor(x) :- discounted(x))
+all:x (discounted(x) :- a1080p(x))
+all:x (a1080p(x) :- ~typec(x))
+labmonitor(lg-34)",~typec(lg-34),++(+L1++A1+(-(+x1))++L1++A1)-(+L0-+D0)-(+D0-+A0)-(+A0--+T0)+L2(+l2),-+T2(+l2)
+60,"All buildings in New Haven are not high.
+All buildings managed by Yale Housing are located in New Haven. 
+All buildings in Manhattans are high. 
+All buildings owned by Bloomberg are located in Manhattans. 
+All buildings with the Bloomberg logo are owned by Bloomberg. 
+Tower A is managed by Yale Housing.
+Tower B is with the Bloomberg logo.",Tower B is located in New Haven.,F,"∀x (In(x, newHaven) → ¬High(x))
+∀x (YaleHousing(x) → In(x, newHaven))
+∀x (In(x, manhattan) → High(x))
+∀x (Bloomberg(x) → In(x, manhattan))
+∀x (BloombergLogo(x) → Bloomberg(x))
+YaleHousing(tower-a)
+BloombergLogo(tower-b)","¬In(tower-b, newHaven)",,,"forall x (in(x, newhaven) implies not high(x))
+forall x (yalehousing(x) implies in(x, newhaven))
+forall x (in(x, manhattan) implies high(x))
+forall x (bloomberg(x) implies in(x, manhattan))
+forall x (bloomberglogo(x) implies bloomberg(x))
+yalehousing(tower-a)
+bloomberglogo(tower-b)","not in(tower-b, newhaven)","forall (in(x, newhaven) -: nothigh(x))
+forall (yalehousing(x) -: in(x, newhaven))
+forall (in(x, manhattan) -: high(x))
+forall (bloomberg(x) -: in(x, manhattan))
+forall (bloomberglogo(x) -: bloomberg(x))
+yalehousing(tower-a)
+bloomberglogo(tower-b)","notin(tower-b, newhaven)","[@every *x [(in[(?x  newhaven)]  ~high[(?x)])]
+@every *x [(yalehousing[(?x)]  in[(?x  newhaven)])]
+@every *x [(in[(?x  manhattan)]  high[(?x)])]
+@every *x [(bloomberg[(?x)]  in[(?x  manhattan)])]
+@every *x [(bloomberglogo[(?x)]  bloomberg[(?x)])]
+yalehousing[(tower-a)]
+bloomberglogo[(tower-b)]]",~[in[(tower-b  newhaven)]],"all:x (in(x, newhaven) :- ~high(x))
+all:x (yalehousing(x) :- in(x, newhaven))
+all:x (in(x, manhattan) :- high(x))
+all:x (bloomberg(x) :- in(x, manhattan))
+all:x (bloomberglogo(x) :- bloomberg(x))
+yalehousing(tower-a)
+bloomberglogo(tower-b)","~in(tower-b, newhaven)",-(+I0--+H0)-(+Y0-+I0)-(+I0-+H0)-(+B0-+I0)-(+B0-+B0)+Y2(+t2)+B2(+t2),-+I2
+70,"Michael O'Donnell is a British physician, journalist, author, and broadcaster.
+One of the word-setters of My Word! was Michael O'Donnell.
+The magazine World Medicine was edited by Michael O'Donnell.
+Michael O'Donnell was born in Yorkshire as the son of a general practitioner.",World Medicine is not a magazine.,F,"British(michael) ∧ Physician(michael) ∧ Journalist(michael) ∧ Author(michael) ∧ Broadcaster(michael)
+WordSetter(michael)
+Magazine(worldMedicine) ∧ EditedBy(worldMedicine, michael)
+BornIn(michael, yorkshire) ∧ ∃x(SonOf(michael, x) ∧ GeneralPractitioner(x))",¬Magazine(worldmedicine),,,"british(michael) and physician(michael) and journalist(michael) and author(michael) and broadcaster(michael)
+wordsetter(michael)
+magazine(worldmedicine) and editedby(worldmedicine, michael)
+bornin(michael, yorkshire) and exists x(sonof(michael, x) and generalpractitioner(x))",not magazine(worldmedicine),"british(michael) , physician(michael) , journalist(michael) , author(michael) , broadcaster(michael)
+wordsetter(michael)
+magazine(worldmedicine) , editedby(worldmedicine, michael)
+bornin(michael, yorkshire) , (sonof(michael, x) , generalpractitioner(x))",notmagazine(worldmedicine),"[british[(michael)]  physician[(michael)]  journalist[(michael)]  author[(michael)]  broadcaster[(michael)]
+wordsetter[(michael)]
+magazine[(worldmedicine)]  editedby[(worldmedicine  michael)]
+bornin[(michael  yorkshire)]  *x[(sonof[(michael  x)]  generalpractitioner[(?x)])]]",~[magazine[(worldmedicine)]],"british(michael) & physician(michael) & journalist(michael) & author(michael) & broadcaster(michael)
+wordsetter(michael)
+magazine(worldmedicine) & editedby(worldmedicine, michael)
+bornin(michael, yorkshire) & x(sonof(michael, x) & generalpractitioner(x))",~magazine(worldmedicine),+B2(+m2)++P2(+m2)++J2(+m2)++A2(+m2)++B2(+m2)+W2(+m2)+M2(+w2)++E2+B2++(+S1++G1),-+M2(+w2)
+94,"Ainderby Quernhow is a village and civil parish in the Hambleton District.
+Hambleton District is in North Yorkshire.
+North Yorkshire is in England.
+If place A is located in place B and place B is located in place C, then place A is located in place C.",There is no civil parish in England.,F,"Village(ainderbyQuernhow) ∧ CivilParish(ainderbyQuernhow) ∧ In(ainderbyQuernhow, hambletonDistrict)
+In(hambletonDistrict, northYorkshire)
+In(northYorkshire, england)
+∀x ∀y ∀z ((In(x, y) ∧ In(y, z)) → In(x, z))","¬(∃x (CivilParish(x) ∧ In(x, england)))",,,"village(ainderbyquernhow) and civilparish(ainderbyquernhow) and in(ainderbyquernhow, hambletondistrict)
+in(hambletondistrict, northyorkshire)
+in(northyorkshire, england)
+forall x forall y forall z ((in(x, y) and in(y, z)) implies in(x, z))","not (exists x (civilparish(x) and in(x, england)))","village(ainderbyquernhow) , civilparish(ainderbyquernhow) , in(ainderbyquernhow, hambletondistrict)
+in(hambletondistrict, northyorkshire)
+in(northyorkshire, england)
+forall forall forall ((in(x, y) , in(y, z)) -: in(x, z))","not( (civilparish(x) , in(x, england)))","[village[(ainderbyquernhow)]  civilparish[(ainderbyquernhow)]  in[(ainderbyquernhow  hambletondistrict)]
+in[(hambletondistrict  northyorkshire)]
+in[(northyorkshire  england)]
+@every *x @every *y @every *z [([(in[(?x  y)]  in[(?y  z)])]  in[(?x  z)])]]",~[[(*x [(civilparish[(?x)]  in[(?x  england)])])]],"village(ainderbyquernhow) & civilparish(ainderbyquernhow) & in(ainderbyquernhow, hambletondistrict)
+in(hambletondistrict, northyorkshire)
+in(northyorkshire, england)
+all:x all:y all:z ((in(x, y) & in(y, z)) :- in(x, z))","~(x (civilparish(x) & in(x, england)))",+V2(+a2)++C2(+a2)++I2+I2+I2---((+I0++I0)-+I0),-(+(+C1++I1))
+13,"System 7 is a UK-based electronic dance music band.
+Steve Hillage and Miquette Giraudy formed System 7.
+Steve Hillage and Miquette Giraudy are former members of the band Gong.
+Electric dance music bands are bands.
+System 7 has released several club singles.
+Club singles are not singles.",System 7 is not a band.,F,"BasedIn(system7, uk) ∧ ElectronicDanceMusicBand(system7)
+Form(stevehillage, system7) ∧ Form(miquettegiraudy, system7)
+FormerMemberOf(stevehillage, gong) ∧ FormerMemberOf(miquettegiraudy, gong)
+∀x (ElectronicDanceMusicBand(x) → Band(x))
+∃x (ClubSingle(x) ∧ Release(system7, x))
+∀x (ClubSingle(x) → ¬Single(x))",¬Band(system7),,,"basedin(system7, uk) and electronicdancemusicband(system7)
+form(stevehillage, system7) and form(miquettegiraudy, system7)
+formermemberof(stevehillage, gong) and formermemberof(miquettegiraudy, gong)
+forall x (electronicdancemusicband(x) implies band(x))
+exists x (clubsingle(x) and release(system7, x))
+forall x (clubsingle(x) implies not single(x))",not band(system7),"basedin(system7, uk) , electronicdancemusicband(system7)
+form(stevehillage, system7) , form(miquettegiraudy, system7)
+formermemberof(stevehillage, gong) , formermemberof(miquettegiraudy, gong)
+forall (electronicdancemusicband(x) -: band(x))
+ (clubsingle(x) , release(system7, x))
+forall (clubsingle(x) -: notsingle(x))",notband(system7),"[basedin[(system7  uk)]  electronicdancemusicband[(system7)]
+form[(stevehillage  system7)]  form[(miquettegiraudy  system7)]
+formermemberof[(stevehillage  gong)]  formermemberof[(miquettegiraudy  gong)]
+@every *x [(electronicdancemusicband[(?x)]  band[(?x)])]
+*x [(clubsingle[(?x)]  release[(system7  x)])]
+@every *x [(clubsingle[(?x)]  ~single[(?x)])]]",~[band[(system7)]],"basedin(system7, uk) & electronicdancemusicband(system7)
+form(stevehillage, system7) & form(miquettegiraudy, system7)
+formermemberof(stevehillage, gong) & formermemberof(miquettegiraudy, gong)
+all:x (electronicdancemusicband(x) :- band(x))
+x (clubsingle(x) & release(system7, x))
+all:x (clubsingle(x) :- ~single(x))",~band(system7),+B2++E2(+s2)+F2++F2+F2++F2-(+E0-+B0)+(+C1++R1)-(+C0--+S0),-+B2(+s2)
+64,"A podcast is not a novel.
+If a person is born in American City, the person is American.
+If a book is a novel and it is written by a person, then the person is a novel writer.
+Dani Shapiro is an American writer.
+Family History is written by Dani Shapiro.
+Family History is a novel written in 2003.
+Dani Shapiro created a podcast called Family Secrets.
+Boston is an American city.",Family Secrets is a novel.,F,"∀x (Podcast(x) → ¬Novel(x))
+∀x((∃y(BornIn(x, y) ∧ City(y) ∧ LocatedIn(y,america)) → American(x))
+∀x ∀y ((Novel(x) ∧ WrittenBy(x, y)) → WritesNovel(y))
+American(dani_Shapiro) ∧ Writer(dani_Shapiro)
+WrittenBy(family_History, dani_Shapiro)
+Novel(family_History) ∧ WrittenIn(family_History, yr2003)
+Podcast(family_Secrets) ∧ CreatedBy(family_Secrets, dani_Shapiro)
+City(boston) ∧ American(boston)",IsNovel(family_Secrets),,,"forall x (podcast(x) implies not novel(x))
+forall x((exists y(bornin(x, y) and city(y) and locatedin(y,america)) implies american(x))
+forall x forall y ((novel(x) and writtenby(x, y)) implies writesnovel(y))
+american(dani_shapiro) and writer(dani_shapiro)
+writtenby(family_history, dani_shapiro)
+novel(family_history) and writtenin(family_history, yr2003)
+podcast(family_secrets) and createdby(family_secrets, dani_shapiro)
+city(boston) and american(boston)",isnovel(family_secrets),"forall (podcast(x) -: notnovel(x))
+forall(((bornin(x, y) , city(y) , locatedin(y,america)) -: american(x))
+forall forall ((novel(x) , writtenby(x, y)) -: writesnovel(y))
+american(dani_shapiro) , writer(dani_shapiro)
+writtenby(family_history, dani_shapiro)
+novel(family_history) , writtenin(family_history, yr2003)
+podcast(family_secrets) , createdby(family_secrets, dani_shapiro)
+city(boston) , american(boston)",isnovel(family_secrets),"[@every *x [(podcast[(?x)]  ~novel[(?x)])]
+@every *x[([(*y[(bornin[(?x  y)]  city[(?y)]  locatedin[(?y america)])]  american[(?x)])]
+@every *x @every *y [([(novel[(?x)]  writtenby[(?x  y)])]  writesnovel[(?y)])]
+american[(dani_shapiro)]  writer[(dani_shapiro)]
+writtenby[(family_history  dani_shapiro)]
+novel[(family_history)]  writtenin[(family_history  yr2003)]
+podcast[(family_secrets)]  createdby[(family_secrets  dani_shapiro)]
+city[(boston)]  american[(boston)]]",[isnovel[(family_secrets)]],"all:x (podcast(x) :- ~novel(x))
+all:x((y(bornin(x, y) & city(y) & locatedin(y,america)) :- american(x))
+all:x all:y ((novel(x) & writtenby(x, y)) :- writesnovel(y))
+american(dani_shapiro) & writer(dani_shapiro)
+writtenby(family_history, dani_shapiro)
+novel(family_history) & writtenin(family_history, yr2003)
+podcast(family_secrets) & createdby(family_secrets, dani_shapiro)
+city(boston) & american(boston)",isnovel(family_secrets),-(+P0--+N0)-((+(+B1++C1++L1)-+A1)--((+N0++W0)-+W0)+A2(+d2)++W2(+d2)+W2+N2(+f2)++W2+P2(+f2)++C2+C2(+b2)++A2(+b2),+I2(+f2)
+62,"All devices belonging to the company are connected to Google Home. 
+All devices belonging to employees are connected to the company's wifi. 
+All devices connected to Google Home are controlled by the managers. 
+All devices that connect to the company's wifi are easy to operate. 
+ModelXX belongs to employees. ",ModelXX is controlled by managers.,U,"∀x (OwnedBy(x, company) → ConnectedTo(x, googleHome))
+∀x (OwnedBy(x, employee) → ConnectedTo(x, companyWiFi))
+∀x (ConnectedTo(x, googleHome) → ControlledBy(x, managers))
+∀x (ConnectedTo(x, companyWiFi) → EasyToOperate(x))
+OwnedBy(modelXX, employee)","ControlledBy(modelXX, managers)",,,"forall x (ownedby(x, company) implies connectedto(x, googlehome))
+forall x (ownedby(x, employee) implies connectedto(x, companywifi))
+forall x (connectedto(x, googlehome) implies controlledby(x, managers))
+forall x (connectedto(x, companywifi) implies easytooperate(x))
+ownedby(modelxx, employee)","controlledby(modelxx, managers)","forall (ownedby(x, company) -: connectedto(x, googlehome))
+forall (ownedby(x, employee) -: connectedto(x, companywifi))
+forall (connectedto(x, googlehome) -: controlledby(x, managers))
+forall (connectedto(x, companywifi) -: easytooperate(x))
+ownedby(modelxx, employee)","controlledby(modelxx, managers)","[@every *x [(ownedby[(?x  company)]  connectedto[(?x  googlehome)])]
+@every *x [(ownedby[(?x  employee)]  connectedto[(?x  companywifi)])]
+@every *x [(connectedto[(?x  googlehome)]  controlledby[(?x  managers)])]
+@every *x [(connectedto[(?x  companywifi)]  easytooperate[(?x)])]
+ownedby[(modelxx  employee)]]",[controlledby[(modelxx  managers)]],"all:x (ownedby(x, company) :- connectedto(x, googlehome))
+all:x (ownedby(x, employee) :- connectedto(x, companywifi))
+all:x (connectedto(x, googlehome) :- controlledby(x, managers))
+all:x (connectedto(x, companywifi) :- easytooperate(x))
+ownedby(modelxx, employee)","controlledby(modelxx, managers)",-(+O0-+C0)-(+O0-+C0)-(+C0-+C0)-(+C0-+E0)+O2,+C2
+48,"Douglas Adams is an author who created the book collection called The Salmon of Doubt. 
+The Salmon of Doubt is about life experiences and technology.
+All authors are writers.
+Writers create innovative ideas.
+Some books that contain innovative ideas are about technology.",Douglas Adams created innovative ideas.,T,"Author(douglasAdams) ∧ Authored(douglasAdams, theSalmonOfDoubt) ∧ Book(theSalmonOfDoubt)
+About(theSalmonOfDoubt, lifeExperience) ∧ About(theSalmonOfDoubt, technology)
+∀x (Author(x) → Writer(x))
+∀x (Writer(x) → Create(x, innovativeIdea))
+∃x ∃y (Contain(x, innovativeIdea) ∧ About(x, technology) ∧ (¬(x=y)) ∧ (Contain(y, innovativeIdea) ∧ About(y, technology)))","Create(douglasAdams, innovativeIdea)",,,"author(douglasadams) and authored(douglasadams, thesalmonofdoubt) and book(thesalmonofdoubt)
+about(thesalmonofdoubt, lifeexperience) and about(thesalmonofdoubt, technology)
+forall x (author(x) implies writer(x))
+forall x (writer(x) implies create(x, innovativeidea))
+exists x exists y (contain(x, innovativeidea) and about(x, technology) and (not (x=y)) and (contain(y, innovativeidea) and about(y, technology)))","create(douglasadams, innovativeidea)","author(douglasadams) , authored(douglasadams, thesalmonofdoubt) , book(thesalmonofdoubt)
+about(thesalmonofdoubt, lifeexperience) , about(thesalmonofdoubt, technology)
+forall (author(x) -: writer(x))
+forall (writer(x) -: create(x, innovativeidea))
+  (contain(x, innovativeidea) , about(x, technology) , (not(x=y)) , (contain(y, innovativeidea) , about(y, technology)))","create(douglasadams, innovativeidea)","[author[(douglasadams)]  authored[(douglasadams  thesalmonofdoubt)]  book[(thesalmonofdoubt)]
+about[(thesalmonofdoubt  lifeexperience)]  about[(thesalmonofdoubt  technology)]
+@every *x [(author[(?x)]  writer[(?x)])]
+@every *x [(writer[(?x)]  create[(?x  innovativeidea)])]
+*x *y [(contain[(?x  innovativeidea)]  about[(?x  technology)]  [(~[(?x=y)])]  [(contain[(?y  innovativeidea)]  about[(?y  technology)])])]]",[create[(douglasadams  innovativeidea)]],"author(douglasadams) & authored(douglasadams, thesalmonofdoubt) & book(thesalmonofdoubt)
+about(thesalmonofdoubt, lifeexperience) & about(thesalmonofdoubt, technology)
+all:x (author(x) :- writer(x))
+all:x (writer(x) :- create(x, innovativeidea))
+x y (contain(x, innovativeidea) & about(x, technology) & (~(x=y)) & (contain(y, innovativeidea) & about(y, technology)))","create(douglasadams, innovativeidea)",+A2(+d2)++A2++B2(+t2)+A2++A2-(+A0-+W0)-(+W0-+C0)++(+C1++A1+(-(+x1))+(+C1++A1)),+C2
+34,"Rafa Nadal was born in Mallorca.
+Rafa Nadal is a professional tennis player.
+Nadal's win ratio is high.
+All players in the Big 3 are professionals who have a high win ratio.",Nadal is the greatest player of all time.,U,"BornIn(rafaNadal, mallorca)
+ProfessionalTennisPlayer(rafaNadal)
+HighWinRatio(rafaNadal)
+∀x ((ProfessionalTennisPlayer(x) ∧ InBig3(x)) → HighWinRatio(x))",GreatestOfAllTime(rafaNadal),,,"bornin(rafanadal, mallorca)
+professionaltennisplayer(rafanadal)
+highwinratio(rafanadal)
+forall x ((professionaltennisplayer(x) and inbig3(x)) implies highwinratio(x))",greatestofalltime(rafanadal),"bornin(rafanadal, mallorca)
+professionaltennisplayer(rafanadal)
+highwinratio(rafanadal)
+forall ((professionaltennisplayer(x) , inbig3(x)) -: highwinratio(x))",greatestofalltime(rafanadal),"[bornin[(rafanadal  mallorca)]
+professionaltennisplayer[(rafanadal)]
+highwinratio[(rafanadal)]
+@every *x [([(professionaltennisplayer[(?x)]  inbig3[(?x)])]  highwinratio[(?x)])]]",[greatestofalltime[(rafanadal)]],"bornin(rafanadal, mallorca)
+professionaltennisplayer(rafanadal)
+highwinratio(rafanadal)
+all:x ((professionaltennisplayer(x) & inbig3(x)) :- highwinratio(x))",greatestofalltime(rafanadal),+B2+P2(+r2)+H2(+r2)-((+P0++I0)-+H0),+G2(+r2)
+71,"Herodicus was a Greek physician, dietician, sophist, and gymnast.
+Herodicus was born in the city of Selymbria.
+Selymbria is a colony of the city-state Megara.
+One of the tutors of Hippocrates was Herodicus.
+Massages were recommended by Herodicus.
+Some of the theories of Herodicus are considered to be the foundation of sports medicine.",Herodicus was born in a colony of a city-state.,T,"Greek(herodicus) ∧ Physician(herodicus) ∧ Dietician(herodicus) ∧ Sophist(herodicus) ∧ Gymnast(herodicus)
+Born(herodicus, selymbia) ∧ City(selymbia)
+Colony(selymbia, megara) ∧ CityState(megara)
+Tutor(herodicus, hippocrates)
+Recommend(herodicus, massages)
+∃x ∃y (Theory(x) ∧ From(x, herodicus) ∧ FoundationOf(x, sportsMedicine) ∧ (¬(x=y)) ∧ Theory(y) ∧ From(y, herodicus) ∧ FoundationOf(y, sportsMedicine))","∃x ∃y (Born(herodicus, x) ∧ Colony(x, y) ∧ CityState(y))",,,"greek(herodicus) and physician(herodicus) and dietician(herodicus) and sophist(herodicus) and gymnast(herodicus)
+born(herodicus, selymbia) and city(selymbia)
+colony(selymbia, megara) and citystate(megara)
+tutor(herodicus, hippocrates)
+recommend(herodicus, massages)
+exists x exists y (theory(x) and from(x, herodicus) and foundationof(x, sportsmedicine) and (not (x=y)) and theory(y) and from(y, herodicus) and foundationof(y, sportsmedicine))","exists x exists y (born(herodicus, x) and colony(x, y) and citystate(y))","greek(herodicus) , physician(herodicus) , dietician(herodicus) , sophist(herodicus) , gymnast(herodicus)
+born(herodicus, selymbia) , city(selymbia)
+colony(selymbia, megara) , citystate(megara)
+tutor(herodicus, hippocrates)
+recommend(herodicus, massages)
+  (theory(x) , from(x, herodicus) , foundationof(x, sportsmedicine) , (not(x=y)) , theory(y) , from(y, herodicus) , foundationof(y, sportsmedicine))","  (born(herodicus, x) , colony(x, y) , citystate(y))","[greek[(herodicus)]  physician[(herodicus)]  dietician[(herodicus)]  sophist[(herodicus)]  gymnast[(herodicus)]
+born[(herodicus  selymbia)]  city[(selymbia)]
+colony[(selymbia  megara)]  citystate[(megara)]
+tutor[(herodicus  hippocrates)]
+recommend[(herodicus  massages)]
+*x *y [(theory[(?x)]  from[(?x  herodicus)]  foundationof[(?x  sportsmedicine)]  [(~[(?x=y)])]  theory[(?y)]  from[(?y  herodicus)]  foundationof[(?y  sportsmedicine)])]]",[*x *y [(born[(herodicus  x)]  colony[(?x  y)]  citystate[(?y)])]],"greek(herodicus) & physician(herodicus) & dietician(herodicus) & sophist(herodicus) & gymnast(herodicus)
+born(herodicus, selymbia) & city(selymbia)
+colony(selymbia, megara) & citystate(megara)
+tutor(herodicus, hippocrates)
+recommend(herodicus, massages)
+x y (theory(x) & from(x, herodicus) & foundationof(x, sportsmedicine) & (~(x=y)) & theory(y) & from(y, herodicus) & foundationof(y, sportsmedicine))","x y (born(herodicus, x) & colony(x, y) & citystate(y))",+G2(+h2)++P2(+h2)++D2(+h2)++S2(+h2)++G2(+h2)+B2++C2(+s2)+C2++C2(+m2)+T2+R2++(+T1++F1++F1+(-(+x1))++T1++F1++F1),++(+B1++C1++C1)
+26,"Some mammals have teeth.
+Platypuses have no teeth.
+Platypuses are mammals. 
+Humans have teeth.",Humans are mammals.,U,"∃x ∃y (Mammal(x) ∧ Mammal(y) ∧ (¬(x=y)) ∧ Have(x, teeth) ∧ Have(y, teeth))
+¬Have(platypus, teeth)
+Mammal(platypus)
+Have(humans, teeth)",Mammal(humans),,,"exists x exists y (mammal(x) and mammal(y) and (not (x=y)) and have(x, teeth) and have(y, teeth))
+not have(platypus, teeth)
+mammal(platypus)
+have(humans, teeth)",mammal(humans),"  (mammal(x) , mammal(y) , (not(x=y)) , have(x, teeth) , have(y, teeth))
+nothave(platypus, teeth)
+mammal(platypus)
+have(humans, teeth)",mammal(humans),"[*x *y [(mammal[(?x)]  mammal[(?y)]  [(~[(?x=y)])]  have[(?x  teeth)]  have[(?y  teeth)])]
+~have[(platypus  teeth)]
+mammal[(platypus)]
+have[(humans  teeth)]]",[mammal[(humans)]],"x y (mammal(x) & mammal(y) & (~(x=y)) & have(x, teeth) & have(y, teeth))
+~have(platypus, teeth)
+mammal(platypus)
+have(humans, teeth)",mammal(humans),++(+M1++M1+(-(+x1))++H1++H1)-+H1+M2(+p2)+H2,+M2(+h2)
+31,"Naive cynicism was proposed by Justin Kruger and a colleague.
+Thomas Gilovich is a colleague of Justin Kruger. 
+Naive cynicism is a philosophy of mind.",Thomas Gilovich proposed naive cynicism.,U,"Proposed(justinKruger, naiveCynicism) ∧ ∃y (colleagueOfJustinKruger(y) ∧ Proposed(y, naiveCynicism))
+Colleagues(thomasGilovich, justinKruger)
+PhilosophyOfMind(naiveCynicism)","Proposed(thomasGilovich, naiveCynicism)",,,"proposed(justinkruger, naivecynicism) and exists y (colleagueofjustinkruger(y) and proposed(y, naivecynicism))
+colleagues(thomasgilovich, justinkruger)
+philosophyofmind(naivecynicism)","proposed(thomasgilovich, naivecynicism)","proposed(justinkruger, naivecynicism) ,  (colleagueofjustinkruger(y) , proposed(y, naivecynicism))
+colleagues(thomasgilovich, justinkruger)
+philosophyofmind(naivecynicism)","proposed(thomasgilovich, naivecynicism)","[proposed[(justinkruger  naivecynicism)]  *y [(colleagueofjustinkruger[(?y)]  proposed[(?y  naivecynicism)])]
+colleagues[(thomasgilovich  justinkruger)]
+philosophyofmind[(naivecynicism)]]",[proposed[(thomasgilovich  naivecynicism)]],"proposed(justinkruger, naivecynicism) & y (colleagueofjustinkruger(y) & proposed(y, naivecynicism))
+colleagues(thomasgilovich, justinkruger)
+philosophyofmind(naivecynicism)","proposed(thomasgilovich, naivecynicism)",+P2++(+c1++P1)+C2+P2(+n2),+P2
+17,"Odell is an English surname originating in Odell, Bedfordshire.
+In some families, Odell is spelled O'Dell in a mistaken Irish adaptation.
+Notable people with surnames include Amy Odell, Jack Odell, and Mats Odell.
+Amy Odell is a British singer-songwriter.
+Jack Odell is an English toy inventor.",Odell is Amy Odell's surname.,T,"Surname(nameODell) ∧ From(nameODell, oDellBedfordshire)
+MistakenSpellingOf(nameO'Dell, nameODell) ∧ (∃x∃y(Family(x) ∧ Named(x, nameO'Dell) ∧ (¬(x=y)) ∧ Family(y) ∧ Named(y, nameO'Dell))
+Named(amyODell, nameODell) ∧ NotablePerson(amyODell) ∧ Named(jackODell, nameODell) ∧ NotablePerson(jackODell) ∧ Named(matsODell, nameODell) ∧ NotablePerson(matsODell)
+British(amyODell) ∧ Singer(amyODell) ∧ SongWriter(amyODell)
+English(jackODell) ∧ ToyInventor(jackODell)","Named(amyODell, nameODell)",,,"surname(nameodell) and from(nameodell, odellbedfordshire)
+mistakenspellingof(nameo'dell, nameodell) and (exists xexists y(family(x) and named(x, nameo'dell) and (not (x=y)) and family(y) and named(y, nameo'dell))
+named(amyodell, nameodell) and notableperson(amyodell) and named(jackodell, nameodell) and notableperson(jackodell) and named(matsodell, nameodell) and notableperson(matsodell)
+british(amyodell) and singer(amyodell) and songwriter(amyodell)
+english(jackodell) and toyinventor(jackodell)","named(amyodell, nameodell)","surname(nameodell) , from(nameodell, odellbedfordshire)
+mistakenspellingof(nameo'dell, nameodell) , ((family(x) , named(x, nameo'dell) , (not(x=y)) , family(y) , named(y, nameo'dell))
+named(amyodell, nameodell) , notableperson(amyodell) , named(jackodell, nameodell) , notableperson(jackodell) , named(matsodell, nameodell) , notableperson(matsodell)
+british(amyodell) , singer(amyodell) , songwriter(amyodell)
+english(jackodell) , toyinventor(jackodell)","named(amyodell, nameodell)","[surname[(nameodell)]  from[(nameodell  odellbedfordshire)]
+mistakenspellingof[(nameo'dell  nameodell)]  [(*x*y[(family[(?x)]  named[(?x  nameo'dell)]  [(~[(?x=y)])]  family[(?y)]  named[(?y  nameo'dell)])]
+named[(amyodell  nameodell)]  notableperson[(amyodell)]  named[(jackodell  nameodell)]  notableperson[(jackodell)]  named[(matsodell  nameodell)]  notableperson[(matsodell)]
+british[(amyodell)]  singer[(amyodell)]  songwriter[(amyodell)]
+english[(jackodell)]  toyinventor[(jackodell)]]",[named[(amyodell  nameodell)]],"surname(nameodell) & from(nameodell, odellbedfordshire)
+mistakenspellingof(nameo'dell, nameodell) & (xy(family(x) & named(x, nameo'dell) & (~(x=y)) & family(y) & named(y, nameo'dell))
+named(amyodell, nameodell) & notableperson(amyodell) & named(jackodell, nameodell) & notableperson(jackodell) & named(matsodell, nameodell) & notableperson(matsodell)
+british(amyodell) & singer(amyodell) & songwriter(amyodell)
+english(jackodell) & toyinventor(jackodell)","named(amyodell, nameodell)",+S2(+n2)++F2+M2+(++(+F1++N1+(-(+x1))++F1++N1)+N2++N2(+a2)++N2++N2(+j2)++N2++N2(+m2)+B2(+a2)++S2(+a2)++S2(+a2)+E2(+j2)++T2(+j2),+N2
+71,"Herodicus was a Greek physician, dietician, sophist, and gymnast.
+Herodicus was born in the city of Selymbria.
+Selymbria is a colony of the city-state Megara.
+One of the tutors of Hippocrates was Herodicus.
+Massages were recommended by Herodicus.
+Some of the theories of Herodicus are considered to be the foundation of sports medicine.",Herodicus did not recommend massages.,F,"Greek(herodicus) ∧ Physician(herodicus) ∧ Dietician(herodicus) ∧ Sophist(herodicus) ∧ Gymnast(herodicus)
+Born(herodicus, selymbia) ∧ City(selymbia)
+Colony(selymbia, megara) ∧ CityState(megara)
+Tutor(herodicus, hippocrates)
+Recommend(herodicus, massages)
+∃x ∃y (Theory(x) ∧ From(x, herodicus) ∧ FoundationOf(x, sportsMedicine) ∧ (¬(x=y)) ∧ Theory(y) ∧ From(y, herodicus) ∧ FoundationOf(y, sportsMedicine))","¬Recommend(herodicus, massages)",,,"greek(herodicus) and physician(herodicus) and dietician(herodicus) and sophist(herodicus) and gymnast(herodicus)
+born(herodicus, selymbia) and city(selymbia)
+colony(selymbia, megara) and citystate(megara)
+tutor(herodicus, hippocrates)
+recommend(herodicus, massages)
+exists x exists y (theory(x) and from(x, herodicus) and foundationof(x, sportsmedicine) and (not (x=y)) and theory(y) and from(y, herodicus) and foundationof(y, sportsmedicine))","not recommend(herodicus, massages)","greek(herodicus) , physician(herodicus) , dietician(herodicus) , sophist(herodicus) , gymnast(herodicus)
+born(herodicus, selymbia) , city(selymbia)
+colony(selymbia, megara) , citystate(megara)
+tutor(herodicus, hippocrates)
+recommend(herodicus, massages)
+  (theory(x) , from(x, herodicus) , foundationof(x, sportsmedicine) , (not(x=y)) , theory(y) , from(y, herodicus) , foundationof(y, sportsmedicine))","notrecommend(herodicus, massages)","[greek[(herodicus)]  physician[(herodicus)]  dietician[(herodicus)]  sophist[(herodicus)]  gymnast[(herodicus)]
+born[(herodicus  selymbia)]  city[(selymbia)]
+colony[(selymbia  megara)]  citystate[(megara)]
+tutor[(herodicus  hippocrates)]
+recommend[(herodicus  massages)]
+*x *y [(theory[(?x)]  from[(?x  herodicus)]  foundationof[(?x  sportsmedicine)]  [(~[(?x=y)])]  theory[(?y)]  from[(?y  herodicus)]  foundationof[(?y  sportsmedicine)])]]",~[recommend[(herodicus  massages)]],"greek(herodicus) & physician(herodicus) & dietician(herodicus) & sophist(herodicus) & gymnast(herodicus)
+born(herodicus, selymbia) & city(selymbia)
+colony(selymbia, megara) & citystate(megara)
+tutor(herodicus, hippocrates)
+recommend(herodicus, massages)
+x y (theory(x) & from(x, herodicus) & foundationof(x, sportsmedicine) & (~(x=y)) & theory(y) & from(y, herodicus) & foundationof(y, sportsmedicine))","~recommend(herodicus, massages)",+G2(+h2)++P2(+h2)++D2(+h2)++S2(+h2)++G2(+h2)+B2++C2(+s2)+C2++C2(+m2)+T2+R2++(+T1++F1++F1+(-(+x1))++T1++F1++F1),-+R2
+44,"Andrew Wilson is a British historian and political scientist.
+Andrew Wilson specializes in all countries in Eastern Europe.
+Poland is in Eastern Europe.
+Andrew Wilson is born in Britain.
+Britain is not in Eastern Europe.",Andrew Wilson specializes in Poland.,T,"British(andrewWilson) ∧ Historian(andrewWilson) ∧ PoliticalScientist(andrewWilson)
+∀x (LocatedIn(x, easternEurope)→ SpecializeIn(andrewWilson, x))
+LocatedIn(poland, easternEurope)
+BornIn(andrewWilson, britain)
+¬LocatedIn(britain, easternEurope)","SpecializeIn(andrewWilson, poland)",,,"british(andrewwilson) and historian(andrewwilson) and politicalscientist(andrewwilson)
+forall x (locatedin(x, easterneurope)implies specializein(andrewwilson, x))
+locatedin(poland, easterneurope)
+bornin(andrewwilson, britain)
+not locatedin(britain, easterneurope)","specializein(andrewwilson, poland)","british(andrewwilson) , historian(andrewwilson) , politicalscientist(andrewwilson)
+forall (locatedin(x, easterneurope)-: specializein(andrewwilson, x))
+locatedin(poland, easterneurope)
+bornin(andrewwilson, britain)
+notlocatedin(britain, easterneurope)","specializein(andrewwilson, poland)","[british[(andrewwilson)]  historian[(andrewwilson)]  politicalscientist[(andrewwilson)]
+@every *x [(locatedin[(?x  easterneurope)] specializein[(andrewwilson  x)])]
+locatedin[(poland  easterneurope)]
+bornin[(andrewwilson  britain)]
+~locatedin[(britain  easterneurope)]]",[specializein[(andrewwilson  poland)]],"british(andrewwilson) & historian(andrewwilson) & politicalscientist(andrewwilson)
+all:x (locatedin(x, easterneurope):- specializein(andrewwilson, x))
+locatedin(poland, easterneurope)
+bornin(andrewwilson, britain)
+~locatedin(britain, easterneurope)","specializein(andrewwilson, poland)",+B2(+a2)++H2(+a2)++P2(+a2)-(+L0-+S0)+L2+B2-+L2,+S2
+49,"Quincy McDuffie is an American professional wide receiver in Canadian Football.
+People who can catch balls are good wide receivers. 
+Quincy McDuffie can catch some footballs easily.
+Good wide receivers play professionally.
+Good wide receivers can catch with both their left and right hand.
+All footballs are balls.",Professional wide receivers are good at catching balls.,U,"American(quincyMcduffie) ∧ Professional(quincyMcduffie) ∧ WideReciever(quincyMcduffie) ∧ PlaysIn(quincyMcduffie, cFL)
+∀x ((∃y(CanCatch(x, y) ∧ Ball(y))) → GoodWideReceiver(x))
+∃x ∃y (Football(x) ∧ CanCatch(quincymcduffie, x)) ∧ (¬(x=y) ∧ (Football(y) ∧ CanCatch(quincymcduffie, y))
+∀x (GoodWideReceiver(x) → Professional(x))
+∀x (GoodWideReceiver(x) → (CanCatchWith(x, lefthand) ∧ CanCatchWith(x, righthand)))
+∀x (Football(x) → Ball(x))","∀x ((Professional(x) ∧ WideReciever(x)) → Good(x, catchingballs))",,,"american(quincymcduffie) and professional(quincymcduffie) and widereciever(quincymcduffie) and playsin(quincymcduffie, cfl)
+forall x ((exists y(cancatch(x, y) and ball(y))) implies goodwidereceiver(x))
+exists x exists y (football(x) and cancatch(quincymcduffie, x)) and (not (x=y) and (football(y) and cancatch(quincymcduffie, y))
+forall x (goodwidereceiver(x) implies professional(x))
+forall x (goodwidereceiver(x) implies (cancatchwith(x, lefthand) and cancatchwith(x, righthand)))
+forall x (football(x) implies ball(x))","forall x ((professional(x) and widereciever(x)) implies good(x, catchingballs))","american(quincymcduffie) , professional(quincymcduffie) , widereciever(quincymcduffie) , playsin(quincymcduffie, cfl)
+forall (((cancatch(x, y) , ball(y))) -: goodwidereceiver(x))
+  (football(x) , cancatch(quincymcduffie, x)) , (not(x=y) , (football(y) , cancatch(quincymcduffie, y))
+forall (goodwidereceiver(x) -: professional(x))
+forall (goodwidereceiver(x) -: (cancatchwith(x, lefthand) , cancatchwith(x, righthand)))
+forall (football(x) -: ball(x))","forall ((professional(x) , widereciever(x)) -: good(x, catchingballs))","[american[(quincymcduffie)]  professional[(quincymcduffie)]  widereciever[(quincymcduffie)]  playsin[(quincymcduffie  cfl)]
+@every *x [([(*y[(cancatch[(?x  y)]  ball[(?y)])])]  goodwidereceiver[(?x)])]
+*x *y [(football[(?x)]  cancatch[(quincymcduffie  x)])]  [(~[(?x=y)]  [(football[(?y)]  cancatch[(quincymcduffie  y)])]
+@every *x [(goodwidereceiver[(?x)]  professional[(?x)])]
+@every *x [(goodwidereceiver[(?x)]  [(cancatchwith[(?x  lefthand)]  cancatchwith[(?x  righthand)])])]
+@every *x [(football[(?x)]  ball[(?x)])]]",[@every *x [([(professional[(?x)]  widereciever[(?x)])]  good[(?x  catchingballs)])]],"american(quincymcduffie) & professional(quincymcduffie) & widereciever(quincymcduffie) & playsin(quincymcduffie, cfl)
+all:x ((y(cancatch(x, y) & ball(y))) :- goodwidereceiver(x))
+x y (football(x) & cancatch(quincymcduffie, x)) & (~(x=y) & (football(y) & cancatch(quincymcduffie, y))
+all:x (goodwidereceiver(x) :- professional(x))
+all:x (goodwidereceiver(x) :- (cancatchwith(x, lefthand) & cancatchwith(x, righthand)))
+all:x (football(x) :- ball(x))","all:x ((professional(x) & widereciever(x)) :- good(x, catchingballs))",+A2(+q2)++P2(+q2)++W2(+q2)++P2-((+(+C1++B1))-+G1)++(+F1++C1)+(-(+x1)+(+F1++C1)-(+G0-+P0)-(+G0-(+C0++C0))-(+F0-+B0),-((+P0++W0)-+G0)
+39,"""Your Woman"" is a song by the British one-person band White Town.
+""Your Woman"" song peaked at No. 1 on the UK Singles Chart.
+If a song peaked at No.1 at a particular place, it was extremely popular.
+""Your Woman"" peaked at No. 1 in Iceland, Israel, and Spain.","""Your Woman"" was extremely popular.",T,"Produce(whiteTown, yourWoman) ∧ OnePersonBand(whiteTown)
+Peak(yourWoman, uKSinglesChart)
+∀x ((∃y(Peak(x, y))) → Popular(x))
+Peak(yourWoman, iceland) ∧ Peak(yourWoman, israel) ∧ Peak(yourWoman, spain)",Popular(yourWoman),,,"produce(whitetown, yourwoman) and onepersonband(whitetown)
+peak(yourwoman, uksingleschart)
+forall x ((exists y(peak(x, y))) implies popular(x))
+peak(yourwoman, iceland) and peak(yourwoman, israel) and peak(yourwoman, spain)",popular(yourwoman),"produce(whitetown, yourwoman) , onepersonband(whitetown)
+peak(yourwoman, uksingleschart)
+forall (((peak(x, y))) -: popular(x))
+peak(yourwoman, iceland) , peak(yourwoman, israel) , peak(yourwoman, spain)",popular(yourwoman),"[produce[(whitetown  yourwoman)]  onepersonband[(whitetown)]
+peak[(yourwoman  uksingleschart)]
+@every *x [([(*y[(peak[(?x  y)])])]  popular[(?x)])]
+peak[(?yourwoman  iceland)]  peak[(?yourwoman  israel)]  peak[(?yourwoman  spain)]]",[popular[(yourwoman)]],"produce(whitetown, yourwoman) & onepersonband(whitetown)
+peak(yourwoman, uksingleschart)
+all:x ((y(peak(x, y))) :- popular(x))
+peak(yourwoman, iceland) & peak(yourwoman, israel) & peak(yourwoman, spain)",popular(yourwoman),+P2++O2(+w2)+P2-((+(+P1))-+P1)+P2++P2++P2,+P2(+y2)
+36,"Tyga is a rapper.
+Rappers release rap albums.
+Tyga released the Well Done 3 album.
+Rappers are not opera singers.",Tyga is an opera singer.,F,"IsRapper(tyga)
+∀x ∀y ((IsRapper(x) ∧ ReleasedAlbum(x, y)) → IsRapAlbum(y))
+ReleasedAlbum(tyga, wellDone3)
+∀x (IsRapper(x) → ¬IsOperaSinger(x))",IsOperaSinger(tyga),,,"israpper(tyga)
+forall x forall y ((israpper(x) and releasedalbum(x, y)) implies israpalbum(y))
+releasedalbum(tyga, welldone3)
+forall x (israpper(x) implies not isoperasinger(x))",isoperasinger(tyga),"israpper(tyga)
+forall forall ((israpper(x) , releasedalbum(x, y)) -: israpalbum(y))
+releasedalbum(tyga, welldone3)
+forall (israpper(x) -: notisoperasinger(x))",isoperasinger(tyga),"[israpper[(tyga)]
+@every *x @every *y [([(israpper[(?x)]  releasedalbum[(?x  y)])]  israpalbum[(?y)])]
+releasedalbum[(tyga  welldone3)]
+@every *x [(israpper[(?x)]  ~isoperasinger[(?x)])]]",[isoperasinger[(tyga)]],"israpper(tyga)
+all:x all:y ((israpper(x) & releasedalbum(x, y)) :- israpalbum(y))
+releasedalbum(tyga, welldone3)
+all:x (israpper(x) :- ~isoperasinger(x))",isoperasinger(tyga),+I2(+t2)--((+I0++R0)-+I0)+R2-(+I0--+I0),+I2(+t2)
+78,"Ableton has an office in Germany.
+Ableton has an office in the USA.
+USA and Germany are different countries.
+Any company that has offices in different countries is a multinational company.
+Ableton makes music software.",Ableton is a multinational company.,T,"OfficeIn(ableton, germany)
+OfficeIn(ableton, unitedStates)
+¬SameCountry(germany, unitedStates)
+∀x ∀y ∀z (OfficeIn(x, y) ∧ OfficeIn(x, z) ∧ (¬SameCountry(y, z)) → MultinationalCompany(x))
+MakesMusicSoftware(ableton)",MultinationalCompany(ableton),,,"officein(ableton, germany)
+officein(ableton, unitedstates)
+not samecountry(germany, unitedstates)
+forall x forall y forall z (officein(x, y) and officein(x, z) and (not samecountry(y, z)) implies multinationalcompany(x))
+makesmusicsoftware(ableton)",multinationalcompany(ableton),"officein(ableton, germany)
+officein(ableton, unitedstates)
+notsamecountry(germany, unitedstates)
+forall forall forall (officein(x, y) , officein(x, z) , (notsamecountry(y, z)) -: multinationalcompany(x))
+makesmusicsoftware(ableton)",multinationalcompany(ableton),"[officein[(ableton  germany)]
+officein[(ableton  unitedstates)]
+~samecountry[(germany  unitedstates)]
+@every *x @every *y @every *z [(officein[(?x  y)]  officein[(?x  z)]  [(~samecountry[(?y  z)])]  multinationalcompany[(?x)])]
+makesmusicsoftware[(ableton)]]",[multinationalcompany[(ableton)]],"officein(ableton, germany)
+officein(ableton, unitedstates)
+~samecountry(germany, unitedstates)
+all:x all:y all:z (officein(x, y) & officein(x, z) & (~samecountry(y, z)) :- multinationalcompany(x))
+makesmusicsoftware(ableton)",multinationalcompany(ableton),+O2+O2-+S2---(+O0++O0+(-+S0)-+M0)+M2(+a2),+M2(+a2)
+45,"SR 287 is in Alabama.
+Alabama is in the United States.
+US 31 intersects with SR 287.
+CR 47 intersects with SR 287.
+If place A is located in place B and place B is located in place C, then place A is located in place C.",SR 287 is in the United States.,T,"In(sR287, alabama)
+In(alabama, unitedStates)
+Intersect(uS31, sR287)
+Intersect(cR47, sR287)
+∀x ∀y ∀z ((In(x, y) ∧ In(y, z)) → In(x, z))","In(sR287, unitedStates)",,,"in(sr287, alabama)
+in(alabama, unitedstates)
+intersect(us31, sr287)
+intersect(cr47, sr287)
+forall x forall y forall z ((in(x, y) and in(y, z)) implies in(x, z))","in(sr287, unitedstates)","in(sr287, alabama)
+in(alabama, unitedstates)
+intersect(us31, sr287)
+intersect(cr47, sr287)
+forall forall forall ((in(x, y) , in(y, z)) -: in(x, z))","in(sr287, unitedstates)","[in[(sr287  alabama)]
+in[(alabama  unitedstates)]
+intersect[(us31  sr287)]
+intersect[(cr47  sr287)]
+@every *x @every *y @every *z [([(in[(?x  y)]  in[(?y  z)])]  in[(?x  z)])]]",[in[(sr287  unitedstates)]],"in(sr287, alabama)
+in(alabama, unitedstates)
+intersect(us31, sr287)
+intersect(cr47, sr287)
+all:x all:y all:z ((in(x, y) & in(y, z)) :- in(x, z))","in(sr287, unitedstates)",+I2+I2+I2+I2---((+I0++I0)-+I0),+I2
+79,"Robert Lewandowski is a striker.
+Strikers are soccer players.
+Robert Lewandowski left Bayern Munchen.
+If a player leaves a team they no longer play for that team.",Robert Lewandowski is a soccer player.,T,"Striker(robertLewandowski)
+∀x (Striker(x) → SoccerPlayer(x))
+Left(robertLewandowski, bayernMunchen)
+∀x ∀y (Left(x, y) → ¬PlaysFor(x, y))",SoccerPlayer(robertLewandowski),,,"striker(robertlewandowski)
+forall x (striker(x) implies soccerplayer(x))
+left(robertlewandowski, bayernmunchen)
+forall x forall y (left(x, y) implies not playsfor(x, y))",soccerplayer(robertlewandowski),"striker(robertlewandowski)
+forall (striker(x) -: soccerplayer(x))
+left(robertlewandowski, bayernmunchen)
+forall forall (left(x, y) -: notplaysfor(x, y))",soccerplayer(robertlewandowski),"[striker[(robertlewandowski)]
+@every *x [(striker[(?x)]  soccerplayer[(?x)])]
+left[(robertlewandowski  bayernmunchen)]
+@every *x @every *y [(left[(?x  y)]  ~playsfor[(?x  y)])]]",[soccerplayer[(robertlewandowski)]],"striker(robertlewandowski)
+all:x (striker(x) :- soccerplayer(x))
+left(robertlewandowski, bayernmunchen)
+all:x all:y (left(x, y) :- ~playsfor(x, y))",soccerplayer(robertlewandowski),+S2(+r2)-(+S0-+S0)+L2--(+L0--+P0),+S2(+r2)
+84,"Luzon is an island in the Philippines.
+In December 1999, an earthquake struck Luzon.
+People died in the December 1999 earthquake in Luzon.",Leyte is an island in the Philippines.,U,"Island(luzon) ∧ In(luzon, philippines)
+∃x (Earthquake(x) ∧ StrikeInYr(x, year1999) ∧ StrikeInMo(x, december) ∧ StrikeInCity(x, luzon))
+∃x (Earthquake(x) ∧ StrikeInYr(x, year1999) ∧ StrikeInMo(x, december) ∧ StrikeInCity(x, luzon) ∧ Deadly(x))","Island(leyte) ∧ In(leyte, philippines)",,,"island(luzon) and in(luzon, philippines)
+exists x (earthquake(x) and strikeinyr(x, year1999) and strikeinmo(x, december) and strikeincity(x, luzon))
+exists x (earthquake(x) and strikeinyr(x, year1999) and strikeinmo(x, december) and strikeincity(x, luzon) and deadly(x))","island(leyte) and in(leyte, philippines)","island(luzon) , in(luzon, philippines)
+ (earthquake(x) , strikeinyr(x, year1999) , strikeinmo(x, december) , strikeincity(x, luzon))
+ (earthquake(x) , strikeinyr(x, year1999) , strikeinmo(x, december) , strikeincity(x, luzon) , deadly(x))","island(leyte) , in(leyte, philippines)","[island[(luzon)]  in[(luzon  philippines)]
+*x [(earthquake[(?x)]  strikeinyr[(?x  year1999)]  strikeinmo[(?x  december)]  strikeincity[(?x  luzon)])]
+*x [(earthquake[(?x)]  strikeinyr[(?x  year1999)]  strikeinmo[(?x  december)]  strikeincity[(?x  luzon)]  deadly[(?x)])]]",[island[(leyte)]  in[(leyte  philippines)]],"island(luzon) & in(luzon, philippines)
+x (earthquake(x) & strikeinyr(x, year1999) & strikeinmo(x, december) & strikeincity(x, luzon))
+x (earthquake(x) & strikeinyr(x, year1999) & strikeinmo(x, december) & strikeincity(x, luzon) & deadly(x))","island(leyte) & in(leyte, philippines)",+I2(+l2)++I2+(+E1++S1++S1++S1)+(+E1++S1++S1++S1++D1),+I2(+l2)++I2
