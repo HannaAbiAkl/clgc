@@ -1,6 +1,6 @@
 [project]
 name = "clgc"
-version = "2.0.0"
+version = "2.1.0"
 authors = [
   { name="Hanna Abi Akl", email="hannaabiakl8@gmail.com" },
 ]
@@ -10,7 +10,7 @@ requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
-    "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
     "Topic :: Scientific/Engineering :: Artificial Intelligence"
 ]
 license = "GPL-3.0-or-later"
