@@ -1,4 +1,6 @@
-from clgc.logic import *
+import sys
+sys.path.append('../')
+from src.clgc.__base import *
 
 # test SEF categoirization
 syllogism = "∀x (Bikes(x) → ¬Calledcars(x))\n ∀x (Bike(x) → Vehicle(x))\n ∃x (Vehicles(x) ∧ Bikes(x))\n"

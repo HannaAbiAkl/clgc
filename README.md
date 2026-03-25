@@ -19,6 +19,7 @@ A package used for handling logic statements and logic analysis using formal kno
 - Tensor Function Logic Plus (TFL+)
 - CLINGO
 - MINIFOLX
+- PROLOG
 
 ## Setup
 Start by installing the package

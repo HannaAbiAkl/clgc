@@ -39,5 +39,30 @@ class TestFolTransformations(unittest.TestCase):
            except Exception as e:
             self.fail(f"Failed to parse FOL string: {e}")
 
+    def test_prolog_syntax(self):
+            test_list = ["likes(noor, sausage)",
+            "likes(melissa, pasta)",
+            "likes(dmitry, cookie)",
+            "likes(nikita, sausage)",
+            "likes(assel, limonade)",
+            "food_type(gouda, cheese)",
+            "food_type(ritz, cracker)",
+            "food_type(steak, meat)",
+            "food_type(sausage, meat)",
+            "food_type(limonade, juice)",
+            "food_type(cookie, dessert)",
+            "flavor(sweet, dessert)",
+            "flavor(savory, meat)",
+            "flavor(savory, cheese)",
+            "flavor(sweet, juice)",
+            "food_flavor(X, Y) :- food_type(X, Z), flavor(Y, Z)",
+            "dish_to_like(X, Y) :- likes(X, L), food_type(L, T), flavor(F, T), food_flavor(Y, F), neq(L, Y)"]
+            for statement in test_list:
+                prolog_syllogism = FOLSyllogism(statement + " .\n")
+                try:
+                    prolog_syllogism.validate(grammar='PROLOG')
+                except Exception as e:
+                    self.fail(f"Failed to parse Prolog string: {e}")   
+
 if __name__ == '__main__':
     unittest.main()

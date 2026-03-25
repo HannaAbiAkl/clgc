@@ -74,6 +74,97 @@ class FOLSyllogism(Notation):
     %ignore WS
 """
 
+    __CLIF_BNF_GRAMMAR = r"""
+    start: program
+    program: [stat]+
+    stat: proposition newline | keyword* quantifier* symbol* leftparen* (quantifier symbol)* proposition rightparen* newline | keyword* (quantifier symbol)* leftparen* (quantifier symbol)* proposition rightparen* newline
+    proposition: atomicproposition | complexproposition
+    complexproposition: keyword* proposition keyword leftparen* (quantifier symbol)* proposition rightparen*
+    atomicproposition: leftparen* term* leftparen* term* rightparen*
+    !term: (LETTER+) (LETTER+|DIGIT+|"=" | "+" | "-" | "," | "≠")* | (DIGIT+) (LETTER+|DIGIT+|"=" | "+" | "-" | "," | "≠")*
+    !leftparen: "("
+    !rightparen: ")"
+    !keyword: "and" | "not" | "implies" | "or" | "xor"
+    !quantifier: "exists" | "forall"
+    symbol: LETTER
+    newline: /\n/
+
+    %import common.LETTER
+    %import common.DIGIT
+    %import common.INT -> NUMBER
+    %import common.ESCAPED_STRING -> STRING
+    %import common.WS
+    %ignore WS
+"""
+
+    __CGIF_BNF_GRAMMAR = r"""
+    start: program
+    program: [stat]+
+    stat: proposition newline | keyword* quantifier* symbol* leftparen* (quantifier symbol)* proposition rightparen* newline | keyword* (quantifier symbol)* leftparen* (quantifier symbol)* proposition rightparen* newline
+    proposition: atomicproposition | complexproposition
+    complexproposition: keyword* proposition keyword leftparen* (quantifier symbol)* proposition rightparen*
+    atomicproposition: leftparen* term* leftparen* term* rightparen*
+    !term: (LETTER+) (LETTER+|DIGIT+|"=" | "+" | "-" | "," | "≠" | "?")* | (DIGIT+) (LETTER+|DIGIT+|"=" | "+" | "-" | "," | "≠" | "?")*
+    !leftparen: "[("
+    !rightparen: ")]"
+    !keyword: "~" | "?"
+    !quantifier: "*" | "@every *"
+    symbol: LETTER
+    newline: /\n/
+
+    %import common.LETTER
+    %import common.DIGIT
+    %import common.INT -> NUMBER
+    %import common.ESCAPED_STRING -> STRING
+    %import common.WS
+    %ignore WS
+"""
+
+# based on: https://cseweb.ucsd.edu/classes/fa09/cse130/misc/prolog/prolog_tutorial.pdf
+# and: https://github.com/simonkrenger/ch.bfh.bti7064.w2013.PrologParser/blob/master/doc/prolog-bnf-grammar.txt
+    __PROLOG_BNF_GRAMMAR = r"""
+    start: program
+    program: [stat]+
+    stat: clauselist query newline | query newline | clauselist newline
+    clauselist: clause | clauselist clause
+    clause: predicate dot | predicate implication predicatelist dot
+    predicatelist: predicate | predicatelist comma predicate
+    predicate: atom | atom leftparen termlist rightparen
+    termlist: term | termlist comma term
+    term: numeral | atom | variable | structure
+    structure: atom leftparen termlist rightparen
+    implication: ":-"
+    rightparen: ")"
+    leftparen: "("
+    mark: "?-"
+    query: mark predicatelist dot
+    atom: smallatom | "'" string "'"
+    smallatom: letter | smallatom character
+    variable:  letter | variable character
+    letter: LETTER | "_"
+    numeral: digit | numeral digit
+    digit: NUMBER
+    character:  letter | digit | special
+    special: "+" | "-" | "*" | "/" | "/\/" | "^" | "~" | ":" | "." | "?" | " " | "\#" | "$" | "\&"
+    dot: "."
+    comma: ","
+    string: character | string character
+    newline: /\n/
+
+    %import common.LETTER
+    %import common.INT -> NUMBER
+    %import common.WS
+    %ignore WS
+"""
+
+    __GRAMMARS = {
+        "fol": __FOL_BNF_GRAMMAR,
+        "tfl": __TFL_BNF_GRAMMAR,
+        "clif": __CLIF_BNF_GRAMMAR,
+        "cgif": __CGIF_BNF_GRAMMAR,
+        "prolog": __PROLOG_BNF_GRAMMAR
+    }
+
     __PARSER = Lark(__FOL_BNF_GRAMMAR)
     
     __CATEGORICAL_KEYWORDS = ["all", "any", "some", "no", "few", "most", "none", "several"]
@@ -90,10 +181,14 @@ class FOLSyllogism(Notation):
     def __repr__(self):
         return f"FOLSyllogism({self.syllogism})"
 
-    def validate(self):
+    def validate(self, grammar=None):
         # Implement validation logic for the syllogism
+        if grammar:
+            parser = Lark(self.__GRAMMARS[grammar.lower()])
+            self.__PARSER = parser
         try:
             self.__PARSER.parse(self.syllogism)
+            print("Valid syllogism")
         except Exception as e:
             raise ParseError(f"Invalid syllogism: {e}") from e
 

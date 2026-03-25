@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: clgc
-Version: 2.0
+Version: 2.1.0
 Summary: A Python package to translate First-Order Logic (FOL) into different knowledge representation languages
 Author-email: Hanna Abi Akl <hannaabiakl8@gmail.com>
 License-Expression: GPL-3.0-or-later
@@ -8,7 +8,7 @@ Project-URL: Homepage, https://github.com/HannaAbiAkl/clgc
 Project-URL: Issues, https://github.com/HannaAbiAkl/clgc/issues
 Classifier: Programming Language :: Python :: 3
 Classifier: Operating System :: OS Independent
-Classifier: Development Status :: 4 - Beta
+Classifier: Development Status :: 5 - Production/Stable
 Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
 Requires-Python: >=3.9
 Description-Content-Type: text/markdown
@@ -36,11 +36,12 @@ A package used for handling logic statements and logic analysis using formal kno
 - Tensor Function Logic Plus (TFL+)
 - CLINGO
 - MINIFOLX
+- PROLOG
 
 ## Setup
 Start by installing the package
 
-`pip install -i https://test.pypi.org/simple/ clgc==0.0.1`
+`pip install clgc`
 
 Then install the dependencies
 
