@@ -101,7 +101,7 @@ print(test_syllogism.conclusion)
 ## Integration
 As CLGC manipulates logical notations, it can be integrated with other logic programming libraries.
 ### Pytholog
-The example below is adapted from Pytholog[[1]](#1) to show how CLGC objects can be leveraged to write and validate correct logical programming notations like PROLOG.
+The example below is adapted from Pytholog [[1]](#ref-1) to show how CLGC objects can be leveraged to write and validate correct logical programming notations like PROLOG.
 
 **<ins>_Note:</ins> You should make sure to install the dependencies of the target library integrations._**
 
@@ -155,5 +155,4 @@ except Exception as e:
 ```
 
 ## References
-<a id="1">[1]</a> 
-[Pytholog](https://github.com/MNoorFawi/pytholog/tree/master?tab=readme-ov-file)
+1. <span id=ref-1>MNoorFawi. (n.d.). GitHub - MNoorFawi/pytholog: Python library that enables using prolog syntax and logic programming in python. GitHub. [[code]](https://github.com/MNoorFawi/pytholog/tree/master?tab=readme-ov-file)</span>
