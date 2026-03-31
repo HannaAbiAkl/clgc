@@ -143,6 +143,29 @@ class FOLSyllogism(Notation):
     %ignore WS
 """
 
+    __MINIFOL2_BNF_GRAMMAR = r"""
+    start: program
+    program: [stat]+
+    stat: proposition newline | keyword* quantifier* symbol* leftparen* (quantifier symbol)* proposition rightparen* newline | keyword* (quantifier symbol)* leftparen* (quantifier symbol)* proposition rightparen* newline
+    proposition: atomicproposition | complexproposition
+    complexproposition: keyword* proposition keyword leftparen* (quantifier symbol)* proposition rightparen*
+    atomicproposition: leftparen* term* leftparen* term* rightparen*
+    !term: (LETTER+) (LETTER+|DIGIT+|"=" | "+" | "-" | "," | "≠")* | (DIGIT+) (LETTER+|DIGIT+|"=" | "+" | "-" | "," | "≠")*
+    !leftparen: "("
+    !rightparen: ")"
+    !keyword: "&" | "~" | ":-" | "|" | "^"
+    !quantifier: "all"
+    symbol: LETTER
+    newline: /\n/
+
+    %import common.LETTER
+    %import common.DIGIT
+    %import common.INT -> NUMBER
+    %import common.ESCAPED_STRING -> STRING
+    %import common.WS
+    %ignore WS
+"""
+
 # based on: https://cseweb.ucsd.edu/classes/fa09/cse130/misc/prolog/prolog_tutorial.pdf
 # and: https://github.com/simonkrenger/ch.bfh.bti7064.w2013.PrologParser/blob/master/doc/prolog-bnf-grammar.txt
     __PROLOG_BNF_GRAMMAR = r"""
@@ -186,6 +209,7 @@ class FOLSyllogism(Notation):
         "clif": __CLIF_BNF_GRAMMAR,
         "cgif": __CGIF_BNF_GRAMMAR,
         "clingo": __CLINGO_BNF_GRAMMAR,
+        "minifol2": __MINIFOL2_BNF_GRAMMAR,
         "prolog": __PROLOG_BNF_GRAMMAR
     }
 
