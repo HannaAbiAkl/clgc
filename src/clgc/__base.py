@@ -63,7 +63,29 @@ class FOLSyllogism(Notation):
     rightparen: ")"
     plus: "+"
     minus: "-"
-    term: plus T n | minus T n
+    term: plus+ minus* T n | minus+ plus* T n
+    T: LETTER
+    n: NUMBER
+    newline: /\n/
+
+    %import common.LETTER
+    %import common.INT -> NUMBER
+    %import common.WS
+    %ignore WS
+"""
+
+    __TFLPLUS_BNF_GRAMMAR = r"""
+    start: program
+    program: [stat]+
+    stat: proposition newline
+    proposition: atomicproposition | complexproposition
+    complexproposition: leftparen proposition rightparen | proposition plus proposition | proposition minus proposition
+    atomicproposition: term
+    leftparen: "("
+    rightparen: ")"
+    plus: "+"
+    minus: "-"
+    term: (plus+ | minus+) leftparen* (plus+ | minus+)  T n rightparen*
     T: LETTER
     n: NUMBER
     newline: /\n/
@@ -102,11 +124,13 @@ class FOLSyllogism(Notation):
     program: [stat]+
     stat: proposition newline | keyword* quantifier* symbol* leftparen* (quantifier symbol)* proposition rightparen* newline | keyword* (quantifier symbol)* leftparen* (quantifier symbol)* proposition rightparen* newline
     proposition: atomicproposition | complexproposition
-    complexproposition: keyword* proposition keyword leftparen* (quantifier symbol)* proposition rightparen*
-    atomicproposition: leftparen* term* leftparen* term* rightparen*
-    !term: (LETTER+) (LETTER+|DIGIT+|"=" | "+" | "-" | "," | "≠" | "?")* | (DIGIT+) (LETTER+|DIGIT+|"=" | "+" | "-" | "," | "≠" | "?")*
-    !leftparen: "[("
-    !rightparen: ")]"
+    complexproposition: keyword* proposition keyword leftbracket* leftparen* (quantifier symbol)* proposition rightparen* rightbracket*
+    atomicproposition: leftbracket* leftparen* term* leftbracket* leftparen* term* rightparen* rightbracket*
+    !term: leftbracket* leftparen* quantifier* (LETTER+) (LETTER+|DIGIT+|"=" | "+" | "-" | "," | "≠" | "?")* | (DIGIT+) (LETTER+|DIGIT+|"=" | "+" | "-" | "," | "≠" | "?")* rightparen* rightbracket*
+    !leftbracket: "["
+    !rightbracket: "]"
+    !leftparen: "("
+    !rightparen: ")"
     !keyword: "~" | "?"
     !quantifier: "*" | "@every *"
     symbol: LETTER
@@ -206,6 +230,7 @@ class FOLSyllogism(Notation):
     __GRAMMARS = {
         "fol": __FOL_BNF_GRAMMAR,
         "tfl": __TFL_BNF_GRAMMAR,
+        "tfl+": __TFLPLUS_BNF_GRAMMAR,
         "clif": __CLIF_BNF_GRAMMAR,
         "cgif": __CGIF_BNF_GRAMMAR,
         "clingo": __CLINGO_BNF_GRAMMAR,
@@ -303,13 +328,31 @@ class FOLSyllogism(Notation):
         if write is None: write = sys.stdout.write
         FOLSyllogism._tree_to_json(item, write, 0)
 
-
     @staticmethod
     def tree_to_json_str(item):
         ''' Returns a Lark tree as a JSON string.'''
         output = []
         FOLSyllogism.tree_to_json(item, output.append)  # will build output in memory
         return ''.join(output)
+
+    @classmethod
+    def treeify(cls, syllogism_str, grammar=None, format="tree"):
+        ''' Returns the tree representation of the syllogism in the specified format (tree, str, json).'''
+        if grammar:
+            # change parser to match grammar
+            parser = Lark(cls.__GRAMMARS[grammar.lower()])
+            cls.__PARSER = parser
+            # add closing '\n' to syllogism_str if not already present, since our grammars require it
+            if not syllogism_str.endswith("\n"):
+                syllogism_str += "\n"
+        tree_obj = cls.__PARSER.parse(syllogism_str)
+        if format == "str":
+            return cls.tree_to_json_str(tree_obj)
+        elif format == "json":
+            json_str = cls.tree_to_json_str(tree_obj)
+            return json.loads(json_str, strict=False)
+        else:
+            return cls.tree_to_json(tree_obj)
 
     @classmethod
     def convert_to_tfl(cls, json_obj, tfl_list):
