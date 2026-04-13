@@ -2,7 +2,9 @@ import sys
 sys.path.append('../')
 from src.clgc.__base import *
 
-syllogism = FOLSyllogism("∃x (Canine(x) ∧ ¬AquaticCreatureKnownAsFish(x))\n")
+#syllogism = FOLSyllogism("∃x (Canine(x) ∧ ¬AquaticCreatureKnownAsFish(x))\n")
+syllogism = FOLSyllogism("LargeComplex(shafaq-asiman) ∧ LargeComplex(shafaq-asiman) ∧ Offshore(shafaq-asiman) ∧ GeologicalStructures(shafaq-asiman) ∧ In(shafaq-asiman, caspiansea)\nNorthwestOf(baku, shafaq-asiman)\n ∀x ∀y (NorthwestOf(x, y) → SoutheastOf(y, x))\n")
+'''
 # test output tree format
 print("*** Output FOL tree format ***")
 print(FOLSyllogism.treeify(syllogism.syllogism))
@@ -12,23 +14,28 @@ print(FOLSyllogism.treeify(syllogism.syllogism, format="str"))
 # test output json format
 print("*** Output FOL json format ***")
 print(FOLSyllogism.treeify(syllogism.syllogism, format="json"))
-
+'''
 # test for tfl/tfl+
+''''
 tfl_plus_syllogism = FOLSyllogism.fol_to_tfl_plus(syllogism.syllogism)
 print("*** TFL+ STRING:", tfl_plus_syllogism)
+'''
+tfl_plus_syllogism = "+(-+I1)"
 FOLSyllogism(tfl_plus_syllogism+'\n').validate(grammar='tfl+')
 print("*** Output TFL+ tree format ***")
-print(FOLSyllogism.treeify(tfl_plus_syllogism, grammar="tfl+", format="tree"))
+print(FOLSyllogism.treeify(tfl_plus_syllogism+'\n', grammar="tfl+", format="tree"))
 print("*** Output TFL+ str format ***")
-print(FOLSyllogism.treeify(tfl_plus_syllogism, grammar="tfl+", format="str"))
+print(FOLSyllogism.treeify(tfl_plus_syllogism+'\n', grammar="tfl+", format="str"))
 print("*** Output TFL+ json format ***")
-print(FOLSyllogism.treeify(tfl_plus_syllogism, grammar="tfl+", format="json"))
-
+print(FOLSyllogism.treeify(tfl_plus_syllogism+'\n', grammar="tfl+", format="json"))
+'''
 # test for clif
 clif_syllogism = FOLSyllogism.fol_to_clif(syllogism.syllogism)
 print("*** CLIF STRING:", clif_syllogism)
+
 FOLSyllogism(clif_syllogism+'\n').validate(grammar='clif')
 print("*** Output CLIF tree format ***")
+
 print(FOLSyllogism.treeify(clif_syllogism, grammar="clif", format="tree"))
 print("*** Output CLIF str format ***")
 print(FOLSyllogism.treeify(clif_syllogism, grammar="clif", format="str"))
@@ -68,3 +75,4 @@ print("*** Output CLINGO str format ***")
 print(FOLSyllogism.treeify(clingo_syllogism, grammar="clingo", format="str"))
 print("*** Output CLINGO json format ***")
 print(FOLSyllogism.treeify(clingo_syllogism, grammar="clingo", format="json"))
+'''

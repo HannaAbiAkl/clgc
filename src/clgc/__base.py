@@ -80,12 +80,12 @@ class FOLSyllogism(Notation):
     stat: proposition newline
     proposition: atomicproposition | complexproposition
     complexproposition: leftparen proposition rightparen | proposition plus proposition | proposition minus proposition
-    atomicproposition: term
+    atomicproposition: leftparen* (plus+ | minus+) term | leftparen* (plus* | minus*) term | term
     leftparen: "("
     rightparen: ")"
     plus: "+"
     minus: "-"
-    term: (plus+ | minus+) leftparen* (plus+ | minus+)  T n rightparen*
+    term: T n | leftparen* T n | leftparen* (plus* | minus*) T n | leftparen* (plus* | minus*) T n rightparen* | leftparen* (plus* | minus*) T n rightparen* (plus* | minus*) | leftparen* (plus* | minus*) T n leftparen* | | leftparen* (plus+ | minus+) T n leftparen* 
     T: LETTER
     n: NUMBER
     newline: /\n/
@@ -122,7 +122,7 @@ class FOLSyllogism(Notation):
     __CGIF_BNF_GRAMMAR = r"""
     start: program
     program: [stat]+
-    stat: proposition newline | keyword* quantifier* symbol* leftparen* (quantifier symbol)* proposition rightparen* newline | keyword* (quantifier symbol)* leftparen* (quantifier symbol)* proposition rightparen* newline
+    stat: proposition newline | keyword* quantifier* symbol* leftparen* (quantifier symbol)* proposition* rightparen* newline | keyword* (quantifier symbol)* leftparen* (quantifier symbol)* proposition rightparen* newline
     proposition: atomicproposition | complexproposition
     complexproposition: keyword* proposition keyword leftbracket* leftparen* (quantifier symbol)* proposition rightparen* rightbracket*
     atomicproposition: leftbracket* leftparen* term* leftbracket* leftparen* term* rightparen* rightbracket*
@@ -174,10 +174,10 @@ class FOLSyllogism(Notation):
     proposition: atomicproposition | complexproposition
     complexproposition: keyword* proposition keyword leftparen* (quantifier symbol)* proposition rightparen*
     atomicproposition: leftparen* term* leftparen* term* rightparen*
-    !term: (LETTER+) (LETTER+|DIGIT+|"=" | "+" | "-" | "," | "≠")* | (DIGIT+) (LETTER+|DIGIT+|"=" | "+" | "-" | "," | "≠")*
+    !term: leftparen* (LETTER+) (LETTER+|DIGIT+|"=" | "+" | "-" | "," | "≠")* | (DIGIT+) (LETTER+|DIGIT+|"=" | "+" | "-" | "," | "≠")* rightparen*
     !leftparen: "("
     !rightparen: ")"
-    !keyword: "&" | "~" | ":-" | "|" | "^"
+    !keyword: "&" | "~" | ":-" | "|" | "^" | ":"
     !quantifier: "all"
     symbol: LETTER
     newline: /\n/
@@ -258,6 +258,9 @@ class FOLSyllogism(Notation):
         # Implement validation logic for the syllogism
         if grammar:
             parser = Lark(self.__GRAMMARS[grammar.lower()])
+            self.__PARSER = parser
+        else:
+            parser = Lark(self.__GRAMMARS['fol'])
             self.__PARSER = parser
         try:
             self.__PARSER.parse(self.syllogism)
@@ -341,6 +344,10 @@ class FOLSyllogism(Notation):
         if grammar:
             # change parser to match grammar
             parser = Lark(cls.__GRAMMARS[grammar.lower()])
+            cls.__PARSER = parser
+        else:
+            # default to fol grammar
+            parser = Lark(cls.__GRAMMARS['fol'])
             cls.__PARSER = parser
             # add closing '\n' to syllogism_str if not already present, since our grammars require it
             if not syllogism_str.endswith("\n"):
