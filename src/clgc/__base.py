@@ -2,6 +2,7 @@ import json
 import sys
 import lark
 from lark import Lark
+from py_toon_format import encode
 from xml.etree.ElementTree import ParseError
 
 from abc import ABC, abstractmethod
@@ -337,6 +338,11 @@ class FOLSyllogism(Notation):
         output = []
         FOLSyllogism.tree_to_json(item, output.append)  # will build output in memory
         return ''.join(output)
+    
+    @staticmethod
+    def toonify(json_obj):
+        '''Convert json object to toon'''
+        return encode(json_obj)
 
     @classmethod
     def treeify(cls, syllogism_str, grammar=None, format="tree"):
@@ -360,6 +366,28 @@ class FOLSyllogism(Notation):
             return json.loads(json_str, strict=False)
         else:
             return cls.tree_to_json(tree_obj)
+
+    @classmethod
+    def simplify_tree(cls, json_obj):
+        """Recursively simplifies the tree structure by removing superfluous information like 'line' and 'col'."""
+        for key, value in json_obj.items():
+            if isinstance(value, dict):
+                if 'line' in value:
+                    del value['line']
+                if 'col' in value:
+                    del value['col']
+                cls.simplify_tree(value)
+            elif isinstance(value, list):
+                for item in value:
+                    if isinstance(item, dict):
+                        if 'line' in item:
+                            del item['line']
+                        if 'col' in item:
+                            del item['col']
+                        cls.simplify_tree(item)
+            else:
+                pass
+        return json_obj
 
     @classmethod
     def convert_to_tfl(cls, json_obj, tfl_list):
@@ -599,7 +627,6 @@ class FOLSyllogism(Notation):
             else:
                 custom_cgif_string += fol_string[i]
         return custom_cgif_string.lower()
-    
     
     @classmethod
     def fol_to_minifol4(cls, fol_string):

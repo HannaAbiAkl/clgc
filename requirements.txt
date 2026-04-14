@@ -17,6 +17,7 @@ nh3==0.3.2
 numpy==2.4.2
 packaging @ file:///C:/miniconda3/conda-bld/packaging_1761049099114/work
 pandas==3.0.0
+py-toon-format==0.1.0
 Pygments==2.19.2
 pyproject_hooks==1.2.0
 python-dateutil==2.9.0.post0
