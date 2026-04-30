@@ -8,6 +8,8 @@ A Python package to translate First-Order Logic (FOL) into different knowledge r
 
 A package used for handling logic statements and logic analysis using formal knowledge representation languages.
 
+Related literature cover architecture [[1]](#ref-1) and experiments [[2]](#ref-2).
+
 ## Key Features
 - Translate FOL statements to other formal Knowledge Representation (KR) languages
 - Categorize syllogisms by type
@@ -101,7 +103,7 @@ print(test_syllogism.conclusion)
 ## Integration
 As CLGC manipulates logical notations, it can be integrated with other logic programming libraries.
 ### Pytholog
-The example below is adapted from Pytholog [[1]](#ref-1) to show how CLGC objects can be leveraged to write and validate correct logical programming notations like PROLOG.
+The example below is adapted from Pytholog [[3]](#ref-3) to show how CLGC objects can be leveraged to write and validate correct logical programming notations like PROLOG.
 
 **<ins>_Note:</ins> You should make sure to install the dependencies of the target library integrations._**
 
@@ -155,4 +157,6 @@ except Exception as e:
 ```
 
 ## References
-1. <span id=ref-1>MNoorFawi. (n.d.). GitHub - MNoorFawi/pytholog: Python library that enables using prolog syntax and logic programming in python. GitHub. [[code]](https://github.com/MNoorFawi/pytholog/tree/master?tab=readme-ov-file)</span>
+1. <span id=ref-1>Hanna Abi Akl. Investigating Language Model Capabilities to Represent and Process Formal Knowledge: A Preliminary Study to Assist Ontology Engineering. the International Joint Conference on Rules and Reasoning (RuleML+RR) 2025, Sep 2025, Instabul, Turkey. ⟨hal-05248053v2⟩. [[paper]](https://inria.hal.science/hal-05248053)</span>
+2. <span id=ref-2>Hanna Abi Akl, Fabien Gandon, Catherine Faron, Pierre Monnin. SEF-CLGC at SemEval-2026 Task 11: Logical Notation Impact on Language Model Performance. SemEval-2026 - The 20th International Workshop on Semantic Evaluation, Jul 2026, San Diego (California), United States. ⟨hal-05606250⟩. [[paper]](https://hal.science/hal-05606250)</span></span>
+3. <span id=ref-3>MNoorFawi. (n.d.). GitHub - MNoorFawi/pytholog: Python library that enables using prolog syntax and logic programming in python. GitHub. [[code]](https://github.com/MNoorFawi/pytholog/tree/master?tab=readme-ov-file)</span>

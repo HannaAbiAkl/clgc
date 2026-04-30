@@ -1,0 +1,24 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: CLGC - Common Logic Grammar Construction
+message: >-
+  A Python package to translate First-Order Logic into
+  different knowledge representation languages
+type: software
+authors:
+  - given-names: Hanna
+    family-names: Abi Akl
+    email: hanna.abi-akl@inria.fr
+    affiliation: 'Inria, Univ. Côte d''Azur, CNRS, I3S, France'
+    orcid: 'https://orcid.org/0000-0001-9829-7401'
+repository-code: 'https://github.com/HannaAbiAkl/clgc/tree/main'
+abstract: >-
+  A package used for handling logic statements and logic
+  analysis using formal knowledge representation languages.
+keywords:
+  - first-order logic
+  - logical reasoning
+  - knowledge representation
+license: GPL-3.0

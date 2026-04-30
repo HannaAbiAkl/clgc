@@ -1,0 +1,36 @@
+{
+    "@context": "https://w3id.org/codemeta/3.0",
+    "type": "SoftwareSourceCode",
+    "author": [
+        {
+            "id": "https://orcid.org/0000-0001-9829-7401",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "Inria, Univ. Côte d'Azur, CNRS, I3S, France"
+            },
+            "email": "hanna.abi-akl@inria.fr",
+            "familyName": "Abi Akl",
+            "givenName": "Hanna"
+        },
+        {
+            "type": "Role",
+            "schema:author": "https://orcid.org/0000-0001-9829-7401",
+            "roleName": "Developer"
+        }
+    ],
+    "codeRepository": "https://github.com/HannaAbiAkl/clgc",
+    "dateCreated": "2026-02-05",
+    "datePublished": "2026-02-27",
+    "description": "A Python package to translate First-Order Logic (FOL) into different knowledge representation languages",
+    "keywords": [
+        "first-order logic",
+        "logical reasoning",
+        "knowledge representation"
+    ],
+    "license": "https://spdx.org/licenses/GPL-3.0",
+    "name": "CLGC",
+    "programmingLanguage": "Python",
+    "version": "2.1.0",
+    "developmentStatus": "active"
+}
