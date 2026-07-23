@@ -2,28 +2,45 @@
 
 # CLGC
 
-A Python package to translate First-Order Logic (FOL) into different knowledge representation languages
+A Python package to translate First-Order Logic (FOL) into different knowledge representation languages.
 
 ## Scope
 
 A package used for handling logic statements and logic analysis using formal knowledge representation languages.
 
-Related literature cover architecture [[1]](#ref-1) and experiments [[2]](#ref-2).
+Related literature cover architecture [[1]](#ref-1) and experiments [[2]](#ref-2),[[4]](#ref-4).
+
+## Architecture
+
+![alt text for screen readers](https://raw.githubusercontent.com/hannaabiakl/clgc/main/figures/fig1.png "Architecture")
+
+Formal languages (notations) are treated as objects starting with a base abstract class *Notation*. Any formal language is defined from the *Notation* class using its Backus–Naur form [(BNF)](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form) grammar.
+
+The package also supports the creation of user-defined (custom) notations as long as they have a defined BNF grammar.
+
+The easiest entry point for a new notation is by extending FOL (the default notation for manipulating syllogisms in the package).
 
 ## Key Features
+
+![alt text for screen readers](https://raw.githubusercontent.com/hannaabiakl/clgc/main/figures/fig2.png "Features")
+
+- Manipulate syllogisms as objects
 - Translate FOL statements to other formal Knowledge Representation (KR) languages
 - Categorize syllogisms by type
+- Validate KR notations
 
 ## Supported KR Languages
+
 - Common Logic Interchange Format (CLIF)
 - Conceptual Graph Interchange Format (CGIF)
 - Tensor Function Logic (TFL)
 - Tensor Function Logic Plus (TFL+)
 - CLINGO
-- MINIFOLX
+- MINIFOL*x*
 - PROLOG
 
 ## Setup
+
 Start by installing the package
 
 `pip install clgc`
@@ -33,6 +50,7 @@ Then install the dependencies
 `pip install -r requirements.txt`
 
 ## Basic Usage
+
 To load all functionalities
 
 `from clgc.__base import *`
@@ -157,6 +175,7 @@ except Exception as e:
 ```
 
 ## References
-1. <span id=ref-1>Hanna Abi Akl. Investigating Language Model Capabilities to Represent and Process Formal Knowledge: A Preliminary Study to Assist Ontology Engineering. the International Joint Conference on Rules and Reasoning (RuleML+RR) 2025, Sep 2025, Instabul, Turkey. ⟨hal-05248053v2⟩. [[paper]](https://inria.hal.science/hal-05248053)</span>
+1. <span id=ref-1>Hanna Abi Akl. Investigating Language Model Capabilities to Represent and Process Formal Knowledge: A Preliminary Study to Assist Ontology Engineering. The International Joint Conference on Rules and Reasoning (RuleML+RR) 2025, Sep 2025, Instabul, Turkey. ⟨hal-05248053v2⟩. [[paper]](https://inria.hal.science/hal-05248053)</span>
 2. <span id=ref-2>Hanna Abi Akl, Fabien Gandon, Catherine Faron, Pierre Monnin. SEF-CLGC at SemEval-2026 Task 11: Logical Notation Impact on Language Model Performance. SemEval-2026 - The 20th International Workshop on Semantic Evaluation, Jul 2026, San Diego (California), United States. ⟨hal-05606250⟩. [[paper]](https://hal.science/hal-05606250)</span></span>
 3. <span id=ref-3>MNoorFawi. (n.d.). GitHub - MNoorFawi/pytholog: Python library that enables using prolog syntax and logic programming in python. GitHub. [[code]](https://github.com/MNoorFawi/pytholog/tree/master?tab=readme-ov-file)</span>
+4. <span id=ref-4>Hanna Abi Akl, Fabien Gandon, Catherine Faron, Pierre Monnin. Are you Talking Logic to Me? Assessing Language Models Syllogistic Reasoning Capabilities. The International Joint Conference on Rules and Reasoning (RuleML+RR) 2026, Aug 2026, Vilnius, Lithuania. ⟨hal-05700643⟩. [[paper]](https://hal.science/hal-05700643)</span></span>
