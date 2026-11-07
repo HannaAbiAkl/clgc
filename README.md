@@ -174,6 +174,28 @@ except Exception as e:
 # ['Yes']
 ```
 
+## Syllogisms as Graphs
+![alt text for screen readers](https://raw.githubusercontent.com/hannaabiakl/clgc/main/figures/fig3.png "CLGC-Graphs")
+
+CLGC is evolving! Syllogisms can now be represented as graphs to explore topological features and detect syllogistic fallacies.
+
+Here is an example usage and the generated graph in FOL:
+```python
+test_syllogism = FOLSyllogism("∀x (Tiger(x) → Cat(x))\n∀x (Cat(x) → ¬Dog(x))\n∀x (BengalTiger(x) → Tiger(x))\n∀x (Husky(x) → Dog(x))\nBengalTiger(fido) ⊕ Cat(fido)\n")
+test_syllogism.add_conclusion("Husky(fido)")
+# transform flat syllogism to graph
+fol_syllogism_graph = FOLSyllogism.ast_to_syllogism_graph(test_syllogism.syllogism+'\n')
+print("Syllogism Graph:")
+print(fol_syllogism_graph)
+# plot the graph
+FOLSyllogism.plot_syllogism_pyvis(fol_syllogism_graph, output_filename="fol_syllogism_graph.html")
+```
+
+And the ensuing graph representation
+
+![alt text for screen readers](https://raw.githubusercontent.com/hannaabiakl/clgc/main/figures/fig4.png "FOL-Graph")
+
+
 ## References
 1. <span id=ref-1>Hanna Abi Akl. Investigating Language Model Capabilities to Represent and Process Formal Knowledge: A Preliminary Study to Assist Ontology Engineering. The International Joint Conference on Rules and Reasoning (RuleML+RR) 2025, Sep 2025, Instabul, Turkey. ⟨hal-05248053v2⟩. [[paper]](https://inria.hal.science/hal-05248053)</span>
 2. <span id=ref-2>Hanna Abi Akl, Fabien Gandon, Catherine Faron, Pierre Monnin. SEF-CLGC at SemEval-2026 Task 11: Logical Notation Impact on Language Model Performance. SemEval-2026 - The 20th International Workshop on Semantic Evaluation, Jul 2026, San Diego (California), United States. ⟨hal-05606250⟩. [[paper]](https://hal.science/hal-05606250)</span></span>
